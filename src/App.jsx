@@ -771,7 +771,7 @@ export default function App(){
         <header className="hdr">
           <div className="hdr-l">
             <div className="logo">MACRO<span>WAR</span>ROOM</div>
-            <div className="tagline">Global Strategy · Jun 7, 2026</div>
+            <div className="tagline">Global Macro Strategy · Jun 7, 2026</div>
           </div>
           <div className="hdr-r">
             <div className="live-clock">
