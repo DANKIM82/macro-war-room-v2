@@ -1,0 +1,47 @@
+{
+  "regimeLabel": "DISINFLATIONARY DE-ESCALATION",
+  "regimeSub": "Risk-on relief as US-Iran deal cracks the oil premium, but sticky 4.2% CPI keeps Warsh's Fed pinned on hold.",
+  "themes": [
+    "US-Iran peace deal collapses war risk premium -> Brent to 3-month lows, equities to record highs",
+    "Energy-led CPI spike to 4.2% meets falling oil -> inflation impulse peaks, but Fed won't pre-cut",
+    "Warsh arrives dovish-by-reputation but boxed by hot prints -> hold now, slow normalization later",
+    "Falling oil + AI/IPO euphoria -> record SPX, but breadth concentrated in semis and mega-cap"
+  ],
+  "signalNotes": [
+    {
+      "name": "US Real Rate",
+      "note": "~-0.6% real on 10y vs 4.2% CPI; still loose, but disinflation from oil should turn reals less negative."
+    },
+    {
+      "name": "2s10s Curve",
+      "note": "+39bp, modestly steep; market pricing growth resilience and a patient Fed, not recession."
+    },
+    {
+      "name": "HY Credit Spread",
+      "note": "Tight; VIX 16 and record equities signal no credit stress, full risk appetite post-deal."
+    },
+    {
+      "name": "VIX",
+      "note": "16.2 and falling — war-premium unwind complete; complacency risk if Iran deal frays."
+    },
+    {
+      "name": "Brent Crude",
+      "note": "$83 off the highs on Iran deal; downside capped by lingering Mideast risk premium per CNBC."
+    },
+    {
+      "name": "Gold",
+      "note": "$4336, holding near highs despite de-escalation — debasement/fiscal hedge bid persists."
+    },
+    {
+      "name": "USD / KRW",
+      "note": "1512 weak-KRW; DXY 99.7 soft, but KRW lagging — watch BOK and semi export cycle."
+    },
+    {
+      "name": "Semiconductor SOX",
+      "note": "Nvidia/Micron/Sandisk leading the melt-up; AI capex and IPO wave driving record tape."
+    }
+  ],
+  "headline": "A US-Iran peace deal cracked oil and propelled global equities to records, even as a 3-year-high 4.2% CPI leaves Warsh's Fed on hold and gold pinned near all-time highs.",
+  "generated": "2026-06-16T01:46:01Z",
+  "asOf": "2026-06-16"
+}
