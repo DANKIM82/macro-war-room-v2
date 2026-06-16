@@ -228,6 +228,41 @@ function deltaColor(type,val,isEq){
 }
 
 /* ════════════════════════════════════════════════════════════════════
+   LIVE DATA OVERLAY  — merges public/data.json (refreshed daily) onto
+   the static board/signals. Falls back to static when data.json absent.
+   ════════════════════════════════════════════════════════════════════ */
+const EQ_KEY={US:"SPX",JP:"Nikkei",KR:"KOSPI",CN:"CSI300",EU:"EuroStoxx",GB:"FTSE"};
+const US_KEY={"Policy Rate":"policyRate","2Y Yield":"y2","10Y Yield":"y10","CPI y/y":"cpiYoY","GDP y/y":"gdpYoY"};
+const liveNum=v=>(v!=null&&!isNaN(v))?Number(v):null;
+function mergeBoard(live){
+  if(!live)return BOARD;
+  return BOARD.map(c=>{
+    let rows=c.rows.map(r=>{
+      let nv=null;
+      if(r.eq)nv=liveNum(live.equities?.[EQ_KEY[c.code]]);
+      else if(c.code==="US"&&US_KEY[r.k])nv=liveNum(live.us?.[US_KEY[r.k]]);
+      return nv!=null?{...r,now:nv,live:true}:r;
+    });
+    if(c.code==="US"){
+      const y2=rows.find(r=>r.k==="2Y Yield"),y10=rows.find(r=>r.k==="10Y Yield");
+      if(y2?.live&&y10?.live){
+        const slope=Math.round((y10.now-y2.now)*100);
+        rows=rows.map(r=>r.k==="2s10s"?{...r,now:slope,live:true}:r);
+      }
+    }
+    return {...c,rows};
+  });
+}
+function mergeSignals(live){
+  if(!live?.fx)return SIGNALS;
+  return SIGNALS.map(s=>{
+    if(s.name==="USD / KRW"&&live.fx.USDKRW!=null)
+      return {...s,val:Number(live.fx.USDKRW).toLocaleString("en-US")};
+    return s;
+  });
+}
+
+/* ════════════════════════════════════════════════════════════════════
    AI PROMPTS
    ════════════════════════════════════════════════════════════════════ */
 function buildMetricPrompt(country,row){
@@ -523,6 +558,29 @@ body{background:var(--bg);color:var(--t)}
 @keyframes dotp{0%,80%,100%{transform:scale(.55);opacity:.3}40%{transform:scale(1);opacity:1}}
 @keyframes ov-in{from{opacity:0}to{opacity:1}}
 @keyframes dr-in{from{transform:translateY(100%)}to{transform:translateY(0)}}
+/* HEADER ACTIONS / PDF */
+.hdr-actions{display:flex;align-items:center;gap:10px}
+.data-status{display:inline-flex;align-items:center;gap:5px;font-family:'JetBrains Mono',monospace;
+  font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.data-status.on{color:var(--green)}
+.ds-dot{width:6px;height:6px;border-radius:50%;background:var(--dim)}
+.data-status.on .ds-dot{background:var(--green);box-shadow:0 0 6px rgba(14,158,120,.6)}
+.pdf-btn{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:6px 13px;background:rgba(226,86,0,.1);color:var(--orange);
+  border:1px solid rgba(226,86,0,.4);border-radius:8px;cursor:pointer;transition:.15s}
+.pdf-btn:hover{background:rgba(226,86,0,.2);border-color:var(--orange)}
+/* PRINT (PDF export) */
+@media print{
+  @page{margin:10mm;size:A4 portrait}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .pdf-btn,.analyze-btn,.gbtn,.overlay,.drawer,.live-clock{display:none!important}
+  .wr{background:#fff!important;min-height:0}
+  .wi{max-width:none;padding:0}
+  .sig-strip{flex-wrap:wrap;overflow:visible}
+  .radar-panel,.nfp-panel,.board-shell,.cal-card,.trade-card,.sig-card,.cal-deck{
+    break-inside:avoid;page-break-inside:avoid}
+  .sec{break-after:avoid}
+}
 `;
 
 /* ════════════════════════════════════════════════════════════════════
@@ -662,13 +720,13 @@ function AnalysisDrawer({open,onClose,info,state}){
 /* ════════════════════════════════════════════════════════════════════
    RATES MATRIX
    ════════════════════════════════════════════════════════════════════ */
-function RatesMatrix({onAnalyze}){
+function RatesMatrix({onAnalyze,board=BOARD}){
   const [sel,setSel]=useState(0);
-  const C=BOARD[sel];
+  const C=board[sel];
   return(<>
     <div className="board-shell">
       <div className="btabs">
-        {BOARD.map((c,i)=>(
+        {board.map((c,i)=>(
           <button key={c.code} className={"btab"+(sel===i?" on":"")} onClick={()=>setSel(i)}>{c.code}</button>
         ))}
       </div>
@@ -717,9 +775,31 @@ export default function App(){
   const [clock,setClock]=useState(new Date());
   const [openA,setOpenA]=useState(null);
   const [analyses,setAnalyses]=useState({});
+  const [live,setLive]=useState(null);
   const timerRef=useRef(null);
 
   useEffect(()=>{const t=setInterval(()=>setClock(new Date()),1000);return()=>clearInterval(t);},[]);
+
+  // Daily-refreshed market data — written by scripts/update_data.py (GitHub Actions cron)
+  useEffect(()=>{
+    fetch(`${import.meta.env.BASE_URL}data.json`,{cache:"no-store"})
+      .then(r=>r.ok?r.json():null)
+      .then(d=>{if(d)setLive(d);})
+      .catch(()=>{});
+  },[]);
+
+  const liveBoard=mergeBoard(live);
+  const liveSignals=mergeSignals(live);
+
+  // Export the current dashboard as a dated PDF (browser print → Save as PDF)
+  function exportPDF(){
+    const d=new Date();
+    const stamp=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    const prev=document.title;
+    document.title=`MacroWarRoom_${stamp}`;
+    window.print();
+    setTimeout(()=>{document.title=prev;},800);
+  }
 
   function startTypewriter(text,key){
     if(timerRef.current)clearInterval(timerRef.current);
@@ -778,6 +858,12 @@ export default function App(){
               <b>{clock.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit",second:"2-digit"})}</b>{" "}
               {clock.toLocaleDateString([],{weekday:"short",month:"short",day:"numeric"})}
             </div>
+            <div className="hdr-actions">
+              <span className={"data-status"+(live?" on":"")} title={live?`Updated ${live.updated||live.date}`:"Using built-in static data"}>
+                <span className="ds-dot"/>{live?`DATA · ${live.date||"live"}`:"STATIC DATA"}
+              </span>
+              <button className="pdf-btn" onClick={exportPDF} title="오늘 화면을 PDF로 저장">⬇ PDF</button>
+            </div>
           </div>
         </header>
 
@@ -810,7 +896,7 @@ export default function App(){
         {/* SIGNAL STACK */}
         <div className="sec">Cross-Asset Signals</div>
         <div className="sig-strip">
-          {SIGNALS.map((s,i)=>(
+          {liveSignals.map((s,i)=>(
             <div className="sig-card" key={s.name} style={{animationDelay:i*.05+"s",borderTopColor:s.col,borderTopWidth:2}}>
               <div className="sig-name">{s.name}</div>
               <div>
@@ -920,7 +1006,7 @@ export default function App(){
 
         {/* RATES MATRIX */}
         <div className="sec">Rates &amp; Macro Matrix</div>
-        <RatesMatrix onAnalyze={handleAnalyze}/>
+        <RatesMatrix onAnalyze={handleAnalyze} board={liveBoard}/>
 
         <div className="foot">
           <span>Data: BLS, Fed, BOJ, ECB, BOE, TradingEconomics · <b>Jun 5–6, 2026</b>. Signals & trade ideas are for analytical purposes only — not investment advice. ~ = estimated.</span>

@@ -52,11 +52,23 @@ python scripts/update_data.py
 
 ```
 
-### 3. Automate Data Updates
+### 3. Automate Data Updates (하루 1회 자동)
 
-데이터는 GitHub Actions를 통해 매일(월~금) 한국 시간(KST) 오전 9시에 자동으로 업데이트됩니다.
+데이터는 GitHub Actions(`.github/workflows/update-data.yml`)를 통해 매일(월~금) 한국 시간(KST)
+오전 9시(00:00 UTC)에 자동으로 업데이트됩니다. 워크플로우가 `public/data.json`을 다시 생성해
+저장소에 커밋하고, React 앱은 로딩 시 이 파일을 불러옵니다.
 
 * GitHub 저장소 **Settings → Secrets and variables → Actions** 에 `FRED_API_KEY`를 등록해야 합니다.
+* **Actions** 탭 → *Update macro data (daily)* → **Run workflow** 로 즉시 수동 실행도 가능합니다.
+
+**현재 자동 갱신되는 항목:** 미국 정책금리·2Y·10Y·2s10s·CPI·GDP, 전 지수(S&P·Nikkei·KOSPI·CSI300·
+Euro Stoxx·FTSE), USD/KRW. 그 외(레짐 레이더, 테마, 트레이드 북, NFP 시계열, 타 국가 금리)는 아직
+`src/App.jsx`에서 수동 관리합니다 — 더 많은 항목을 라이브로 연결하려면 `scripts/update_data.py`를 확장하세요.
+
+### 4. 일별 PDF 추적 (Daily Tracking)
+
+헤더의 **⬇ PDF** 버튼 → 브라우저 인쇄 대화상자 → **PDF로 저장**. 파일명이 `MacroWarRoom_YYYY-MM-DD.pdf`
+로 자동 지정되어 매일 한 장씩 스냅샷을 보관할 수 있습니다.
 
 ---
 

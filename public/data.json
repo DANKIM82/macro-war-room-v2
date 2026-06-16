@@ -1,0 +1,28 @@
+{
+  "updated": "2026-06-07T00:00:00Z",
+  "date": "2026-06-07",
+  "fx": {
+    "USDJPY": 160.0,
+    "USDKRW": 1555,
+    "USDCNY": 7.21,
+    "EURUSD": 1.155,
+    "GBPUSD": 1.27,
+    "DXY": 104.2,
+    "JPYKRW": 9.72
+  },
+  "equities": {
+    "SPX": 7384,
+    "Nikkei": 67470,
+    "KOSPI": 8400,
+    "CSI300": 4905,
+    "EuroStoxx": 5280,
+    "FTSE": 8800
+  },
+  "us": {
+    "policyRate": 3.75,
+    "y2": 4.16,
+    "y10": 4.54,
+    "cpiYoY": 3.8,
+    "gdpYoY": 2.4
+  }
+}
