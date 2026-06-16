@@ -127,6 +127,12 @@ us10y_yf    = yf_last("^TNX")            # US 10Y (%)
 jp10y_yf    = yf_last("^JGBL")          # JP 10Y (may vary)
 uk10y_yf    = yf_last("^TMBMKGB-10Y")   # UK Gilt 10Y
 
+print("Commodities / vol (Yahoo Finance):")
+brent  = yf_last("BZ=F")   # Brent crude
+wti    = yf_last("CL=F")   # WTI crude
+gold   = yf_last("GC=F")   # Gold
+vix    = yf_last("^VIX")   # Volatility index
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Assemble output JSON
 # ─────────────────────────────────────────────────────────────────────────────
@@ -149,6 +155,12 @@ data = {
         "CSI300":    int(csi300) if csi300 else None,
         "EuroStoxx": int(eurostoxx) if eurostoxx else None,
         "FTSE":      int(ftse) if ftse else None,
+    },
+    "commodities": {
+        "brent": round(brent, 2) if brent else None,
+        "wti":   round(wti, 2) if wti else None,
+        "gold":  round(gold, 2) if gold else None,
+        "vix":   round(vix, 2) if vix else None,
     },
     "us": {
         "policyRate": us_policy,

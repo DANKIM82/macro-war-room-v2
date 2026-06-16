@@ -253,12 +253,17 @@ function mergeBoard(live){
     return {...c,rows};
   });
 }
-function mergeSignals(live){
-  if(!live?.fx)return SIGNALS;
+function mergeSignals(live,analysis){
+  const notes={};
+  (analysis?.signalNotes||[]).forEach(n=>{if(n&&n.name)notes[n.name]=n.note;});
+  const c=live?.commodities,fx=live?.fx;
   return SIGNALS.map(s=>{
-    if(s.name==="USD / KRW"&&live.fx.USDKRW!=null)
-      return {...s,val:Number(live.fx.USDKRW).toLocaleString("en-US")};
-    return s;
+    let val=s.val;
+    if(s.name==="USD / KRW"&&fx?.USDKRW!=null)val=Number(fx.USDKRW).toLocaleString("en-US");
+    else if(s.name==="Brent Crude"&&c?.brent!=null)val="$"+Math.round(c.brent);
+    else if(s.name==="Gold"&&c?.gold!=null)val="$"+Math.round(c.gold).toLocaleString("en-US");
+    else if(s.name==="VIX"&&c?.vix!=null)val="~"+Number(c.vix).toFixed(0);
+    return {...s,val,note:notes[s.name]||s.note};
   });
 }
 
@@ -776,20 +781,24 @@ export default function App(){
   const [openA,setOpenA]=useState(null);
   const [analyses,setAnalyses]=useState({});
   const [live,setLive]=useState(null);
+  const [analysis,setAnalysis]=useState(null);
   const timerRef=useRef(null);
 
   useEffect(()=>{const t=setInterval(()=>setClock(new Date()),1000);return()=>clearInterval(t);},[]);
 
-  // Daily-refreshed market data — written by scripts/update_data.py (GitHub Actions cron)
+  // Daily-refreshed data — written by scripts/update_data.py + update_analysis.py (GitHub Actions cron)
   useEffect(()=>{
     fetch(`${import.meta.env.BASE_URL}data.json`,{cache:"no-store"})
-      .then(r=>r.ok?r.json():null)
-      .then(d=>{if(d)setLive(d);})
-      .catch(()=>{});
+      .then(r=>r.ok?r.json():null).then(d=>{if(d)setLive(d);}).catch(()=>{});
+    fetch(`${import.meta.env.BASE_URL}analysis.json`,{cache:"no-store"})
+      .then(r=>r.ok?r.json():null).then(a=>{if(a)setAnalysis(a);}).catch(()=>{});
   },[]);
 
   const liveBoard=mergeBoard(live);
-  const liveSignals=mergeSignals(live);
+  const liveSignals=mergeSignals(live,analysis);
+  const regimeLabel=analysis?.regimeLabel||REGIME_LABEL;
+  const regimeSub=analysis?.regimeSub||REGIME_SUB;
+  const themes=(analysis?.themes&&analysis.themes.length)?analysis.themes:THEMES;
 
   // Export the current dashboard as a dated PDF (browser print → Save as PDF)
   function exportPDF(){
@@ -859,8 +868,8 @@ export default function App(){
               {clock.toLocaleDateString([],{weekday:"short",month:"short",day:"numeric"})}
             </div>
             <div className="hdr-actions">
-              <span className={"data-status"+(live?" on":"")} title={live?`Updated ${live.updated||live.date}`:"Using built-in static data"}>
-                <span className="ds-dot"/>{live?`DATA · ${live.date||"live"}`:"STATIC DATA"}
+              <span className={"data-status"+((live||analysis)?" on":"")} title={analysis?.headline||(live?`Updated ${live.updated||live.date}`:"Using built-in static data")}>
+                <span className="ds-dot"/>{analysis?`AI · ${analysis.asOf||analysis.generated||"live"}`:live?`DATA · ${live.date||"live"}`:"STATIC DATA"}
               </span>
               <button className="pdf-btn" onClick={exportPDF} title="오늘 화면을 PDF로 저장">⬇ PDF</button>
             </div>
@@ -871,9 +880,9 @@ export default function App(){
         <div className="regime-bar">
           <div className="regime-badge">
             <div className="regime-dot"/>
-            {REGIME_LABEL}
+            {regimeLabel}
           </div>
-          <div className="regime-sub">{REGIME_SUB}</div>
+          <div className="regime-sub">{regimeSub}</div>
         </div>
 
         {/* REGIME RADAR + THEMES */}
@@ -883,7 +892,7 @@ export default function App(){
           <div className="radar-panel">
             <div className="radar-title">KEY THEMES</div>
             <div className="theme-list">
-              {THEMES.map((t,i)=>(
+              {themes.map((t,i)=>(
                 <div className="theme-item" key={i}>
                   <span className="theme-num">0{i+1}</span>
                   <span className="theme-txt">{t}</span>

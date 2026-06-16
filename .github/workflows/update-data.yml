@@ -20,21 +20,27 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests yfinance
+        run: pip install requests yfinance anthropic
 
       - name: Fetch latest market data
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/update_data.py
 
-      - name: Commit updated data.json
+      - name: Generate news + AI analysis
+        continue-on-error: true   # an LLM/news hiccup must not block the data update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/update_analysis.py
+
+      - name: Commit updated data
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data.json
+          git add public/data.json public/analysis.json
           if git diff --staged --quiet; then
             echo "No data changes today."
           else
-            git commit -m "chore: daily macro data update ($(date -u +%Y-%m-%d))"
+            git commit -m "chore: daily macro data + analysis update ($(date -u +%Y-%m-%d))"
             git push
           fi

@@ -58,8 +58,12 @@ python scripts/update_data.py
 오전 9시(00:00 UTC)에 자동으로 업데이트됩니다. 워크플로우가 `public/data.json`을 다시 생성해
 저장소에 커밋하고, React 앱은 로딩 시 이 파일을 불러옵니다.
 
-* GitHub 저장소 **Settings → Secrets and variables → Actions** 에 `FRED_API_KEY`를 등록해야 합니다.
+* GitHub 저장소 **Settings → Secrets and variables → Actions** 에 시크릿 2개 등록:
+  * `FRED_API_KEY` — 미국 금리/CPI/GDP 라이브 데이터용
+  * `ANTHROPIC_API_KEY` — 매일 뉴스→AI 분석(레짐/테마/시그널 코멘트)용
 * **Actions** 탭 → *Update macro data (daily)* → **Run workflow** 로 즉시 수동 실행도 가능합니다.
+
+매일 워크플로우는 ① `update_data.py`(시장 숫자) → ② `update_analysis.py`(Google News 헤드라인 + Claude `claude-opus-4-8` 분석 → `public/analysis.json`)를 실행합니다. 앱은 `analysis.json`을 읽어 레짐 배지·테마·시그널 코멘트를 자동 반영합니다. `ANTHROPIC_API_KEY`가 없으면 분석 단계는 건너뛰고(데이터 업데이트는 정상 동작), 앱은 내장 기본 내러티브로 표시됩니다.
 
 **현재 자동 갱신되는 항목:** 미국 정책금리·2Y·10Y·2s10s·CPI·GDP, 전 지수(S&P·Nikkei·KOSPI·CSI300·
 Euro Stoxx·FTSE), USD/KRW. 그 외(레짐 레이더, 테마, 트레이드 북, NFP 시계열, 타 국가 금리)는 아직
