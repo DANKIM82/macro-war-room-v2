@@ -289,10 +289,10 @@ Style: Millennium/Citadel IC memo — blunt, quantitative, no narrative fluff. 3
 const CSS=`
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#09090f;--p:#101018;--p2:#17171f;--p3:#1e1e28;
-  --b:rgba(255,255,255,.08);--b2:rgba(255,255,255,.14);
-  --t:#F0F2F8;--mt:#8892a4;--dim:#4a5568;
-  --orange:#FF6200;--green:#22d3a8;--red:#FF3B55;--amber:#F9A825;--purple:#a78bfa}
+:root{--bg:#EAE2D0;--p:#F7F1E3;--p2:#EFE7D5;--p3:#E5DBC5;
+  --b:rgba(60,48,24,.14);--b2:rgba(60,48,24,.24);
+  --t:#2A2317;--mt:#6E6450;--dim:#9A8E74;
+  --orange:#E25600;--green:#0E9E78;--red:#D62A42;--amber:#B5780A;--purple:#7C5CE0}
 body{background:var(--bg);color:var(--t)}
 .wr{font-family:'Nunito Sans',sans-serif;min-height:100vh;
   background:radial-gradient(ellipse 120% 60% at 80% -20%,rgba(255,98,0,.08),transparent 55%),
@@ -342,7 +342,7 @@ body{background:var(--bg);color:var(--t)}
   font-size:9px;color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
 /* SIGNAL STACK */
 .sig-strip{display:flex;overflow-x:auto;gap:11px;padding-bottom:8px;margin-bottom:24px;
-  scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.1) transparent}
+  scrollbar-width:thin;scrollbar-color:rgba(60,48,24,.18) transparent}
 .sig-card{flex:none;width:190px;background:var(--p);border:1px solid var(--b);
   border-radius:13px;padding:14px;display:flex;flex-direction:column;gap:10px;
   transition:border-color .15s;animation:fadeup .4s both}
@@ -353,7 +353,7 @@ body{background:var(--bg);color:var(--t)}
   letter-spacing:-.01em;line-height:1}
 .sig-dir{font-size:11px;margin-left:3px;vertical-align:middle}
 .pct-wrap{display:flex;flex-direction:column;gap:4px}
-.pct-bar-bg{height:3px;background:rgba(255,255,255,.09);border-radius:2px;overflow:hidden}
+.pct-bar-bg{height:3px;background:rgba(60,48,24,.12);border-radius:2px;overflow:hidden}
 .pct-bar-fill{height:100%;border-radius:2px}
 .pct-label{font-family:'JetBrains Mono',monospace;font-size:8.5px;color:var(--dim);
   display:flex;justify-content:space-between}
@@ -386,7 +386,7 @@ body{background:var(--bg);color:var(--t)}
 .chip{font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 5px;
   border-radius:4px;border:1px solid;white-space:nowrap}
 .chip.ab{color:var(--green);border-color:rgba(34,211,168,.4);background:rgba(34,211,168,.08)}
-.chip.be{color:#84B6DA;border-color:rgba(132,182,218,.35);background:rgba(132,182,218,.08)}
+.chip.be{color:#2F6E9E;border-color:rgba(47,110,158,.35);background:rgba(47,110,158,.08)}
 .chip.eq{color:var(--mt);border-color:var(--b)}
 /* TRADE BOOK */
 .trade-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px;margin-bottom:26px}
@@ -459,7 +459,7 @@ body{background:var(--bg);color:var(--t)}
 .btbl{width:100%;min-width:560px;border-collapse:collapse;font-family:'JetBrains Mono',monospace}
 .btbl th{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   color:var(--dim);text-align:right;padding:10px 14px;border-bottom:1px solid var(--b2);
-  background:rgba(255,255,255,.015);white-space:nowrap}
+  background:rgba(60,48,24,.04);white-space:nowrap}
 .btbl th.l{text-align:left}
 .btbl th.hn{color:var(--t);background:rgba(255,98,0,.07)}
 .btbl td{padding:11px 14px;text-align:right;font-size:13px;border-bottom:1px solid var(--b);
@@ -477,13 +477,13 @@ body{background:var(--bg);color:var(--t)}
   cursor:pointer;transition:.15s;white-space:nowrap}
 .gbtn:hover{border-color:var(--purple);color:var(--purple);background:rgba(167,139,250,.08)}
 /* AI DRAWER */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:300;
+.overlay{position:fixed;inset:0;background:rgba(40,35,23,.45);z-index:300;
   display:flex;flex-direction:column;justify-content:flex-end;animation:ov-in .2s}
-.drawer{background:#0f0f18;border:1px solid rgba(255,255,255,.18);
+.drawer{background:#F7F1E3;border:1px solid rgba(60,48,24,.2);
   border-top-left-radius:22px;border-top-right-radius:22px;
   padding:14px 20px 36px;max-height:82vh;overflow-y:auto;
   animation:dr-in .3s cubic-bezier(.32,.72,0,1)}
-.dhandle{width:36px;height:4px;background:rgba(255,255,255,.16);
+.dhandle{width:36px;height:4px;background:rgba(60,48,24,.22);
   border-radius:2px;margin:0 auto 16px}
 .dhdr{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px}
 .dbadge-metric{font-family:'JetBrains Mono',monospace;font-size:8.5px;font-weight:700;
@@ -500,7 +500,7 @@ body{background:var(--bg);color:var(--t)}
   padding:4px 8px;transition:.12s;flex:none}
 .dclose:hover{color:var(--t)}
 .dbody{font-family:'Nunito Sans',sans-serif;font-size:13.5px;line-height:1.78;
-  color:#E8EAF0;white-space:pre-wrap;min-height:40px}
+  color:var(--t);white-space:pre-wrap;min-height:40px}
 .dcur{display:inline-block;width:2px;height:15px;background:var(--orange);
   margin-left:2px;vertical-align:middle;animation:blink .7s step-end infinite}
 .deq{background:rgba(255,98,0,.08);border-left:3px solid var(--orange);
@@ -541,14 +541,14 @@ function RegimeRadar() {
       <div className="radar-title">MACRO REGIME RADAR</div>
       <ResponsiveContainer width="100%" height={240}>
         <RadarChart data={REGIME} margin={{top:10,right:30,bottom:10,left:30}}>
-          <PolarGrid gridType="polygon" stroke="rgba(255,255,255,.08)" radialLines={false}/>
+          <PolarGrid gridType="polygon" stroke="rgba(60,48,24,.14)" radialLines={false}/>
           <PolarAngleAxis dataKey="axis" tick={<RadarTick/>}/>
           <PolarRadiusAxis domain={[0,10]} tick={false} axisLine={false}/>
           <Radar name="Now" dataKey="current" stroke="#FF6200" fill="#FF6200"
             fillOpacity={0.2} strokeWidth={2} dot={{fill:"#FF6200",r:3}}/>
-          <Radar name="6M Ago" dataKey="prior" stroke="rgba(255,255,255,.22)"
-            fill="rgba(255,255,255,.05)" strokeWidth={1.5} strokeDasharray="5 4"
-            dot={{fill:"rgba(255,255,255,.3)",r:2.5}}/>
+          <Radar name="6M Ago" dataKey="prior" stroke="rgba(60,48,24,.4)"
+            fill="rgba(60,48,24,.07)" strokeWidth={1.5} strokeDasharray="5 4"
+            dot={{fill:"rgba(60,48,24,.45)",r:2.5}}/>
           <Tooltip
             contentStyle={{background:"#101018",border:"1px solid rgba(255,255,255,.15)",
               borderRadius:8,fontFamily:"JetBrains Mono,monospace",fontSize:11}}
@@ -563,7 +563,7 @@ function RegimeRadar() {
           Now (Jun '26)
         </span>
         <span className="rl">
-          <svg width={20} height={2}><line x1={0} y1={1} x2={20} y2={1} stroke="rgba(255,255,255,.3)" strokeWidth={1.5} strokeDasharray="4 3"/></svg>
+          <svg width={20} height={2}><line x1={0} y1={1} x2={20} y2={1} stroke="rgba(60,48,24,.4)" strokeWidth={1.5} strokeDasharray="4 3"/></svg>
           6M Ago (Dec '25)
         </span>
       </div>
@@ -599,12 +599,12 @@ function NFPChart() {
     <div style={{width:"100%",height:200}}>
       <ResponsiveContainer>
         <ComposedChart data={NFP} margin={{top:4,right:44,left:-16,bottom:0}}>
-          <CartesianGrid strokeDasharray="2 5" stroke="rgba(255,255,255,.05)" vertical={false}/>
+          <CartesianGrid strokeDasharray="2 5" stroke="rgba(60,48,24,.1)" vertical={false}/>
           <XAxis dataKey="mo" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} interval={4}/>
           <YAxis yAxisId="l" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"K"} domain={["auto","auto"]}/>
           <YAxis yAxisId="r" orientation="right" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"%"}/>
           <Tooltip content={<Tip/>}/>
-          <ReferenceLine yAxisId="l" y={0} stroke="rgba(255,255,255,.2)" strokeWidth={1}/>
+          <ReferenceLine yAxisId="l" y={0} stroke="rgba(60,48,24,.28)" strokeWidth={1}/>
           <Bar yAxisId="l" dataKey="surp" maxBarSize={12} radius={[2,2,0,0]}>
             {NFP.map((d,i)=><Cell key={i} fill={d.surp>=0?"#22d3a8":"#FF3B55"} fillOpacity={0.7}/>)}
           </Bar>
