@@ -6,7 +6,13 @@ Output: public/data.json  (loaded by the React app on startup)
 """
 
 import json, os, sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+# Force UTF-8 console so emoji/box-drawing prints don't crash on Windows (cp949)
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 try:
     import requests
@@ -48,12 +54,18 @@ def fred(series, obs=2):
 # Yahoo Finance helper
 # ─────────────────────────────────────────────────────────────────────────────
 def yf_last(ticker, period="5d"):
-    """Return latest close price for a Yahoo Finance ticker."""
+    """Return latest close price for a Yahoo Finance ticker (None if unavailable/NaN)."""
     try:
         df = yf.Ticker(ticker).history(period=period)
+        if "Close" in df:
+            df = df.dropna(subset=["Close"])   # drop holidays / missing closes
         if df.empty:
+            LOG.append(f"  [SKIP] {ticker} — no data")
             return None
         v = round(float(df["Close"].iloc[-1]), 4)
+        if v != v:                              # NaN guard (NaN is truthy in Python!)
+            LOG.append(f"  [SKIP] {ticker} — NaN")
+            return None
         LOG.append(f"  [OK]   {ticker} → {v}")
         return v
     except Exception as e:
@@ -119,7 +131,7 @@ uk10y_yf    = yf_last("^TMBMKGB-10Y")   # UK Gilt 10Y
 # Assemble output JSON
 # ─────────────────────────────────────────────────────────────────────────────
 data = {
-    "updated": datetime.utcnow().isoformat() + "Z",
+    "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     "date":    TODAY,
     "fx": {
         "USDJPY":  usdjpy,
@@ -141,7 +153,7 @@ data = {
     "us": {
         "policyRate": us_policy,
         "y2":         us_2y,
-        "y10":        us_10y or (round(us10y_yf / 100, 4) if us10y_yf else None),
+        "y10":        us_10y or (round(us10y_yf, 4) if us10y_yf else None),
         "cpiYoY":     us_cpi,
         "gdpYoY":     us_gdp,
     },
