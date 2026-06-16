@@ -1,10 +1,4 @@
-기존 README 내용을 보니 왜 처음에 헷갈리셨는지 딱 알겠네요! 기존 문서는 이미 만들어진 코드를 가져오는 게 아니라, 아예 백지상태에서 새 프로젝트를 생성하는 명령어(`npm create vite...`)가 적혀 있었습니다.
 
-말씀하신 대로 '로컬 폴더를 준비하고 코드를 다운받아 실행하는' 정확한 순서를 1번에 배치하여 다시 작성했습니다. 아래 내용을 그대로 복사해서 `README.md` 파일에 덮어쓰시면 됩니다.
-
----
-
-```markdown
 # Macro War Room 🔴
 
 Global macro hedge fund dashboard — React + FRED + Yahoo Finance.
