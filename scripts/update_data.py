@@ -2,7 +2,7 @@
 Macro War Room — Automated Data Fetcher
 Pulls live data from FRED (US macro) + Yahoo Finance (FX, equities, international yields)
 Run: python update_data.py
-Output: public/data.json  (loaded by the React app on startup)
+Output: data.json  (loaded by index.html on startup)
 """
 
 import json, os, sys
@@ -174,8 +174,7 @@ data = {
 # ─────────────────────────────────────────────────────────────────────────────
 # Save
 # ─────────────────────────────────────────────────────────────────────────────
-os.makedirs("public", exist_ok=True)
-outfile = "public/data.json"
+outfile = "data.json"
 with open(outfile, "w") as f:
     json.dump(data, f, indent=2)
 

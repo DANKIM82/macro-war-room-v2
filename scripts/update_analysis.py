@@ -20,7 +20,7 @@ except Exception:
 
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 TODAY   = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-OUTFILE = "public/analysis.json"
+OUTFILE = "analysis.json"
 
 # Signal names MUST match SIGNALS[].name in src/App.jsx so notes map cleanly.
 SIGNAL_NAMES = ["US Real Rate", "2s10s Curve", "HY Credit Spread", "VIX",
@@ -95,7 +95,7 @@ def main():
 
     snapshot = "(no market data available)"
     try:
-        with open("public/data.json", encoding="utf-8") as f:
+        with open("data.json", encoding="utf-8") as f:
             d = json.load(f)
         snapshot = json.dumps(
             {k: d.get(k) for k in ("date", "us", "equities", "fx", "commodities")},
@@ -139,7 +139,6 @@ Be specific, current, and blunt — Millennium/Citadel house style. No hedging f
     data["generated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     data["asOf"] = TODAY
 
-    os.makedirs("public", exist_ok=True)
     with open(OUTFILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"Saved {OUTFILE} — regime: {data['regimeLabel']}")
