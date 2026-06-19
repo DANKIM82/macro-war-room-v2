@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH HOLD STAGFLATION",
-  "regimeSub": "Inflation re-accelerating to 4.2% as Warsh's Fed kills cut bias and pivots to hikes, even with oil cratering on the Iran deal.",
+  "regimeLabel": "HAWKISH REFLATION",
+  "regimeSub": "Inflation at a 3-yr high (4.2%) forces a hawkish Fed pivot toward HIKES, even as the US-Iran deal cools oil and lifts risk.",
   "themes": [
-    "US-Iran deal sinks Brent to 3-month lows -> oil tailwind, but core inflation still sticky at 4.2%",
-    "Warsh Fed strips cutting bias and signals hikes -> bond yields surge, Dow drops 500",
-    "Negative real policy rate (3.63% vs 4.2% CPI) -> Fed behind the curve, gold bid to $4,339",
-    "Soft 1.6% GDP plus rising prices -> stagflation squeeze, equity breadth narrowing as semis roll over"
+    "CPI back to 4.2% -> Fed drops cutting bias, dots now point to next move UP -> front-end repricing",
+    "US-Iran deal + Hormuz fears ease -> Brent back to $79 -> geopolitical risk premium bleeding out of risk assets",
+    "Sticky inflation + resilient 1.6% growth -> 'higher for longer' becomes 'higher from here' -> bear-flattening pressure",
+    "Gold pinned at $4177 despite easing oil -> debasement/fiscal-dominance hedge, not just war hedge"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy rate 3.63% vs 4.2% CPI = negative real; Fed forced to lean hawkish to catch up."
+      "note": "Policy 3.63 vs CPI 4.2 = negative real front end; Fed behind the curve, hike risk live for Sept."
     },
     {
       "name": "2s10s Curve",
-      "note": "+38bps and steepening as Warsh's hike signal lifts the long end; term premium rebuilding."
+      "note": "+29bp, barely positive; hike threat caps the front end, bear-flattening bias if inflation sticks."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Still contained; no credit event yet, but hawkish Fed plus soft GDP is the risk to watch."
+      "note": "Tight; VIX 16 and Iran deal keep credit complacent despite hawkish Fed — vulnerable to repricing."
     },
     {
       "name": "VIX",
-      "note": "18.4 — elevated but orderly; absorbing Fed hawkish shock and Iran-deal relief simultaneously."
+      "note": "16.4, sub-trend calm on Iran de-escalation; cheap optionality into a Fed leaning hawkish."
     },
     {
       "name": "Brent Crude",
-      "note": "$78, 3-month lows on US-Iran agreement; disinflation help but EIA draws cap the downside."
+      "note": "$79 post US-Iran deal; Hormuz premium gone, but diesel/AI-power demand a sneaky upside tail."
     },
     {
       "name": "Gold",
-      "note": "$4,339 near record — hedging negative real rates and Fed credibility under new chair Warsh."
+      "note": "$4177 and firm even as oil falls — fiscal-dominance and Fed-independence fears, not war, are the bid."
     },
     {
       "name": "USD / KRW",
-      "note": "1,522 — won deeply weak; high US rates and strong-ish DXY pressure Asian FX."
+      "note": "1538 weak won; DXY ~101 contained, but hawkish Fed + KOSPI 8997 melt-up keep flows two-sided."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Nvidia/Broadcom/Micron led Nasdaq drop; AI leadership wobbling as yields spike."
+      "note": "AI leadership intact (Micron/Marvell), but power/energy bottleneck and rate threat are the new constraints."
     }
   ],
-  "headline": "Oil has collapsed on an Iran deal but US inflation just hit a 3-year high at 4.2%, and Warsh's Fed has flipped from cuts to hikes — markets now price stagflation, not soft landing.",
-  "generated": "2026-06-18T03:47:48Z",
-  "asOf": "2026-06-18"
+  "headline": "As of 2026-06-19, a US-Iran deal has defused the oil shock and juiced risk, but 4.2% inflation has flipped the Fed toward hikes — markets are pricing de-escalation and reflation at the same time.",
+  "generated": "2026-06-19T04:07:01Z",
+  "asOf": "2026-06-19"
 }
