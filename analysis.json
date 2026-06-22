@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH STAGFLATION RELIEF",
-  "regimeSub": "Sticky 4.2% CPI keeps Fed hawkish even as Iran war ends and oil cracks below $80, easing the supply-shock tail.",
+  "regimeLabel": "HAWKISH STAGFLATION RISK",
+  "regimeSub": "Iran-war energy shock pushes CPI above 4% while a Warsh-led Fed kills cut bias and threatens a hike into slowing 1.6% growth.",
   "themes": [
-    "Iran-US framework ends war -> Iranian barrels return, Brent sub-$80, supply premium bleeds out fast",
-    "CPI at 3-yr high 4.2% -> Fed drops cutting bias, more officials flag hikes; September live",
-    "Oil relief + AI mega-cap bid -> SPX 7500 risk-on despite no rate cuts coming",
-    "Trump's Fed pick can't deliver cuts into hot inflation -> credibility risk, term-premium creep in 10s"
+    "Hormuz tankers trapped -> energy-led CPI to 4.2% -> Fed pivots from cuts to a possible September hike.",
+    "US-Iran peace talks postponed -> Brent stuck near $80 with a war premium -> sticky inflation, no Fed relief.",
+    "Warsh Fed pares cutting bias -> real rates grind higher -> equities at record 7500 priced for perfection look fragile.",
+    "Stagflation mix (4.2% CPI, 1.6% GDP) -> gold rips to $4224 as the cleanest hedge against policy error and war."
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs CPI 4.2% = negative real front end; Fed boxed in, can't ease into hot prints."
+      "note": "Policy real rate negative (-0.6%); 10y real ~+0.3%. Fed behind the curve, hike talk = real rates push up."
     },
     {
       "name": "2s10s Curve",
-      "note": "+29bp, modestly steep; market pricing higher-for-longer plus term premium, not recession cuts."
+      "note": "+29bp, modestly positive. Bear-steepening risk if war premium entrenches inflation and Fed signals hike."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Implied tight with VIX 16 and SPX at highs; credit ignoring hike risk, complacent."
+      "note": "Still tight despite stagflation; complacent. First crack if oil re-spikes or Fed hikes into slowdown."
     },
     {
       "name": "VIX",
-      "note": "16.4 — war-end relief crushed vol; cheap hedges ahead of a hawkish Fed and CPI risk."
+      "note": "16.4 — far too cheap given trapped tankers, CPI risk and hawkish Fed. Buy convexity into the prints."
     },
     {
       "name": "Brent Crude",
-      "note": "$79.57, 3-month low; Iran ceasefire + tanker resumption removes geopolitical premium."
+      "note": "$79.85, holding war premium even as peace talks slip. Hormuz risk is the dominant inflation swing factor."
     },
     {
       "name": "Gold",
-      "note": "$4160 elevated; holding bid on negative real rates and Fed-credibility doubts, not war fear."
+      "note": "$4224 record — the regime trade. Bid on war, negative real rates and Fed credibility doubt under Warsh."
     },
     {
       "name": "USD / KRW",
-      "note": "1538 weak won despite DXY 100.97; KOSPI 9033 melt-up masks FX-funding and export stress."
+      "note": "1538 — won weak on oil-import drag and risk-off. Asian energy importers most exposed to Brent premium."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI leadership intact, Nikkei/KOSPI parabolic; Accenture IT drag a minor wobble, not a turn."
+      "note": "Micron 6/24 print is the tell; AI demand intact but rate/oil shock caps multiples. Watch for air pocket."
     }
   ],
-  "headline": "Iran war ends and oil breaks below $80, but US inflation at a 3-year high keeps a hawkish Fed on hold with hikes back on the table as risk assets melt up.",
-  "generated": "2026-06-19T04:45:23Z",
-  "asOf": "2026-06-19"
+  "headline": "An Iran-war oil shock has driven US inflation back above 4%, a newly hawkish Warsh Fed is threatening to hike into 1.6% growth, and record equities and a 16 VIX are dangerously underpricing stagflation.",
+  "generated": "2026-06-22T04:01:37Z",
+  "asOf": "2026-06-22"
 }
