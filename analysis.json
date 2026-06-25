@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH DISINFLATION RESET",
-  "regimeSub": "Iran war de-escalates and Hormuz reopens, collapsing the oil shock just as Warsh's Fed pivots hawkish and the AI trade cracks.",
+  "regimeLabel": "HAWKISH HOLD, OIL UNWIND",
+  "regimeSub": "Iran-war oil spike unwinds as Hormuz reopens, but 4.2% CPI keeps Warsh Fed biased toward a hike, not cuts.",
   "themes": [
-    "Hormuz reopens -> Brent back to $76 -> energy-driven CPI spike set to fade through H2",
-    "Warsh Fed kills cutting bias -> September HIKE risk live -> front-end stays anchored, real rates grind higher",
-    "AI euphoria unwinds -> SOX and megacap tech roll over -> SPX vulnerable despite oil relief",
-    "Sticky 4.2% CPI + 1.6% GDP -> stagflation-lite -> Fed boxed between price stability and slowing growth"
+    "Hormuz reopens -> Brent collapses from $200 calls to $73, energy-led inflation impulse fading fast",
+    "Warsh Fed strips cutting bias, hints at hike -> front-end stays bid, real-rate squeeze building",
+    "CPI at 4.2% (3-yr high) collides with 1.6% GDP -> late-cycle stagflation-lite anxiety persists",
+    "AI/tech wobble (Micron, SOX rout then rebound) -> equities at record SPX 7358 but breadth fragile"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs 4.2% CPI = negative real, but Warsh wants it positive; 10y real ~+0.3% and rising."
+      "note": "Policy 3.63% vs 4.2% CPI = negative real rate; Fed sees itself behind curve, hence hike threat."
     },
     {
       "name": "2s10s Curve",
-      "note": "+27bp, modestly positive; hike rhetoric caps steepening, bear-flatten risk if Fed delivers."
+      "note": "+34bp (4.16/4.50); mildly steep but hike risk could re-flatten the front end fast."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Still contained as oil falls, but AI tech unwind is the credit tail to watch."
+      "note": "Implied tight with VIX 18.6 and SPX at highs; credit ignoring stagflation/hike tail."
     },
     {
       "name": "VIX",
-      "note": "19.5 — elevated but not panic; AI selloff and Fed hawkishness keep a bid under vol."
+      "note": "18.6 — calm post-war, but tech-led two-day rout shows fragility under the surface."
     },
     {
       "name": "Brent Crude",
-      "note": "$76 and sliding as Hormuz reopens; Macquarie pulled $200 call — war premium has fully bled out."
+      "note": "$72.7, lowest since pre-Iran-war; Hormuz reopening kills the oil shock, disinflationary for H2."
     },
     {
       "name": "Gold",
-      "note": "$4075 holds near highs despite oil drop — hedging Fed credibility and fiscal/inflation tail, not war."
+      "note": "$3998 near record — hedging sticky inflation, negative real rates and fiscal/geopolitical doubt despite oil drop."
     },
     {
       "name": "USD / KRW",
-      "note": "1537 weak won, but KOSPI +3% on chip dip-buying; FX vulnerable to SOX swings and BoK."
+      "note": "1546 weak won; DXY soft at 101.5, but KRW pressured by tech cycle and regional risk."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Epicenter of the selloff; AI fears deepen, Micron earnings the next binary catalyst."
+      "note": "Micron beat sparks rebound after AI jitters; sector is the market's swing factor at record highs."
     }
   ],
-  "headline": "The Iran war is ending and oil is deflating, but a hawkish Warsh Fed and a cracking AI trade have replaced the energy shock as the market's dominant fear.",
-  "generated": "2026-06-24T03:25:06Z",
-  "asOf": "2026-06-24"
+  "headline": "The Iran war's oil shock is unwinding as tankers retransit Hormuz, but 4.2% inflation has the new Warsh Fed threatening hikes into a 1.6% economy with equities priced for perfection.",
+  "generated": "2026-06-25T02:59:43Z",
+  "asOf": "2026-06-25"
 }
