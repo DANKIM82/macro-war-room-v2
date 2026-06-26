@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH HOLD, OIL UNWIND",
-  "regimeSub": "Iran-war oil spike unwinds as Hormuz reopens, but 4.2% CPI keeps Warsh Fed biased toward a hike, not cuts.",
+  "regimeLabel": "STICKY INFLATION, HAWKISH HOLD",
+  "regimeSub": "Higher-for-longer regime: Warsh Fed holds at 3.63% with hike bias as CPI runs 4.2%, even as the Iran war fades and oil collapses.",
   "themes": [
-    "Hormuz reopens -> Brent collapses from $200 calls to $73, energy-led inflation impulse fading fast",
-    "Warsh Fed strips cutting bias, hints at hike -> front-end stays bid, real-rate squeeze building",
-    "CPI at 4.2% (3-yr high) collides with 1.6% GDP -> late-cycle stagflation-lite anxiety persists",
-    "AI/tech wobble (Micron, SOX rout then rebound) -> equities at record SPX 7358 but breadth fragile"
+    "Iran war de-escalation + Hormuz tankers flowing -> Brent back below $74, but disinflation help arrives too late for the Fed.",
+    "CPI at 3-year high of 4.2% -> Warsh strips cutting bias, markets now price a September HIKE (hysteresis risk).",
+    "Negative real policy rate (3.63% vs 4.2% CPI) -> gold rips to $4,012 as a hedge against credibility loss.",
+    "Hawkish repricing + Apple/Big Tech rollover -> SPX heads for a losing week despite Micron-led memory pop."
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs 4.2% CPI = negative real rate; Fed sees itself behind curve, hence hike threat."
+      "note": "Policy 3.63% minus CPI 4.2% = negative real rate; Fed is still behind the curve despite the hawkish hold."
     },
     {
       "name": "2s10s Curve",
-      "note": "+34bp (4.16/4.50); mildly steep but hike risk could re-flatten the front end fast."
+      "note": "+30bp and modestly steeper; bear-steepening risk as hike bias lifts the front and term premium builds."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Implied tight with VIX 18.6 and SPX at highs; credit ignoring stagflation/hike tail."
+      "note": "Still contained with VIX sub-19; no credit stress yet, but a September hike scenario is the squeeze risk."
     },
     {
       "name": "VIX",
-      "note": "18.6 — calm post-war, but tech-led two-day rout shows fragility under the surface."
+      "note": "18.89 — elevated but calm; Hormuz attack headlines and tech wobble keep a bid under vol, not panic."
     },
     {
       "name": "Brent Crude",
-      "note": "$72.7, lowest since pre-Iran-war; Hormuz reopening kills the oil shock, disinflationary for H2."
+      "note": "$74 and falling to pre-Iran-war levels as Hormuz reopens and UAE supply surges; geopolitical premium bleeding out."
     },
     {
       "name": "Gold",
-      "note": "$3998 near record — hedging sticky inflation, negative real rates and fiscal/geopolitical doubt despite oil drop."
+      "note": "$4,012 — record territory; negative real rates and Fed-credibility doubts trump the oil/geopolitics de-escalation."
     },
     {
       "name": "USD / KRW",
-      "note": "1546 weak won; DXY soft at 101.5, but KRW pressured by tech cycle and regional risk."
+      "note": "1,549 — won soft despite weak DXY (101.5); KRW pressured by tech-cycle risk and broad EM-Asia caution."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Micron beat sparks rebound after AI jitters; sector is the market's swing factor at record highs."
+      "note": "Two-sided: Micron/memory ripping on AI demand but Apple/Big Tech dragging; leadership narrow, not broad."
     }
   ],
-  "headline": "The Iran war's oil shock is unwinding as tankers retransit Hormuz, but 4.2% inflation has the new Warsh Fed threatening hikes into a 1.6% economy with equities priced for perfection.",
-  "generated": "2026-06-25T02:59:43Z",
-  "asOf": "2026-06-25"
+  "headline": "The Iran war and its oil spike are over, but inflation isn't — at 4.2% CPI the Warsh Fed holds higher-for-longer with a hike bias, sending gold to records, tech wobbling, and oil back to pre-war lows.",
+  "generated": "2026-06-26T03:31:19Z",
+  "asOf": "2026-06-26"
 }
