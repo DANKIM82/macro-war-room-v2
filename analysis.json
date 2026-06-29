@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STICKY INFLATION, HAWKISH HOLD",
-  "regimeSub": "Higher-for-longer regime: Warsh Fed holds at 3.63% with hike bias as CPI runs 4.2%, even as the Iran war fades and oil collapses.",
+  "regimeLabel": "STICKY INFLATION, HAWKISH FED",
+  "regimeSub": "Reflationary regime: 4.2% CPI and a Warsh-led Fed signaling hikes, even as the Iran war de-escalates and oil unwinds its spike.",
   "themes": [
-    "Iran war de-escalation + Hormuz tankers flowing -> Brent back below $74, but disinflation help arrives too late for the Fed.",
-    "CPI at 3-year high of 4.2% -> Warsh strips cutting bias, markets now price a September HIKE (hysteresis risk).",
-    "Negative real policy rate (3.63% vs 4.2% CPI) -> gold rips to $4,012 as a hedge against credibility loss.",
-    "Hawkish repricing + Apple/Big Tech rollover -> SPX heads for a losing week despite Micron-led memory pop."
+    "Hormuz reopens + Saudi price cuts -> Brent back to ~$73 prewar, removing the oil tail risk",
+    "CPI at 4.2% (3-yr high) -> Fed dot plot pivots hawkish, September hike live despite cooling oil",
+    "Negative US real policy rate -> gold pinned near $4,086 as inflation hedge stays bid",
+    "OpenAI IPO flop + tech vol -> AI/momentum unwind threatens narrow leadership even as SPX prints 7,354"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% minus CPI 4.2% = negative real rate; Fed is still behind the curve despite the hawkish hold."
+      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve, hike bias justified."
     },
     {
       "name": "2s10s Curve",
-      "note": "+30bp and modestly steeper; bear-steepening risk as hike bias lifts the front and term premium builds."
+      "note": "+31bp, modestly steep; market prices hikes but doubts the Fed kills growth—no recession signal."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Still contained with VIX sub-19; no credit stress yet, but a September hike scenario is the squeeze risk."
+      "note": "Tight with VIX at 18; credit ignoring tech wobble and hike risk—complacent, fade strength."
     },
     {
       "name": "VIX",
-      "note": "18.89 — elevated but calm; Hormuz attack headlines and tech wobble keep a bid under vol, not panic."
+      "note": "18.4, off the war highs; geopolitical premium drained but tech vol keeps a floor under it."
     },
     {
       "name": "Brent Crude",
-      "note": "$74 and falling to pre-Iran-war levels as Hormuz reopens and UAE supply surges; geopolitical premium bleeding out."
+      "note": "$73, fully round-tripped to prewar as Hormuz reopens; oil now a disinflationary tailwind."
     },
     {
       "name": "Gold",
-      "note": "$4,012 — record territory; negative real rates and Fed-credibility doubts trump the oil/geopolitics de-escalation."
+      "note": "$4,086, holding near highs on negative real rates and structural debasement bid—stay long."
     },
     {
       "name": "USD / KRW",
-      "note": "1,549 — won soft despite weak DXY (101.5); KRW pressured by tech-cycle risk and broad EM-Asia caution."
+      "note": "1,544 weak won despite soft DXY; KRW pressured by tech/AI rotation, watch KOSPI 8,244 froth."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Two-sided: Micron/memory ripping on AI demand but Apple/Big Tech dragging; leadership narrow, not broad."
+      "note": "AI trade cracking post-OpenAI IPO blow; the $7trn energy/AI narrative is the market's fault line."
     }
   ],
-  "headline": "The Iran war and its oil spike are over, but inflation isn't — at 4.2% CPI the Warsh Fed holds higher-for-longer with a hike bias, sending gold to records, tech wobbling, and oil back to pre-war lows.",
-  "generated": "2026-06-26T03:31:19Z",
-  "asOf": "2026-06-26"
+  "headline": "Oil has round-tripped its Iran-war spike as Hormuz reopens, but 4.2% inflation and a hawkish Warsh Fed leave reflation and a September hike on the table, with a fragile AI trade the key risk.",
+  "generated": "2026-06-29T03:41:37Z",
+  "asOf": "2026-06-29"
 }
