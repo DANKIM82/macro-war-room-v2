@@ -2,12 +2,12 @@ name: Update macro data (daily)
 
 on:
   schedule:
-    # 00:00 UTC = 09:00 KST, weekdays (Mon–Fri)
+    # 00:00 UTC = 09:00 KST, weekdays (Mon-Fri)
     - cron: "0 0 * * 1-5"
-  workflow_dispatch: {}   # allow manual "Run workflow" from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
-  contents: write          # needed to commit public/data.json back to the repo
+  contents: write
 
 jobs:
   update:
@@ -25,10 +25,11 @@ jobs:
       - name: Fetch latest market data
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
         run: python scripts/update_data.py
 
       - name: Generate news + AI analysis
-        continue-on-error: true   # an LLM/news hiccup must not block the data update
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/update_analysis.py
