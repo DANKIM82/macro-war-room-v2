@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH MELT-UP REFLATION",
-  "regimeSub": "Risk-on melt-up meets sticky 4.2% inflation and a hawkish Warsh Fed flirting with a September hike, even as Iran de-escalates.",
+  "regimeLabel": "STICKY-INFLATION RISK-ON",
+  "regimeSub": "Equities melt up on US-Iran de-escalation while a hawkish Warsh Fed sits on 4.2% CPI with no cutting bias.",
   "themes": [
-    "US-Iran ceasefire caps oil near $73 -> tail risk drains, equities rip to record highs",
-    "CPI stuck at 4.2% 3yr high -> Warsh drops cutting bias, September HIKE now live",
-    "AI/energy capex boom -> tech leadership powers Dow >52k and SPX 7440 melt-up",
-    "Gold pinned near $4000 + DXY soft at 101 -> markets hedge fiscal/Fed-independence risk (Cook ruling)"
+    "US-Iran truce caps Brent near $73 -> oil shock unwinds, but energy already pushed CPI to 3-yr high of 4.2%.",
+    "New Fed chair Warsh strips cutting bias -> September HIKE risk live as inflation reaccelerates.",
+    "AI/semis ($7trn buildout) drive SPX 7440 and Dow 52k -> narrow tech leadership masks valuation risk.",
+    "Trump-Fed clash (Cook firing blocked by SCOTUS) -> independence premium and term-premium risk building in long end."
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10y at 4.38 barely above 4.2% CPI; front-end real rate negative — policy not truly restrictive."
+      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Fed restrictive in name only, fuels risk assets."
     },
     {
       "name": "2s10s Curve",
-      "note": "+31bps and steepening; bear-steepener as hike risk meets sticky inflation, not growth optimism."
+      "note": "+31bp (4.07/4.38), modestly steep; hike risk flattens front, fiscal/term premium pins long end."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight; risk-on melt-up and Iran de-escalation keep credit complacent despite hike threat."
+      "note": "Tight; VIX 17.6 and equity highs signal no credit stress, complacency into H2."
     },
     {
       "name": "VIX",
-      "note": "17.6 — calm post-ceasefire, but underprices a live September hike and frayed truce."
+      "note": "17.65, calm post-Iran deal; cheap hedges given Fed-hike and Fed-independence tail risks."
     },
     {
       "name": "Brent Crude",
-      "note": "$73 after US-Iran deal; oil shock unwound but energy still the marginal CPI driver."
+      "note": "$73 after US-Iran halt; geopolitical premium drained, but already embedded in 4.2% CPI."
     },
     {
       "name": "Gold",
-      "note": "~$4000 — bid on Fed-independence fears (Cook/Warsh) and persistent inflation, not fear."
+      "note": "$4003 near record; hedging sticky inflation, negative real rates and Fed-independence erosion."
     },
     {
       "name": "USD / KRW",
-      "note": "1546 weak KRW; soft DXY plus KOSPI 8650 tech mania — chase semis, watch import inflation."
+      "note": "1546 weak KRW despite KOSPI 8643 melt-up; AI/chip equity inflows not lifting won, BoK divergence."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI capex supercycle leading the tape; crowded long, primary engine of the equity melt-up."
+      "note": "Nvidia/Micron/Broadcom carry the tape; AI energy trade is the market's single point of failure."
     }
   ],
-  "headline": "Iran ceasefire and a $7trn AI boom drive global equities to records, but 4.2% inflation and a hawkish Warsh Fed have markets pricing the next move as a hike, not a cut.",
-  "generated": "2026-06-30T05:11:16Z",
+  "headline": "Risk assets are partying at record highs on a US-Iran ceasefire and an AI capex boom, even as a hawkish Warsh Fed stares down 4.2% inflation and a live September hike.",
+  "generated": "2026-06-30T05:18:30Z",
   "asOf": "2026-06-30"
 }
