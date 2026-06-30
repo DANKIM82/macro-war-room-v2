@@ -1,27 +1,27 @@
 {
-  "updated": "2026-06-30T04:35:27Z",
+  "updated": "2026-06-30T04:39:03Z",
   "date": "2026-06-30",
   "fx": {
-    "USDJPY": 162.17,
-    "USDKRW": 1548,
-    "USDCNY": 6.7796,
+    "USDJPY": 162.171,
+    "USDKRW": 1547,
+    "USDCNY": 6.7914,
     "EURUSD": 1.1401,
     "GBPUSD": 1.3235,
     "DXY": 101.33,
-    "JPYKRW": 9.55
+    "JPYKRW": 9.54
   },
   "equities": {
     "SPX": 7440,
-    "Nikkei": 70472,
-    "KOSPI": 8528,
+    "Nikkei": 70548,
+    "KOSPI": 8557,
     "CSI300": 4982,
     "EuroStoxx": 6231,
     "FTSE": 10484
   },
   "commodities": {
-    "brent": 73.65,
-    "wti": 70.4,
-    "gold": 3992.1,
+    "brent": 73.53,
+    "wti": 70.29,
+    "gold": 3993.1,
     "vix": 17.65
   },
   "us": {
@@ -32,13 +32,13 @@
     "gdpYoY": 2.1
   },
   "kr": {
-    "policyRate": null,
-    "policyRate_m1": null,
-    "policyRate_y1": null,
-    "y2": null,
-    "y2_d1": null,
-    "y2_w1": null,
-    "y2_m1": null,
+    "policyRate": 2.5,
+    "policyRate_m1": 2.5,
+    "policyRate_y1": 2.5,
+    "y2": 3.304,
+    "y2_d1": 3.294,
+    "y2_w1": 3.31,
+    "y2_m1": 3.157,
     "y2_y1": null,
     "y10": null,
     "y10_d1": null,
@@ -50,9 +50,9 @@
     "slope_w1": null,
     "slope_m1": null,
     "slope_y1": null,
-    "cpiYoY": null,
-    "cpiYoY_m1": null,
-    "cpiYoY_y1": null,
+    "cpiYoY": 119.92,
+    "cpiYoY_m1": 119.37,
+    "cpiYoY_y1": 116.27,
     "gdpYoY": null,
     "gdpYoY_q1": null,
     "gdpYoY_y1": null

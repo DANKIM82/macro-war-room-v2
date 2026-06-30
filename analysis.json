@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH REFLATION",
-  "regimeSub": "Sticky 4.2% CPI meets a Warsh Fed dropping its cutting bias, while a US-Iran de-escalation caps oil and fuels a risk-on melt-up.",
+  "regimeLabel": "HAWKISH HOLD REFLATION",
+  "regimeSub": "Risk-on equity melt-up colliding with sticky 4.2% CPI and a Warsh Fed that dropped its cutting bias and is flirting with a hike.",
   "themes": [
-    "US-Iran ceasefire deflates the oil risk premium -> Brent back to low-70s, energy-led CPI spike peaks",
-    "Warsh Fed strips cutting bias with CPI at 3yr high -> September HIKE risk repriced, front-end stays heavy",
-    "AI capex supercycle drives Dow above 52k and SOX -> equities ignore restrictive policy on earnings momentum",
-    "Fed independence under siege (Cook firing blocked by SCOTUS) -> term premium and gold bid as institutional risk lingers"
+    "Iran-US ceasefire deal caps oil near $73 -> energy disinflation relief but headline CPI still 4.2%",
+    "Warsh Fed strips cutting bias, hysteresis talk points to September HIKE -> front-end stays pinned",
+    "AI/energy capex boom + de-escalation -> Dow above 52k, SPX 7440, global risk-on broadens",
+    "Negative real policy rate + soft DXY (101) -> gold rockets to ~$4000 as debasement/credibility hedge"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs 4.2% CPI = negative real front end; 10y real ~flat. Fed reluctant to ease into hot prints."
+      "note": "Policy 3.63% vs CPI 4.2% = negative real; Fed behind curve, hike risk live despite cooling oil."
     },
     {
       "name": "2s10s Curve",
-      "note": "+31bp, modestly positive. Bear-steepening bias if Warsh signals hike; long-end carries fiscal/term premium."
+      "note": "+31bp (4.07/4.38); modest steepening but flat-ish as hike fears anchor the front end."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight, no stress. VIX 17.6 and equity highs confirm risk-on; credit not pricing recession or policy error."
+      "note": "Tight; VIX 17.6 and record equities signal no credit stress, complacent risk appetite."
     },
     {
       "name": "VIX",
-      "note": "17.65, complacent. Iran deal removed left-tail; cheap hedges into a Fed that may surprise hawkish."
+      "note": "17.65 — calm post-ceasefire, but underprices a hawkish Warsh and sticky-inflation tail."
     },
     {
       "name": "Brent Crude",
-      "note": "$73.65, down post US-Iran deal. Supply-surge narrative vs ING 'overshot' — geopolitical premium drained."
+      "note": "$73.5, deflated by US-Iran deal halting attacks; supply-surge pricing eases inflation impulse."
     },
     {
       "name": "Gold",
-      "note": "$3992, near records despite no oil shock. Bid on Fed-independence threat, negative real rates, debasement hedge."
+      "note": "~$3993 near records — feeding on negative real rates, Fed independence fight (Cook case), debasement."
     },
     {
       "name": "USD / KRW",
-      "note": "1548 weak won despite KOSPI 8528 boom; carry into JPY funding (JPYKRW 9.55) and tech inflows in tension."
+      "note": "1547 weak won despite KOSPI 8557 melt-up; yen at 162 carry pressure spilling across Asia FX."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI/energy-trade leadership; Nikkei 70k, KOSPI 8528 confirm chip melt-up. Crowded but earnings-backed."
+      "note": "AI/energy capex supercycle driving leadership; Tesla, Alphabet, Rocket Lab gains confirm tech bid."
     }
   ],
-  "headline": "Stocks are at record highs on a US-Iran ceasefire and an AI capex boom, but a Warsh Fed facing 4.2% inflation has killed its cutting bias and flagged a possible September hike — reflation, not landing, is the trade.",
-  "generated": "2026-06-30T04:35:46Z",
+  "headline": "Equities are at records on an Iran-US ceasefire and AI capex euphoria, but inflation at a 3-year-high 4.2% and a hawkish Warsh Fed threatening a September hike leave the rally riding negative real rates and record gold.",
+  "generated": "2026-06-30T04:39:25Z",
   "asOf": "2026-06-30"
 }
