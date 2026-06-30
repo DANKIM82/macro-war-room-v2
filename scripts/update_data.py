@@ -1,9 +1,8 @@
 """
 Macro War Room - Automated Data Fetcher
-Pulls live data from FRED (US macro) + Yahoo Finance (FX, equities, international yields)
-+ BOK ECOS API (South Korea: Policy Rate, 2Y/10Y Yield, CPI, GDP)
-Run: python update_data.py
-Output: data.json (loaded by index.html on startup)
+BOK ECOS series codes (stat_code=817Y002):
+  010190000=1Y 010195000=2Y 010200000=3Y
+  010200001=5Y 010210000=10Y 010220000=20Y 010230000=30Y
 """
 
 import json, os, sys
@@ -72,7 +71,7 @@ def ecos(stat_code, item_code, cycle="M", n=14):
     if not ECOS_KEY:
         LOG.append(f"  [SKIP] ECOS {stat_code}/{item_code} - no ECOS_API_KEY")
         return [None] * n
-    days_back = {"D": 60, "M": 500, "Q": 1200, "A": 3650}.get(cycle, 500)
+    days_back = {"D": 90, "M": 500, "Q": 1200, "A": 3650}.get(cycle, 500)
     fmt = "%Y%m%d" if cycle == "D" else "%Y%m"
     start = (datetime.today() - timedelta(days=days_back)).strftime(fmt)
     end   = datetime.today().strftime(fmt)
@@ -84,7 +83,7 @@ def ecos(stat_code, item_code, cycle="M", n=14):
         r = requests.get(url, timeout=15).json()
         rows = r.get("StatisticSearch", {}).get("row", [])
         if not rows:
-            LOG.append(f"  [SKIP] ECOS {stat_code}/{item_code} - empty")
+            LOG.append(f"  [SKIP] ECOS {stat_code}/{item_code} - empty response")
             return [None] * n
         rows.sort(key=lambda x: x.get("TIME", ""), reverse=True)
         vals = []
@@ -154,20 +153,23 @@ wti       = yf_last("CL=F")
 gold      = yf_last("GC=F")
 vix       = yf_last("^VIX")
 
+# BOK ECOS -- 817Y002: KTB daily yields
+# 010195000=2Y  010210000=10Y
 print("South Korea (BOK ECOS API):")
+
 kr_policy_obs = ecos("722Y001", "0101000", cycle="M", n=14)
 kr_policy     = idx(kr_policy_obs, 0)
 kr_policy_m1  = idx(kr_policy_obs, 1)
 kr_policy_y1  = idx(kr_policy_obs, 12)
 
-kr_2y_obs = ecos("817Y002", "010190000", cycle="D", n=400)
+kr_2y_obs = ecos("817Y002", "010195000", cycle="D", n=400)
 kr_2y     = idx(kr_2y_obs, 0)
 kr_2y_d1  = idx(kr_2y_obs, 1)
 kr_2y_w1  = idx(kr_2y_obs, 5)
 kr_2y_m1  = idx(kr_2y_obs, 22)
 kr_2y_y1  = idx(kr_2y_obs, 250)
 
-kr_10y_obs = ecos("817Y002", "010500000", cycle="D", n=400)
+kr_10y_obs = ecos("817Y002", "010210000", cycle="D", n=400)
 kr_10y     = idx(kr_10y_obs, 0)
 kr_10y_d1  = idx(kr_10y_obs, 1)
 kr_10y_w1  = idx(kr_10y_obs, 5)
@@ -249,9 +251,9 @@ if None in [us_policy, us_2y, us_10y]:
 else:
     print(f"US:  Policy {us_policy}% | 2Y {us_2y}% | 10Y {us_10y}% | CPI {us_cpi}%")
 if None in [kr_policy, kr_2y, kr_10y]:
-    print("WARNING: ECOS data missing - set ECOS_API_KEY")
+    print("WARNING: ECOS data missing - check ECOS_API_KEY / series codes")
 else:
-    print(f"KR:  BOK {kr_policy}% | 2Y {kr_2y}% | 10Y {kr_10y}% | CPI {kr_cpi}%")
+    print(f"KR:  BOK {kr_policy}% | 2Y {kr_2y}% | 10Y {kr_10y}% | CPI {kr_cpi}% | 2s10s {kr_slope}bps")
 print(f"FX:  USDJPY {usdjpy} | USDKRW {usdkrw} | DXY {dxy}")
 for msg in LOG:
     print(msg)
