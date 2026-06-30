@@ -124,7 +124,7 @@ print("FX (Yahoo Finance):")
 usdjpy = yf_last("USDJPY=X")
 usdkrw = yf_last("USDKRW=X")
 usdcny = yf_last("USDCNY=X")
-eurusd = yf_last("EURUSD=X")h
+eurusd = yf_last("EURUSD=X")
 gbpusd = yf_last("GBPUSD=X")
 dxy = yf_last("DX-Y.NYB")
 
