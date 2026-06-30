@@ -161,14 +161,14 @@ kr_2y = idx(kr_2y_obs, 0)
 kr_2y_d1 = idx(kr_2y_obs, 1)
 kr_2y_w1 = idx(kr_2y_obs, 5)
 kr_2y_m1 = idx(kr_2y_obs, 22)
-kr_2y_y1 = idx(kr_2y_obs, 250) or 2.449
+kr_2y_y1 = idx(kr_2y_obs, -250) or 2.449
 
 kr_10y_obs = ecos("817Y002", "010210000", cycle="D", n=1000)
 kr_10y = idx(kr_10y_obs, 0)
 kr_10y_d1 = idx(kr_10y_obs, 1)
 kr_10y_w1 = idx(kr_10y_obs, 5)
 kr_10y_m1 = idx(kr_10y_obs, 22)
-kr_10y_y1 = idx(kr_10y_obs, 250) or 2.817
+kr_10y_y1 = idx(kr_10y_obs, -250) or 2.817
 
 kr_slope = slope_bps(kr_10y, kr_2y)
 kr_slope_d1 = slope_bps(kr_10y_d1, kr_2y_d1)
