@@ -817,9 +817,9 @@ export default function App(){
 
   // Daily-refreshed data — written by scripts/update_data.py + update_analysis.py (GitHub Actions cron)
   useEffect(()=>{
-    fetch(`${import.meta.env.BASE_URL}data.json`,{cache:"no-store"})
+    fetch('./data.json',{cache:"no-store"})
       .then(r=>r.ok?r.json():null).then(d=>{if(d)setLive(d);}).catch(()=>{});
-    fetch(`${import.meta.env.BASE_URL}analysis.json`,{cache:"no-store"})
+    fetch('./analysis.json',{cache:"no-store"})
       .then(r=>r.ok?r.json():null).then(a=>{if(a)setAnalysis(a);}).catch(()=>{});
   },[]);
 
