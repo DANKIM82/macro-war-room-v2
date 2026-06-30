@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STICKY CPI, HAWKISH HOLD",
-  "regimeSub": "Reflation regime: CPI at 4.2% 3-yr high forces Warsh Fed to drop cutting bias and flag September hike even as Iran ceasefire cools oil.",
+  "regimeLabel": "HAWKISH REFLATION",
+  "regimeSub": "Sticky 4.2% CPI meets a Warsh Fed dropping its cutting bias, while a US-Iran de-escalation caps oil and fuels a risk-on melt-up.",
   "themes": [
-    "US-Iran deal halts attacks -> Brent back below $74, energy spike fading but CPI lag keeps prints hot",
-    "New Fed chair Warsh kills cut bias -> market now pricing hike risk, real rates still negative at -0.6%",
-    "AI/energy capex supercycle -> equities make new highs (SPX 7440, Nasdaq +2%) despite hawkish Fed",
-    "Gold near $3982 + Cook firing fight -> markets hedge Fed-independence erosion and sticky inflation"
+    "US-Iran ceasefire deflates the oil risk premium -> Brent back to low-70s, energy-led CPI spike peaks",
+    "Warsh Fed strips cutting bias with CPI at 3yr high -> September HIKE risk repriced, front-end stays heavy",
+    "AI capex supercycle drives Dow above 52k and SOX -> equities ignore restrictive policy on earnings momentum",
+    "Fed independence under siege (Cook firing blocked by SCOTUS) -> term premium and gold bid as institutional risk lingers"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "3.63% policy vs 4.2% CPI = -0.6% real; policy still loose despite hawkish rhetoric, hike justified."
+      "note": "Policy 3.63% vs 4.2% CPI = negative real front end; 10y real ~flat. Fed reluctant to ease into hot prints."
     },
     {
       "name": "2s10s Curve",
-      "note": "+31bp, mildly positive; bear-steepening risk if Warsh hikes into sticky inflation."
+      "note": "+31bp, modestly positive. Bear-steepening bias if Warsh signals hike; long-end carries fiscal/term premium."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight; VIX 17.6 and equity highs signal no credit stress, complacent to hike risk."
+      "note": "Tight, no stress. VIX 17.6 and equity highs confirm risk-on; credit not pricing recession or policy error."
     },
     {
       "name": "VIX",
-      "note": "17.65, calm post-ceasefire; underpricing September Fed hike and Grantham crash warnings."
+      "note": "17.65, complacent. Iran deal removed left-tail; cheap hedges into a Fed that may surprise hawkish."
     },
     {
       "name": "Brent Crude",
-      "note": "$73.85, down hard on US-Iran deal; supply-surge narrative vs geopolitical premium unwind."
+      "note": "$73.65, down post US-Iran deal. Supply-surge narrative vs ING 'overshot' — geopolitical premium drained."
     },
     {
       "name": "Gold",
-      "note": "$3981, near records; hedging negative real rates, Fed-independence risk and sticky CPI."
+      "note": "$3992, near records despite no oil shock. Bid on Fed-independence threat, negative real rates, debasement hedge."
     },
     {
       "name": "USD / KRW",
-      "note": "1543 weak won; JPY at 162 too — Asia FX soft as USD holds and BOJ/BOK lag."
+      "note": "1548 weak won despite KOSPI 8528 boom; carry into JPY funding (JPYKRW 9.55) and tech inflows in tension."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix warning flags memory cyclicality; AI demand still driving but Micron risk rising."
+      "note": "AI/energy-trade leadership; Nikkei 70k, KOSPI 8528 confirm chip melt-up. Crowded but earnings-backed."
     }
   ],
-  "headline": "As of 2026-06-30 the world is a sticky-inflation reflation: CPI at a 3-year-high 4.2% and a hawkish Warsh Fed collide with an Iran ceasefire that pulled Brent under $74, while equities print records and gold hovers near $3,980.",
-  "generated": "2026-06-30T03:29:41Z",
+  "headline": "Stocks are at record highs on a US-Iran ceasefire and an AI capex boom, but a Warsh Fed facing 4.2% inflation has killed its cutting bias and flagged a possible September hike — reflation, not landing, is the trade.",
+  "generated": "2026-06-30T04:35:46Z",
   "asOf": "2026-06-30"
 }
