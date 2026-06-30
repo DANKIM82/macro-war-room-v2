@@ -5,7 +5,7 @@
 <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Macro War Room</title>
-<!-- ───────────────────────────────────────────────────────────────────────
+<!-- ────────────────────────────────────────────h───────────────────────────
      GENERATED FILE — do not edit by hand.
      Edit src/App.jsx (and src/index.css), then run:  python scripts/build_html.py
      Daily market/analysis data is fetched at runtime from ./data.json +
@@ -371,25 +371,54 @@ function deltaColor(type,val,isEq){
    ════════════════════════════════════════════════════════════════════ */
 const EQ_KEY={US:"SPX",JP:"Nikkei",KR:"KOSPI",CN:"CSI300",EU:"EuroStoxx",GB:"FTSE"};
 const US_KEY={"Policy Rate":"policyRate","2Y Yield":"y2","10Y Yield":"y10","CPI y/y":"cpiYoY","GDP y/y":"gdpYoY"};
+const KR_KEY={
+"Policy Rate":["policyRate",null,null,"policyRate_m1","policyRate_y1"],
+"2Y Yield": ["y2","y2_d1","y2_w1","y2_m1","y2_y1"],
+"10Y Yield": ["y10","y10_d1","y10_w1","y10_m1","y10_y1"],
+"2s10s": ["slope","slope_d1","slope_w1","slope_m1","slope_y1"],
+"CPI y/y": ["cpiYoY",null,null,"cpiYoY_m1","cpiYoY_y1"],
+"GDP y/y": ["gdpYoY",null,null,"gdpYoY_q1","gdpYoY_y1"],
+};
 const liveNum=v=>(v!=null&&!isNaN(v))?Number(v):null;
 function mergeBoard(live){
-  if(!live)return BOARD;
-  return BOARD.map(c=>{
-    let rows=c.rows.map(r=>{
-      let nv=null;
-      if(r.eq)nv=liveNum(live.equities?.[EQ_KEY[c.code]]);
-      else if(c.code==="US"&&US_KEY[r.k])nv=liveNum(live.us?.[US_KEY[r.k]]);
-      return nv!=null?{...r,now:nv,live:true}:r;
-    });
-    if(c.code==="US"){
-      const y2=rows.find(r=>r.k==="2Y Yield"),y10=rows.find(r=>r.k==="10Y Yield");
-      if(y2?.live&&y10?.live){
-        const slope=Math.round((y10.now-y2.now)*100);
-        rows=rows.map(r=>r.k==="2s10s"?{...r,now:slope,live:true}:r);
-      }
-    }
-    return {...c,rows};
-  });
+if(!live)return BOARD;
+const kr=live.kr||{};
+return BOARD.map(c=>{
+let rows=c.rows.map(r=>{
+if(r.eq){
+const nv=liveNum(live.equities?.[EQ_KEY[c.code]]);
+return nv!=null?{...r,now:nv,live:true}:r;
+}
+if(c.code==="US"&&US_KEY[r.k]){
+const nv=liveNum(live.us?.[US_KEY[r.k]]);
+return nv!=null?{...r,now:nv,live:true}:r;
+}
+if(c.code==="KR"&&KR_KEY[r.k]){
+const [k0,k1,k2,k3,k4]=KR_KEY[r.k];
+const nv =k0?liveNum(kr[k0]):null;
+const nd1=k1?liveNum(kr[k1]):null;
+const nw1=k2?liveNum(kr[k2]):null;
+const nm1=k3?liveNum(kr[k3]):null;
+const ny1=k4?liveNum(kr[k4]):null;
+const patch={};
+if(nv !=null){patch.now=nv;patch.live=true;}
+if(nd1!=null)patch.d1=nd1;
+if(nw1!=null)patch.w1=nw1;
+if(nm1!=null)patch.m1=nm1;
+if(ny1!=null)patch.y1=ny1;
+return Object.keys(patch).length>0?{...r,...patch}:r;
+}
+return r;
+});
+if(c.code==="US"){
+const y2=rows.find(r=>r.k==="2Y Yield"),y10=rows.find(r=>r.k==="10Y Yield");
+if(y2?.live&&y10?.live){
+const slope=Math.round((y10.now-y2.now)*100);
+rows=rows.map(r=>r.k==="2s10s"?{...r,now:slope,live:true}:r);
+}
+}
+return {...c,rows};
+});
 }
 function mergeSignals(live,analysis){
   const notes={};
