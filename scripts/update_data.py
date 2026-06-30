@@ -2,7 +2,7 @@
 Macro War Room - Automated Data Fetcher
 BOK ECOS series codes (stat_code=817Y002):
 010190000=1Y 010195000=2Y 010200000=3Y
-010200001=5Y 010210000=10Y 010220000=20Y 010230000=30Y
+010200001=5Y 010210000=10Y 010220000=20Y 010230000=30Yh
 """
 
 import json, os, sys
@@ -124,7 +124,7 @@ print("FX (Yahoo Finance):")
 usdjpy = yf_last("USDJPY=X")
 usdkrw = yf_last("USDKRW=X")
 usdcny = yf_last("USDCNY=X")
-eurusd = yf_last("EURUSD=X")
+eurusd = yf_last("EURUSD=X")h
 gbpusd = yf_last("GBPUSD=X")
 dxy = yf_last("DX-Y.NYB")
 
@@ -160,15 +160,17 @@ kr_2y_obs = ecos("817Y002", "010195000", cycle="D", n=1000)
 kr_2y = idx(kr_2y_obs, 0)
 kr_2y_d1 = idx(kr_2y_obs, 1)
 kr_2y_w1 = idx(kr_2y_obs, 5)
-kr_2y_m1 = idx(kr_2y_obs, 22)
-kr_2y_y1 = 2.449
+kr_2y_obs_m = ecos("721Y001", "5090000", cycle="M", n=24)
+kr_2y_m1 = idx(kr_2y_obs_m, 1)
+kr_2y_y1 = idx(kr_2y_obs_m, 12)
 
 kr_10y_obs = ecos("817Y002", "010210000", cycle="D", n=1000)
 kr_10y = idx(kr_10y_obs, 0)
 kr_10y_d1 = idx(kr_10y_obs, 1)
 kr_10y_w1 = idx(kr_10y_obs, 5)
-kr_10y_m1 = idx(kr_10y_obs, 22)
-kr_10y_y1 = 2.817
+kr_10y_obs_m = ecos("721Y001", "5050000", cycle="M", n=24)
+kr_10y_m1 = idx(kr_10y_obs_m, 1)
+kr_10y_y1 = idx(kr_10y_obs_m, 12)
 
 kr_slope = slope_bps(kr_10y, kr_2y)
 kr_slope_d1 = slope_bps(kr_10y_d1, kr_2y_d1)
