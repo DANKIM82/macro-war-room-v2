@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "RISK-ON DESPITE STICKY INFLATION",
-  "regimeSub": "AI-led equity melt-up meets a hawkish Warsh Fed and Iran-war de-escalation, with CPI stuck at a 3-year high of 4.2%.",
+  "regimeLabel": "HAWKISH RISK-ON MELT-UP",
+  "regimeSub": "AI-driven equity melt-up meets sticky 4.2% CPI and a Warsh-led Fed threatening a hike, even as Iran ceasefire crushes oil.",
   "themes": [
-    "Iran ceasefire + tanker flows resuming -> Brent back to $74, energy CPI tailwind fading but base effects keep inflation hot",
-    "Warsh Fed drops cutting bias, leaves door open to hike -> front-end repriced, real policy rate still negative at -0.6%",
-    "AI capex + power-shortage narrative -> Nasdaq best quarter since 2020, megacap tech masking narrow breadth",
-    "Negative real rates + fiscal/geopolitical hedging -> gold pinned above $4,000 even as equities print records"
+    "Iran ceasefire + US-Iran deal collapsed the oil premium (Brent -38% QoQ) — disinflation tailwind fights sticky core",
+    "New Fed Chair Warsh holds but dangles a September hike as CPI hits a 3-yr high — front-end priced for pain",
+    "AI/semiconductor rally powers SPX to 7499 and best quarter since 2020 — breadth thin, valuations stretched",
+    "Yen at 40-year low (162.83) as BoJ lags — carry trades funding the global equity bid, fragility building"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve as it stalls cuts and threatens hikes."
+      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve, hike bias justified."
     },
     {
       "name": "2s10s Curve",
-      "note": "+31bp and modestly steeper; market doubts a hike sticks, prices eventual cuts despite hot CPI."
+      "note": "+28bp, mildly positive; hike risk flattens front-end, no recession signal from steepening."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight; VIX 17 and record equities signal zero credit stress, no recession premium priced."
+      "note": "Tight — risk-on melt-up and lower oil suppress default fears; complacent to hike shock."
     },
     {
       "name": "VIX",
-      "note": "17.2 — complacent after AI-rout snapback; cheap vol given hike risk and frayed Iran ceasefire."
+      "note": "16.45, low; market shrugging off Fed hawkishness and geopolitics — vol is cheap insurance."
     },
     {
       "name": "Brent Crude",
-      "note": "$74, lowest since pre-Iran war as Hormuz tankers exit; supply-surge bet, but stockpile buying risk lurks."
+      "note": "$73, down 38% in Q2 on Iran ceasefire; benchmark loading anomalies flag structural stress."
     },
     {
       "name": "Gold",
-      "note": "$4,056 — refuses to fall; negative real rates and geopolitical hedging keep structural bid intact."
+      "note": "$3993 near highs despite risk-on; hedging fiscal/inflation debasement and negative real rates."
     },
     {
       "name": "USD / KRW",
-      "note": "1,551 — won weak despite KOSPI 8,476 melt-up; carry and US rate edge pressure EM Asia FX."
+      "note": "1556 weak KRW but KOSPI 8345 ripping on chip cycle; FX weakness tolerated amid tech boom."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI/semis the engine of the Nasdaq 20% quarter; leadership narrow, power-shortage theme the next leg."
+      "note": "AI/chip rally is the market's engine — leadership narrow, any AI wobble hits everything."
     }
   ],
-  "headline": "As of 2026-06-30, equities are ripping to records on an AI surge while a new Warsh-led Fed holds at 3.63% with a hike bias against 4.2% inflation, and an Iran ceasefire pulls Brent to $74 — risk-on, but real rates negative and gold above $4,000 flag the unease.",
-  "generated": "2026-06-30T14:22:21Z",
-  "asOf": "2026-06-30"
+  "headline": "Oil-shock fears are dead — Iran's ceasefire tanked Brent 38%, but a 4.2% CPI print and a hawkish Warsh Fed now threaten to hike into a raging AI-led equity melt-up with the yen at 40-year lows.",
+  "generated": "2026-07-01T03:38:08Z",
+  "asOf": "2026-07-01"
 }
