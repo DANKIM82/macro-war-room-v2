@@ -1,28 +1,28 @@
 {
   "regimeLabel": "HAWKISH RISK-ON MELT-UP",
-  "regimeSub": "AI-driven equity melt-up meets sticky 4.2% CPI and a Warsh-led Fed threatening a hike, even as Iran ceasefire crushes oil.",
+  "regimeSub": "AI-driven equity melt-up meets sticky 4.2% CPI and a Warsh-led Fed threatening a September hike, signaled at the ECB Forum (Jul 1), even as Iran ceasefire crushes oil.",
   "themes": [
     "Iran ceasefire + US-Iran deal collapsed the oil premium (Brent -38% QoQ) — disinflation tailwind fights sticky core",
-    "New Fed Chair Warsh holds but dangles a September hike as CPI hits a 3-yr high — front-end priced for pain",
+    "Warsh at ECB Forum (Jul 1): September hike remains live; CPI at 4.2% keeps Fed behind the curve — front-end repriced for pain",
     "AI/semiconductor rally powers SPX to 7499 and best quarter since 2020 — breadth thin, valuations stretched",
     "Yen at 40-year low (162.83) as BoJ lags — carry trades funding the global equity bid, fragility building"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve, hike bias justified."
+      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Warsh ECB Forum (Jul 1) flagged Sep hike live — hike bias dominates."
     },
     {
       "name": "2s10s Curve",
-      "note": "+28bp, mildly positive; hike risk flattens front-end, no recession signal from steepening."
+      "note": "+28bp, mildly positive; Warsh hike threat flattens front-end, no recession signal from steepening."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight — risk-on melt-up and lower oil suppress default fears; complacent to hike shock."
+      "note": "Tight — risk-on melt-up and lower oil suppress default fears; complacent to Sep hike shock."
     },
     {
       "name": "VIX",
-      "note": "16.45, low; market shrugging off Fed hawkishness and geopolitics — vol is cheap insurance."
+      "note": "16.45, low; market shrugging off Warsh hawkishness and geopolitics — vol is cheap insurance ahead of NFP."
     },
     {
       "name": "Brent Crude",
@@ -38,10 +38,10 @@
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI/chip rally is the market's engine — leadership narrow, any AI wobble hits everything."
+      "note": "AI/chip rally is the market's engine — leadership narrow, any Warsh hike shock or AI wobble hits everything."
     }
   ],
   "headline": "Oil-shock fears are dead — Iran's ceasefire tanked Brent 38%, but a 4.2% CPI print and a hawkish Warsh Fed now threaten to hike into a raging AI-led equity melt-up with the yen at 40-year lows.",
-  "generated": "2026-07-01T03:38:08Z",
-  "asOf": "2026-07-01"
+  "generated": "2026-07-02T02:00:00Z",
+  "asOf": "2026-07-02"
 }
