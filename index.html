@@ -154,13 +154,13 @@ const REGIME = [
   { axis:"Dollar Force",    current:7.8, prior:5.2 },
   { axis:"Liquidity Ease",  current:4.2, prior:6.5 },
 ];
-const REGIME_LABEL = "STAGFLATION RISK";
-const REGIME_SUB   = "High inflation + tightening policy + risk-off · Driven by Iran energy shock";
+const REGIME_LABEL = "HAWKISH RISK-ON MELT-UP";
+const REGIME_SUB   = "AI-driven equity melt-up meets sticky 4.2% CPI and a Warsh-led Fed threatening a hike, even as Iran ceasefire crushes oil.";
 const THEMES = [
-  "Iran war → Brent $95 → CPI re-acceleration → Fed trapped at 3.75%+",
-  "AI capex supercycle intact → KR/JP semiconductor divergence from US tech",
-  "USD bull regime → EM stress → USDKRW at 15Y high, USDJPY at 160",
-  "Duration assets most at risk · Gold at ATH as fiscal/geopolitical hedge",
+  "Iran ceasefire + US-Iran deal collapsed the oil premium (Brent -38% QoQ) — disinflation tailwind fights sticky core",
+  "Warsh at ECB Forum (Jul 1): September hike remains live; CPI at 4.2% keeps Fed behind curve — front-end re-priced for pain",
+  "AI/semiconductor rally powers SPX to 7499 and best quarter since 2020 — breadth thin, valuations stretched",
+  "Yen at 40-year low (162.83) as BoJ lags — carry trades funding the global equity bid, fragility building",
 ];
 
 /* ════════════════════════════════════════════════════════════════════
@@ -168,21 +168,21 @@ const THEMES = [
    ════════════════════════════════════════════════════════════════════ */
 const SIGNALS = [
   { name:"US Real Rate",       val:"+1.87%",  pct:88, dir:"▲", col:"#FF3B55",
-    note:"Highly restrictive — growth & multiple compression headwind" },
+    note:"Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve, hike bias justified." },
   { name:"2s10s Curve",        val:"+38 bps", pct:62, dir:"▲", col:"#22d3a8",
-    note:"Steepening from inversion — bank earnings tailwind" },
+    note:"+28bp, mildly positive; hike risk flattens front-end, no recession signal from steepening." },
   { name:"HY Credit Spread",   val:"~180 bps",pct:72, dir:"▲", col:"#F9A825",
-    note:"Elevated risk premium — risk-off credit regime" },
-  { name:"VIX",                val:"~22",      pct:45, dir:"▲", col:"#F9A825",
-    note:"Cautious not panic — elevated uncertainty premium" },
-  { name:"Brent Crude",        val:"$95",      pct:85, dir:"▲", col:"#FF3B55",
-    note:"Iran war structural risk premium — stagflation driver" },
-  { name:"Gold",               val:"$4,520",   pct:98, dir:"▲", col:"#22d3a8",
-    note:"All-time highs — fiscal fears + geopolitical safe haven" },
-  { name:"USD / KRW",          val:"1,555",    pct:82, dir:"▲", col:"#FF3B55",
-    note:"15-year high — EM stress signal, capital outflow" },
+    note:"Tight — risk-on melt-up and lower oil suppress default fears; complacent to hike shock." },
+  { name:"VIX",                val:"~16",      pct:45, dir:"▲", col:"#F9A825",
+    note:"16.45, low; market shrugging off Fed hawkishness and geopolitics — vol is cheap insurance." },
+  { name:"Brent Crude",        val:"$73",      pct:85, dir:"▲", col:"#FF3B55",
+    note:"$73, down 38% in Q2 on Iran ceasefire; benchmark loading anomalies flag structural stress." },
+  { name:"Gold",               val:"$3,993",   pct:98, dir:"▲", col:"#22d3a8",
+    note:"$3993 near highs despite risk-on; hedging fiscal/inflation debasement and negative real rates." },
+  { name:"USD / KRW",          val:"1,556",    pct:82, dir:"▲", col:"#FF3B55",
+    note:"1556 weak KRW but KOSPI 8345 ripping on chip cycle; FX weakness tolerated amid tech boom." },
   { name:"Semiconductor SOX",  val:"ATH",      pct:95, dir:"▲", col:"#22d3a8",
-    note:"AI capex boom intact — Korean/Japanese semis are the winners" },
+    note:"AI/chip rally is the market's engine — leadership narrow, any AI wobble hits everything." },
 ];
 
 /* ════════════════════════════════════════════════════════════════════
@@ -193,7 +193,7 @@ const TRADES = [
     thesis:"Iran war keeps oil elevated → CPI stays above 3% through 2026 → Fed reprices to hike by Q4. Market under-pricing re-tightening risk. 10Y at 4.54% has room to 5%+ given CPI trajectory and term premium normalization.",
     entry:"4.54% (short TLT / long SFRZ6 puts)", target:"5.10–5.25%", stop:"Below 4.10%",
     timeline:"3–6 months", conv:5, status:"ACTIVE",
-    catalyst:"Jun 10 CPI (exp +3.4%); Jun 18 FOMC hawkish tilt" },
+    catalyst:"Jul 3 NFP (est +120K); Warsh Sep hike signal at ECB Forum (Jul 1)" },
   { id:2, dir:"LONG",  asset:"JPY vs USD", tag:"LONG JPY",
     thesis:"BOJ on track to 1%+ by Dec 2026. Fed stuck at 3.75%+ on inflation. USDJPY at 160 is ~20% cheap vs fair value on rate differential. Japan intervention risk asymmetric. Largest G10 rate convergence trade with high carry cost but strong fundamental case.",
     entry:"USDJPY 160 (long JPY / short USD)", target:"USDJPY 143–147", stop:"USDJPY 168",
@@ -220,10 +220,10 @@ const TRADES = [
    CATALYST CALENDAR
    ════════════════════════════════════════════════════════════════════ */
 const CAL = [
-  {name:"CPI (US)",         imp:"high",last:"+3.8% y/y",lp:"Apr",sur:"above", nl:"Jun 10, 8:30 ET",ni:"2026-06-10T08:30:00-04:00",con:"~3.4%",pr:"3.8%"},
-  {name:"FOMC Decision",    imp:"high",last:"Hold 3.75%",lp:"May",sur:"inline",nl:"Jun 18, 2:00 ET",ni:"2026-06-18T14:00:00-04:00",con:"Hold",  pr:"3.75%"},
-  {name:"Retail Sales",     imp:"med", last:"+0.5% m/m", lp:"Apr",sur:"above", nl:"Jun 16, 8:30 ET",ni:"2026-06-16T08:30:00-04:00",con:"+0.2%", pr:"+0.5%"},
-  {name:"Core PCE",         imp:"high",last:"+2.7% y/y", lp:"Apr",sur:"above", nl:"Jun 27, 8:30 ET",ni:"2026-06-27T08:30:00-04:00",con:"+2.5%", pr:"+2.5%"},
+  {name:"CPI (US)",         imp:"high",last:"+4.2% y/y",lp:"May",sur:"above", nl:"Aug 12, 8:30 ET",ni:"2026-08-12T08:30:00-04:00",con:"~4.0%",pr:"4.2%"},
+  {name:"FOMC Decision",    imp:"high",last:"Hold 3.63%",lp:"Jun",sur:"inline",nl:"Jul 30, 2:00 ET",ni:"2026-07-30T14:00:00-04:00",con:"Hold",  pr:"3.63%"},
+  {name:"Retail Sales",     imp:"med", last:"+0.3% m/m", lp:"May",sur:"inline", nl:"Jul 16, 8:30 ET",ni:"2026-07-16T08:30:00-04:00",con:"+0.2%", pr:"+0.3%"},
+  {name:"Core PCE",         imp:"high",last:"+2.8% y/y", lp:"May",sur:"above", nl:"Jul 31, 8:30 ET",ni:"2026-07-31T08:30:00-04:00",con:"+2.6%", pr:"+2.8%"},
   {name:"Nonfarm Payrolls", imp:"high",last:"+172K",      lp:"May",sur:"above", nl:"Jul 3, 8:30 ET", ni:"2026-07-03T08:30:00-04:00",con:"+120K", pr:"+179K"},
   {name:"GDP Advance",      imp:"high",last:"+2.4% y/y", lp:"Q1", sur:"above", nl:"Jul 30, 8:30 ET",ni:"2026-07-30T08:30:00-04:00",con:"+2.1%", pr:"+2.4%"},
 ];
@@ -233,13 +233,13 @@ const CAL = [
    ════════════════════════════════════════════════════════════════════ */
 const BOARD = [
   {code:"US",name:"United States", region:"Americas",rows:[
-    {k:"Policy Rate",sub:"Fed Funds upper",dp:2,type:"rate",now:3.75,d1:3.75,w1:3.75,m1:3.75,y1:4.25},
-    {k:"2Y Yield",   sub:"",dp:2,type:"rate",now:4.16,d1:4.05,w1:3.88,m1:3.72,y1:3.95},
-    {k:"10Y Yield",  sub:"",dp:2,type:"rate",now:4.54,d1:4.48,w1:4.32,m1:4.15,y1:4.22},
+    {k:"Policy Rate",sub:"Fed Funds upper",dp:2,type:"rate",now:3.63,d1:3.75,w1:3.75,m1:3.75,y1:4.25},
+    {k:"2Y Yield",   sub:"",dp:2,type:"rate",now:4.10,d1:4.05,w1:3.88,m1:3.72,y1:3.95},
+    {k:"10Y Yield",  sub:"",dp:2,type:"rate",now:4.38,d1:4.48,w1:4.32,m1:4.15,y1:4.22},
     {k:"2s10s",      sub:"bps",dp:0,type:"slope",now:38,d1:43,w1:44,m1:43,y1:-25},
-    {k:"CPI y/y",    sub:"Apr 2026",dp:1,type:"cpi",now:3.8,d1:3.8,w1:3.8,m1:2.8,y1:2.4},
-    {k:"GDP y/y",    sub:"Q1 2026",dp:1,type:"gdp",now:2.4,d1:2.4,w1:2.4,m1:2.1,y1:2.1},
-    {k:"S&P 500",    sub:"",dp:0,type:"price",eq:true,now:7384,d1:7577,w1:7480,m1:7150,y1:5995},
+    {k:"CPI y/y",    sub:"Apr 2026",dp:1,type:"cpi",now:4.2,d1:3.8,w1:3.8,m1:2.8,y1:2.4},
+    {k:"GDP y/y",    sub:"Q1 2026",dp:1,type:"gdp",now:2.1,d1:2.4,w1:2.4,m1:2.1,y1:2.1},
+    {k:"S&P 500",    sub:"",dp:0,type:"price",eq:true,now:7499,d1:7577,w1:7480,m1:7150,y1:5995},
   ]},
   {code:"JP",name:"Japan",region:"Asia",rows:[
     {k:"Policy Rate",sub:"BOJ",dp:2,type:"rate",now:0.75,d1:0.75,w1:0.75,m1:0.75,y1:0.50},
@@ -257,7 +257,7 @@ const BOARD = [
     {k:"2s10s",      sub:"bps ~",dp:0,type:"slope",now:63,d1:65,w1:65,m1:65,y1:45},
     {k:"CPI y/y",    sub:"May 2026 ~",dp:1,type:"cpi",now:3.2,d1:3.2,w1:3.2,m1:2.0,y1:2.3},
     {k:"GDP y/y",    sub:"Q1 ~",dp:1,type:"gdp",now:3.1,d1:3.1,w1:3.1,m1:3.1,y1:2.0},
-    {k:"KOSPI",      sub:"",dp:0,type:"price",eq:true,now:8400,d1:8600,w1:8476,m1:7800,y1:2650},
+    {k:"KOSPI",      sub:"",dp:0,type:"price",eq:true,now:8345,d1:8600,w1:8476,m1:7800,y1:2650},
   ]},
   {code:"CN",name:"China",region:"Asia",rows:[
     {k:"Policy Rate",sub:"PBOC LPR ~",dp:2,type:"rate",now:3.10,d1:3.10,w1:3.10,m1:3.10,y1:3.45},
@@ -337,7 +337,7 @@ function Countdown({iso,now}){
   const m=Math.floor(diff/60);const s=diff-m*60;
   const p=n=>String(n).padStart(2,"0");
   return(<span style={{fontFamily:"JetBrains Mono,monospace",fontSize:"clamp(22px,5vw,36px)",
-      fontWeight:700,color:"#F0F2F8",letterSpacing:"-.02em",fontVariantNumeric:"tabular-nums",
+      fontWeight:700,color:"#1A1612",letterSpacing:"-.02em",fontVariantNumeric:"tabular-nums",
       display:"inline-flex",gap:6,alignItems:"baseline"}}>
     {d>0&&<em style={{fontStyle:"normal"}}>{d}<i style={{fontStyle:"normal",fontSize:10,color:"#4a5568",marginLeft:1}}>d</i></em>}
     <em style={{fontStyle:"normal"}}>{p(h)}<i style={{fontStyle:"normal",fontSize:10,color:"#4a5568",marginLeft:1}}>h</i></em>
@@ -441,7 +441,7 @@ function buildMetricPrompt(country,row){
   const snap=country.rows.map(r=>`  ${r.k}: ${fmtVal(r,r.now)} (1Y: ${fmtVal(r,r.y1)})`).join("\n");
   const cur=`${fmtVal(row,row.now)}${row.type==="slope"?" bps":row.dp>0?"%":""}`;
   const dlt=calcDelta(row);
-  return `You are a senior macro PM at a $50bn global macro hedge fund. Today is June 7, 2026.
+  return `You are a senior macro PM at a $50bn global macro hedge fund. Today is July 2, 2026.
 
 COUNTRY DATA — ${country.name}:
 ${snap}
@@ -460,7 +460,7 @@ Style: PM-to-team voice note — direct, opinionated, no hedging. 250 words max.
 }
 
 function buildTradePrompt(trade){
-  return `You are a senior PM at a top global macro hedge fund presenting to the investment committee. Today is June 7, 2026.
+  return `You are a senior PM at a top global macro hedge fund presenting to the investment committee. Today is July 2, 2026.
 
 PROPOSED TRADE:
 Direction: ${trade.dir}
@@ -991,9 +991,9 @@ function App(){
   async function handleAnalyze(type,country,rowOrTrade){
     const key=type==="trade"?`trade_${rowOrTrade.id}`:`${country.code}_${rowOrTrade.k}`;
     const info = type==="trade"
-      ? {type:"trade",title:rowOrTrade.dir+" "+rowOrTrade.asset,subtitle:rowOrTrade.tag+" · Jun 7, 2026"}
+      ? {type:"trade",title:rowOrTrade.dir+" "+rowOrTrade.asset,subtitle:rowOrTrade.tag+" · Jul 2, 2026"}
       : {type:"metric",title:country.name+" · "+rowOrTrade.k,
-          subtitle:fmtVal(rowOrTrade,rowOrTrade.now)+(rowOrTrade.type==="slope"?" bps":rowOrTrade.dp>0?"%":"")+" · Jun 7, 2026"};
+          subtitle:fmtVal(rowOrTrade,rowOrTrade.now)+(rowOrTrade.type==="slope"?" bps":rowOrTrade.dp>0?"%":"")+" · Jul 2, 2026"};
     setOpenA({key,info});
     if(analyses[key]?.done)return;
     if(timerRef.current){clearInterval(timerRef.current);timerRef.current=null;}
@@ -1027,7 +1027,7 @@ function App(){
         <header className="hdr">
           <div className="hdr-l">
             <div className="logo">MACRO<span>WAR</span>ROOM</div>
-            <div className="tagline">Global Macro Strategy · Jun 7, 2026</div>
+            <div className="tagline">Global Macro Strategy · Jul 2, 2026</div>
           </div>
           <div className="hdr-r">
             <div className="live-clock">
@@ -1185,7 +1185,7 @@ function App(){
         <RatesMatrix onAnalyze={handleAnalyze} board={liveBoard}/>
 
         <div className="foot">
-          <span>Data: BLS, Fed, BOJ, ECB, BOE, TradingEconomics · <b>Jun 5–6, 2026</b>. Signals & trade ideas are for analytical purposes only — not investment advice. ~ = estimated.</span>
+          <span>Data: BLS, Fed, BOJ, ECB, BOE, TradingEconomics · <b>Jul 1–2, 2026</b>. Signals & trade ideas are for analytical purposes only — not investment advice. ~ = estimated.</span>
           <span>\u0394 color: rate\u2191=red(hawkish) · price\u2191=green · CPI\u2191=red · curve\u2191=green · Click rows for AI analysis</span>
         </div>
       </div>
