@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "QUIET GRIND HIGHER",
-  "regimeSub": "Holiday-thin liquidity with SPX at ATH, yen weakness persists as BOJ remains sidelined.",
+  "regimeLabel": "HAWKISH PAUSE RISK-ON",
+  "regimeSub": "Warsh signals July rate decision pending while AI-driven equity melt-up defies 4.2% CPI and bond selloff.",
   "themes": [
-    "USDJPY 162.53 → BOJ inaction enabling yen carry revival; Nikkei 69682 benefits from exporter FX tailwind",
-    "VIX 16.59 pre-July 4th → vol compression into holiday weekend; dealers short gamma into illiquid tape",
-    "Gold $4056 holding gains → real rate ~-6bp (Fed at 3.63% vs 4.2% CPI) keeps hard assets bid despite risk-on",
-    "DXY 101.34 soft → Fed at terminal with 2 cuts priced by year-end; EUR strength (1.139) reflects ECB hold"
+    "Warsh at Sintra vowed to 'disappoint' inflation doves, hinted July FOMC decision → USD bid, DXY 101.3, gold -worst month since 2008",
+    "BOJ hiked to 1% on Jun-16, ending tapering FY27 → USDJPY blows through 162.5, yen carry trade accelerating into risk assets",
+    "KOSPI +68% Q2 best since 1998 as SK Hynix overtakes Samsung in market cap → HBM/AI capex cycle overwhelms KRW weakness at 1553",
+    "US CPI 4.2% YoY in May print sparked fastest inflation since 2023 → 10Y at 4.44% as Fed removes cutting bias, fiscal concerns mount"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Fed funds 3.63% vs 4.2% CPI = -57bp real; goldilocks for risk but inflation still sticky."
+      "note": "Real rate ~0% (4.44% 10Y minus 4.2% CPI); Warsh hawkish tilt could push positive in H2"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s 4.14% / 10s 4.44% = +30bp steepener; normalization continues, no inversion stress."
+      "note": "Curve +30bp steepening (2Y 4.14%, 10Y 4.44%); bear steepener on fiscal/inflation premium"
     },
     {
       "name": "HY Credit Spread",
-      "note": "No fresh data but SPX ATH + low VIX implies spreads tight; watch for complacency."
+      "note": "Spreads compressed despite rate vol; AI euphoria and resilient labor (172K May NFP) supporting risk"
     },
     {
       "name": "VIX",
-      "note": "16.59 subdued into July 4th; holiday gamma decay favors sellers, risk-on tilt intact."
+      "note": "VIX 16.6 complacent given 4.2% CPI and Warsh hike signals; positioning for summer grind higher"
     },
     {
       "name": "Brent Crude",
-      "note": "$70.96 capped; OPEC+ supply fears offset by soft China demand (CSI300 4872 lagging)."
+      "note": "Brent $70.9 collapsed from $120 Iran peak; ceasefire talks and oversupply narrative dominating"
     },
     {
       "name": "Gold",
-      "note": "$4056 resilient despite equity strength; negative real rates + CB buying sustaining bid."
+      "note": "Gold $4061 suffering worst monthly drop since 2008; USD strength and real rate fears crushing longs"
     },
     {
       "name": "USD / KRW",
-      "note": "1552 stable; KOSPI 8084 strong, Korea export cycle healthy, no BOK intervention signals."
+      "note": "KRW at 1553 breaching key level; foreign outflows $941M as 'Sell Korea' rout tests BOK resolve"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "No SOX print but KOSPI 8084 + Nikkei 69682 imply semis bid; AI capex narrative intact."
+      "note": "SOX ripping on Nvidia +85% Q1 rev, TSMC capex raise; SK Hynix > Samsung in market cap on HBM demand"
     }
   ],
-  "headline": "Risk assets grind to ATHs on holiday-thinned volumes as yen weakness (162.5) and negative real rates (-57bp) sustain the carry/equity bid despite sticky 4.2% CPI.",
-  "generated": "2026-07-02T02:26:22Z",
+  "headline": "New Fed Chair Warsh holds rates but warns of July hike as 4.2% CPI and AI-driven equity mania collide with BOJ normalization and yen collapse to 162.5.",
+  "generated": "2026-07-02T02:41:22Z",
   "asOf": "2026-07-02"
 }
