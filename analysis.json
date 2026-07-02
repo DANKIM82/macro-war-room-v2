@@ -1,47 +1,47 @@
 {
   "regimeLabel": "HAWKISH PAUSE RISK-ON",
-  "regimeSub": "Warsh signals July rate decision pending while AI-driven equity melt-up defies 4.2% CPI and bond selloff.",
+  "regimeSub": "Warsh signals July rate decision imminent at Sintra; AI/HBM rally defies 4.2% CPI overhang.",
   "themes": [
-    "Warsh at Sintra vowed to 'disappoint' inflation doves, hinted July FOMC decision → USD bid, DXY 101.3, gold -worst month since 2008",
-    "BOJ hiked to 1% on Jun-16, ending tapering FY27 → USDJPY blows through 162.5, yen carry trade accelerating into risk assets",
-    "KOSPI +68% Q2 best since 1998 as SK Hynix overtakes Samsung in market cap → HBM/AI capex cycle overwhelms KRW weakness at 1553",
-    "US CPI 4.2% YoY in May print sparked fastest inflation since 2023 → 10Y at 4.44% as Fed removes cutting bias, fiscal concerns mount"
+    "Fed Chair Warsh at ECB Sintra vowed to 'disappoint' inflation doves, flagged rate decision within 4 weeks → USD bid (DXY 101.4), gold worst monthly drop since 2008",
+    "BOJ hiked to 1% in June and ends tapering FY2027 → USDJPY grinding 162.5 as real rate gap persists despite nominal tightening",
+    "SK Hynix overtook Samsung in market cap on HBM dominance → KOSPI +68% Q2 (best since 1998) but KRW crashed through 1550 on foreign rotation",
+    "Q1 GDP revised to 2.1% with May CPI at 4.2% YoY → stagflation whispers as retail sales mask weakening volume growth"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate ~0% (4.44% 10Y minus 4.2% CPI); Warsh hawkish tilt could push positive in H2"
+      "note": "10Y nominal 4.44% vs 4.2% CPI = barely positive real rate; Warsh hawkish lean puts upside risk on front-end"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve +30bp steepening (2Y 4.14%, 10Y 4.44%); bear steepener on fiscal/inflation premium"
+      "note": "2s at 4.14%, 10s at 4.44% = +30bp steepening; market pricing term premium return as Fed holds"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads compressed despite rate vol; AI euphoria and resilient labor (172K May NFP) supporting risk"
+      "note": "Risk-on persists despite hawkish Fed rhetoric; spreads contained as AI capex cycle funds corporate balance sheets"
     },
     {
       "name": "VIX",
-      "note": "VIX 16.6 complacent given 4.2% CPI and Warsh hike signals; positioning for summer grind higher"
+      "note": "16.59 complacent given Warsh July decision uncertainty; vol sellers in control post-Sintra"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $70.9 collapsed from $120 Iran peak; ceasefire talks and oversupply narrative dominating"
+      "note": "Brent $70.69 collapsed from $120 peak as Hormuz reopens; Iran war premium fully unwound"
     },
     {
       "name": "Gold",
-      "note": "Gold $4061 suffering worst monthly drop since 2008; USD strength and real rate fears crushing longs"
+      "note": "$4069 after worst monthly drop since 2008; hawkish Warsh + stronger USD crushing safe haven bid"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW at 1553 breaching key level; foreign outflows $941M as 'Sell Korea' rout tests BOK resolve"
+      "note": "1553 breached as foreigners dumped $942M in 'Sell Korea' rout despite KOSPI rally; classic EM FX disconnect"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SOX ripping on Nvidia +85% Q1 rev, TSMC capex raise; SK Hynix > Samsung in market cap on HBM demand"
+      "note": "Nvidia +85% Q1 rev, TSMC raised capex guidance; HBM demand structural but valuation stretched at cycle peak"
     }
   ],
-  "headline": "New Fed Chair Warsh holds rates but warns of July hike as 4.2% CPI and AI-driven equity mania collide with BOJ normalization and yen collapse to 162.5.",
-  "generated": "2026-07-02T02:41:22Z",
+  "headline": "New Fed Chair Warsh's hawkish Sintra debut puts July hike in play while AI-driven equity euphoria collides with 4.2% inflation and post-Iran war oil unwind.",
+  "generated": "2026-07-02T03:23:42Z",
   "asOf": "2026-07-02"
 }
