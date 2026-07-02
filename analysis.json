@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH RISK-ON MELT-UP",
-  "regimeSub": "AI-driven equity melt-up meets sticky 4.2% CPI and a Warsh-led Fed threatening a September hike, signaled at the ECB Forum (Jul 1), even as Iran ceasefire crushes oil.",
+  "regimeLabel": "QUIET GRIND HIGHER",
+  "regimeSub": "Holiday-thin liquidity with SPX at ATH, yen weakness persists as BOJ remains sidelined.",
   "themes": [
-    "Iran ceasefire + US-Iran deal collapsed the oil premium (Brent -38% QoQ) — disinflation tailwind fights sticky core",
-    "Warsh at ECB Forum (Jul 1): September hike remains live; CPI at 4.2% keeps Fed behind the curve — front-end repriced for pain",
-    "AI/semiconductor rally powers SPX to 7499 and best quarter since 2020 — breadth thin, valuations stretched",
-    "Yen at 40-year low (162.83) as BoJ lags — carry trades funding the global equity bid, fragility building"
+    "USDJPY 162.53 → BOJ inaction enabling yen carry revival; Nikkei 69682 benefits from exporter FX tailwind",
+    "VIX 16.59 pre-July 4th → vol compression into holiday weekend; dealers short gamma into illiquid tape",
+    "Gold $4056 holding gains → real rate ~-6bp (Fed at 3.63% vs 4.2% CPI) keeps hard assets bid despite risk-on",
+    "DXY 101.34 soft → Fed at terminal with 2 cuts priced by year-end; EUR strength (1.139) reflects ECB hold"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 3.63% vs CPI 4.2% = negative real rate; Warsh ECB Forum (Jul 1) flagged Sep hike live — hike bias dominates."
+      "note": "Fed funds 3.63% vs 4.2% CPI = -57bp real; goldilocks for risk but inflation still sticky."
     },
     {
       "name": "2s10s Curve",
-      "note": "+28bp, mildly positive; Warsh hike threat flattens front-end, no recession signal from steepening."
+      "note": "2s 4.14% / 10s 4.44% = +30bp steepener; normalization continues, no inversion stress."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Tight — risk-on melt-up and lower oil suppress default fears; complacent to Sep hike shock."
+      "note": "No fresh data but SPX ATH + low VIX implies spreads tight; watch for complacency."
     },
     {
       "name": "VIX",
-      "note": "16.45, low; market shrugging off Warsh hawkishness and geopolitics — vol is cheap insurance ahead of NFP."
+      "note": "16.59 subdued into July 4th; holiday gamma decay favors sellers, risk-on tilt intact."
     },
     {
       "name": "Brent Crude",
-      "note": "$73, down 38% in Q2 on Iran ceasefire; benchmark loading anomalies flag structural stress."
+      "note": "$70.96 capped; OPEC+ supply fears offset by soft China demand (CSI300 4872 lagging)."
     },
     {
       "name": "Gold",
-      "note": "$3993 near highs despite risk-on; hedging fiscal/inflation debasement and negative real rates."
+      "note": "$4056 resilient despite equity strength; negative real rates + CB buying sustaining bid."
     },
     {
       "name": "USD / KRW",
-      "note": "1556 weak KRW but KOSPI 8345 ripping on chip cycle; FX weakness tolerated amid tech boom."
+      "note": "1552 stable; KOSPI 8084 strong, Korea export cycle healthy, no BOK intervention signals."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI/chip rally is the market's engine — leadership narrow, any Warsh hike shock or AI wobble hits everything."
+      "note": "No SOX print but KOSPI 8084 + Nikkei 69682 imply semis bid; AI capex narrative intact."
     }
   ],
-  "headline": "Oil-shock fears are dead — Iran's ceasefire tanked Brent 38%, but a 4.2% CPI print and a hawkish Warsh Fed now threaten to hike into a raging AI-led equity melt-up with the yen at 40-year lows.",
-  "generated": "2026-07-02T02:00:00Z",
+  "headline": "Risk assets grind to ATHs on holiday-thinned volumes as yen weakness (162.5) and negative real rates (-57bp) sustain the carry/equity bid despite sticky 4.2% CPI.",
+  "generated": "2026-07-02T02:26:22Z",
   "asOf": "2026-07-02"
 }
