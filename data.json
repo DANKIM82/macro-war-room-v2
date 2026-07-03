@@ -1,33 +1,33 @@
 {
-  "updated": "2026-07-02T03:23:18Z",
-  "date": "2026-07-02",
+  "updated": "2026-07-03T02:46:22Z",
+  "date": "2026-07-03",
   "fx": {
-    "USDJPY": 162.517,
-    "USDKRW": 1553,
-    "USDCNY": 6.7864,
-    "EURUSD": 1.1383,
-    "GBPUSD": 1.3281,
-    "DXY": 101.39,
-    "JPYKRW": 9.56
+    "USDJPY": 161.153,
+    "USDKRW": 1539,
+    "USDCNY": 6.7803,
+    "EURUSD": 1.1446,
+    "GBPUSD": 1.3364,
+    "DXY": 100.8,
+    "JPYKRW": 9.55
   },
   "equities": {
     "SPX": 7483,
-    "Nikkei": 69591,
-    "KOSPI": 8036,
-    "CSI300": 4863,
-    "EuroStoxx": 6282,
-    "FTSE": 10478
+    "Nikkei": 69243,
+    "KOSPI": 7855,
+    "CSI300": 4845,
+    "EuroStoxx": 6360,
+    "FTSE": 10652
   },
   "commodities": {
-    "brent": 70.69,
-    "wti": 67.61,
-    "gold": 4069.5,
-    "vix": 16.59
+    "brent": 72.18,
+    "wti": 68.98,
+    "gold": 4194.9,
+    "vix": 16.15
   },
   "us": {
     "policyRate": 3.63,
-    "y2": 4.14,
-    "y10": 4.44,
+    "y2": 4.17,
+    "y10": 4.48,
     "cpiYoY": 4.2,
     "gdpYoY": 2.1
   },
@@ -35,71 +35,412 @@
     "policyRate": 2.5,
     "policyRate_m1": 2.5,
     "policyRate_y1": 2.5,
-    "y2": 3.72,
-    "y2_d1": 3.651,
-    "y2_w1": 3.674,
+    "y2": 3.687,
+    "y2_d1": 3.72,
+    "y2_w1": 3.66,
     "y2_m1": 3.55,
     "y2_y1": 2.435,
-    "y10": 4.205,
-    "y10_d1": 4.091,
-    "y10_w1": 4.171,
+    "y10": 4.183,
+    "y10_d1": 4.205,
+    "y10_w1": 4.144,
     "y10_m1": 4.075,
     "y10_y1": 2.842,
-    "slope": 48,
-    "slope_d1": 44,
-    "slope_w1": 50,
+    "slope": 50,
+    "slope_d1": 48,
+    "slope_w1": 48,
     "slope_m1": 53,
     "slope_y1": 41,
-    "cpiYoY": 119.92,
-    "cpiYoY_m1": 119.37,
-    "cpiYoY_y1": 116.27,
+    "cpiYoY": 119.99,
+    "cpiYoY_m1": 119.92,
+    "cpiYoY_y1": 116.31,
     "gdpYoY": null,
     "gdpYoY_q1": null,
     "gdpYoY_y1": null
-  }
-,
+  },
   "nfp": [
-    {"date":"2022-12-01","mo":"Dec'22","actual":223,"estimate":200,"spx":0.7,"note":null},
-    {"date":"2023-01-01","mo":"Jan'23","actual":517,"estimate":189,"spx":-0.9,"note":"+517K shock"},
-    {"date":"2023-02-01","mo":"Feb'23","actual":311,"estimate":215,"spx":0.3,"note":null},
-    {"date":"2023-03-01","mo":"Mar'23","actual":236,"estimate":239,"spx":0.5,"note":null},
-    {"date":"2023-04-01","mo":"Apr'23","actual":253,"estimate":180,"spx":1.6,"note":null},
-    {"date":"2023-05-01","mo":"May'23","actual":339,"estimate":190,"spx":1.5,"note":null},
-    {"date":"2023-06-01","mo":"Jun'23","actual":209,"estimate":225,"spx":-0.3,"note":null},
-    {"date":"2023-07-01","mo":"Jul'23","actual":187,"estimate":200,"spx":-0.2,"note":null},
-    {"date":"2023-08-01","mo":"Aug'23","actual":187,"estimate":170,"spx":0.2,"note":null},
-    {"date":"2023-09-01","mo":"Sep'23","actual":336,"estimate":170,"spx":-0.9,"note":"10Y → 5%"},
-    {"date":"2023-10-01","mo":"Oct'23","actual":150,"estimate":183,"spx":0.9,"note":null},
-    {"date":"2023-11-01","mo":"Nov'23","actual":199,"estimate":190,"spx":0.5,"note":null},
-    {"date":"2023-12-01","mo":"Dec'23","actual":216,"estimate":168,"spx":-0.3,"note":null},
-    {"date":"2024-01-01","mo":"Jan'24","actual":353,"estimate":180,"spx":0.6,"note":"Massive beat"},
-    {"date":"2024-02-01","mo":"Feb'24","actual":275,"estimate":198,"spx":0.8,"note":null},
-    {"date":"2024-03-01","mo":"Mar'24","actual":303,"estimate":214,"spx":-0.2,"note":null},
-    {"date":"2024-04-01","mo":"Apr'24","actual":175,"estimate":240,"spx":1.0,"note":"Big miss → rally"},
-    {"date":"2024-05-01","mo":"May'24","actual":272,"estimate":182,"spx":0.8,"note":null},
-    {"date":"2024-06-01","mo":"Jun'24","actual":206,"estimate":190,"spx":0.5,"note":null},
-    {"date":"2024-07-01","mo":"Jul'24","actual":114,"estimate":175,"spx":-1.8,"note":"Recession fear+yen carry"},
-    {"date":"2024-08-01","mo":"Aug'24","actual":142,"estimate":161,"spx":1.0,"note":null},
-    {"date":"2024-09-01","mo":"Sep'24","actual":254,"estimate":140,"spx":0.8,"note":"Huge beat"},
-    {"date":"2024-10-01","mo":"Oct'24","actual":12,"estimate":113,"spx":0.4,"note":"Hurricane distorted"},
-    {"date":"2024-11-01","mo":"Nov'24","actual":227,"estimate":202,"spx":-0.3,"note":null},
-    {"date":"2024-12-01","mo":"Dec'24","actual":256,"estimate":155,"spx":0.8,"note":null},
-    {"date":"2025-01-01","mo":"Jan'25","actual":143,"estimate":171,"spx":0.6,"note":null},
-    {"date":"2025-02-01","mo":"Feb'25","actual":151,"estimate":170,"spx":-1.5,"note":"DOGE effect"},
-    {"date":"2025-03-01","mo":"Mar'25","actual":228,"estimate":135,"spx":1.8,"note":null},
-    {"date":"2025-04-01","mo":"Apr'25","actual":177,"estimate":130,"spx":1.2,"note":null},
-    {"date":"2025-05-01","mo":"May'25","actual":139,"estimate":130,"spx":0.6,"note":null},
-    {"date":"2025-06-01","mo":"Jun'25","actual":147,"estimate":110,"spx":0.9,"note":null},
-    {"date":"2025-07-01","mo":"Jul'25","actual":129,"estimate":100,"spx":0.5,"note":null},
-    {"date":"2025-08-01","mo":"Aug'25","actual":165,"estimate":140,"spx":1.1,"note":null},
-    {"date":"2025-09-01","mo":"Sep'25","actual":78,"estimate":120,"spx":-0.8,"note":"Iran war starts"},
-    {"date":"2025-10-01","mo":"Oct'25","actual":185,"estimate":130,"spx":1.4,"note":null},
-    {"date":"2025-11-01","mo":"Nov'25","actual":120,"estimate":145,"spx":-0.5,"note":null},
-    {"date":"2025-12-01","mo":"Dec'25","actual":88,"estimate":150,"spx":-1.2,"note":null},
-    {"date":"2026-01-01","mo":"Jan'26","actual":-133,"estimate":-50,"spx":2.1,"note":"DOGE peak → cut bets"},
-    {"date":"2026-02-01","mo":"Feb'26","actual":185,"estimate":60,"spx":1.5,"note":null},
-    {"date":"2026-03-01","mo":"Mar'26","actual":214,"estimate":100,"spx":1.0,"note":null},
-    {"date":"2026-04-01","mo":"Apr'26","actual":179,"estimate":62,"spx":0.7,"note":null},
-    {"date":"2026-05-01","mo":"May'26","actual":172,"estimate":88,"spx":-2.6,"note":"+172K vs 88K → rate hike repricing"},
-    {"date":"2026-06-01","mo":"Jun'26","actual":177,"estimate":120,"spx":null,"note":"Jul 3 release — SPX pending close"}
-  ]}
+    {
+      "date": "2022-07-01",
+      "mo": "Jul'22",
+      "actual": 714000,
+      "estimate": null,
+      "spx": null,
+      "note": null
+    },
+    {
+      "date": "2022-08-01",
+      "mo": "Aug'22",
+      "actual": 290000,
+      "estimate": null,
+      "spx": null,
+      "note": null
+    },
+    {
+      "date": "2022-09-01",
+      "mo": "Sep'22",
+      "actual": 220000,
+      "estimate": null,
+      "spx": null,
+      "note": null
+    },
+    {
+      "date": "2022-10-01",
+      "mo": "Oct'22",
+      "actual": 357000,
+      "estimate": null,
+      "spx": null,
+      "note": null
+    },
+    {
+      "date": "2022-11-01",
+      "mo": "Nov'22",
+      "actual": 303000,
+      "estimate": null,
+      "spx": null,
+      "note": null
+    },
+    {
+      "date": "2022-12-01",
+      "mo": "Dec'22",
+      "actual": 100000,
+      "estimate": 200,
+      "spx": 0.7,
+      "note": null
+    },
+    {
+      "date": "2023-01-01",
+      "mo": "Jan'23",
+      "actual": 434000,
+      "estimate": 189,
+      "spx": -0.9,
+      "note": "+517K shock"
+    },
+    {
+      "date": "2023-02-01",
+      "mo": "Feb'23",
+      "actual": 290000,
+      "estimate": 215,
+      "spx": 0.3,
+      "note": null
+    },
+    {
+      "date": "2023-03-01",
+      "mo": "Mar'23",
+      "actual": 68000,
+      "estimate": 239,
+      "spx": 0.5,
+      "note": null
+    },
+    {
+      "date": "2023-04-01",
+      "mo": "Apr'23",
+      "actual": 241000,
+      "estimate": 180,
+      "spx": 1.6,
+      "note": null
+    },
+    {
+      "date": "2023-05-01",
+      "mo": "May'23",
+      "actual": 280000,
+      "estimate": 190,
+      "spx": 1.5,
+      "note": null
+    },
+    {
+      "date": "2023-06-01",
+      "mo": "Jun'23",
+      "actual": 225000,
+      "estimate": 225,
+      "spx": -0.3,
+      "note": null
+    },
+    {
+      "date": "2023-07-01",
+      "mo": "Jul'23",
+      "actual": 163000,
+      "estimate": 200,
+      "spx": -0.2,
+      "note": null
+    },
+    {
+      "date": "2023-08-01",
+      "mo": "Aug'23",
+      "actual": 218000,
+      "estimate": 170,
+      "spx": 0.2,
+      "note": null
+    },
+    {
+      "date": "2023-09-01",
+      "mo": "Sep'23",
+      "actual": 156000,
+      "estimate": 170,
+      "spx": -0.9,
+      "note": "10Y \u2192 5%"
+    },
+    {
+      "date": "2023-10-01",
+      "mo": "Oct'23",
+      "actual": 159000,
+      "estimate": 183,
+      "spx": 0.9,
+      "note": null
+    },
+    {
+      "date": "2023-11-01",
+      "mo": "Nov'23",
+      "actual": 127000,
+      "estimate": 190,
+      "spx": 0.5,
+      "note": null
+    },
+    {
+      "date": "2023-12-01",
+      "mo": "Dec'23",
+      "actual": 154000,
+      "estimate": 168,
+      "spx": -0.3,
+      "note": null
+    },
+    {
+      "date": "2024-01-01",
+      "mo": "Jan'24",
+      "actual": 175000,
+      "estimate": 180,
+      "spx": 0.6,
+      "note": "Massive beat"
+    },
+    {
+      "date": "2024-02-01",
+      "mo": "Feb'24",
+      "actual": 206000,
+      "estimate": 198,
+      "spx": 0.8,
+      "note": null
+    },
+    {
+      "date": "2024-03-01",
+      "mo": "Mar'24",
+      "actual": 228000,
+      "estimate": 214,
+      "spx": -0.2,
+      "note": null
+    },
+    {
+      "date": "2024-04-01",
+      "mo": "Apr'24",
+      "actual": 64000,
+      "estimate": 240,
+      "spx": 1.0,
+      "note": "Big miss \u2192 rally"
+    },
+    {
+      "date": "2024-05-01",
+      "mo": "May'24",
+      "actual": 78000,
+      "estimate": 182,
+      "spx": 0.8,
+      "note": null
+    },
+    {
+      "date": "2024-06-01",
+      "mo": "Jun'24",
+      "actual": 87000,
+      "estimate": 190,
+      "spx": 0.5,
+      "note": null
+    },
+    {
+      "date": "2024-07-01",
+      "mo": "Jul'24",
+      "actual": 53000,
+      "estimate": 175,
+      "spx": -1.8,
+      "note": "Recession fear+yen carry"
+    },
+    {
+      "date": "2024-08-01",
+      "mo": "Aug'24",
+      "actual": 9000,
+      "estimate": 161,
+      "spx": 1.0,
+      "note": null
+    },
+    {
+      "date": "2024-09-01",
+      "mo": "Sep'24",
+      "actual": 155000,
+      "estimate": 140,
+      "spx": 0.8,
+      "note": "Huge beat"
+    },
+    {
+      "date": "2024-10-01",
+      "mo": "Oct'24",
+      "actual": 33000,
+      "estimate": 113,
+      "spx": 0.4,
+      "note": "Hurricane distorted"
+    },
+    {
+      "date": "2024-11-01",
+      "mo": "Nov'24",
+      "actual": 134000,
+      "estimate": 202,
+      "spx": -0.3,
+      "note": null
+    },
+    {
+      "date": "2024-12-01",
+      "mo": "Dec'24",
+      "actual": 237000,
+      "estimate": 155,
+      "spx": 0.8,
+      "note": null
+    },
+    {
+      "date": "2025-01-01",
+      "mo": "Jan'25",
+      "actual": -48000,
+      "estimate": 171,
+      "spx": 0.6,
+      "note": null
+    },
+    {
+      "date": "2025-02-01",
+      "mo": "Feb'25",
+      "actual": 42000,
+      "estimate": 170,
+      "spx": -1.5,
+      "note": "DOGE effect"
+    },
+    {
+      "date": "2025-03-01",
+      "mo": "Mar'25",
+      "actual": 67000,
+      "estimate": 135,
+      "spx": 1.8,
+      "note": null
+    },
+    {
+      "date": "2025-04-01",
+      "mo": "Apr'25",
+      "actual": 108000,
+      "estimate": 130,
+      "spx": 1.2,
+      "note": null
+    },
+    {
+      "date": "2025-05-01",
+      "mo": "May'25",
+      "actual": 13000,
+      "estimate": 130,
+      "spx": 0.6,
+      "note": null
+    },
+    {
+      "date": "2025-06-01",
+      "mo": "Jun'25",
+      "actual": -20000,
+      "estimate": 110,
+      "spx": 0.9,
+      "note": null
+    },
+    {
+      "date": "2025-07-01",
+      "mo": "Jul'25",
+      "actual": 64000,
+      "estimate": 100,
+      "spx": 0.5,
+      "note": null
+    },
+    {
+      "date": "2025-08-01",
+      "mo": "Aug'25",
+      "actual": -70000,
+      "estimate": 140,
+      "spx": 1.1,
+      "note": null
+    },
+    {
+      "date": "2025-09-01",
+      "mo": "Sep'25",
+      "actual": 76000,
+      "estimate": 120,
+      "spx": -0.8,
+      "note": "Iran war starts"
+    },
+    {
+      "date": "2025-10-01",
+      "mo": "Oct'25",
+      "actual": -140000,
+      "estimate": 130,
+      "spx": 1.4,
+      "note": null
+    },
+    {
+      "date": "2025-11-01",
+      "mo": "Nov'25",
+      "actual": 41000,
+      "estimate": 145,
+      "spx": -0.5,
+      "note": null
+    },
+    {
+      "date": "2025-12-01",
+      "mo": "Dec'25",
+      "actual": -17000,
+      "estimate": 150,
+      "spx": -1.2,
+      "note": null
+    },
+    {
+      "date": "2026-01-01",
+      "mo": "Jan'26",
+      "actual": 160000,
+      "estimate": -50,
+      "spx": 2.1,
+      "note": "DOGE peak \u2192 cut bets"
+    },
+    {
+      "date": "2026-02-01",
+      "mo": "Feb'26",
+      "actual": -156000,
+      "estimate": 60,
+      "spx": 1.5,
+      "note": null
+    },
+    {
+      "date": "2026-03-01",
+      "mo": "Mar'26",
+      "actual": 214000,
+      "estimate": 100,
+      "spx": 1.0,
+      "note": null
+    },
+    {
+      "date": "2026-04-01",
+      "mo": "Apr'26",
+      "actual": 148000,
+      "estimate": 62,
+      "spx": 0.7,
+      "note": null
+    },
+    {
+      "date": "2026-05-01",
+      "mo": "May'26",
+      "actual": 129000,
+      "estimate": 88,
+      "spx": -2.6,
+      "note": "+172K vs 88K \u2192 rate hike repricing"
+    },
+    {
+      "date": "2026-06-01",
+      "mo": "Jun'26",
+      "actual": 57000,
+      "estimate": 120,
+      "spx": null,
+      "note": "Jul 3 release \u2014 SPX pending close"
+    }
+  ]
+}

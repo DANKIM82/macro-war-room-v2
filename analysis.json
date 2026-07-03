@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH PAUSE RISK-ON",
-  "regimeSub": "Warsh signals July rate decision imminent at Sintra; AI/HBM rally defies 4.2% CPI overhang.",
+  "regimeLabel": "STAGFLATION WOBBLE RISK-ON",
+  "regimeSub": "June NFP shock (57K vs ~150K est) collides with Warsh's hawkish Sintra posture; growth scare meets sticky 4.2% CPI.",
   "themes": [
-    "Fed Chair Warsh at ECB Sintra vowed to 'disappoint' inflation doves, flagged rate decision within 4 weeks → USD bid (DXY 101.4), gold worst monthly drop since 2008",
-    "BOJ hiked to 1% in June and ends tapering FY2027 → USDJPY grinding 162.5 as real rate gap persists despite nominal tightening",
-    "SK Hynix overtook Samsung in market cap on HBM dominance → KOSPI +68% Q2 (best since 1998) but KRW crashed through 1550 on foreign rotation",
-    "Q1 GDP revised to 2.1% with May CPI at 4.2% YoY → stagflation whispers as retail sales mask weakening volume growth"
+    "June NFP printed 57K vs ~150K expected, labor force participation at 5-year low → stagflation fears intensify as Warsh's July hike threat meets crumbling labor demand",
+    "Fed Chair Warsh at Sintra (Jul 1) vowed to 'disappoint' inflation doves, rate decision in 4 weeks → DXY softened to 100.8 post-payrolls as hike odds compress",
+    "BOJ at 1% with tapering end in FY2027 fails to arrest USDJPY at 161.15 → real rate gap persists as Japan fiscal concerns steepen curve despite nominal tightening",
+    "SK Hynix market cap flip over Samsung on HBM dominance continues → KOSPI 7855 holds but KRW stabilizes at 1539 after 'Sell Korea' rout exhaustion"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y nominal 4.44% vs 4.2% CPI = barely positive real rate; Warsh hawkish lean puts upside risk on front-end"
+      "note": "2y 4.17% vs CPI 4.2% → real rate -3bps; policy effectively neutral despite Warsh hawkish rhetoric"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s at 4.14%, 10s at 4.44% = +30bp steepening; market pricing term premium return as Fed holds"
+      "note": "31bps steepening (4.17% to 4.48%) reflects growth slowdown fears post-NFP shock, not rate cut bets"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Risk-on persists despite hawkish Fed rhetoric; spreads contained as AI capex cycle funds corporate balance sheets"
+      "note": "VIX at 16.15 suggests credit complacent; watch for spread widening if payrolls weakness persists"
     },
     {
       "name": "VIX",
-      "note": "16.59 complacent given Warsh July decision uncertainty; vol sellers in control post-Sintra"
+      "note": "16.15 subdued despite NFP miss; holiday-thinned markets masking true vol repricing risk"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $70.69 collapsed from $120 peak as Hormuz reopens; Iran war premium fully unwound"
+      "note": "72.18 off April/May Iran war highs; Hormuz reopening narrative easing energy-driven inflation fears"
     },
     {
       "name": "Gold",
-      "note": "$4069 after worst monthly drop since 2008; hawkish Warsh + stronger USD crushing safe haven bid"
+      "note": "4194.9 rebounding from worst monthly drop since 2008 as NFP miss softens USD, real rates compress"
     },
     {
       "name": "USD / KRW",
-      "note": "1553 breached as foreigners dumped $942M in 'Sell Korea' rout despite KOSPI rally; classic EM FX disconnect"
+      "note": "1539 stabilizing after 1550 breach; foreign outflows pausing but structural 'Sell Korea' overhang persists"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Nvidia +85% Q1 rev, TSMC raised capex guidance; HBM demand structural but valuation stretched at cycle peak"
+      "note": "SK Hynix > Samsung on HBM; AI capex thesis intact (TSMC raised guidance) but memory cycle risk flagged"
     }
   ],
-  "headline": "New Fed Chair Warsh's hawkish Sintra debut puts July hike in play while AI-driven equity euphoria collides with 4.2% inflation and post-Iran war oil unwind.",
-  "generated": "2026-07-02T03:23:42Z",
-  "asOf": "2026-07-02"
+  "headline": "June payrolls shock (57K) injects stagflation doubt as Warsh's hawkish Sintra stance meets collapsing labor momentum, forcing markets to reprice July FOMC odds.",
+  "generated": "2026-07-03T02:46:46Z",
+  "asOf": "2026-07-03"
 }
