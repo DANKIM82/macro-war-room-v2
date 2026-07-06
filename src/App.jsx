@@ -10,7 +10,7 @@ import {
    ════════════════════════════════════════════════════════════════════ */
 const REGIME = [
   { axis:"Growth",          current:6.2, prior:7.5 },
-  { axis:"Inflation Heat",  current:8.8, prior:5.5 h},
+  { axis:"Inflation Heat",  current:8.8, prior:5.5 },
   { axis:"Policy Pressure", current:7.5, prior:5.5 },
   { axis:"Risk Appetite",   current:3.5, prior:7.0 },
   { axis:"Dollar Force",    current:7.8, prior:5.2 },
@@ -79,16 +79,117 @@ const TRADES = [
 ];
 
 /* ════════════════════════════════════════════════════════════════════
-   CATALYST CALENDAR
+   CATALYST CALENDAR — each entry's "last" print is overlaid live from
+   data.json (see mergeCalLive below). `sched` holds the confirmed
+   remaining official release dates for 2026 (BLS / BEA / Census / Fed
+   calendars) so the app auto-advances to the next release that hasn't
+   happened yet, instead of getting stuck showing a past date as "due".
+   con values beyond the very next release are left null ("TBD") since
+   forward consensus estimates aren't published by these data sources.
    ════════════════════════════════════════════════════════════════════ */
 const CAL = [
-  {name:"CPI (US)",         imp:"high",last:"+4.2% y/y",lp:"May",sur:"above", nl:"Aug 12, 8:30 ET",ni:"2026-08-12T08:30:00-04:00",con:"~4.0%",pr:"4.2%"},
-  {name:"FOMC Decision",    imp:"high",last:"Hold 3.63%",lp:"Jun",sur:"inline",nl:"Jul 30, 2:00 ET",ni:"2026-07-30T14:00:00-04:00",con:"Hold",  pr:"3.63%"},
-  {name:"Retail Sales",     imp:"med", last:"+0.3% m/m", lp:"May",sur:"inline", nl:"Jul 16, 8:30 ET",ni:"2026-07-16T08:30:00-04:00",con:"+0.2%", pr:"+0.3%"},
-  {name:"Core PCE",         imp:"high",last:"+2.8% y/y", lp:"May",sur:"above", nl:"Jul 31, 8:30 ET",ni:"2026-07-31T08:30:00-04:00",con:"+2.6%", pr:"+2.8%"},
-  {name:"Nonfarm Payrolls", imp:"high",last:"+172K",      lp:"May",sur:"above", nl:"Jul 3, 8:30 ET", ni:"2026-07-03T08:30:00-04:00",con:"+120K", pr:"+179K"},
-  {name:"GDP Advance",      imp:"high",last:"+2.4% y/y", lp:"Q1", sur:"above", nl:"Jul 30, 8:30 ET",ni:"2026-07-30T08:30:00-04:00",con:"+2.1%", pr:"+2.4%"},
+  {name:"CPI (US)", imp:"high", key:"cpi",
+   last:"+4.2% y/y", lp:"May", sur:"above", pr:"4.2%",
+   sched:[
+     {p:"Jun", nl:"Jul 14, 8:30 ET", d:"2026-07-14T08:30:00-04:00", con:"~4.1%"},
+     {p:"Jul", nl:"Aug 12, 8:30 ET", d:"2026-08-12T08:30:00-04:00", con:"~4.0%"},
+     {p:"Aug", nl:"Sep 11, 8:30 ET", d:"2026-09-11T08:30:00-04:00", con:null},
+     {p:"Sep", nl:"Oct 14, 8:30 ET", d:"2026-10-14T08:30:00-04:00", con:null},
+     {p:"Oct", nl:"Nov 10, 8:30 ET", d:"2026-11-10T08:30:00-04:00", con:null},
+     {p:"Nov", nl:"Dec 10, 8:30 ET", d:"2026-12-10T08:30:00-04:00", con:null},
+   ]},
+  {name:"FOMC Decision", imp:"high", key:"fomc",
+   last:"Hold 3.63%", lp:"Jun", sur:"inline", pr:"3.63%",
+   sched:[
+     {p:"Jul", nl:"Jul 29, 2:00 ET", d:"2026-07-29T14:00:00-04:00", con:"Hold"},
+     {p:"Sep", nl:"Sep 16, 2:00 ET", d:"2026-09-16T14:00:00-04:00", con:null},
+     {p:"Oct", nl:"Oct 28, 2:00 ET", d:"2026-10-28T14:00:00-04:00", con:null},
+     {p:"Dec", nl:"Dec 9, 2:00 ET",  d:"2026-12-09T14:00:00-04:00", con:null},
+   ]},
+  {name:"Retail Sales", imp:"med", key:"retail",
+   last:"+0.3% m/m", lp:"May", sur:"inline", pr:"+0.3%",
+   sched:[
+     {p:"Jun", nl:"Jul 16, 8:30 ET", d:"2026-07-16T08:30:00-04:00", con:"+0.2%"},
+     {p:"Jul", nl:"Aug 14, 8:30 ET", d:"2026-08-14T08:30:00-04:00", con:null},
+     {p:"Aug", nl:"Sep 16, 8:30 ET", d:"2026-09-16T08:30:00-04:00", con:null},
+     {p:"Sep", nl:"Oct 15, 8:30 ET", d:"2026-10-15T08:30:00-04:00", con:null},
+     {p:"Oct", nl:"Nov 17, 8:30 ET", d:"2026-11-17T08:30:00-04:00", con:null},
+     {p:"Nov", nl:"Dec 16, 8:30 ET", d:"2026-12-16T08:30:00-04:00", con:null},
+   ]},
+  {name:"Core PCE", imp:"high", key:"pce",
+   last:"+2.8% y/y", lp:"May", sur:"above", pr:"2.8%",
+   sched:[
+     {p:"Jun", nl:"Jul 30, 8:30 ET", d:"2026-07-30T08:30:00-04:00", con:"+2.6%"},
+     {p:"Jul", nl:"Aug 26, 8:30 ET", d:"2026-08-26T08:30:00-04:00", con:null},
+     {p:"Aug", nl:"Sep 30, 8:30 ET", d:"2026-09-30T08:30:00-04:00", con:null},
+     {p:"Sep", nl:"Oct 29, 8:30 ET", d:"2026-10-29T08:30:00-04:00", con:null},
+     {p:"Oct", nl:"Nov 25, 8:30 ET", d:"2026-11-25T08:30:00-04:00", con:null},
+     {p:"Nov", nl:"Dec 23, 8:30 ET", d:"2026-12-23T08:30:00-04:00", con:null},
+   ]},
+  {name:"Nonfarm Payrolls", imp:"high", key:"nfp",
+   last:"+172K", lp:"May", sur:"above", pr:"+179K",
+   sched:[
+     {p:"Jul", nl:"Aug 7, 8:30 ET", d:"2026-08-07T08:30:00-04:00", con:null},
+     {p:"Aug", nl:"Sep 4, 8:30 ET", d:"2026-09-04T08:30:00-04:00", con:null},
+     {p:"Sep", nl:"Oct 2, 8:30 ET", d:"2026-10-02T08:30:00-04:00", con:null},
+     {p:"Oct", nl:"Nov 6, 8:30 ET", d:"2026-11-06T08:30:00-04:00", con:null},
+     {p:"Nov", nl:"Dec 4, 8:30 ET", d:"2026-12-04T08:30:00-04:00", con:null},
+   ]},
+  {name:"GDP Advance", imp:"high", key:"gdp",
+   last:"+2.4% y/y", lp:"Q1", sur:"above", pr:"+2.4%",
+   sched:[
+     {p:"Q2", nl:"Jul 30, 8:30 ET", d:"2026-07-30T08:30:00-04:00", con:"+2.1%"},
+     {p:"Q3", nl:"Oct 29, 8:30 ET", d:"2026-10-29T08:30:00-04:00", con:null},
+   ]},
 ];
+
+/**
+ * mergeCalLive — overlays live "last actual" prints (from data.json) onto
+ * the Upcoming Catalysts cards, and auto-advances each catalyst's schedule
+ * to the next release date that hasn't happened yet, so a card never gets
+ * stuck showing "due" forever once its date has passed.
+ */
+function mergeCalLive(calArr, live, now){
+  const t = now.getTime();
+  const us = live && live.us;
+  const nfpArr = live && live.nfp;
+  return calArr.map(it=>{
+    const patch = {};
+    if(it.sched && it.sched.length){
+      let futureIdx = it.sched.findIndex(s=>new Date(s.d).getTime() > t);
+      if(futureIdx === -1) futureIdx = it.sched.length;
+      const chosen = it.sched[futureIdx] || it.sched[it.sched.length-1];
+      const lastCompleted = it.sched[futureIdx-1];
+      patch.nl = chosen.nl; patch.ni = chosen.d;
+      patch.con = chosen.con != null ? chosen.con : "TBD";
+      if(lastCompleted) patch.lp = lastCompleted.p;
+    }
+    if(it.key==="nfp" && nfpArr && nfpArr.length){
+      const withActual = nfpArr.filter(d=>d.actual!=null);
+      const last = withActual[withActual.length-1];
+      if(last){
+        const rounded = Math.round(last.actual/1000);
+        patch.last = (rounded>=0?"+":"")+rounded+"K";
+        if(last.mo) patch.lp = last.mo.replace(/'\d\d$/, "");
+        if(last.estimate!=null){
+          const diffK = rounded - Math.round(last.estimate/1000);
+          patch.sur = Math.abs(diffK) < 5 ? "inline" : (diffK > 0 ? "above" : "below");
+        }
+      }
+    } else if(it.key==="cpi" && us && us.cpiYoY!=null){
+      patch.last = "+"+us.cpiYoY+"% y/y";
+    } else if(it.key==="gdp" && us && us.gdpYoY!=null){
+      patch.last = "+"+us.gdpYoY+"% y/y";
+    } else if(it.key==="fomc" && us && us.policyRate!=null){
+      patch.last = "Hold "+us.policyRate+"%";
+    } else if(it.key==="retail" && us && us.retailSalesMoM!=null){
+      patch.last = (us.retailSalesMoM>=0?"+":"")+us.retailSalesMoM+"% m/m";
+    } else if(it.key==="pce" && us && us.corePCEYoY!=null){
+      patch.last = "+"+us.corePCEYoY+"% y/y";
+    }
+    return {...it, ...patch};
+  });
+}
 
 /* ════════════════════════════════════════════════════════════════════
    RATES MATRIX
@@ -150,32 +251,72 @@ const BOARD = [
   ]},
 ];
 
-/* ════════════════════════════════════════════════════════════════════
-   NFP DATA
-   ════════════════════════════════════════════════════════════════════ */
-const NFP=[
-  {mo:"Dec'22",a:223,e:200,spx:0.7},{mo:"Jan'23",a:517,e:189,spx:-0.9,note:"+517K shock"},
-  {mo:"Feb'23",a:311,e:215,spx:0.3},{mo:"Mar'23",a:236,e:239,spx:0.5},
-  {mo:"Apr'23",a:253,e:180,spx:1.6},{mo:"May'23",a:339,e:190,spx:1.5},
-  {mo:"Jun'23",a:209,e:225,spx:-0.3},{mo:"Jul'23",a:187,e:200,spx:-0.2},
-  {mo:"Aug'23",a:187,e:170,spx:0.2},{mo:"Sep'23",a:336,e:170,spx:-0.9,note:"10Y → 5%"},
-  {mo:"Oct'23",a:150,e:183,spx:0.9},{mo:"Nov'23",a:199,e:190,spx:0.5},
-  {mo:"Dec'23",a:216,e:168,spx:-0.3},{mo:"Jan'24",a:353,e:180,spx:0.6,note:"Massive beat"},
-  {mo:"Feb'24",a:275,e:198,spx:0.8},{mo:"Mar'24",a:303,e:214,spx:-0.2},
-  {mo:"Apr'24",a:175,e:240,spx:1.0,note:"Big miss → rally"},{mo:"May'24",a:272,e:182,spx:0.8},
-  {mo:"Jun'24",a:206,e:190,spx:0.5},{mo:"Jul'24",a:114,e:175,spx:-1.8,note:"Recession fear+yen carry"},
-  {mo:"Aug'24",a:142,e:161,spx:1.0},{mo:"Sep'24",a:254,e:140,spx:0.8,note:"Huge beat"},
-  {mo:"Oct'24",a:12,e:113,spx:0.4,note:"Hurricane distorted"},{mo:"Nov'24",a:227,e:202,spx:-0.3},
-  {mo:"Dec'24",a:256,e:155,spx:0.8},{mo:"Jan'25",a:143,e:171,spx:0.6},
-  {mo:"Feb'25",a:151,e:170,spx:-1.5,note:"DOGE effect"},{mo:"Mar'25",a:228,e:135,spx:1.8},
-  {mo:"Apr'25",a:177,e:130,spx:1.2},{mo:"May'25",a:139,e:130,spx:0.6},
-  {mo:"Jun'25",a:147,e:110,spx:0.9},{mo:"Jul'25",a:129,e:100,spx:0.5},
-  {mo:"Aug'25",a:165,e:140,spx:1.1},{mo:"Sep'25",a:78,e:120,spx:-0.8,note:"Iran war starts"},
-  {mo:"Oct'25",a:185,e:130,spx:1.4},{mo:"Nov'25",a:120,e:145,spx:-0.5},
-  {mo:"Dec'25",a:88,e:150,spx:-1.2},{mo:"Jan'26",a:-133,e:-50,spx:2.1,note:"DOGE peak → cut bets"},
-  {mo:"Feb'26",a:185,e:60,spx:1.5},{mo:"Mar'26",a:214,e:100,spx:1.0},
-  {mo:"Apr'26",a:179,e:62,spx:0.7},{mo:"May'26",a:172,e:88,spx:-2.6,note:"+172K vs 88K → rate hike repricing"},
+/* ════════════════════════════════════════════════════════════════
+NFP DATA — static history (actuals auto-updated nightly by GitHub Actions
+via FRED PAYEMS; estimate/spx/note patched manually after each release)
+════════════════════════════════════════════════════════════════ */
+const NFP_STATIC=[
+{mo:"Dec'22",a:223,e:200,spx:0.7},{mo:"Jan'23",a:517,e:189,spx:-0.9,note:"+517K shock"},
+{mo:"Feb'23",a:311,e:215,spx:0.3},{mo:"Mar'23",a:236,e:239,spx:0.5},
+{mo:"Apr'23",a:253,e:180,spx:1.6},{mo:"May'23",a:339,e:190,spx:1.5},
+{mo:"Jun'23",a:209,e:225,spx:-0.3},{mo:"Jul'23",a:187,e:200,spx:-0.2},
+{mo:"Aug'23",a:187,e:170,spx:0.2},{mo:"Sep'23",a:336,e:170,spx:-0.9,note:"10Y → 5%"},
+{mo:"Oct'23",a:150,e:183,spx:0.9},{mo:"Nov'23",a:199,e:190,spx:0.5},
+{mo:"Dec'23",a:216,e:168,spx:-0.3},{mo:"Jan'24",a:353,e:180,spx:0.6,note:"Massive beat"},
+{mo:"Feb'24",a:275,e:198,spx:0.8},{mo:"Mar'24",a:303,e:214,spx:-0.2},
+{mo:"Apr'24",a:175,e:240,spx:1.0,note:"Big miss → rally"},{mo:"May'24",a:272,e:182,spx:0.8},
+{mo:"Jun'24",a:206,e:190,spx:0.5},{mo:"Jul'24",a:114,e:175,spx:-1.8,note:"Recession fear+yen carry"},
+{mo:"Aug'24",a:142,e:161,spx:1.0},{mo:"Sep'24",a:254,e:140,spx:0.8,note:"Huge beat"},
+{mo:"Oct'24",a:12,e:113,spx:0.4,note:"Hurricane distorted"},{mo:"Nov'24",a:227,e:202,spx:-0.3},
+{mo:"Dec'24",a:256,e:155,spx:0.8},{mo:"Jan'25",a:143,e:171,spx:0.6},
+{mo:"Feb'25",a:151,e:170,spx:-1.5,note:"DOGE effect"},{mo:"Mar'25",a:228,e:135,spx:1.8},
+{mo:"Apr'25",a:177,e:130,spx:1.2},{mo:"May'25",a:139,e:130,spx:0.6},
+{mo:"Jun'25",a:147,e:110,spx:0.9},{mo:"Jul'25",a:129,e:100,spx:0.5},
+{mo:"Aug'25",a:165,e:140,spx:1.1},{mo:"Sep'25",a:78,e:120,spx:-0.8,note:"Iran war starts"},
+{mo:"Oct'25",a:185,e:130,spx:1.4},{mo:"Nov'25",a:120,e:145,spx:-0.5},
+{mo:"Dec'25",a:88,e:150,spx:-1.2},{mo:"Jan'26",a:-133,e:-50,spx:2.1,note:"DOGE peak → cut bets"},
+{mo:"Feb'26",a:185,e:60,spx:1.5},{mo:"Mar'26",a:214,e:100,spx:1.0},
+{mo:"Apr'26",a:179,e:62,spx:0.7},{mo:"May'26",a:172,e:88,spx:-2.6,note:"+172K vs 88K → rate hike repricing"},
 ].map(d=>({...d,surp:d.a-d.e}));
+
+/**
+ * mergeNFPLive — overlays live data from data.json onto the static array.
+ * For each entry in live.nfp:
+ *   - If a matching mo exists in NFP_STATIC, update its actual (keeps e/spx/note).
+ *   - Otherwise append it as a new bar (estimate/spx/note null until manually patched).
+ * Returns the merged array with surp recomputed, oldest first.
+ */
+function mergeNFPLive(staticArr, liveArr) {
+  if (!liveArr || !liveArr.length) return staticArr;
+  const byMo = {};
+  staticArr.forEach(d => { byMo[d.mo] = {...d}; });
+  liveArr.forEach(ld => {
+    const mo = ld.mo || ld.date;
+    if (byMo[mo]) {
+      // update actual from FRED; keep estimate/spx/note from static
+      byMo[mo].a = ld.actual != null ? ld.actual : byMo[mo].a;
+    } else {
+      // brand-new month from FRED — add with whatever fields exist in live entry
+      byMo[mo] = {
+        mo,
+        a:    ld.actual   != null ? ld.actual   : null,
+        e:    ld.estimate != null ? ld.estimate : null,
+        spx:  ld.spx      != null ? ld.spx      : null,
+        note: ld.note     || null,
+      };
+    }
+  });
+  // Sort by date using the mo label
+  const moOrder = staticArr.map(d => d.mo);
+  liveArr.forEach(ld => {
+    const mo = ld.mo || ld.date;
+    if (!moOrder.includes(mo)) moOrder.push(mo);
+  });
+  return moOrder
+    .filter(mo => byMo[mo])
+    .map(mo => ({ ...byMo[mo], surp: (byMo[mo].a != null && byMo[mo].e != null) ? byMo[mo].a - byMo[mo].e : null }));
+}
+
 
 /* ════════════════════════════════════════════════════════════════════
    HELPERS
@@ -663,54 +804,59 @@ function RegimeRadar() {
   );
 }
 
-/* ════════════════════════════════════════════════════════════════════
-   NFP CHART COMPONENT
-   ════════════════════════════════════════════════════════════════════ */
-function NFPChart() {
-  const lat=NFP[NFP.length-1];
-  const avg=Math.round(NFP.reduce((s,d)=>s+d.surp,0)/NFP.length);
-  const Tip=({active,payload,label})=>{
-    if(!active||!payload?.length)return null;
-    const d=NFP.find(x=>x.mo===label);if(!d)return null;
-    return(<div style={{background:"#101018",border:"1px solid rgba(255,255,255,.15)",
-        borderRadius:10,padding:"10px 14px",fontFamily:"JetBrains Mono,monospace",fontSize:11,minWidth:150}}>
-      <div style={{color:"#FF6200",fontWeight:700,marginBottom:6}}>{label}</div>
-      <div style={{color:"#F0F2F8"}}>Act <b>{d.a}K</b> · Est {d.e}K</div>
-      <div style={{color:d.surp>=0?"#22d3a8":"#FF3B55",fontWeight:700,marginTop:2}}>{d.surp>=0?"+":""}{d.surp}K surprise</div>
-      <div style={{color:d.spx>=0?"#22d3a8":"#FF3B55",marginTop:4}}>SPX {d.spx>=0?"+":""}{d.spx}%</div>
-      {d.note&&<div style={{color:"#4a5568",marginTop:5,fontSize:9.5,lineHeight:1.4}}>{d.note}</div>}
-    </div>);
-  };
-  return(<div className="nfp-panel">
-    <div className="nfp-stats">
-      <div className="nstat"><span className="nstat-k">Latest May '26</span><span className="nstat-v" style={{color:"#22d3a8"}}>+{lat.a}K</span></div>
-      <div className="nstat"><span className="nstat-k">vs estimate</span><span className="nstat-v" style={{color:"#FF6200"}}>+{lat.surp}K</span></div>
-      <div className="nstat"><span className="nstat-k">SPX day-of</span><span className="nstat-v" style={{color:"#FF3B55"}}>{lat.spx}%</span></div>
-      <div className="nstat"><span className="nstat-k">3Y avg surprise</span><span className="nstat-v">{avg>=0?"+":""}{avg}K</span></div>
-    </div>
-    <div style={{width:"100%",height:200}}>
-      <ResponsiveContainer>
-        <ComposedChart data={NFP} margin={{top:4,right:44,left:-16,bottom:0}}>
-          <CartesianGrid strokeDasharray="2 5" stroke="rgba(60,48,24,.1)" vertical={false}/>
-          <XAxis dataKey="mo" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} interval={4}/>
-          <YAxis yAxisId="l" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"K"} domain={["auto","auto"]}/>
-          <YAxis yAxisId="r" orientation="right" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"%"}/>
-          <Tooltip content={<Tip/>}/>
-          <ReferenceLine yAxisId="l" y={0} stroke="rgba(60,48,24,.28)" strokeWidth={1}/>
-          <Bar yAxisId="l" dataKey="surp" maxBarSize={12} radius={[2,2,0,0]}>
-            {NFP.map((d,i)=><Cell key={i} fill={d.surp>=0?"#22d3a8":"#FF3B55"} fillOpacity={0.7}/>)}
-          </Bar>
-          <Line yAxisId="r" type="monotone" dataKey="spx" stroke="#FF6200" strokeWidth={1.5} dot={false} activeDot={{r:3,fill:"#FF6200"}}/>
-        </ComposedChart>
-      </ResponsiveContainer>
-    </div>
-    <div className="nfp-leg">
-      <span className="nleg"><span style={{width:10,height:10,borderRadius:3,background:"#22d3a8",opacity:.7,display:"inline-block"}}/> Surprise +</span>
-      <span className="nleg"><span style={{width:10,height:10,borderRadius:3,background:"#FF3B55",opacity:.7,display:"inline-block"}}/> Surprise −</span>
-      <span className="nleg"><span style={{width:14,height:2,background:"#FF6200",display:"inline-block",borderRadius:1}}/> SPX Day %</span>
-    </div>
-  </div>);
+/* ════════════════════════════════════════════════════════════════
+NFP CHART COMPONENT
+════════════════════════════════════════════════════════════════ */
+function NFPChart({ liveNFP }) {
+const NFP = mergeNFPLive(NFP_STATIC, liveNFP);
+const lat=NFP[NFP.length-1];
+const avg=Math.round(NFP.filter(d=>d.surp!=null).reduce((s,d)=>s+d.surp,0)/NFP.filter(d=>d.surp!=null).length);
+const Tip=({active,payload,label})=>{
+if(!active||!payload?.length)return null;
+const d=NFP.find(x=>x.mo===label);if(!d)return null;
+return(<div style={{background:"#101018",border:"1px solid rgba(255,255,255,.15)",
+borderRadius:10,padding:"10px 14px",fontFamily:"JetBrains Mono,monospace",fontSize:11,minWidth:150}}>
+<div style={{color:"#FF6200",fontWeight:700,marginBottom:6}}>{label}</div>
+<div style={{color:"#F0F2F8"}}>Act <b>{d.a}K</b>{d.e!=null?` · Est ${d.e}K`:""}</div>
+{d.surp!=null&&<div style={{color:d.surp>=0?"#22d3a8":"#FF3B55",fontWeight:700,marginTop:2}}>{d.surp>=0?"+":""}{d.surp}K surprise</div>}
+{d.spx!=null&&<div style={{color:d.spx>=0?"#22d3a8":"#FF3B55",marginTop:4}}>SPX {d.spx>=0?"+":""}{d.spx}%</div>}
+{d.note&&<div style={{color:"#4a5568",marginTop:5,fontSize:9.5,lineHeight:1.4}}>{d.note}</div>}
+</div>);
+};
+const latMo=lat?.mo||"";
+const latSurp=lat?.surp!=null?(lat.surp>=0?"+":"")+lat.surp+"K":"n/a";
+const latSpx=lat?.spx!=null?(lat.spx>=0?"+":"")+lat.spx+"%":"n/a";
+return(<div className="nfp-panel">
+<div className="nfp-stats">
+<div className="nstat"><span className="nstat-k">Latest {latMo}</span><span className="nstat-v" style={{color:"#22d3a8"}}>+{lat?.a}K</span></div>
+<div className="nstat"><span className="nstat-k">vs estimate</span><span className="nstat-v" style={{color:"#FF6200"}}>{latSurp}</span></div>
+<div className="nstat"><span className="nstat-k">SPX day-of</span><span className="nstat-v" style={{color:lat?.spx>=0?"#22d3a8":"#FF3B55"}}>{latSpx}</span></div>
+<div className="nstat"><span className="nstat-k">3Y avg surprise</span><span className="nstat-v">{avg>=0?"+":""}{avg}K</span></div>
+</div>
+<div style={{width:"100%",height:200}}>
+<ResponsiveContainer>
+<ComposedChart data={NFP} margin={{top:4,right:44,left:-16,bottom:0}}>
+<CartesianGrid strokeDasharray="2 5" stroke="rgba(60,48,24,.1)" vertical={false}/>
+<XAxis dataKey="mo" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} interval={4}/>
+<YAxis yAxisId="l" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"K"} domain={["auto","auto"]}/>
+<YAxis yAxisId="r" orientation="right" tick={{fill:"#4a5568",fontSize:8.5,fontFamily:"JetBrains Mono,monospace"}} tickLine={false} tickFormatter={v=>v+"%"}/>
+<Tooltip content={<Tip/>}/>
+<ReferenceLine yAxisId="l" y={0} stroke="rgba(60,48,24,.28)" strokeWidth={1}/>
+<Bar yAxisId="l" dataKey="surp" maxBarSize={12} radius={[2,2,0,0]}>
+{NFP.map((d,i)=><Cell key={i} fill={d.surp!=null?(d.surp>=0?"#22d3a8":"#FF3B55"):"#888"} fillOpacity={0.7}/>)}
+</Bar>
+<Line yAxisId="r" type="monotone" dataKey="spx" stroke="#FF6200" strokeWidth={1.5} dot={false} activeDot={{r:3,fill:"#FF6200"}}/>
+</ComposedChart>
+</ResponsiveContainer>
+</div>
+<div className="nfp-leg">
+<span className="nleg"><span style={{width:10,height:10,borderRadius:3,background:"#22d3a8",opacity:.7,display:"inline-block"}}/> Surprise +</span>
+<span className="nleg"><span style={{width:10,height:10,borderRadius:3,background:"#FF3B55",opacity:.7,display:"inline-block"}}/> Surprise −</span>
+<span className="nleg"><span style={{width:14,height:2,background:"#FF6200",display:"inline-block",borderRadius:1}}/> SPX Day %</span>
+</div>
+</div>);
 }
+
 
 /* ════════════════════════════════════════════════════════════════════
    AI ANALYSIS DRAWER
@@ -877,7 +1023,8 @@ export default function App(){
     }
   }
 
-  const sortedCal=[...CAL].sort((a,b)=>tval(a)-tval(b));
+  const liveCal=mergeCalLive(CAL, live, clock);
+const sortedCal=[...liveCal].sort((a,b)=>tval(a)-tval(b));
   const onDeck=sortedCal.find(it=>tval(it)>clock.getTime())||sortedCal[0];
 
   return(<>
@@ -1040,7 +1187,7 @@ export default function App(){
 
         {/* NFP CHART */}
         <div className="sec">NFP History: Surprise vs S&P 500</div>
-        <NFPChart/>
+        <NFPChart liveNFP={live?.nfp}/>
 
         {/* RATES MATRIX */}
         <div className="sec">Rates &amp; Macro Matrix</div>
