@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION LIMBO RISK-ON",
-  "regimeSub": "Post-NFP shock consolidation as markets digest 57K miss while Warsh hawks stay silent ahead of July FOMC.",
+  "regimeSub": "OPEC+ output expansion hammers Brent to $72.56 as post-NFP stagflation narrative meets oil deflation.",
   "themes": [
-    "June NFP 57K vs ~150K est with LFPR at 5-year low → stagflation setup intensifies but VIX at 16.15 shows equity vol complacent despite labor market crack",
-    "Warsh at Sintra (Jul 1-2) vowed to 'disappoint' inflation doves with 4-week rate decision timeline → DXY slips to 100.95 as July hike odds recalibrate post-payrolls",
-    "BOJ at 1% with tapering end FY2027 fails to arrest USDJPY at 161.76 → JPY weakness persists as real rate differential dominates nominal policy tightening",
-    "KOSPI at 7909 holds despite ₩148T foreign outflows as SK Hynix/HBM dominance offsets KRW weakness to 1533 → BOK hike speculation (Jul 16) caps further won slide"
+    "OPEC+ Jul 6 output expansion + Iran crude returning to pre-war levels → Brent collapses to $72.56, easing energy-driven CPI pressure but undercutting stagflation inflation leg",
+    "June NFP 57K vs ~150K est with LFPR at 5-year low persists → Warsh's 4-week decision window now priced as hold not hike, DXY slips to 100.86",
+    "BOJ at 1% + tapering end FY2027 still fails to arrest USDJPY at 161.89 → carry trade intact as Japan real rates stay deeply negative vs US 4.2% CPI / 3.63% policy",
+    "KOSPI retreats to 7558 from 7909 as ₩148T foreign outflows accelerate → BOK Jul 16 hike speculation (US jobs shock divergence) fails to support KRW at 1525"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 4.48% minus 4.2% CPI = 28bp real; thin cushion if inflation reaccelerates on energy"
+      "note": "Policy 3.63% vs CPI 4.2% = -57bp real rate; negative real rates persist despite Warsh hawk rhetoric at Sintra"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.17% vs 10Y 4.48% = +31bp steepening; growth scare flatteners not materializing yet"
+      "note": "2s 4.14% / 10s 4.49% = +35bp steepening; curve normalizing as growth fears outweigh near-term hike risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Credit ignoring NFP miss for now; watch for lag as labor deterioration feeds earnings"
+      "note": "VIX 15.57 implies HY spreads remain tight; credit complacent despite labor crack in June NFP"
     },
     {
       "name": "VIX",
-      "note": "16.15 oddly sanguine post-57K NFP shock; complacency into July FOMC decision window"
+      "note": "VIX at 15.57 down from 16.15 ytd; vol compression continues despite stagflation crosscurrents"
     },
     {
       "name": "Brent Crude",
-      "note": "72.07 stable post-Iran ceasefire; OPEC cut chatter offsets demand concerns from weak jobs"
+      "note": "Brent $72.56 post-OPEC+ expansion; pre-Iran war levels signal energy inflation impulse fading"
     },
     {
       "name": "Gold",
-      "note": "4184.5 bid as stagflation hedge; worst monthly drop in June now reversing on growth fears"
+      "note": "Gold $4151 holds despite worst monthly drop since 2008 in June; haven bid persists on growth scare"
     },
     {
       "name": "USD / KRW",
-      "note": "1533 stable as BOK Jul 16 hike speculation builds; HBM flows offsetting broad EM weakness"
+      "note": "USDKRW 1525 vs 1533 yesterday; KRW stabilizing as BOK Jul 16 hike odds rise on US-Korea divergence"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix > Samsung market cap flip sustains; HBM capex cycle intact despite macro headwinds"
+      "note": "KOSPI 7558 (-4.4% from 7909) as SK Hynix/Samsung retreat; HBM euphoria meets foreign ₩148T outflows"
     }
   ],
-  "headline": "Markets consolidate post-June NFP shock (57K) as Warsh's July hike threat hangs over stagflationary 4.2% CPI backdrop with no Fed speakers to clarify path.",
-  "generated": "2026-07-06T03:01:25Z",
-  "asOf": "2026-07-06"
+  "headline": "Oil normalizes to pre-Iran war levels as OPEC+ expands output, complicating Warsh's July FOMC calculus as stagflation's inflation leg weakens while labor market crack persists.",
+  "generated": "2026-07-07T02:53:50Z",
+  "asOf": "2026-07-07"
 }
