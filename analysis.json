@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION LIMBO RISK-ON",
-  "regimeSub": "OPEC+ output expansion keeps Brent pinned at $76 while weak labor + sticky 4.2% CPI freeze Warsh ahead of July FOMC.",
+  "regimeSub": "FOMC minutes reveal split Fed as Warsh holds fire; OPEC+ output normalizes oil while sticky 4.2% CPI persists.",
   "themes": [
-    "OPEC+ Jul 6 output expansion normalizes Brent to $76 (pre-Iran war levels) → energy CPI tailwind fading but core PCE still elevated, complicating Warsh's July decision",
-    "June NFP 57K miss + LFPR 5-year low persists → Warsh at Sintra (Jul 1) noted 'inflation risks eased' but declined to signal July; market now pricing hold over hike",
-    "BOJ at 1% with tapering ending FY2027 fails to stem USDJPY at 162.39 → Japan real rates deeply negative vs US 4.2% CPI keeps carry trade bid intact",
-    "KOSPI 7471 (-1.2% from yesterday) as ₩148T YTD foreign outflows continue → BOK Jul 16 hike speculation on US divergence not stabilizing KRW at 1513"
+    "July 8 FOMC minutes show Fed officials split on rate direction with inflation concerns growing at June meeting → market pricing hold but Warsh retains optionality for September",
+    "OPEC+ Jul 6 output expansion pushes Brent to $78.89 (pre-Iran war levels) → energy CPI tailwind fading but May core PCE at 3.4% keeps real policy restrictive bias intact",
+    "BOJ at 1% ending tapering FY2027 fails to arrest USDJPY at 162.47 → Japan negative real rates vs US 4.2% CPI keeps carry bid; gold at $4080 reflects inflation hedge demand",
+    "KOSPI 7359 stabilizing as SK Hynix HBM momentum persists but KRW at 1506 → BOK Jul 16 hike speculation remains live on Fed divergence risk"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 4.48% minus 4.2% CPI = +28bp real rate; positive but thin cushion if inflation re-accelerates on supply shocks"
+      "note": "Policy rate 3.63% vs 4.2% CPI = -57bp real; Fed minutes show officials worried inflation above target persists"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s at +35bp (4.48-4.13) steepening reflects growth doubt post-57K NFP, not inflation normalization"
+      "note": "2Y 4.19% / 10Y 4.55% = +36bp steepener; term premium reflects fiscal concerns and inflation uncertainty"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX 16.13 implies tight HY spreads; complacency despite stagflationary macro backdrop and Warsh hike optionality"
+      "note": "VIX 16.9 signals benign risk appetite; credit markets shrugging off stagflation concerns for now"
     },
     {
       "name": "VIX",
-      "note": "VIX 16.13 down from recent stress; markets pricing Warsh hold in July, discounting tail risk from sticky inflation"
+      "note": "At 16.9 subdued despite FOMC split; equity vol complacent ahead of July 29-30 meeting"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $76.12 up from $72.56 yesterday; OPEC+ expansion absorbed but price stabilizing at pre-Iran war equilibrium"
+      "note": "Brent $78.89 post OPEC+ expansion normalizing to pre-Iran war levels; energy squeeze easing"
     },
     {
       "name": "Gold",
-      "note": "Gold $4126 bid despite worst monthly drop since 2008 in June; real rate compression + geopolitical hedge demand persists"
+      "note": "Gold $4080 bid as inflation hedge despite July worst monthly drop since 2008; real rate support intact"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW at 1513 firmer vs 1525 yesterday; BOK Jul 16 hike speculation and HBM/AI flows providing marginal support"
+      "note": "KRW at 1506 marginally firmer; BOK Jul 16 hike speculation rising on Warsh divergence signals"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix overtook Samsung in market cap on HBM demand; TSMC capex guidance bullish but KOSPI foreign outflows persist"
+      "note": "AI chip rebound flagged Jul 6; SK Hynix HBM4E momentum keeps KOSPI 7359 supported despite FX outflows"
     }
   ],
-  "headline": "Oil normalization meets labor market deterioration as Warsh holds fire pre-July FOMC, leaving markets in stagflationary purgatory with carry trades and AI flows the only clean longs.",
-  "generated": "2026-07-08T02:30:54Z",
-  "asOf": "2026-07-08"
+  "headline": "FOMC minutes expose Fed split on rates as Warsh navigates stagflation trap: 4.2% CPI sticky, June NFP 57K miss, OPEC+ output normalizing oil while markets await July decision.",
+  "generated": "2026-07-09T02:47:07Z",
+  "asOf": "2026-07-09"
 }
