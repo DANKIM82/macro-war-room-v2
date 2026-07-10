@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION LIMBO RISK-ON",
-  "regimeSub": "FOMC minutes reveal split Fed as Warsh holds fire; OPEC+ output normalizes oil while sticky 4.2% CPI persists.",
+  "regimeSub": "FOMC split persists; Brent normalizes to $76 as OPEC+ expands while 4.2% CPI anchors hawkish Fed optionality.",
   "themes": [
-    "July 8 FOMC minutes show Fed officials split on rate direction with inflation concerns growing at June meeting → market pricing hold but Warsh retains optionality for September",
-    "OPEC+ Jul 6 output expansion pushes Brent to $78.89 (pre-Iran war levels) → energy CPI tailwind fading but May core PCE at 3.4% keeps real policy restrictive bias intact",
-    "BOJ at 1% ending tapering FY2027 fails to arrest USDJPY at 162.47 → Japan negative real rates vs US 4.2% CPI keeps carry bid; gold at $4080 reflects inflation hedge demand",
-    "KOSPI 7359 stabilizing as SK Hynix HBM momentum persists but KRW at 1506 → BOK Jul 16 hike speculation remains live on Fed divergence risk"
+    "July 8 FOMC minutes confirm Fed officials split on rate direction with inflation concerns growing → Warsh retains September hike optionality as markets price 50% odds per TradingView",
+    "OPEC+ Jul 6 output expansion drives Brent to $76.42 (pre-Iran war levels) → energy disinflation tailwind materializing but core PCE at 3.4% keeps real policy restrictive",
+    "BOJ at 1% with tapering end FY2027 fails to arrest USDJPY at 161.45 → Japan negative real rates vs US 4.2% CPI sustains carry; gold at $4133 up $53 reflects persistent inflation hedge bid",
+    "June NFP miss at 57K vs est keeps labor market cooling narrative alive → weak participation rate at 5yr low complicates Fed calculus between inflation fight and growth concerns"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy rate 3.63% vs 4.2% CPI = -57bp real; Fed minutes show officials worried inflation above target persists"
+      "note": "Policy rate 3.63% vs 4.2% CPI = -57bp real; restrictive in name only with core PCE at 3.4%"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.19% / 10Y 4.55% = +36bp steepener; term premium reflects fiscal concerns and inflation uncertainty"
+      "note": "2Y 4.21% / 10Y 4.56% = +35bp steepening; term premium rising on fiscal and inflation uncertainty"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX 16.9 signals benign risk appetite; credit markets shrugging off stagflation concerns for now"
+      "note": "VIX at 15.84 suggests complacency; credit holding in despite stagflation crosscurrents"
     },
     {
       "name": "VIX",
-      "note": "At 16.9 subdued despite FOMC split; equity vol complacent ahead of July 29-30 meeting"
+      "note": "At 15.84 remarkably low given Fed split and sticky inflation; summer lull masking tail risks"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $78.89 post OPEC+ expansion normalizing to pre-Iran war levels; energy squeeze easing"
+      "note": "At $76.42 down from war highs as OPEC+ Jul 6 output expansion normalizes supply; geopolitical premium fading"
     },
     {
       "name": "Gold",
-      "note": "Gold $4080 bid as inflation hedge despite July worst monthly drop since 2008; real rate support intact"
+      "note": "At $4133 (+$53 vs yesterday) → inflation hedge demand persists as real rates remain negative"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW at 1506 marginally firmer; BOK Jul 16 hike speculation rising on Warsh divergence signals"
+      "note": "At 1506 stable; BOK Jul 16 hike speculation live as Warsh-led Fed keeps hawkish bias intact"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI chip rebound flagged Jul 6; SK Hynix HBM4E momentum keeps KOSPI 7359 supported despite FX outflows"
+      "note": "AI chip rebound per Jul 6 analyst calls; SK Hynix HBM lead over Samsung sustains KOSPI at 7556"
     }
   ],
-  "headline": "FOMC minutes expose Fed split on rates as Warsh navigates stagflation trap: 4.2% CPI sticky, June NFP 57K miss, OPEC+ output normalizing oil while markets await July decision.",
-  "generated": "2026-07-09T02:47:07Z",
-  "asOf": "2026-07-09"
+  "headline": "Fed remains split on rate direction as July FOMC minutes reveal growing inflation concerns, while OPEC+ output expansion normalizes oil prices and labor market cooling complicates Warsh's September decision calculus.",
+  "generated": "2026-07-10T02:50:20Z",
+  "asOf": "2026-07-10"
 }
