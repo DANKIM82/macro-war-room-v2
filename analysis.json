@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION LIMBO RISK-ON",
-  "regimeSub": "Trump tears up Iran ceasefire, Spain tariffs add geopolitical noise but Brent holds at $78 as OPEC+ supply absorbs shock.",
+  "regimeLabel": "STAGFLATIONARY POLICY LIMBO",
+  "regimeSub": "Warsh Fed hawkish hold meets soft June payrolls (57K) as CPI sticky at 4.2%; Trump tears up Iran ceasefire.",
   "themes": [
-    "Trump Jul 9 rips up Iran ceasefire & orders Spain trade cutoff → EuroStoxx dropped 1.6% worst session in 3 months but VIX at 15.03 shows no contagion to US risk assets",
-    "BOK Jul 9 signals need to hike on higher inflation and growth → hawkish tilt confirms global CB hawkish synchronization with Fed/BOJ; USDKRW steady at 1500",
-    "Retail sales Jul 12 beat forecasts despite Iran war impact → consumer resilience sustains GDP 2.1% narrative but CPI 4.2%/core PCE 3.4% keeps Warsh's hike threat alive",
-    "Citi hikes TSMC price target 30%+ ahead of earnings → HBM momentum continues with SK Hynix surpassing Samsung in market cap; KOSPI at 7475 outperforms SPX YTD"
+    "Fed Chair Warsh at ECB Sintra vowed to 'disappoint' inflation doves, July FOMC minutes showed split on hikes → UST 10Y elevated at 4.54%, real rates compressing risk premia",
+    "June NFP printed 57K vs consensus miss, unemployment 4.2%, labor force participation at 5-year low → stagflation fears rise as growth softens while inflation persists at 4.2%",
+    "Trump ripped up Iran ceasefire July 9 and ordered Spain trade cutoff → EuroStoxx plunged 1.6%, geopolitical risk premium repricing despite Brent normalizing to $79 on OPEC+ output expansion",
+    "BOK signaled end to easing cycle citing FX stability and inflation concerns → USDKRW sticky at 1505, KOSPI outperformance (7072) driven by SK Hynix HBM dominance over Samsung"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy rate 3.63% vs CPI 4.2% = -57bp real rate; still accommodative despite Warsh hawkish rhetoric on 2% target"
+      "note": "10Y 4.54% minus 4.2% CPI = ~34bp real; compressed vs H1 but hawkish Warsh keeps floor under nominals"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s at 4.16%, 10s at 4.54% = +38bp steepener; term premium building on fiscal/inflation concerns"
+      "note": "2Y 4.16% / 10Y 4.54% = +38bp steepener; term premium rebuilding on fiscal concerns and inflation persistence"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX 15.03 implies HY spreads contained; risk-on despite Trump Iran/Spain escalation"
+      "note": "Spreads contained despite geopolitical noise; VIX at 15 signals complacency vs stagflation backdrop"
     },
     {
       "name": "VIX",
-      "note": "VIX 15.03 remarkably sanguine given Jul 9 geopolitical shock; equity vol sellers in control"
+      "note": "15.03 subdued despite Trump Iran ceasefire collapse; vol sellers in control but headline risk elevated"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $78.51 stable at pre-war levels; OPEC+ Jul 6 expansion offsetting Iran ceasefire collapse"
+      "note": "$79.27 back to pre-Iran war levels per Reuters; OPEC+ July output expansion offsets Hormuz reopening hedges"
     },
     {
       "name": "Gold",
-      "note": "Gold $4093 off $4133 highs; worst monthly drop since 2008 per Jul 1 as DXY stabilizes at 101"
+      "note": "$4078 recovering from worst monthly drop since 2008 in June; real rate compression and geopolitics bid"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1500 flat; BOK hawkish Jul 9 signal anchors won despite Fed hike optionality"
+      "note": "1505 range-bound as BOK hawkish hold supports won; JPY weakness (162) keeps JPYKRW cross at 9.29"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Citi +30% TSMC PT, Nvidia Q1 85% rev growth; HBM leadership shift to SK Hynix sustains Korea semis bid"
+      "note": "SK Hynix overtook Samsung on HBM AI demand; Citi hiking TSMC PT 30%+ ahead of earnings"
     }
   ],
-  "headline": "Trump's Iran ceasefire collapse and Spain tariffs inject geopolitical noise but OPEC+ supply keeps Brent anchored near $78 while Warsh's Fed maintains September hike optionality on sticky 4.2% CPI.",
-  "generated": "2026-07-13T00:14:21Z",
+  "headline": "Warsh's hawkish Fed hold collides with soft June payrolls and Trump's Iran ceasefire collapse, leaving markets in stagflationary limbo with VIX deceptively calm at 15.",
+  "generated": "2026-07-13T02:35:21Z",
   "asOf": "2026-07-13"
 }
