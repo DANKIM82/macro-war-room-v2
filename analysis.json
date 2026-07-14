@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION CROSSROADS",
-  "regimeSub": "CPI release today pivotal as Warsh Fed leans hawkish amid 57K NFP miss and renewed Middle East fighting.",
+  "regimeLabel": "DISINFLATION RELIEF RALLY",
+  "regimeSub": "June CPI at 3.5% vs 3.8% expected triggers risk-on as Warsh's July hike case weakens materially.",
   "themes": [
-    "June CPI (today) expected to confirm sticky 4.2% YoY → markets pricing hawkish Warsh Fed hold, July FOMC minutes showed split on hikes, UST 10Y at 4.56% reflecting rate uncertainty",
-    "BOK minutes signal Thursday rate hike to 2.75% as new governor adopts hawkish posture → USDKRW eased to 1493 from 1505 but won remains under pressure, KOSPI -3.5% from June highs as SK Hynix whipsaws 13% ADR vs -15% local",
-    "Trump Iran ceasefire collapse July 9 + Spain trade cutoff → OPEC+ upped August quotas but Middle East fighting resumes, Brent spikes to $84 from $79, geopolitical risk premium rebuilding",
-    "June NFP 57K miss + Q1 GDP 2.1% soft + retail sales resilient → classic stagflation setup where labor cools but inflation persists, VIX subdued at 17.16 suggests complacency ahead of CPI print"
+    "June CPI prints 3.5% vs 3.8% expected → front-end yields likely to compress as July FOMC hike probability fades, SPX pushing 7549",
+    "Chair Warsh's hawkish credibility tested: vowed zero tolerance above 2% target on July 3, but cooling inflation buys time before August decision",
+    "SK Hynix crashes 15% in Seoul on HBM contract ceiling concerns → KOSPI vulnerable despite won at 1489 as BOK signals rate hike this week per Yonhap",
+    "Trump tears up Iran ceasefire July 9, orders Spain trade cutoff → Brent rebounds to $84 as OPEC+ expands August quotas into renewed Middle East risk"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y nominal 4.56% less 4.2% CPI = 36bp real; compressed but positive as Warsh maintains hawkish bias"
+      "note": "Real rate ~0.71% (3.63 policy vs 3.5% CPI); soft CPI eases pressure on Warsh to hike July"
     },
     {
       "name": "2s10s Curve",
-      "note": "35bp steepening (2Y 4.21%, 10Y 4.56%) reflects term premium rebuild on fiscal/inflation concerns"
+      "note": "Curve at +35bp (4.56-4.21); steepening reflects growth intact with inflation cooling"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite stagflation setup; equity vol muted, credit complacent pre-CPI"
+      "note": "Credit calm with VIX 16.48; risk-on bid following CPI beat keeps spreads compressed"
     },
     {
       "name": "VIX",
-      "note": "17.16 low given CPI catalyst today + geopolitical flare; vol sellers overconfident ahead of data"
+      "note": "VIX 16.48 subdued despite Iran ceasefire collapse; CPI relief dominates geopolitical noise"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $84.18 up from $79 post-ceasefire collapse; OPEC+ quota hike offset by renewed ME fighting"
+      "note": "Brent $84.34 up from post-ceasefire lows; Trump Iran reversal + OPEC+ August hike creates two-way risk"
     },
     {
       "name": "Gold",
-      "note": "Gold $4016 near highs despite June selloff; inflation hedge bid returns as real rates compress"
+      "note": "Gold $4070 stabilizing after worst monthly drop since 2008 in June; real rate pressure easing"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1493 easing from 1505 as BOK hike Thursday priced; still elevated on Fed-BOK divergence"
+      "note": "KRW 1489 weak; BOK rate hike this week (Yonhap) needed to defend currency as SK Hynix craters"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix ADR +13% vs Korea -15% dislocation; TSMC earnings Thursday key for AI capex narrative"
+      "note": "SK Hynix -15% Seoul record rout on HBM contract limits; TSMC earnings Thursday will set sector tone"
     }
   ],
-  "headline": "Markets brace for June CPI print as Warsh Fed holds hawkish amid 57K payrolls miss, Trump's Iran ceasefire collapse, and BOK poised for Thursday hike to 2.75%.",
-  "generated": "2026-07-14T02:14:16Z",
+  "headline": "Soft June CPI (3.5% vs 3.8% exp) hands Warsh breathing room as Iran ceasefire collapse and SK Hynix meltdown create crosscurrents beneath the surface relief rally.",
+  "generated": "2026-07-14T18:07:27Z",
   "asOf": "2026-07-14"
 }
