@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATIONARY POLICY LIMBO",
-  "regimeSub": "Warsh Fed hawkish hold meets soft June payrolls (57K) as CPI sticky at 4.2%; Trump tears up Iran ceasefire.",
+  "regimeLabel": "STAGFLATION CROSSROADS",
+  "regimeSub": "CPI release today pivotal as Warsh Fed leans hawkish amid 57K NFP miss and renewed Middle East fighting.",
   "themes": [
-    "Fed Chair Warsh at ECB Sintra vowed to 'disappoint' inflation doves, July FOMC minutes showed split on hikes → UST 10Y elevated at 4.54%, real rates compressing risk premia",
-    "June NFP printed 57K vs consensus miss, unemployment 4.2%, labor force participation at 5-year low → stagflation fears rise as growth softens while inflation persists at 4.2%",
-    "Trump ripped up Iran ceasefire July 9 and ordered Spain trade cutoff → EuroStoxx plunged 1.6%, geopolitical risk premium repricing despite Brent normalizing to $79 on OPEC+ output expansion",
-    "BOK signaled end to easing cycle citing FX stability and inflation concerns → USDKRW sticky at 1505, KOSPI outperformance (7072) driven by SK Hynix HBM dominance over Samsung"
+    "June CPI (today) expected to confirm sticky 4.2% YoY → markets pricing hawkish Warsh Fed hold, July FOMC minutes showed split on hikes, UST 10Y at 4.56% reflecting rate uncertainty",
+    "BOK minutes signal Thursday rate hike to 2.75% as new governor adopts hawkish posture → USDKRW eased to 1493 from 1505 but won remains under pressure, KOSPI -3.5% from June highs as SK Hynix whipsaws 13% ADR vs -15% local",
+    "Trump Iran ceasefire collapse July 9 + Spain trade cutoff → OPEC+ upped August quotas but Middle East fighting resumes, Brent spikes to $84 from $79, geopolitical risk premium rebuilding",
+    "June NFP 57K miss + Q1 GDP 2.1% soft + retail sales resilient → classic stagflation setup where labor cools but inflation persists, VIX subdued at 17.16 suggests complacency ahead of CPI print"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 4.54% minus 4.2% CPI = ~34bp real; compressed vs H1 but hawkish Warsh keeps floor under nominals"
+      "note": "10Y nominal 4.56% less 4.2% CPI = 36bp real; compressed but positive as Warsh maintains hawkish bias"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.16% / 10Y 4.54% = +38bp steepener; term premium rebuilding on fiscal concerns and inflation persistence"
+      "note": "35bp steepening (2Y 4.21%, 10Y 4.56%) reflects term premium rebuild on fiscal/inflation concerns"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite geopolitical noise; VIX at 15 signals complacency vs stagflation backdrop"
+      "note": "Spreads contained despite stagflation setup; equity vol muted, credit complacent pre-CPI"
     },
     {
       "name": "VIX",
-      "note": "15.03 subdued despite Trump Iran ceasefire collapse; vol sellers in control but headline risk elevated"
+      "note": "17.16 low given CPI catalyst today + geopolitical flare; vol sellers overconfident ahead of data"
     },
     {
       "name": "Brent Crude",
-      "note": "$79.27 back to pre-Iran war levels per Reuters; OPEC+ July output expansion offsets Hormuz reopening hedges"
+      "note": "Brent $84.18 up from $79 post-ceasefire collapse; OPEC+ quota hike offset by renewed ME fighting"
     },
     {
       "name": "Gold",
-      "note": "$4078 recovering from worst monthly drop since 2008 in June; real rate compression and geopolitics bid"
+      "note": "Gold $4016 near highs despite June selloff; inflation hedge bid returns as real rates compress"
     },
     {
       "name": "USD / KRW",
-      "note": "1505 range-bound as BOK hawkish hold supports won; JPY weakness (162) keeps JPYKRW cross at 9.29"
+      "note": "USDKRW 1493 easing from 1505 as BOK hike Thursday priced; still elevated on Fed-BOK divergence"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix overtook Samsung on HBM AI demand; Citi hiking TSMC PT 30%+ ahead of earnings"
+      "note": "SK Hynix ADR +13% vs Korea -15% dislocation; TSMC earnings Thursday key for AI capex narrative"
     }
   ],
-  "headline": "Warsh's hawkish Fed hold collides with soft June payrolls and Trump's Iran ceasefire collapse, leaving markets in stagflationary limbo with VIX deceptively calm at 15.",
-  "generated": "2026-07-13T02:35:21Z",
-  "asOf": "2026-07-13"
+  "headline": "Markets brace for June CPI print as Warsh Fed holds hawkish amid 57K payrolls miss, Trump's Iran ceasefire collapse, and BOK poised for Thursday hike to 2.75%.",
+  "generated": "2026-07-14T02:14:16Z",
+  "asOf": "2026-07-14"
 }
