@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "DISINFLATION RELIEF RALLY",
-  "regimeSub": "June CPI at 3.5% vs 3.8% expected triggers risk-on as Warsh's July hike case weakens materially.",
+  "regimeLabel": "DISINFLATION CONSOLIDATION",
+  "regimeSub": "Markets digest June CPI beat as BOK rate hike looms Thursday; risk-on fading into event risk.",
   "themes": [
-    "June CPI prints 3.5% vs 3.8% expected → front-end yields likely to compress as July FOMC hike probability fades, SPX pushing 7549",
-    "Chair Warsh's hawkish credibility tested: vowed zero tolerance above 2% target on July 3, but cooling inflation buys time before August decision",
-    "SK Hynix crashes 15% in Seoul on HBM contract ceiling concerns → KOSPI vulnerable despite won at 1489 as BOK signals rate hike this week per Yonhap",
-    "Trump tears up Iran ceasefire July 9, orders Spain trade cutoff → Brent rebounds to $84 as OPEC+ expands August quotas into renewed Middle East risk"
+    "June CPI 3.5% vs 3.8% expected now priced → SPX consolidating at 7543 as July FOMC hike odds collapse, Warsh's hawkish rhetoric neutralized by data",
+    "BOK poised to hike to 2.75% Thursday per Korea Times → USDKRW stuck at 1490 as won weakness persists despite tightening cycle expectations",
+    "SK Hynix ADR/Seoul divergence (-15% Seoul crash vs +13% ADR) signals HBM earnings ceiling → KOSPI at 7251, down 20% from June 22 ATH of 9114",
+    "Brent at $85.93 as OPEC+ August quota expansion meets renewed Middle East risk → oil stabilizing at pre-Iran-war levels despite Trump ceasefire collapse"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate ~0.71% (3.63 policy vs 3.5% CPI); soft CPI eases pressure on Warsh to hike July"
+      "note": "10Y real ~1.12% (4.62 nominal - 3.5% CPI); compressed from peak as disinflation trade gains traction"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +35bp (4.56-4.21); steepening reflects growth intact with inflation cooling"
+      "note": "36bps steep (4.62 - 4.26); bear steepening intact as Fed hike odds fade but fiscal premium persists"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Credit calm with VIX 16.48; risk-on bid following CPI beat keeps spreads compressed"
+      "note": "VIX at 16.5 suggests spreads tight; credit complacent on soft landing narrative post-CPI"
     },
     {
       "name": "VIX",
-      "note": "VIX 16.48 subdued despite Iran ceasefire collapse; CPI relief dominates geopolitical noise"
+      "note": "16.5 subdued despite BOK decision and geopolitical risk; vol sellers in control post-CPI relief"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $84.34 up from post-ceasefire lows; Trump Iran reversal + OPEC+ August hike creates two-way risk"
+      "note": "$85.93 range-bound as OPEC+ quota hike offsets renewed Hormuz risk from Trump ceasefire exit"
     },
     {
       "name": "Gold",
-      "note": "Gold $4070 stabilizing after worst monthly drop since 2008 in June; real rate pressure easing"
+      "note": "$4040 holding highs despite June's worst month since 2008; real rate compression supportive"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW 1489 weak; BOK rate hike this week (Yonhap) needed to defend currency as SK Hynix craters"
+      "note": "1490 sticky; BOK hike expectations not enough to reverse won weakness amid chip sector turmoil"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix -15% Seoul record rout on HBM contract limits; TSMC earnings Thursday will set sector tone"
+      "note": "SK Hynix Seoul -15% on HBM contract caps; contagion risk to SOXQ after 181% YTD rally"
     }
   ],
-  "headline": "Soft June CPI (3.5% vs 3.8% exp) hands Warsh breathing room as Iran ceasefire collapse and SK Hynix meltdown create crosscurrents beneath the surface relief rally.",
-  "generated": "2026-07-14T18:07:27Z",
-  "asOf": "2026-07-14"
+  "headline": "CPI-driven relief rally stalls as markets await BOK Thursday hike and digest SK Hynix HBM collapse, with Warsh's July hike case materially weakened by 3.5% inflation print.",
+  "generated": "2026-07-15T02:12:41Z",
+  "asOf": "2026-07-15"
 }
