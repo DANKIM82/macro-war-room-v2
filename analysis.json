@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "DISINFLATION CONSOLIDATION",
-  "regimeSub": "Markets digest June CPI beat as BOK rate hike looms Thursday; risk-on fading into event risk.",
+  "regimeLabel": "DISINFLATION TIGHTENING",
+  "regimeSub": "BOK delivers 25bp hike to 2.75% overnight; EM tightening cycle resumes despite soft US CPI print.",
   "themes": [
-    "June CPI 3.5% vs 3.8% expected now priced → SPX consolidating at 7543 as July FOMC hike odds collapse, Warsh's hawkish rhetoric neutralized by data",
-    "BOK poised to hike to 2.75% Thursday per Korea Times → USDKRW stuck at 1490 as won weakness persists despite tightening cycle expectations",
-    "SK Hynix ADR/Seoul divergence (-15% Seoul crash vs +13% ADR) signals HBM earnings ceiling → KOSPI at 7251, down 20% from June 22 ATH of 9114",
-    "Brent at $85.93 as OPEC+ August quota expansion meets renewed Middle East risk → oil stabilizing at pre-Iran-war levels despite Trump ceasefire collapse"
+    "BOK Governor Rhee hikes 25bp to 2.75% first time in 3.5 years → USDKRW tightens to 1485 from 1490 as won finds bid, but remains 3% off June highs",
+    "June CPI 3.5% vs 3.8% expected now fully digested → SPX +0.4% to 7572 as July FOMC hike odds remain suppressed despite Warsh's House testimony inflation warnings Monday",
+    "OPEC+ August quota expansion collides with renewed Hormuz hostilities per CNBC → Brent flat at $85.29, ECB reconsidering rate path on 'extremely volatile' energy outlook",
+    "SK Hynix HBM contract ceiling thesis confirmed → KOSPI rebounds 7% to 6753 from Monday crash but still 26% below June 22 ATH of 9114"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.12% (4.62 nominal - 3.5% CPI); compressed from peak as disinflation trade gains traction"
+      "note": "10y real ~1.08% (4.58 nominal - 3.5% CPI); real rates positive but compressing on disinflation"
     },
     {
       "name": "2s10s Curve",
-      "note": "36bps steep (4.62 - 4.26); bear steepening intact as Fed hike odds fade but fiscal premium persists"
+      "note": "2s10s at +40bp (4.58-4.18); curve steepening as front-end anchored, long end reflects fiscal/growth"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 16.5 suggests spreads tight; credit complacent on soft landing narrative post-CPI"
+      "note": "Spreads contained with VIX at 15.67; risk appetite stable despite BOK tightening signal"
     },
     {
       "name": "VIX",
-      "note": "16.5 subdued despite BOK decision and geopolitical risk; vol sellers in control post-CPI relief"
+      "note": "VIX 15.67 complacent; equity vol compressed despite EM rate hike cycle resuming"
     },
     {
       "name": "Brent Crude",
-      "note": "$85.93 range-bound as OPEC+ quota hike offsets renewed Hormuz risk from Trump ceasefire exit"
+      "note": "Brent $85.29 rangebound; OPEC+ supply hike vs Hormuz risk = stalemate at pre-war levels"
     },
     {
       "name": "Gold",
-      "note": "$4040 holding highs despite June's worst month since 2008; real rate compression supportive"
+      "note": "Gold $4037 holding post-June selloff lows; haven bid muted as real rates stay positive"
     },
     {
       "name": "USD / KRW",
-      "note": "1490 sticky; BOK hike expectations not enough to reverse won weakness amid chip sector turmoil"
+      "note": "USDKRW 1485 tightens 5 won post-BOK hike; won still weak vs June levels despite tightening"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix Seoul -15% on HBM contract caps; contagion risk to SOXQ after 181% YTD rally"
+      "note": "KOSPI 6753 rebounds from HBM crash; SK Hynix contract ceiling now priced, watching Samsung"
     }
   ],
-  "headline": "CPI-driven relief rally stalls as markets await BOK Thursday hike and digest SK Hynix HBM collapse, with Warsh's July hike case materially weakened by 3.5% inflation print.",
-  "generated": "2026-07-15T02:12:41Z",
-  "asOf": "2026-07-15"
+  "headline": "BOK's first hike in 3.5 years marks EM tightening resumption as US disinflation (CPI 3.5% vs 3.8% exp) keeps Fed on hold, while Hormuz flare-ups freeze ECB rate path.",
+  "generated": "2026-07-16T02:25:36Z",
+  "asOf": "2026-07-16"
 }
