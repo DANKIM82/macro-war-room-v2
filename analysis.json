@@ -1,47 +1,47 @@
 {
   "regimeLabel": "DISINFLATION TIGHTENING",
-  "regimeSub": "BOK delivers 25bp hike to 2.75% overnight; EM tightening cycle resumes despite soft US CPI print.",
+  "regimeSub": "Soft US retail sales reinforce disinflationary narrative; BOK hike digested as KOSPI extends bounce.",
   "themes": [
-    "BOK Governor Rhee hikes 25bp to 2.75% first time in 3.5 years → USDKRW tightens to 1485 from 1490 as won finds bid, but remains 3% off June highs",
-    "June CPI 3.5% vs 3.8% expected now fully digested → SPX +0.4% to 7572 as July FOMC hike odds remain suppressed despite Warsh's House testimony inflation warnings Monday",
-    "OPEC+ August quota expansion collides with renewed Hormuz hostilities per CNBC → Brent flat at $85.29, ECB reconsidering rate path on 'extremely volatile' energy outlook",
-    "SK Hynix HBM contract ceiling thesis confirmed → KOSPI rebounds 7% to 6753 from Monday crash but still 26% below June 22 ATH of 9114"
+    "June retail sales miss (weaker than expected despite Prime Day/World Cup) → consumer momentum fading supports NY Fed Williams' 'inflation peaked' call, dampens July FOMC hike odds",
+    "BOK 25bp hike to 2.75% now priced → USDKRW grinds lower to 1477 (-0.5% from yesterday's 1485) as won strength persists post-Rhee hawkish pivot",
+    "TSMC raises capex and revenue guidance on AI chip demand → KOSPI +1% to 6820, SK Hynix HBM supply crisis narrative intact through 2027 per Tech Times",
+    "Renewed Hormuz hostilities per CNBC driving ECB rates rethink → Brent holds $85 as OPEC+ August quota hike collides with geopolitical premium, gold bid at $3988"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10y real ~1.08% (4.58 nominal - 3.5% CPI); real rates positive but compressing on disinflation"
+      "note": "10Y real ~1.05% (4.55 nominal - 3.5 CPI); positive real rates persist but soft data keeps Fed on hold through July"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s at +40bp (4.58-4.18); curve steepening as front-end anchored, long end reflects fiscal/growth"
+      "note": "Curve at +42bp (4.55-4.13); steepening reflects growth concerns as retail sales disappoint"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained with VIX at 15.67; risk appetite stable despite BOK tightening signal"
+      "note": "VIX at 16.73 implies complacency; credit spreads contained as soft landing narrative holds"
     },
     {
       "name": "VIX",
-      "note": "VIX 15.67 complacent; equity vol compressed despite EM rate hike cycle resuming"
+      "note": "16.73 down from recent highs; SPX at 7533 (-0.5% from yesterday) as retail miss weighs"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $85.29 rangebound; OPEC+ supply hike vs Hormuz risk = stalemate at pre-war levels"
+      "note": "$85.04 flat; OPEC+ quota hike offset by renewed Hormuz tensions per CNBC/IER reports"
     },
     {
       "name": "Gold",
-      "note": "Gold $4037 holding post-June selloff lows; haven bid muted as real rates stay positive"
+      "note": "$3988 holding near highs; geopolitical bid from Hormuz plus real rate ceiling keeps floor"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1485 tightens 5 won post-BOK hike; won still weak vs June levels despite tightening"
+      "note": "1477 vs 1485 yesterday; won strength on BOK hike + SK growth forecast raised to 3% on AI memory"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6753 rebounds from HBM crash; SK Hynix contract ceiling now priced, watching Samsung"
+      "note": "TSMC capex/revenue raise signals sustained AI demand; SK Hynix supply crisis thesis intact through 2027"
     }
   ],
-  "headline": "BOK's first hike in 3.5 years marks EM tightening resumption as US disinflation (CPI 3.5% vs 3.8% exp) keeps Fed on hold, while Hormuz flare-ups freeze ECB rate path.",
-  "generated": "2026-07-16T02:25:36Z",
-  "asOf": "2026-07-16"
+  "headline": "Soft US retail sales and digested BOK hike reinforce disinflation thesis as renewed Hormuz hostilities keep ECB on edge and TSMC capex raise sustains AI semiconductor bid.",
+  "generated": "2026-07-17T02:28:35Z",
+  "asOf": "2026-07-17"
 }
