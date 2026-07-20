@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "DISINFLATION TIGHTENING",
-  "regimeSub": "Soft US retail sales reinforce disinflationary narrative; BOK hike digested as KOSPI extends bounce.",
+  "regimeLabel": "DISINFLATION CONSOLIDATION",
+  "regimeSub": "June CPI at 3.5% YoY below estimates extends soft inflation print; BOK hike cycle and TSMC capex lift Asia risk.",
   "themes": [
-    "June retail sales miss (weaker than expected despite Prime Day/World Cup) → consumer momentum fading supports NY Fed Williams' 'inflation peaked' call, dampens July FOMC hike odds",
-    "BOK 25bp hike to 2.75% now priced → USDKRW grinds lower to 1477 (-0.5% from yesterday's 1485) as won strength persists post-Rhee hawkish pivot",
-    "TSMC raises capex and revenue guidance on AI chip demand → KOSPI +1% to 6820, SK Hynix HBM supply crisis narrative intact through 2027 per Tech Times",
-    "Renewed Hormuz hostilities per CNBC driving ECB rates rethink → Brent holds $85 as OPEC+ August quota hike collides with geopolitical premium, gold bid at $3988"
+    "June CPI 3.5% YoY below est (energy eased per CNBC) → NY Fed Williams 'inflation peaked' call validated, July FOMC hike odds fade further despite Dallas Fed Logan's hawkish pushback",
+    "BOK hike to 2.75% (first in 3.5 yrs) now fully digested → USDKRW 1481 stable, KOSPI 6578 holds gains as AI chip demand underpins SK Hynix/Samsung valuations",
+    "TSMC raises capex + revenue guidance on AI chip demand (Thu) → Korea growth forecast 3%, HBM supply crisis narrative extends through 2027, semi momentum intact",
+    "Brent $90 (+6% from last week) as renewed Hormuz hostilities (CNBC) and Trump Iran sanctions push offset OPEC+ August quota hike → gold $4025 at highs on geopolitical hedge"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.05% (4.55 nominal - 3.5 CPI); positive real rates persist but soft data keeps Fed on hold through July"
+      "note": "10Y 4.57% minus CPI 3.5% = +107bp real; restrictive but narrowing as disinflation persists"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +42bp (4.55-4.13); steepening reflects growth concerns as retail sales disappoint"
+      "note": "2Y 4.16% / 10Y 4.57% = +41bp; curve steeper on fiscal concerns, BOJ taper endpoint in view"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 16.73 implies complacency; credit spreads contained as soft landing narrative holds"
+      "note": "Spreads stable as retail resilience (Axios: 'spending while grumbling') keeps default fears contained"
     },
     {
       "name": "VIX",
-      "note": "16.73 down from recent highs; SPX at 7533 (-0.5% from yesterday) as retail miss weighs"
+      "note": "18.77 subdued despite Hormuz flare-up; equity vol not pricing tail risk from Iran escalation"
     },
     {
       "name": "Brent Crude",
-      "note": "$85.04 flat; OPEC+ quota hike offset by renewed Hormuz tensions per CNBC/IER reports"
+      "note": "$90.07 bid as renewed Hormuz hostilities (CNBC) collide with OPEC+ Aug quota hike; geopolitical premium sticky"
     },
     {
       "name": "Gold",
-      "note": "$3988 holding near highs; geopolitical bid from Hormuz plus real rate ceiling keeps floor"
+      "note": "$4025.9 ATH as Trump Iran sanctions push (Crypto Briefing) + real rate compression drive safe haven bid"
     },
     {
       "name": "USD / KRW",
-      "note": "1477 vs 1485 yesterday; won strength on BOK hike + SK growth forecast raised to 3% on AI memory"
+      "note": "1481 stable post-BOK hike; won strength capped as Fed/BOK policy divergence narrows on US disinflation"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC capex/revenue raise signals sustained AI demand; SK Hynix supply crisis thesis intact through 2027"
+      "note": "TSMC $100bn US capex + raised guidance validates AI capex cycle; HBM supply crisis thesis intact thru 2027"
     }
   ],
-  "headline": "Soft US retail sales and digested BOK hike reinforce disinflation thesis as renewed Hormuz hostilities keep ECB on edge and TSMC capex raise sustains AI semiconductor bid.",
-  "generated": "2026-07-17T02:28:35Z",
-  "asOf": "2026-07-17"
+  "headline": "June CPI undershoot to 3.5% anchors Fed hold narrative while BOK kicks off hike cycle; Hormuz tensions keep Brent at $90 and gold at record highs despite equity calm.",
+  "generated": "2026-07-20T03:21:06Z",
+  "asOf": "2026-07-20"
 }

@@ -1,33 +1,33 @@
 {
-  "updated": "2026-07-17T02:28:11Z",
-  "date": "2026-07-17",
+  "updated": "2026-07-20T03:20:43Z",
+  "date": "2026-07-20",
   "fx": {
-    "USDJPY": 162.429,
-    "USDKRW": 1477,
-    "USDCNY": 6.7745,
-    "EURUSD": 1.1443,
-    "GBPUSD": 1.3467,
-    "DXY": 100.75,
-    "JPYKRW": 9.1
+    "USDJPY": 162.358,
+    "USDKRW": 1481,
+    "USDCNY": 6.771,
+    "EURUSD": 1.1444,
+    "GBPUSD": 1.346,
+    "DXY": 100.73,
+    "JPYKRW": 9.13
   },
   "equities": {
-    "SPX": 7533,
-    "Nikkei": 64063,
-    "KOSPI": 6820,
-    "CSI300": 4606,
-    "EuroStoxx": 6283,
-    "FTSE": 10572
+    "SPX": 7457,
+    "Nikkei": 64141,
+    "KOSPI": 6578,
+    "CSI300": 4623,
+    "EuroStoxx": 6230,
+    "FTSE": 10600
   },
   "commodities": {
-    "brent": 85.04,
-    "wti": 79.15,
-    "gold": 3987.6,
-    "vix": 16.73
+    "brent": 90.07,
+    "wti": 83.47,
+    "gold": 4025.9,
+    "vix": 18.77
   },
   "us": {
     "policyRate": 3.63,
-    "y2": 4.13,
-    "y10": 4.55,
+    "y2": 4.16,
+    "y10": 4.57,
     "cpiYoY": 3.5,
     "gdpYoY": 2.1
   },
