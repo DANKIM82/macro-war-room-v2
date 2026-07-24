@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "DISINFLATION CONSOLIDATION",
-  "regimeSub": "Brent +$3.75 to $95.9 on Hormuz flare-up; KOSPI -2.2% on Kimi K3 hangover while gold holds ATH $4119.",
+  "regimeLabel": "ENERGY SQUEEZE CONTINUATION",
+  "regimeSub": "Brent breaches $100 on Hormuz fighting resumption; VIX creeps to 18.7 as gold slips from ATH.",
   "themes": [
-    "Brent crude +4% to $95.9 as renewed Hormuz hostilities (Jul 15 CNBC) collide with Trump Iran sanctions push (Jul 19) → energy squeeze persists despite OPEC+ Aug quota hike; WTI $88.19 confirms geopolitical premium intact",
-    "KOSPI -2.2% to 6964 as Samsung/SK Hynix Kimi K3 selloff (Jul 20) extends → USDKRW strengthens to 1467 from 1479 post-BOK 2.75% hike (Jul 16); Alphabet AI capex boost (Jul 23) fails to lift Korea memory names",
-    "10y yield +3bp to 4.63% with 2s10s at 37bp as NY Fed Williams 'inflation peaked' (Jul 15) anchors Fed on hold → CPI 3.5% YoY confirms disinflationary trend from May 4.2% peak while Warsh stays data-dependent through summer",
-    "Gold -$6 to $4119 holding near ATH as VIX compresses to 16.64 from 17.05 → haven demand persists on Iran sanction escalation risk without equity vol spike; classic tail-risk positioning not imminent stress signal"
+    "Brent crude +$4.27 to $100.17 as OPEC+ Aug quota hike (Jul 6) collides with resumed Middle East fighting (Jul 13 IER) → geopolitical premium now dominant over supply expansion; WTI $91.64 confirms $90+ floor",
+    "KOSPI -2.1% to 6816 extending Kimi K3 selloff (Jul 20) despite Alphabet AI capex boost (Jul 23) and TSMC $100bn US investment (Jul 16) → BOK 2.75% hike (Jul 16) fails to support KRW as USDKRW firms to 1464",
+    "10y yield +4bp to 4.67% with 2s10s at 36bp as Williams 'inflation peaked' (Jul 15) clashes with crude surge → CPI 3.5% YoY holding while energy pressures rebuild; Warsh FOMC split (Jul 8 mins) keeps hike optionality alive",
+    "Gold -$72 to $4047 off ATH as VIX rises to 18.7 from 16.64 → risk repricing underway with Trump Iran sanctions push (Jul 19) keeping tail risk bid but profit-taking on haven metals into crude spike"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10y real ~1.13% (4.63% nom - 3.5% CPI); restrictive but stable as Williams sees inflation peaked"
+      "note": "10y real ~1.17% (4.67 nom - 3.5 CPI); positive real rate constrains but energy shock complicates Fed math"
     },
     {
       "name": "2s10s Curve",
-      "note": "37bp steepening (4.63% - 4.26%) signals growth concern; bear steepener on energy-driven inflation"
+      "note": "36bp steepness (4.31/4.67) reflects term premium rebuild on inflation persistence; not inverted = no imminent recession"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite oil surge; retail spending resilience (Jul 21 NYT) supports credit"
+      "note": "Spreads stable as energy sector benefits from crude surge; watch for cracks if Brent sustains above $100"
     },
     {
       "name": "VIX",
-      "note": "16.64 down from 17.05; equity vol compression despite $96 Brent = complacency or hedged positioning"
+      "note": "18.7 up from 16.64; vol normalizing as energy squeeze and geopolitics warrant modest hedging increase"
     },
     {
       "name": "Brent Crude",
-      "note": "$95.9 +4% on Hormuz + Trump Iran sanctions (Jul 19); OPEC+ Aug quota ineffective vs geopolitical bid"
+      "note": "$100.17 breaches triple digits on Hormuz resumption (Jul 13); OPEC+ quota hike irrelevant vs geopolitics"
     },
     {
       "name": "Gold",
-      "note": "$4119 near ATH; -$6 but holding as Iran sanction risk (Trump Jul 19) sustains haven demand"
+      "note": "$4047 down $72 from ATH; profit-taking as crude absorbs geopolitical bid; still elevated on Iran risk"
     },
     {
       "name": "USD / KRW",
-      "note": "1467 from 1479 = KRW strength post-BOK hike to 2.75% (Jul 16); HBM selloff not driving FX"
+      "note": "1464 firming despite BOK 2.75% hike (Jul 16); AI chip demand concerns outweigh rate support"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC $100bn US capex (Jul 16) + Alphabet AI spend (Jul 23) supports; Korea memory lagging on Kimi K3"
+      "note": "TSMC capex boost (Jul 16) and Alphabet spend (Jul 23) positive but Kimi K3 shock (Jul 20) clouds Korea names"
     }
   ],
-  "headline": "Brent surges to $96 on Hormuz/Iran sanctions escalation while KOSPI sheds 2% on memory selloff; Fed holds as CPI confirms 3.5% disinflation path with gold at $4119 signaling persistent tail-risk hedging.",
-  "generated": "2026-07-23T02:33:02Z",
-  "asOf": "2026-07-23"
+  "headline": "Brent crude breaches $100 on resumed Hormuz hostilities, lifting VIX to 18.7 while KOSPI extends AI selloff and gold retreats from ATH amid Fed data-dependency under Warsh.",
+  "generated": "2026-07-24T02:29:40Z",
+  "asOf": "2026-07-24"
 }
