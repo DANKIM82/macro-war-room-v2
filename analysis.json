@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "OIL UNWIND RELIEF",
-  "regimeSub": "Brent crashes to $87 from $100+ as Hormuz reopening normalizes shipping; risk assets stabilize.",
+  "regimeLabel": "OIL UNWIND CONSOLIDATION",
+  "regimeSub": "Brent stabilizes at $87.66 as Hormuz relief digested; BOJ preview dominates FX ahead of Thurs decision.",
   "themes": [
-    "Brent crude -$12.80 to $87.37 as Hormuz reopening (Jun 15-16) finally filters through shipping routes → OPEC+ Aug quota expansion (Jul 6) now dominating over fading geopolitical premium; WTI $81.54 confirms $80 floor broken",
-    "KOSPI -10% to 6133 from 6816 as Kimi K3 shock (Jul 20) triggers Samsung/SK Hynix selloff despite TSMC $100bn US capex (Jul 16) → BOK 2.75% hike (Jul 16) ineffective as USDKRW firms to 1466; HBM supply concerns persist",
-    "10y yield +2bp to 4.69% with 2s10s at 36bp as Williams 'inflation peaked' call (Jul 15) meets oil relief → CPI 3.5% YoY but energy component easing; Warsh hawkish Sintra stance (Jul 4) keeps Sep hike live",
-    "Gold flat at $4047 with VIX stable at 18.67 as crude collapse removes energy inflation tail → risk repricing paused; tech sector rotation (Jul 24) drives defensive positioning away from AI momentum"
+    "Brent +$0.29 to $87.66 as OPEC+ Aug quota expansion (Jul 6) caps upside but Hormuz risk premium fully unwound → WTI $82.60 stable; oil settling at pre-Iran war levels per Reuters confirms regime shift",
+    "KOSPI -7.9% WoW to 5684 as Kimi K3 shock aftershocks persist despite SK Hynix HBM strength → USDKRW easing to 1452 from 1466 as BOK 2.75% hike (Jul 16) finally anchoring; Samsung/Hynix rotation continues",
+    "BOJ preview (ING Jul 28) signals 'slow path to higher rates' as USDJPY pins at 163.69 → fiscal concerns drive JGB curve twist-steepening; June hike already delivered leaves Thurs meeting likely hold",
+    "10y yield -4bp to 4.65% with 2s10s compressing to 34bp as Williams 'inflation peaked' (Jul 15) narrative gains traction → CPI 3.5% but core PCE 3.4% May print shows energy-driven spike fading"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate ~0.8% (4.33% 2y vs 3.5% CPI); restrictive but oil relief eases inflation path"
+      "note": "Real rate 1.15% (10y 4.65% less CPI 3.5%); restrictive but Williams 'peaked' call easing terminal repricing"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +36bp remains steepened on fiscal concerns; Williams 'peaked' call not moving front-end"
+      "note": "Curve at 34bp, -2bp from yesterday; steepening trend pausing as oil relief removes inflation tail"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as oil unwind removes corporate energy cost pressure; consumer resilient per Jul retail"
+      "note": "HY spreads stable as VIX 18.21 and oil normalization remove near-term stress catalysts"
     },
     {
       "name": "VIX",
-      "note": "VIX 18.67 holding Jul 24 level despite KOSPI crash; crude relief offsetting tech rotation stress"
+      "note": "VIX -46bp to 18.21 as crude collapse and Hormuz reopening remove geopolitical vol premium"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $87.37 down 13% from $100+ as Hormuz shipping normalizes; OPEC+ expansion now dominant driver"
+      "note": "Brent $87.66 consolidating post-Hormuz; OPEC+ Aug expansion capping upside, $85 support in focus"
     },
     {
       "name": "Gold",
-      "note": "Gold $4047 unchanged as crude collapse removes energy inflation bid; haven demand fading with VIX flat"
+      "note": "Gold -$18.60 to $4028 as energy inflation hedge unwinds; safe haven bid fading with oil relief"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1466 firm despite BOK 2.75% hike (Jul 16); Kimi K3 semiconductor shock overriding rate support"
+      "note": "USDKRW 1452 firming from 1466 as BOK 2.75% (Jul 16) anchors; Kimi K3 shock fading from KOSPI"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SOX under pressure on Kimi K3 efficiency shock (Jul 20); TSMC capex ($100bn) fails to arrest rotation"
+      "note": "TSMC $100bn US capex (Jul 16) supports sector but tech rotation (Jul 24) and HBM supply concerns persist"
     }
   ],
-  "headline": "Brent crude collapses 13% to $87 as Hormuz reopening normalizes oil flows, but KOSPI crashes 10% on Kimi K3 semiconductor shock while Fed Chair Warsh maintains hawkish optionality ahead of FOMC.",
-  "generated": "2026-07-28T02:22:46Z",
-  "asOf": "2026-07-28"
+  "headline": "Oil stabilizes at $87 as Hormuz premium fully exits; BOJ Thursday looms with USDJPY pinned at 163.69 while KOSPI digests Kimi K3 shock amid BOK rate anchor.",
+  "generated": "2026-07-29T02:26:53Z",
+  "asOf": "2026-07-29"
 }
