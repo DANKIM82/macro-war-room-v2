@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "OIL UNWIND CONSOLIDATION",
-  "regimeSub": "Brent stabilizes at $87.66 as Hormuz relief digested; BOJ preview dominates FX ahead of Thurs decision.",
+  "regimeLabel": "FED SPLIT HAWKISH HOLD",
+  "regimeSub": "Warsh holds rates but 3 FOMC members voted hike; BOK eyes Aug hike as Mideast uncertainty persists.",
   "themes": [
-    "Brent +$0.29 to $87.66 as OPEC+ Aug quota expansion (Jul 6) caps upside but Hormuz risk premium fully unwound → WTI $82.60 stable; oil settling at pre-Iran war levels per Reuters confirms regime shift",
-    "KOSPI -7.9% WoW to 5684 as Kimi K3 shock aftershocks persist despite SK Hynix HBM strength → USDKRW easing to 1452 from 1466 as BOK 2.75% hike (Jul 16) finally anchoring; Samsung/Hynix rotation continues",
-    "BOJ preview (ING Jul 28) signals 'slow path to higher rates' as USDJPY pins at 163.69 → fiscal concerns drive JGB curve twist-steepening; June hike already delivered leaves Thurs meeting likely hold",
-    "10y yield -4bp to 4.65% with 2s10s compressing to 34bp as Williams 'inflation peaked' (Jul 15) narrative gains traction → CPI 3.5% but core PCE 3.4% May print shows energy-driven spike fading"
+    "Fed Chair Warsh holds rates unchanged (Jul 29) but 3 dissents voted hike → hints 'Big Picture' Jackson Hole speech, says 'not constrained by market prices' signaling hawkish tilt despite hold",
+    "BOK Governor Rhee signals Aug hike likely (Korea Times Jul 30) after Jul 16 hike to 2.75% → Fed hold 'intensifies uncertainty' per BOK; USDKRW easing to 1446 as rate differential narrows",
+    "Brent +$2.13 to $89.79 as Mideast tensions resurface despite Hormuz reopening (Jun 15) → oil settling at pre-war levels per Reuters (Jul 6) but geopolitical risk premium rebuilding",
+    "Consumer confidence falls (Jul 29) despite retail 'defying gravity' per NRF → VIX elevated at 20.66 as FOMC dissent + slowing payrolls (Jun NFP +57k vs forecast) raise stagflation concerns"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate 1.15% (10y 4.65% less CPI 3.5%); restrictive but Williams 'peaked' call easing terminal repricing"
+      "note": "Policy rate 3.63% vs CPI 3.5% = +13bp real; 3 FOMC dissents keep hike risk alive for Sep"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at 34bp, -2bp from yesterday; steepening trend pausing as oil relief removes inflation tail"
+      "note": "2s 4.26% / 10s 4.61% = 35bp spread; steepening slightly as long end reprices Warsh hawkish tilt"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads stable as VIX 18.21 and oil normalization remove near-term stress catalysts"
+      "note": "Spreads stable but FOMC 3-way split adds uncertainty; watch Aug corporate issuance window"
     },
     {
       "name": "VIX",
-      "note": "VIX -46bp to 18.21 as crude collapse and Hormuz reopening remove geopolitical vol premium"
+      "note": "VIX 20.66 elevated post-FOMC as Warsh dissent math + Mideast uncertainty cap risk appetite"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $87.66 consolidating post-Hormuz; OPEC+ Aug expansion capping upside, $85 support in focus"
+      "note": "Brent $89.79 +2.4% as Iran tensions rebuild premium despite OPEC+ Aug quota expansion"
     },
     {
       "name": "Gold",
-      "note": "Gold -$18.60 to $4028 as energy inflation hedge unwinds; safe haven bid fading with oil relief"
+      "note": "Gold $4143 near highs as real rate compression + geopolitical hedging sustain bid"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1452 firming from 1466 as BOK 2.75% (Jul 16) anchors; Kimi K3 shock fading from KOSPI"
+      "note": "USDKRW 1446 -0.4% as BOK Aug hike signal narrows carry vs Fed hold; KOSPI +5% to 5966"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC $100bn US capex (Jul 16) supports sector but tech rotation (Jul 24) and HBM supply concerns persist"
+      "note": "TSMC $100bn US capex (Jul 16) supports sector; MSFT earnings (Jul 29) key for AI capex validation"
     }
   ],
-  "headline": "Oil stabilizes at $87 as Hormuz premium fully exits; BOJ Thursday looms with USDJPY pinned at 163.69 while KOSPI digests Kimi K3 shock amid BOK rate anchor.",
-  "generated": "2026-07-29T02:26:53Z",
-  "asOf": "2026-07-29"
+  "headline": "Fed Chair Warsh holds rates but 3 FOMC dissents voted hike, BOK signals August move, and Brent rebuilds geopolitical premium as markets digest hawkish-hold regime.",
+  "generated": "2026-07-30T02:09:15Z",
+  "asOf": "2026-07-30"
 }
