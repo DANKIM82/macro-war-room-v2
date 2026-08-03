@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION WATCH INTENSIFIES",
-  "regimeSub": "Q2 GDP slows to 1.5% as Fed holds with 3 hawkish dissents; stagflation narrative gaining traction.",
+  "regimeLabel": "STAGFLATION DRIFT CONTINUES",
+  "regimeSub": "GDP stuck at 1.5% with CPI at 3.5%; Fed on hold pre-Jackson Hole as markets await Warsh direction.",
   "themes": [
-    "Q2 GDP prints 1.5% YoY (Jul 30) vs prior ~2% → imports drag but domestic demand 'robust' per Reuters; growth slowdown crystallizes stagflation risk with CPI still at 3.5%",
-    "Fed Chair Warsh holds rates (Jul 29) with 3 dissents voting hike → signals 'Big Picture' Jackson Hole speech, 'not constrained by market prices' per Chosun (Jul 30); hawkish bias intact despite growth miss",
-    "BOK hike path intact as Korea Times (Jul 30) flags 'Fed freeze intensifies uncertainty' → rate diff narrowing supports KRW to 1432; Rhee likely to hike Aug as domestic inflation remains sticky",
-    "VIX collapses to 17.09 from 20.66 as Q2 GDP shows consumer resilience despite headline miss → Brent eases to $87.98 (-$1.81) as Hormuz normalization continues, gold bid at $4140 on stagflation hedge"
+    "Q2 GDP confirmed at 1.5% YoY vs prior ~2% with CPI sticky at 3.5% → stagflation math crystallizes; real growth-inflation gap widest since 2022",
+    "Fed Chair Warsh's Jackson Hole 'Big Picture' speech looms as the catalyst → 3 hawkish dissents on Jul 29 hold signal bias to hike; no Fed speakers this week leaves market adrift",
+    "Brent grinds higher to $90.12 (+$2.14 from $87.98) → Hormuz normalization fading from narrative as supply concerns resurface; cost-push inflation risk re-enters",
+    "Gold holds bid at $4111 despite VIX collapse to 15.99 → stagflation hedge demand persists as real rates compress with growth slowdown; DXY soft at 99.72 supports metals"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate at +72bp (policy 3.63% vs CPI 3.5%); positive but narrow → Fed constrained by growth slowdown"
+      "note": "10Y at 4.68% minus 3.5% CPI = 1.18% real; compressed vs Jun on growth fears, still restrictive."
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +45bp (4.67% 10Y vs 4.22% 2Y); steepener intact as long-end reprices stagflation risk"
+      "note": "2s at 4.23%, 10s at 4.68% → +45bp steepening; bear steepener as long-end prices stagflation risk."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads likely stable as Q2 GDP shows consumer still spending; VIX compression supportive"
+      "note": "VIX at 15.99 suggests HY spreads tight; complacency vs stagflation backdrop is a setup for repricing."
     },
     {
       "name": "VIX",
-      "note": "VIX drops to 17.09 from 20.66 → post-FOMC vol crush as 3 dissents but no hike = relief rally"
+      "note": "15.99 down from 17.09; vol crushed despite macro deterioration → pre-Jackson Hole calm before storm."
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $87.98 (-$1.81) → Hormuz premium continues to fade; risk premium bleeding out slowly"
+      "note": "$90.12 up $2.14 WoW; supply concerns resurface post-Hormuz normalization, cost-push inflation risk rebuilding."
     },
     {
       "name": "Gold",
-      "note": "Gold $4140.6 bid as stagflation hedge; 1.5% GDP + 3.5% CPI = real asset demand persistent"
+      "note": "$4111 holding near highs; stagflation hedge bid intact as real rates compress on growth slowdown."
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1432 (-14) as BOK hike expectations firm; rate differential narrowing supports KRW"
+      "note": "1426 vs 1432 prior; KRW firming as BOK hike Aug expectations firm, rate diff narrowing supportive."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC capex boost ($100B US) + HBM demand intact; Samsung/SK Hynix dip on Kimi K3 but AI cycle strong"
+      "note": "Risk-on persists with SPX at 7489; SOX likely bid but vulnerable to stagflation repricing in tech multiples."
     }
   ],
-  "headline": "Q2 GDP slows to 1.5% confirming stagflation setup as Warsh's divided Fed holds with 3 hike dissents, teeing up hawkish Jackson Hole pivot while BOK prepares August hike.",
-  "generated": "2026-07-31T02:37:02Z",
-  "asOf": "2026-07-31"
+  "headline": "Stagflation regime solidifies as GDP remains at 1.5% against 3.5% CPI, with Brent grinding back above $90 and markets drifting in pre-Jackson Hole vacuum awaiting Warsh's policy signal.",
+  "generated": "2026-08-03T02:37:57Z",
+  "asOf": "2026-08-03"
 }
