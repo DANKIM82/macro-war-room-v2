@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION DRIFT CONTINUES",
-  "regimeSub": "GDP stuck at 1.5% with CPI at 3.5%; Fed on hold pre-Jackson Hole as markets await Warsh direction.",
+  "regimeSub": "BOK hike odds rise on core CPI surprise; OPEC+ September output hike caps oil, extends growth-inflation squeeze.",
   "themes": [
-    "Q2 GDP confirmed at 1.5% YoY vs prior ~2% with CPI sticky at 3.5% → stagflation math crystallizes; real growth-inflation gap widest since 2022",
-    "Fed Chair Warsh's Jackson Hole 'Big Picture' speech looms as the catalyst → 3 hawkish dissents on Jul 29 hold signal bias to hike; no Fed speakers this week leaves market adrift",
-    "Brent grinds higher to $90.12 (+$2.14 from $87.98) → Hormuz normalization fading from narrative as supply concerns resurface; cost-push inflation risk re-enters",
-    "Gold holds bid at $4111 despite VIX collapse to 15.99 → stagflation hedge demand persists as real rates compress with growth slowdown; DXY soft at 99.72 supports metals"
+    "Korea core CPI hits 2Y7M high per today's data → BOK back-to-back hike now base case; KRW holds 1422 as rate differential narrows vs. Fed hold",
+    "OPEC+ confirms September production increase (Aug 2) → Brent drops to $84.54 from $90.12 as supply normalization resumes; cost-push pressure fades at margin",
+    "Warsh 'facts over forecasts' framework (Jul 30) leaves Fed rudderless into Jackson Hole → 3 hawkish dissents at Jul 29 meeting signal bias to hike but no imminent action with CPI at 3.5%",
+    "Gold holds $4112 despite Brent pullback and VIX at 15.86 → stagflation hedge bid persists as Q2 GDP stuck at 1.5% with real rates compressing; DXY pinned at 99.99"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y at 4.68% minus 3.5% CPI = 1.18% real; compressed vs Jun on growth fears, still restrictive."
+      "note": "10Y nominal 4.75% minus 3.5% CPI = 1.25% real; compression continues as growth slows to 1.5%"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s at 4.23%, 10s at 4.68% → +45bp steepening; bear steepener as long-end prices stagflation risk."
+      "note": "47bp steepening (2Y 4.28%, 10Y 4.75%); term premium rebuilding on stagflation fears"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 15.99 suggests HY spreads tight; complacency vs stagflation backdrop is a setup for repricing."
+      "note": "Spreads stable with VIX sub-16; carry trades intact but GDP miss capping compression"
     },
     {
       "name": "VIX",
-      "note": "15.99 down from 17.09; vol crushed despite macro deterioration → pre-Jackson Hole calm before storm."
+      "note": "15.86 reflects complacency pre-Jackson Hole; Warsh speech risk not priced"
     },
     {
       "name": "Brent Crude",
-      "note": "$90.12 up $2.14 WoW; supply concerns resurface post-Hormuz normalization, cost-push inflation risk rebuilding."
+      "note": "$84.54 down sharply from $90.12 on OPEC+ Sept hike; Hormuz normalization intact"
     },
     {
       "name": "Gold",
-      "note": "$4111 holding near highs; stagflation hedge bid intact as real rates compress on growth slowdown."
+      "note": "$4112 bid despite oil drop; stagflation hedge demand firm as real growth-inflation gap persists"
     },
     {
       "name": "USD / KRW",
-      "note": "1426 vs 1432 prior; KRW firming as BOK hike Aug expectations firm, rate diff narrowing supportive."
+      "note": "1422 steady; BOK hike odds rising on core CPI beat offset USD weakness from soft growth"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Risk-on persists with SPX at 7489; SOX likely bid but vulnerable to stagflation repricing in tech multiples."
+      "note": "Korea govt NT$450B AI support (Jul 31) underpins HBM names; TSMC capex raise sustains sector bid"
     }
   ],
-  "headline": "Stagflation regime solidifies as GDP remains at 1.5% against 3.5% CPI, with Brent grinding back above $90 and markets drifting in pre-Jackson Hole vacuum awaiting Warsh's policy signal.",
-  "generated": "2026-08-03T02:37:57Z",
-  "asOf": "2026-08-03"
+  "headline": "Stagflation math unchanged as OPEC+ supply relief caps oil while Korea core CPI surprise lifts BOK hike odds; Warsh Fed adrift pre-Jackson Hole with 3 dissents signaling latent hawkish bias.",
+  "generated": "2026-08-04T02:19:10Z",
+  "asOf": "2026-08-04"
 }
