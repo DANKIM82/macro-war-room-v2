@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION DRIFT CONTINUES",
-  "regimeSub": "BOK hike odds rise on core CPI surprise; OPEC+ September output hike caps oil, extends growth-inflation squeeze.",
+  "regimeLabel": "STAGFLATION DRIFT PERSISTS",
+  "regimeSub": "Chip rally lifts risk appetite but 3.5% CPI vs 1.5% GDP growth-inflation trap unchanged; Fed still paralyzed.",
   "themes": [
-    "Korea core CPI hits 2Y7M high per today's data → BOK back-to-back hike now base case; KRW holds 1422 as rate differential narrows vs. Fed hold",
-    "OPEC+ confirms September production increase (Aug 2) → Brent drops to $84.54 from $90.12 as supply normalization resumes; cost-push pressure fades at margin",
-    "Warsh 'facts over forecasts' framework (Jul 30) leaves Fed rudderless into Jackson Hole → 3 hawkish dissents at Jul 29 meeting signal bias to hike but no imminent action with CPI at 3.5%",
-    "Gold holds $4112 despite Brent pullback and VIX at 15.86 → stagflation hedge bid persists as Q2 GDP stuck at 1.5% with real rates compressing; DXY pinned at 99.99"
+    "Intel +10%, AMD +8%, Broadcom +6% (Aug 4) as TSMC capex/revenue beat sustains AI spend narrative → SOX squeeze extends but real economy decoupling widens",
+    "BOK faces impossible trade: core CPI at 2Y7M high per Aug 4 data forces hawkish bias while Fed hold at 3.63% keeps KRW pinned at 1422 on rate differential",
+    "OPEC+ confirms September production hike (Aug 2) → Brent -5.6% to $79.38 from peak levels; supply normalization underway but Hormuz residual risk caps downside",
+    "Warsh 3-dissent FOMC (Jul 29) with 'facts over forecasts' pivot leaves policy rudderless → 10Y at 4.7% reflects term premium rebuild as Fed credibility questioned with CPI sticky at 3.5%"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y nominal 4.75% minus 3.5% CPI = 1.25% real; compression continues as growth slows to 1.5%"
+      "note": "10Y nominal 4.7% minus 3.5% CPI = 1.2% real; compressed vs history given growth at 1.5%"
     },
     {
       "name": "2s10s Curve",
-      "note": "47bp steepening (2Y 4.28%, 10Y 4.75%); term premium rebuilding on stagflation fears"
+      "note": "45bp steepening (2Y 4.25%, 10Y 4.7%) reflects term premium rebuild as Fed credibility erodes"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable with VIX sub-16; carry trades intact but GDP miss capping compression"
+      "note": "Spreads contained as chip rally supports risk sentiment despite macro deterioration"
     },
     {
       "name": "VIX",
-      "note": "15.86 reflects complacency pre-Jackson Hole; Warsh speech risk not priced"
+      "note": "16.5 up modestly from 15.86; complacency persists amid stagflationary backdrop"
     },
     {
       "name": "Brent Crude",
-      "note": "$84.54 down sharply from $90.12 on OPEC+ Sept hike; Hormuz normalization intact"
+      "note": "$79.38 down from $84.54 as OPEC+ Sept hike confirmed; Hormuz reopening fading from premia"
     },
     {
       "name": "Gold",
-      "note": "$4112 bid despite oil drop; stagflation hedge demand firm as real growth-inflation gap persists"
+      "note": "$4154 up from $4112; stagflation hedge bid intensifies as real rates compress vs nominal"
     },
     {
       "name": "USD / KRW",
-      "note": "1422 steady; BOK hike odds rising on core CPI beat offset USD weakness from soft growth"
+      "note": "1422 stable as BOK hawkish split offsets Fed hold; core CPI surprise limits KRW downside"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Korea govt NT$450B AI support (Jul 31) underpins HBM names; TSMC capex raise sustains sector bid"
+      "note": "Intel/AMD/Broadcom surge on TSMC capex raise; AI momentum decoupled from macro drag"
     }
   ],
-  "headline": "Stagflation math unchanged as OPEC+ supply relief caps oil while Korea core CPI surprise lifts BOK hike odds; Warsh Fed adrift pre-Jackson Hole with 3 dissents signaling latent hawkish bias.",
-  "generated": "2026-08-04T02:19:10Z",
-  "asOf": "2026-08-04"
+  "headline": "Semiconductor rally masks stagflation trap as Fed paralysis continues with CPI at 3.5%, GDP at 1.5%, and Warsh's 'facts over forecasts' doctrine offering no forward guidance into Jackson Hole.",
+  "generated": "2026-08-05T02:14:55Z",
+  "asOf": "2026-08-05"
 }
