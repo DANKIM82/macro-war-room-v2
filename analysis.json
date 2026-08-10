@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION DRIFT PERSISTS",
-  "regimeSub": "NFP preview dominates as Fed paralysis meets 1.5% GDP / 3.5% CPI trap with July jobs data due Friday.",
+  "regimeLabel": "STAGFLATION PARALYSIS DEEPENS",
+  "regimeSub": "July NFP shock (-23K jobs) validates labor cracking while 3.5% CPI traps Warsh in policy stasis ahead of Wednesday CPI.",
   "themes": [
-    "July NFP preview (CNBC Aug 6) signals soft payroll expectations → markets pricing labor cooling as stagflation validation; Warsh boxed by 3-dissent July hold",
-    "Q2 GDP 1.5% print (Jul 30) vs 3.5% CPI confirms real rate at +13bps insufficient → 10Y at 4.63% reflects term premium demand as growth slows into inflation",
-    "OPEC+ September production hike (Aug 2) normalizes post-Hormuz supply → Brent steady at $83.50 but $80+ floor signals residual geopolitical premium embedded",
-    "Korea chip exports top $40B for second month (Aug 1) as KOSPI hits 6234 → BOK caught between AI boom inflation and Fed differential; August hike odds elevated"
+    "July NFP printed -23K vs positive consensus (Aug 7) → first job losses since pandemic validate stagflation thesis; Warsh's 3-dissent hold now looks prescient as hike odds collapse",
+    "Q2 GDP 1.5% / CPI 3.5% combo persists with real rate at +13bps (policy rate 3.63% vs CPI 3.5%) → 10Y at 4.69% reprices term premium as growth deteriorates into sticky inflation",
+    "KOSPI at 6294 with chip exports >$40B (Aug 1) but USDKRW at 1414 signals BOK trapped → Korea JoongAng reports core CPI at 2-year highs complicating Rhee's August decision",
+    "OPEC+ September production hike confirmed (Aug 2) normalizes post-Hormuz flows → Brent at $84.51 holds geopolitical floor despite supply increase; energy pass-through risk to August CPI"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate +13bps (3.63% policy vs 3.5% CPI) offers no cushion; Fed stuck in stagflation no-man's-land"
+      "note": "Real rate +13bps (3.63% policy vs 3.5% CPI) offers zero restrictive bite; Warsh paralyzed by NFP shock"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +45bps (4.63% 10Y vs 4.18% 2Y) steepening on term premium rebuild, not growth optimism"
+      "note": "Curve at -44bps (4.25% 2Y vs 4.69% 10Y) steepening as long-end reprices stagflation duration risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads complacent vs GDP slowdown; credit ignoring 1.5% growth print as AI earnings mask stress"
+      "note": "HY spreads steady as -23K NFP not yet triggering default cycle fears; watch for lag"
     },
     {
       "name": "VIX",
-      "note": "VIX at 15.15 underpricing NFP risk Friday; vol selling into stagflation is crowded trade"
+      "note": "VIX at 14.9 complacent given NFP shock and Wed CPI binary; vol mispriced ahead of data"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $83.50 stable post-OPEC+ hike decision; $80 floor persists on residual Iran premium"
+      "note": "Brent $84.51 holds above $80 floor despite OPEC+ Sept hike; residual Hormuz premium embedded"
     },
     {
       "name": "Gold",
-      "note": "Gold at $4316 off highs but bid sustained; real asset demand reflects fiat credibility erosion"
+      "note": "Gold $4382 at ATH as stagflation haven bid intensifies; real rate collapse supports"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW at 1419 pinned by Fed differential despite BOK July hike; chip exports insufficient to break range"
+      "note": "USDKRW 1414 stable as BOK caught between AI chip boom inflation and Fed rate differential"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SOX rallying on TSMC capex raise and Intel/AMD surge (Aug 4); AI demand masking macro deterioration"
+      "note": "TSMC raised capex/revenue (Jul 16) but Meta earnings miss (Aug 9) triggers Ark rotation into semis"
     }
   ],
-  "headline": "Markets hold breath ahead of Friday NFP as stagflation configuration (1.5% GDP, 3.5% CPI) traps Warsh's paralyzed Fed while chip euphoria and OPEC+ normalization mask underlying growth fragility.",
-  "generated": "2026-08-07T02:33:23Z",
-  "asOf": "2026-08-07"
+  "headline": "July NFP shock at -23K jobs confirms labor market cracking into 3.5% CPI inflation, leaving Fed Chair Warsh frozen ahead of Wednesday's CPI print that will determine whether stagflation forces capitulation or pivot.",
+  "generated": "2026-08-10T01:29:45Z",
+  "asOf": "2026-08-10"
 }

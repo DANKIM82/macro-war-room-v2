@@ -1,33 +1,33 @@
 {
-  "updated": "2026-08-07T02:33:01Z",
-  "date": "2026-08-07",
+  "updated": "2026-08-10T01:29:21Z",
+  "date": "2026-08-10",
   "fx": {
-    "USDJPY": 158.33,
-    "USDKRW": 1419,
-    "USDCNY": 6.7462,
-    "EURUSD": 1.1525,
-    "GBPUSD": 1.3453,
-    "DXY": 99.95,
-    "JPYKRW": 8.96
+    "USDJPY": 158.102,
+    "USDKRW": 1414,
+    "USDCNY": 6.7364,
+    "EURUSD": 1.1559,
+    "GBPUSD": 1.3489,
+    "DXY": 99.66,
+    "JPYKRW": 8.95
   },
   "equities": {
-    "SPX": 7709,
-    "Nikkei": 65146,
-    "KOSPI": 6234,
-    "CSI300": 4683,
-    "EuroStoxx": 6502,
-    "FTSE": 10867
+    "SPX": 7757,
+    "Nikkei": 66724,
+    "KOSPI": 6294,
+    "CSI300": 4694,
+    "EuroStoxx": 6523,
+    "FTSE": 10901
   },
   "commodities": {
-    "brent": 83.5,
-    "wti": 78.12,
-    "gold": 4316.3,
-    "vix": 15.15
+    "brent": 84.51,
+    "wti": 78.89,
+    "gold": 4382.4,
+    "vix": 14.9
   },
   "us": {
     "policyRate": 3.63,
-    "y2": 4.18,
-    "y10": 4.63,
+    "y2": 4.25,
+    "y10": 4.69,
     "cpiYoY": 3.5,
     "gdpYoY": 1.5
   },
@@ -35,19 +35,19 @@
     "policyRate": 2.75,
     "policyRate_m1": 2.5,
     "policyRate_y1": 2.5,
-    "y2": 3.587,
-    "y2_d1": 3.545,
-    "y2_w1": 3.713,
+    "y2": 3.573,
+    "y2_d1": 3.587,
+    "y2_w1": 3.65,
     "y2_m1": 3.68,
     "y2_y1": 2.426,
-    "y10": 4.195,
-    "y10_d1": 4.15,
-    "y10_w1": 4.311,
+    "y10": 4.208,
+    "y10_d1": 4.195,
+    "y10_w1": 4.261,
     "y10_m1": 4.181,
     "y10_y1": 2.84,
-    "slope": 61,
+    "slope": 64,
     "slope_d1": 61,
-    "slope_w1": 60,
+    "slope_w1": 61,
     "slope_m1": 50,
     "slope_y1": 41,
     "cpiYoY": 119.77,
@@ -58,14 +58,6 @@
     "gdpYoY_y1": null
   },
   "nfp": [
-    {
-      "date": "2022-07-01",
-      "mo": "Jul'22",
-      "actual": 714000,
-      "estimate": null,
-      "spx": null,
-      "note": null
-    },
     {
       "date": "2022-08-01",
       "mo": "Aug'22",
@@ -429,7 +421,7 @@
     {
       "date": "2026-05-01",
       "mo": "May'26",
-      "actual": 129000,
+      "actual": 63000,
       "estimate": 88,
       "spx": -2.6,
       "note": "+172K vs 88K \u2192 rate hike repricing"
@@ -437,10 +429,18 @@
     {
       "date": "2026-06-01",
       "mo": "Jun'26",
-      "actual": 57000,
+      "actual": 20000,
       "estimate": 120,
       "spx": null,
       "note": "Jul 3 release \u2014 SPX pending close"
+    },
+    {
+      "date": "2026-07-01",
+      "mo": "Jul'26",
+      "actual": -23000,
+      "estimate": null,
+      "spx": null,
+      "note": null
     }
   ]
 }
