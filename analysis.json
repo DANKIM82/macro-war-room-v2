@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "CPI BINARY PARALYSIS",
-  "regimeSub": "Markets frozen pre-Wednesday CPI as July -23K NFP shock collides with sticky 3.5% inflation, Warsh boxed in.",
+  "regimeLabel": "CPI RELIEF RALLY",
+  "regimeSub": "July CPI at 3.4% in-line kills September hike, weak NFP + soft inflation = extended Fed hold.",
   "themes": [
-    "July NFP -23K (Aug 7) crushed September hike odds → Fed funds futures now pricing extended hold as Waller's July 14 hike warning meets labor reality; Wednesday CPI becomes sole policy trigger",
-    "BOK Senior Deputy Governor Yu (Aug 11) signals August hike despite 1414 won → Korea trapped between chip-wage inflation spiral and KOSPI 6495 needing Samsung/SK Hynix earnings to break higher",
-    "BOJ rate-hike path colliding with Takaichi's JGB troubles (Reuters Aug 10) → 10Y JGB steepening despite Bessent's September nudge keeps USDJPY pinned at 159.3; carry unwind risk builds",
-    "Brent sticky at $89.60 despite post-Hormuz OPEC+ output expansion (Jul 6) → energy pass-through embedded ahead of Wednesday CPI; gold at $4447 signals stagflation hedge bid intensifying"
+    "July CPI 3.4% YoY (Aug 12) matched consensus after -23K NFP shock → Warsh's hike door closes as rate futures reprice extended hold through Q4; real rates compress to 0.92%",
+    "BOK Deputy Gov Yu (Aug 11) confirms August hike despite CPI relief → KRW stuck at 1413 as chip-wage spiral (SK Hynix pay hikes) forces policy divergence from Fed pause narrative",
+    "BOJ rate path colliding with Takaichi JGB troubles (Reuters Aug 10) → 10Y UST-JGB spread compression stalls USDJPY at 159.3; Bessent's September nudge loses traction on US softness",
+    "OPEC+ September output hike (Aug 2) caps Brent at $88 despite post-Hormuz normalization → energy disinflation finally arriving as gold $4486 holds stagflation premium from Q2 scare"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.22% (4.72 nominal vs 3.5% CPI) compressed; stagflation pricing caps upside until Wednesday print resolves"
+      "note": "10Y real at 0.92% (4.7% nominal - 3.4% CPI) compressing on soft data; Warsh hike threat fading fast"
     },
     {
       "name": "2s10s Curve",
-      "note": "47bp steepening (4.25 vs 4.72) reflects growth fears dominating inflation at front-end; bear steepener intact"
+      "note": "48bp steepening persists as front-end rallies on hold pricing; 2Y at 4.22% down from pre-CPI levels"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads holding despite -23K NFP as VIX 15.28 complacency persists; credit ignoring labor crack signals"
+      "note": "Spreads tighten as soft landing narrative revives post-CPI; no recession signal despite -23K NFP"
     },
     {
       "name": "VIX",
-      "note": "15.28 absurdly low for CPI binary event tomorrow; expect vol expansion regardless of print direction"
+      "note": "14.55 crushed as CPI binary resolved benignly; vol sellers re-emerge into Jackson Hole window"
     },
     {
       "name": "Brent Crude",
-      "note": "Sticky $89.60 despite OPEC+ output hike; post-Hormuz supply absorbed, energy inflation threat alive for CPI"
+      "note": "88.01 capped by OPEC+ Sep expansion; post-Hormuz normalization finally feeding through to pump prices"
     },
     {
       "name": "Gold",
-      "note": "$4447 at records as stagflation hedge; -23K NFP + 3.5% CPI = real rate compression bid sustains"
+      "note": "4485.6 holding gains despite CPI relief; stagflation hedge bid sticky as 1.5% GDP + 3.4% CPI lingers"
     },
     {
       "name": "USD / KRW",
-      "note": "1414 holding as BOK Yu's Aug hike signal (Aug 11) offsets won weakness; chip wage inflation forcing action"
+      "note": "1413 stable as BOK Yu's hike signal offsets dollar weakness; chip-wage inflation keeps BOK hawkish vs Fed"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6495 waiting on Samsung/SK Hynix; TSMC capex raise (Jul 16) supports but CPI binary risk dominates"
+      "note": "KOSPI 6820 surging on Samsung/SK Hynix recovery; TSMC capex raise (Jul 16) confirms AI demand intact"
     }
   ],
-  "headline": "Markets frozen ahead of Wednesday CPI as July's -23K jobs shock leaves Fed Chair Warsh paralyzed between 3.5% inflation and growth cracking to 1.5%, with BOK and BOJ both signaling hikes despite currency stress.",
-  "generated": "2026-08-12T01:44:57Z",
-  "asOf": "2026-08-12"
+  "headline": "July CPI prints 3.4% in-line, killing Warsh's September hike option as -23K NFP and stagflationary 1.5% GDP leave Fed paralyzed while BOK/BOJ diverge hawkish.",
+  "generated": "2026-08-13T01:47:15Z",
+  "asOf": "2026-08-13"
 }
