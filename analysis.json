@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "CPI RELIEF RALLY",
-  "regimeSub": "July CPI at 3.4% in-line kills September hike, weak NFP + soft inflation = extended Fed hold.",
+  "regimeLabel": "SOFT LANDING GRIND",
+  "regimeSub": "CPI relief + negative NFP entrenches Fed hold; risk assets drift higher on goldilocks repricing.",
   "themes": [
-    "July CPI 3.4% YoY (Aug 12) matched consensus after -23K NFP shock → Warsh's hike door closes as rate futures reprice extended hold through Q4; real rates compress to 0.92%",
-    "BOK Deputy Gov Yu (Aug 11) confirms August hike despite CPI relief → KRW stuck at 1413 as chip-wage spiral (SK Hynix pay hikes) forces policy divergence from Fed pause narrative",
-    "BOJ rate path colliding with Takaichi JGB troubles (Reuters Aug 10) → 10Y UST-JGB spread compression stalls USDJPY at 159.3; Bessent's September nudge loses traction on US softness",
-    "OPEC+ September output hike (Aug 2) caps Brent at $88 despite post-Hormuz normalization → energy disinflation finally arriving as gold $4486 holds stagflation premium from Q2 scare"
+    "July CPI 3.4% YoY (Aug 12) in-line + July NFP -23K shock → Warsh hike cycle dead, Sept FOMC a formality hold; VIX crushed to 14.6 as tail risks evaporate",
+    "BOK Deputy Gov Yu (Aug 11) telegraphing August hike despite US pause → USDKRW pinned at 1414 on hawkish divergence; chip-driven wage spiral forcing BOK's hand",
+    "BOJ rate path derailed by Takaichi JGB stress (Reuters Aug 10) → USDJPY 159.4 stuck as Bessent Sept hike nudge loses steam on soft US data; carry unwind risk delayed not removed",
+    "OPEC+ September output expansion caps Brent at $87 post-Hormuz normalization → energy disinflation locked in; gold $4370 fading as stagflation hedge unwinds on growth scare subsiding"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at 0.92% (4.7% nominal - 3.4% CPI) compressing on soft data; Warsh hike threat fading fast"
+      "note": "10Y real at 1.38% (4.68 nom - 3.3 CPI); compressed from May peak as hike odds collapse post-NFP miss"
     },
     {
       "name": "2s10s Curve",
-      "note": "48bp steepening persists as front-end rallies on hold pricing; 2Y at 4.22% down from pre-CPI levels"
+      "note": "Curve at +48bp (4.68-4.20); steepening on growth scare + Fed hold narrative, no inversion signal"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads tighten as soft landing narrative revives post-CPI; no recession signal despite -23K NFP"
+      "note": "Spreads tight as soft landing repricing dominates; -23K NFP not enough to trigger credit stress"
     },
     {
       "name": "VIX",
-      "note": "14.55 crushed as CPI binary resolved benignly; vol sellers re-emerge into Jackson Hole window"
+      "note": "14.6 = complacency territory; CPI match + Fed pause = vol sellers in control, Jackson Hole next catalyst"
     },
     {
       "name": "Brent Crude",
-      "note": "88.01 capped by OPEC+ Sep expansion; post-Hormuz normalization finally feeding through to pump prices"
+      "note": "Brent $86.9 capped by OPEC+ Sept output hike; post-Hormuz supply normalization structurally bearish"
     },
     {
       "name": "Gold",
-      "note": "4485.6 holding gains despite CPI relief; stagflation hedge bid sticky as 1.5% GDP + 3.4% CPI lingers"
+      "note": "Gold $4370 off $4486 highs; stagflation premium fading as CPI cooperates + oil supply normalizes"
     },
     {
       "name": "USD / KRW",
-      "note": "1413 stable as BOK Yu's hike signal offsets dollar weakness; chip-wage inflation keeps BOK hawkish vs Fed"
+      "note": "1414 sticky as BOK Yu's hawkish Aug 11 comments offset dollar weakness; chip wage spiral key"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6820 surging on Samsung/SK Hynix recovery; TSMC capex raise (Jul 16) confirms AI demand intact"
+      "note": "KOSPI 6885 near highs on Samsung/Hynix HBM tailwinds; TSMC capex raise (Jul 16) underpins sector"
     }
   ],
-  "headline": "July CPI prints 3.4% in-line, killing Warsh's September hike option as -23K NFP and stagflationary 1.5% GDP leave Fed paralyzed while BOK/BOJ diverge hawkish.",
-  "generated": "2026-08-13T01:47:15Z",
-  "asOf": "2026-08-13"
+  "headline": "Warsh's rate hike campaign dies quietly as July CPI matches estimates and NFP contraction forces extended Fed hold, risk assets grind higher on goldilocks repricing while BOK and BOJ divergence keeps Asia FX choppy.",
+  "generated": "2026-08-14T01:44:41Z",
+  "asOf": "2026-08-14"
 }
