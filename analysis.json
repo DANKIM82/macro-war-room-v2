@@ -1,47 +1,47 @@
 {
   "regimeLabel": "SOFT LANDING GRIND",
-  "regimeSub": "CPI relief + negative NFP entrenches Fed hold; risk assets drift higher on goldilocks repricing.",
+  "regimeSub": "Retail sales miss deepens goldilocks bid; Warsh on hold as growth slows faster than inflation.",
   "themes": [
-    "July CPI 3.4% YoY (Aug 12) in-line + July NFP -23K shock → Warsh hike cycle dead, Sept FOMC a formality hold; VIX crushed to 14.6 as tail risks evaporate",
-    "BOK Deputy Gov Yu (Aug 11) telegraphing August hike despite US pause → USDKRW pinned at 1414 on hawkish divergence; chip-driven wage spiral forcing BOK's hand",
-    "BOJ rate path derailed by Takaichi JGB stress (Reuters Aug 10) → USDJPY 159.4 stuck as Bessent Sept hike nudge loses steam on soft US data; carry unwind risk delayed not removed",
-    "OPEC+ September output expansion caps Brent at $87 post-Hormuz normalization → energy disinflation locked in; gold $4370 fading as stagflation hedge unwinds on growth scare subsiding"
+    "July retail sales post largest drop in 12 months (Aug 14) → consumer exhaustion confirms Q3 GDP tracking sub-1.5%; Fed hike cycle definitively dead, Sept hold locked in",
+    "BOK Deputy Gov Yu (Aug 11) hawkish guidance intact → August hike odds rising as KRW stability trumps growth; USDKRW grinding lower to 1411 on rate divergence",
+    "BOJ-Takaichi JGB stress (Reuters Aug 10) unresolved → USDJPY stuck at 159 as Bessent Sept hike nudge loses traction; carry trade fragility persists but no immediate unwind catalyst",
+    "Gold $4454 catching bid on retail miss → stagflation-lite fears resurface despite Brent capped at $88 post-OPEC+ expansion; safe haven rotation from equities at margin"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at 1.38% (4.68 nom - 3.3 CPI); compressed from May peak as hike odds collapse post-NFP miss"
+      "note": "10Y real ~1.33% (4.63 nom - 3.3 CPI); compressing as growth scare dominates inflation fear"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +48bp (4.68-4.20); steepening on growth scare + Fed hold narrative, no inversion signal"
+      "note": "2s10s +48bp steepener intact; front-end anchored on Warsh hold, long-end pricing weaker growth"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads tight as soft landing repricing dominates; -23K NFP not enough to trigger credit stress"
+      "note": "HY spreads stable as retail miss not systemic; goldilocks keeps credit bid despite soft data"
     },
     {
       "name": "VIX",
-      "note": "14.6 = complacency territory; CPI match + Fed pause = vol sellers in control, Jackson Hole next catalyst"
+      "note": "VIX 14.25 pinned low; no vol catalyst with Fed on hold and earnings season winding down"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $86.9 capped by OPEC+ Sept output hike; post-Hormuz supply normalization structurally bearish"
+      "note": "Brent $88.4 capped by OPEC+ Sept expansion; Hormuz reopened, supply risk premium fading"
     },
     {
       "name": "Gold",
-      "note": "Gold $4370 off $4486 highs; stagflation premium fading as CPI cooperates + oil supply normalizes"
+      "note": "Gold $4454 bid on retail miss; stagflation hedge catching flow despite fading macro tail risks"
     },
     {
       "name": "USD / KRW",
-      "note": "1414 sticky as BOK Yu's hawkish Aug 11 comments offset dollar weakness; chip wage spiral key"
+      "note": "USDKRW 1411 grinding lower; BOK hawkish divergence + chip export strength supporting KRW"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6885 near highs on Samsung/Hynix HBM tailwinds; TSMC capex raise (Jul 16) underpins sector"
+      "note": "KOSPI 6977 near highs; Samsung/SK Hynix HBM story intact, chip exports $40B+ second straight month"
     }
   ],
-  "headline": "Warsh's rate hike campaign dies quietly as July CPI matches estimates and NFP contraction forces extended Fed hold, risk assets grind higher on goldilocks repricing while BOK and BOJ divergence keeps Asia FX choppy.",
-  "generated": "2026-08-14T01:44:41Z",
-  "asOf": "2026-08-14"
+  "headline": "US consumer buckles as July retail sales post sharpest drop in a year, cementing Warsh's hold stance while BOK and BOJ divergence keeps Asia FX rangebound.",
+  "generated": "2026-08-17T01:06:59Z",
+  "asOf": "2026-08-17"
 }
