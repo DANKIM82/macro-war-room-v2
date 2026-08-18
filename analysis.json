@@ -1,47 +1,47 @@
 {
   "regimeLabel": "SOFT LANDING GRIND",
-  "regimeSub": "Retail sales miss deepens goldilocks bid; Warsh on hold as growth slows faster than inflation.",
+  "regimeSub": "Korea chip rally ignites risk bid while US consumer exhaustion keeps Warsh sidelined through Sept.",
   "themes": [
-    "July retail sales post largest drop in 12 months (Aug 14) → consumer exhaustion confirms Q3 GDP tracking sub-1.5%; Fed hike cycle definitively dead, Sept hold locked in",
-    "BOK Deputy Gov Yu (Aug 11) hawkish guidance intact → August hike odds rising as KRW stability trumps growth; USDKRW grinding lower to 1411 on rate divergence",
-    "BOJ-Takaichi JGB stress (Reuters Aug 10) unresolved → USDJPY stuck at 159 as Bessent Sept hike nudge loses traction; carry trade fragility persists but no immediate unwind catalyst",
-    "Gold $4454 catching bid on retail miss → stagflation-lite fears resurface despite Brent capped at $88 post-OPEC+ expansion; safe haven rotation from equities at margin"
+    "KOSPI surges 5% on Samsung/SK Hynix rally (Aug 17) → HBM/AI demand narrative reignites Korea tech bid; USDKRW grinds to 1409 as foreign inflows accelerate",
+    "July retail sales largest drop in 12 months (Aug 14) still echoing → Q3 GDP tracking sub-1.5%, Warsh Sept hold fully priced; Fed hike cycle dead on arrival",
+    "BOK Deputy Gov Yu (Aug 11) signals further hikes → August BOK decision live as KRW stability mandate overrides soft growth; rate divergence widening vs Fed",
+    "Gold $4486 catching stagflation-lite bid → Brent capped at $91 post-OPEC+ expansion but energy-driven CPI at 3.3% keeps real rates negative; safe haven rotation persists"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.33% (4.63 nom - 3.3 CPI); compressing as growth scare dominates inflation fear"
+      "note": "10y nom 4.68% vs 3.3% CPI = +138bp real; still restrictive but fading as growth undershoots"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s +48bp steepener intact; front-end anchored on Warsh hold, long-end pricing weaker growth"
+      "note": "2s 4.17% vs 10s 4.68% = +51bp steepener; bear steepening on fiscal concern, not growth optimism"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads stable as retail miss not systemic; goldilocks keeps credit bid despite soft data"
+      "note": "Spreads stable as July NFP miss (-23k) offset by soft landing narrative; no stress yet"
     },
     {
       "name": "VIX",
-      "note": "VIX 14.25 pinned low; no vol catalyst with Fed on hold and earnings season winding down"
+      "note": "15.19 complacent despite retail miss; equity vol sellers in control, KOSPI rally helping"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $88.4 capped by OPEC+ Sept expansion; Hormuz reopened, supply risk premium fading"
+      "note": "$91 capped by OPEC+ expansion (Jul); supply overhang limits upside despite Hormuz reopening friction"
     },
     {
       "name": "Gold",
-      "note": "Gold $4454 bid on retail miss; stagflation hedge catching flow despite fading macro tail risks"
+      "note": "$4486 new highs; stagflation-lite fears + negative real rates drive safe haven bid"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1411 grinding lower; BOK hawkish divergence + chip export strength supporting KRW"
+      "note": "1409 grinding lower; BOK Yu hawkish + Samsung/SK Hynix rally = KRW catching foreign inflows"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6977 near highs; Samsung/SK Hynix HBM story intact, chip exports $40B+ second straight month"
+      "note": "TSMC $100B US capex + Samsung/SK rally reignites AI capex cycle; HBM demand thesis intact"
     }
   ],
-  "headline": "US consumer buckles as July retail sales post sharpest drop in a year, cementing Warsh's hold stance while BOK and BOJ divergence keeps Asia FX rangebound.",
-  "generated": "2026-08-17T01:06:59Z",
-  "asOf": "2026-08-17"
+  "headline": "Korea chip rally and gold surge bookend a soft-landing regime where US consumer exhaustion keeps Warsh on hold while Asian tech momentum accelerates.",
+  "generated": "2026-08-18T01:05:08Z",
+  "asOf": "2026-08-18"
 }
