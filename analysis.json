@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "SOFT LANDING GRIND",
-  "regimeSub": "Korea chip rally ignites risk bid while US consumer exhaustion keeps Warsh sidelined through Sept.",
+  "regimeLabel": "STAGFLATION LITE GRIND",
+  "regimeSub": "JGB selloff spills into global rates as BOJ hike bets surge; US consumer exhaustion pins Warsh.",
   "themes": [
-    "KOSPI surges 5% on Samsung/SK Hynix rally (Aug 17) → HBM/AI demand narrative reignites Korea tech bid; USDKRW grinds to 1409 as foreign inflows accelerate",
-    "July retail sales largest drop in 12 months (Aug 14) still echoing → Q3 GDP tracking sub-1.5%, Warsh Sept hold fully priced; Fed hike cycle dead on arrival",
-    "BOK Deputy Gov Yu (Aug 11) signals further hikes → August BOK decision live as KRW stability mandate overrides soft growth; rate divergence widening vs Fed",
-    "Gold $4486 catching stagflation-lite bid → Brent capped at $91 post-OPEC+ expansion but energy-driven CPI at 3.3% keeps real rates negative; safe haven rotation persists"
+    "JGB selloff intensifies (Aug 18 Asahi) → BOJ Sept hike bets firm after Bessent nudge; USDJPY sticky at 159.5 as carry unwind risk rises",
+    "July NFP shed 23K jobs + retail sales crater → US growth tracking sub-1.5%; Warsh Sept hold locked in, hike cycle DOA despite 3.3% CPI",
+    "Global bond yields hit multi-decade highs (Aug 18 CNBC) → 10Y UST at 4.72%, 2s10s steepening to +53bp signals term premium repricing not growth optimism",
+    "KOSPI +5% Samsung/SK Hynix rally (Aug 17) fading → USDKRW at 1408 as BOK Deputy Yu hike signal (Aug 11) keeps KRW bid vs softer DXY at 99.6"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10y nom 4.68% vs 3.3% CPI = +138bp real; still restrictive but fading as growth undershoots"
+      "note": "10Y real ~1.4% (4.72% nom - 3.3% CPI); still negative in breakeven terms, not restrictive enough to break inflation"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s 4.17% vs 10s 4.68% = +51bp steepener; bear steepening on fiscal concern, not growth optimism"
+      "note": "2s at 4.19%, 10s at 4.72% = +53bp steepening; term premium repricing on fiscal + BOJ spillover, not growth"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as July NFP miss (-23k) offset by soft landing narrative; no stress yet"
+      "note": "VIX at 15.84 suggests spreads contained; equity vol complacent despite bond carnage, dislocation risk building"
     },
     {
       "name": "VIX",
-      "note": "15.19 complacent despite retail miss; equity vol sellers in control, KOSPI rally helping"
+      "note": "15.84 is absurdly low given JGB selloff + NFP miss + retail crater; gamma pinning masks tail risk"
     },
     {
       "name": "Brent Crude",
-      "note": "$91 capped by OPEC+ expansion (Jul); supply overhang limits upside despite Hormuz reopening friction"
+      "note": "$91.67 capped post-OPEC+ expansion (Jul 6); Hormuz reopened but shipping risk premium lingers at $5-7/bbl"
     },
     {
       "name": "Gold",
-      "note": "$4486 new highs; stagflation-lite fears + negative real rates drive safe haven bid"
+      "note": "$4395 off highs but stagflation-lite bid intact; real rates neg + USD weakness = dip buyers reload"
     },
     {
       "name": "USD / KRW",
-      "note": "1409 grinding lower; BOK Yu hawkish + Samsung/SK Hynix rally = KRW catching foreign inflows"
+      "note": "1408 as BOK Yu hike signal + chip rally inflows offset weak DXY; 1400 break needs sustained SOX bid"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC $100B US capex + Samsung/SK rally reignites AI capex cycle; HBM demand thesis intact"
+      "note": "KOSPI surge fading; TSMC raised capex (Jul 16) but rising yields threaten AI multiple compression pre-NVDA earnings"
     }
   ],
-  "headline": "Korea chip rally and gold surge bookend a soft-landing regime where US consumer exhaustion keeps Warsh on hold while Asian tech momentum accelerates.",
-  "generated": "2026-08-18T01:05:08Z",
-  "asOf": "2026-08-18"
+  "headline": "JGB selloff sparks global rates tantrum as BOJ Sept hike looms; US labor market cracks and consumer exhaustion keep Warsh frozen while Korea chip rally offers thin risk-on veneer over stagflation-lite underbelly.",
+  "generated": "2026-08-19T01:06:24Z",
+  "asOf": "2026-08-19"
 }
