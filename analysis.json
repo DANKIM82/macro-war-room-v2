@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION LITE GRIND",
-  "regimeSub": "JGB selloff spills into global rates as BOJ hike bets surge; US consumer exhaustion pins Warsh.",
+  "regimeSub": "Bessent debt buyback calms global bond rout; US consumer still cracking as Warsh stays pinned.",
   "themes": [
-    "JGB selloff intensifies (Aug 18 Asahi) → BOJ Sept hike bets firm after Bessent nudge; USDJPY sticky at 159.5 as carry unwind risk rises",
-    "July NFP shed 23K jobs + retail sales crater → US growth tracking sub-1.5%; Warsh Sept hold locked in, hike cycle DOA despite 3.3% CPI",
-    "Global bond yields hit multi-decade highs (Aug 18 CNBC) → 10Y UST at 4.72%, 2s10s steepening to +53bp signals term premium repricing not growth optimism",
-    "KOSPI +5% Samsung/SK Hynix rally (Aug 17) fading → USDKRW at 1408 as BOK Deputy Yu hike signal (Aug 11) keeps KRW bid vs softer DXY at 99.6"
+    "Bessent deploys debt buybacks (Aug 19 Bloomberg) → 10Y UST eases to 4.71% from 4.72%, global yields follow as term premium repricing pauses; 2s10s still +52bp",
+    "JGB selloff persists (Aug 18 Asahi) → BOJ Sept hike odds firm; USDJPY sticky at 158.5 but yen carry unwind risk elevated as Takaichi fiscal concerns mount",
+    "July NFP -23K + retail sales largest drop in 12 months → Warsh boxed in at 3.63% rate despite 3.3% CPI; stagflation lite confirmed with 1.5% GDP print",
+    "KOSPI fades to 6756 after Aug 17 Samsung/SK Hynix pop → USDKRW softens to 1393 as DXY slips to 98.85; BOK Deputy Yu Aug 10 hike signal keeps won bid"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.4% (4.72% nom - 3.3% CPI); still negative in breakeven terms, not restrictive enough to break inflation"
+      "note": "10Y real at ~1.4% (4.71 nom - 3.3 CPI); elevated but buyback bid eases pressure at long end"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s at 4.19%, 10s at 4.72% = +53bp steepening; term premium repricing on fiscal + BOJ spillover, not growth"
+      "note": "Spread +52bp (4.71 - 4.19); steepening reflects term premium not growth optimism as fiscal concerns mount"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 15.84 suggests spreads contained; equity vol complacent despite bond carnage, dislocation risk building"
+      "note": "Spreads holding but consumer weakness (-23K NFP, retail crater) raises HY stress risk if growth slips further"
     },
     {
       "name": "VIX",
-      "note": "15.84 is absurdly low given JGB selloff + NFP miss + retail crater; gamma pinning masks tail risk"
+      "note": "14.89 complacent given stagflation setup; Bessent buyback calmed rates vol, equity vol lagging reality"
     },
     {
       "name": "Brent Crude",
-      "note": "$91.67 capped post-OPEC+ expansion (Jul 6); Hormuz reopened but shipping risk premium lingers at $5-7/bbl"
+      "note": "Brent at $91.91 post-Hormuz reopening (June); OPEC+ output expansion capping upside but supply risk lingers"
     },
     {
       "name": "Gold",
-      "note": "$4395 off highs but stagflation-lite bid intact; real rates neg + USD weakness = dip buyers reload"
+      "note": "Gold $4564 bid as fiat confidence erodes on Bessent intervention; safe haven + real rate hedge dual bid"
     },
     {
       "name": "USD / KRW",
-      "note": "1408 as BOK Yu hike signal + chip rally inflows offset weak DXY; 1400 break needs sustained SOX bid"
+      "note": "USDKRW 1393, won strengthening as DXY slips to 98.85; BOK Yu hike signal (Aug 10) supports KRW"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI surge fading; TSMC raised capex (Jul 16) but rising yields threaten AI multiple compression pre-NVDA earnings"
+      "note": "KOSPI 6756 fading post-Aug 17 rally; HBM demand intact but memory cycle warning from CNBC May still echoes"
     }
   ],
-  "headline": "JGB selloff sparks global rates tantrum as BOJ Sept hike looms; US labor market cracks and consumer exhaustion keep Warsh frozen while Korea chip rally offers thin risk-on veneer over stagflation-lite underbelly.",
-  "generated": "2026-08-19T01:06:24Z",
-  "asOf": "2026-08-19"
+  "headline": "Bessent's buyback intervention stabilizes global bond rout while US stagflation lite regime persists—Warsh paralyzed by 3.3% CPI and -23K NFP as BOJ hike bets and JGB selloff keep yen carry risk elevated.",
+  "generated": "2026-08-20T01:05:33Z",
+  "asOf": "2026-08-20"
 }
