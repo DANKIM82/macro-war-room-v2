@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION LITE GRIND",
-  "regimeSub": "Bessent debt buyback calms global bond rout; US consumer still cracking as Warsh stays pinned.",
+  "regimeSub": "Walmart earnings crater confirms US consumer retrenchment; Bessent buybacks stabilize yields but won't fix 3.3% inflation.",
   "themes": [
-    "Bessent deploys debt buybacks (Aug 19 Bloomberg) → 10Y UST eases to 4.71% from 4.72%, global yields follow as term premium repricing pauses; 2s10s still +52bp",
-    "JGB selloff persists (Aug 18 Asahi) → BOJ Sept hike odds firm; USDJPY sticky at 158.5 but yen carry unwind risk elevated as Takaichi fiscal concerns mount",
-    "July NFP -23K + retail sales largest drop in 12 months → Warsh boxed in at 3.63% rate despite 3.3% CPI; stagflation lite confirmed with 1.5% GDP print",
-    "KOSPI fades to 6756 after Aug 17 Samsung/SK Hynix pop → USDKRW softens to 1393 as DXY slips to 98.85; BOK Deputy Yu Aug 10 hike signal keeps won bid"
+    "Walmart posts weakest growth in years (Aug 20 WaPo) → confirms July retail sales -0.4% MoM narrative; US consumer cracking under 3.3% CPI while Warsh frozen at 3.63%",
+    "Bessent debt buyback deployed Aug 19 (Bloomberg) → 10Y UST eases 6bp to 4.65% from multi-decade highs; term premium repricing pauses but 2s10s still +46bp steep",
+    "JGB selloff intensifies (Aug 18 Asahi) → BOJ Sept hike bets firm as Takaichi fiscal concerns mount; USDJPY grinds to 159.1 testing MOF intervention zone",
+    "KOSPI rallies to 6901 on Samsung/SK Hynix HBM momentum (Aug 17 KuCoin) → USDKRW tightens to 1387 as won rebounds; BOK Deputy Yu Aug 11 hike signal anchors hawkish bias"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at ~1.4% (4.71 nom - 3.3 CPI); elevated but buyback bid eases pressure at long end"
+      "note": "10Y real at +1.35% (4.65% nominal - 3.3% CPI); still restrictive but Bessent buyback took edge off term premium"
     },
     {
       "name": "2s10s Curve",
-      "note": "Spread +52bp (4.71 - 4.19); steepening reflects term premium not growth optimism as fiscal concerns mount"
+      "note": "Curve at +46bp (4.19% 2Y, 4.65% 10Y); steep but narrowing as Bessent buyback anchors long-end"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads holding but consumer weakness (-23K NFP, retail crater) raises HY stress risk if growth slips further"
+      "note": "HY spreads steady; consumer stress from Walmart miss not yet spilling into credit markets"
     },
     {
       "name": "VIX",
-      "note": "14.89 complacent given stagflation setup; Bessent buyback calmed rates vol, equity vol lagging reality"
+      "note": "VIX at 16.01 shows complacency despite stagflation lite data; Nvidia earnings next week key catalyst"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent at $91.91 post-Hormuz reopening (June); OPEC+ output expansion capping upside but supply risk lingers"
+      "note": "Brent at $93.47 post-Hormuz reopening; OPEC+ July output expansion caps upside but Iran risk lingers"
     },
     {
       "name": "Gold",
-      "note": "Gold $4564 bid as fiat confidence erodes on Bessent intervention; safe haven + real rate hedge dual bid"
+      "note": "Gold at $4567 all-time high; safe haven bid on stagflation + Bessent Treasury intervention narrative"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1393, won strengthening as DXY slips to 98.85; BOK Yu hike signal (Aug 10) supports KRW"
+      "note": "USDKRW at 1387 vs 1393 yesterday; won bid on BOK Deputy Yu hike signal + KOSPI chip rally"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6756 fading post-Aug 17 rally; HBM demand intact but memory cycle warning from CNBC May still echoes"
+      "note": "KOSPI 6901 on Samsung/SK HBM rally; Nvidia earnings Aug 28 will test AI capex thesis sustainability"
     }
   ],
-  "headline": "Bessent's buyback intervention stabilizes global bond rout while US stagflation lite regime persists—Warsh paralyzed by 3.3% CPI and -23K NFP as BOJ hike bets and JGB selloff keep yen carry risk elevated.",
-  "generated": "2026-08-20T01:05:33Z",
-  "asOf": "2026-08-20"
+  "headline": "US consumer cracks as Walmart posts weakest growth in years while Bessent's debt buyback temporarily stabilizes global bond markets; Warsh remains pinned at 3.63% with 3.3% CPI and 1.5% GDP confirming stagflation lite.",
+  "generated": "2026-08-21T01:08:50Z",
+  "asOf": "2026-08-21"
 }
