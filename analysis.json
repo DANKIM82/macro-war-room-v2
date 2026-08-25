@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION LITE GRIND",
-  "regimeSub": "Warsh Jackson Hole speech imminent as stagflation mix (3.3% CPI, 1.5% GDP, -23k NFP) pins Fed at 3.63%.",
+  "regimeLabel": "STAGFLATION WATCH",
+  "regimeSub": "Warsh Jackson Hole speech today as markets brace for hawkish hold amid 3.3% CPI / 1.5% GDP stagflation mix.",
   "themes": [
-    "Fed Chair Warsh Jackson Hole speech Aug 23 (WSJ) → markets positioned for hawkish hold guidance; July FOMC kept rates at 3.63% despite 3.3% core PCE overshoot vs 2% target",
-    "US stagflation confirmed: Q2 GDP 1.5% miss (Jul 30 Advisor Perspectives), July NFP -23k (Aug 7 CNBC), July retail -0.4% MoM (Aug 14 Census) → consumer cracking while inflation sticky",
-    "JGB selloff deepens (Aug 18 Asahi) → BOJ hike bets firm as Takaichi fiscal concerns mount; USDJPY 158.8 testing MOF intervention zone with BOK Deputy Kwon Aug 21 urging balanced rate approach",
-    "KOSPI retraces to 6802 from 6901 highs as Samsung/SK Hynix HBM rally consolidates → USDKRW at 1381 as won strength complicates BOK Aug rate call per Korea JoongAng (Aug 20)"
+    "Fed Chair Warsh delivers Jackson Hole debut today (Aug 24-25 Reuters/WSJ) → policy tensions with Treasury flagged; markets expect hawkish hold guidance with rates pinned at 3.63% despite 3.3% CPI overshoot",
+    "US stagflation entrenched: Q2 GDP 1.5% miss (Jul 30 WSJ), July NFP -23k (Aug 7 CNBC), July retail sales largest drop in year (Aug 14 Census) → consumer buckling while core inflation stays sticky at 3.3%",
+    "BOK August rate decision splits 5-4 (Aug 24 Aju Press) → record household debt vs stronger growth creates dilemma; won at 1381 complicates easing bias per Vice Gov Kwon Aug 21 caution",
+    "JGB selloff persists (Aug 18 Asahi) amid BOJ Sept hike expectations after Bessent nudge (Aug 5 Reuters); USDJPY 159.16 tests MOF intervention threshold as Takaichi fiscal concerns mount"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate +34bp (3.63% policy minus 3.3% CPI); shallow positive keeps Fed pinned in stagflation bind"
+      "note": "Real 10y at +1.44% (4.74% nom - 3.3% CPI) → restrictive policy maintained as Warsh signals hawkish hold"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s +50bp steep (4.19% vs 4.69%); term premium elevated on fiscal concerns, Bessent buybacks bought time only"
+      "note": "Curve at +50bp (4.74% - 4.24%) steepening on fiscal/inflation concerns; Treasury buyback relief fading"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads contained despite -23k NFP; markets betting Warsh blinks before recession materializes"
+      "note": "HY spreads stable but consumer stress building → July retail plunge (Aug 14) and -23k NFP flag credit risk"
     },
     {
       "name": "VIX",
-      "note": "VIX 15.13 complacent pre-Jackson Hole; vol cheap into Warsh speech catalyst Aug 23"
+      "note": "VIX at 15.85 subdued pre-Warsh; options market pricing ~$350bn Nvidia swing post-earnings (Aug 27)"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $93.11 elevated post-Hormuz reopening; OPEC+ output hikes (Jul 6) not fully offsetting supply risk premium"
+      "note": "Brent $91.86 elevated despite Hormuz reopening (Jun 15 DW); OPEC+ output expansion caps upside"
     },
     {
       "name": "Gold",
-      "note": "Gold $4674 at highs; stagflation hedge bid persists as real rates stay shallow and fiscal concerns mount"
+      "note": "Gold $4744 at ATH → stagflation hedge bid as real rates stay positive but growth deteriorates"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1381 as won rebounds; BOK Kwon Aug 21 balanced stance + HBM flows support KRW near-term"
+      "note": "USDKRW 1381 as won strength complicates BOK; 5-4 split on Aug hike (Aju Press) reflects dilemma"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SOX consolidating post-TSMC Jul capex raise; KOSPI 6802 off highs as Samsung/SK Hynix HBM rally pauses"
+      "note": "SK Hynix/Samsung rally (Aug 17 KuCoin) as HBM demand persists; Nvidia earnings Aug 27 key catalyst"
     }
   ],
-  "headline": "Fed Chair Warsh heads into Jackson Hole with stagflation trap fully sprung—3.3% inflation, 1.5% GDP, negative payrolls—while markets await guidance on whether the Fed hikes into weakness or tolerates above-target inflation.",
-  "generated": "2026-08-24T01:08:27Z",
-  "asOf": "2026-08-24"
+  "headline": "Fed Chair Warsh takes Jackson Hole stage amid entrenched US stagflation (3.3% CPI, 1.5% GDP, -23k NFP) with Treasury policy tensions in focus as BOK splits 5-4 on rates and JGB selloff pressures BOJ.",
+  "generated": "2026-08-25T01:07:07Z",
+  "asOf": "2026-08-25"
 }
