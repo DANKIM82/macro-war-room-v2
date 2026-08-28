@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "BOK delivers second consecutive hike to 3.00% as global CBs tilt hawkish ahead of Warsh Jackson Hole speech.",
+  "regimeSub": "Warsh Jackson Hole speech today as BOK hike aftermath and Nvidia beat collide with sticky 3.3% CPI.",
   "themes": [
-    "BOK Governor Shin hikes 25bp to 3.00% in back-to-back move (Aug 27 Yonhap) → upgrades 2026 GDP forecast to 3.3%, flags inflation and nominal GDP as October rate guides; KRW firms to 1380",
-    "ECB's Schnabel signals rate hike per Bloomberg (Aug 27) → transatlantic hawkish coordination puts pressure on Warsh Jackson Hole speech; gold bid to $4658 on policy uncertainty",
-    "US stagflation stack intact: Q2 GDP confirmed at 1.5% (Aug 26 WSJ second estimate), July NFP -23k, CPI 3.3% → ING notes core PCE keeps Fed hike pressure elevated ahead of Friday print",
-    "Nvidia earnings imminent with $350bn implied move per Reuters → ASML trades at 40% AI capex premium (Aug 26 BigGo); SOX faces sternest test as SK Hynix/Samsung HBM thesis on trial"
+    "Fed Chair Warsh speaks Jackson Hole today (Aug 28 Reuters) → Fed divided on hike timing per Briefs Finance; gold bid $4655 on policy uncertainty ahead of speech",
+    "BOK Governor Shin's back-to-back hike to 3.00% (Aug 27) → signals gradual tightening with 3.3% GDP upgrade; KRW strengthens to 1371 as hawkish stance confirmed",
+    "Nvidia beats Q2 estimates (Aug 27 ETF Database) → KOSPI slumps below 6900 as Samsung/SK Hynix drop on chip rout spreading from Wall Street despite AI capex thesis intact",
+    "US stagflation data stack persists: Q2 GDP confirmed 1.5% (Aug 26 WSJ), July NFP -23k, CPI 3.3% YoY → ING notes slow PCE progress keeps Fed hike pressure elevated"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real 10y at +134bp (4.64% minus 3.3% CPI) → still restrictive but below Aug highs as Treasury buybacks ease pressure"
+      "note": "Real rate +0.89% (4.19% 2Y minus 3.3% CPI) - restrictive but Fed hike odds remain elevated on sticky inflation"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +47bp (4.64-4.17) → bear steepening on fiscal concerns and sticky inflation; duration under pressure"
+      "note": "Curve at +47bp (4.66-4.19) steepening on stagflation fears; long-end pricing fiscal risk amid 1.5% GDP"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads contained despite stagflation data; consumer stress not yet triggering credit events"
+      "note": "Spreads contained despite weak NFP; market pricing soft landing but Warsh speech could reprice risk"
     },
     {
       "name": "VIX",
-      "note": "VIX at 15.21 → complacent into Nvidia earnings and Friday PCE; vol sellers in control pre-event"
+      "note": "VIX 14.5 complacent ahead of Warsh Jackson Hole; Nvidia beat providing cover but policy risk underpriced"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $85.4 normalized post-Hormuz reopening (Jun); OPEC+ expanding output caps energy inflation"
+      "note": "Brent $88.25 stable post-Hormuz normalization; OPEC+ expanding output caps upside despite Iran tensions"
     },
     {
       "name": "Gold",
-      "note": "Gold $4658 ATH on softer yields and Warsh speech uncertainty → safe haven bid as CBs turn hawkish"
+      "note": "Gold $4655 bid near highs on CB policy uncertainty; Warsh/Schnabel hawkish signals driving safe haven flows"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW firms to 1380 post-BOK hike → Shin's hawkish guidance and upgraded GDP forecast support won"
+      "note": "KRW firms to 1371 post-BOK hike; Shin's hawkish tilt and 3.3% GDP upgrade supporting won strength"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SOX faces 'sternest test' per Reuters as Nvidia earnings loom; KOSPI 6912 holding HBM premium"
+      "note": "SOX faces sternest test as Nvidia beat meets Samsung/Hynix rout; KOSPI slumps below 6900 on sector contagion"
     }
   ],
-  "headline": "Global central banks pivot hawkish as BOK delivers second consecutive hike and ECB's Schnabel signals tightening, while markets await Fed Chair Warsh's Jackson Hole debut amid US stagflation backdrop of 3.3% CPI and 1.5% GDP.",
-  "generated": "2026-08-27T07:17:26Z",
-  "asOf": "2026-08-27"
+  "headline": "Fed Chair Warsh's Jackson Hole speech today becomes pivotal as global CB hawkish tilt (BOK hike, ECB Schnabel) meets US stagflation data (1.5% GDP, 3.3% CPI) while Nvidia beat fails to arrest Korean chip selloff.",
+  "generated": "2026-08-28T09:31:19Z",
+  "asOf": "2026-08-28"
 }
