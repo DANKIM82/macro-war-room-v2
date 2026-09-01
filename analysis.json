@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "Warsh's Jackson Hole hawkish pivot anchors regime as BOK's Shin decouples from Fed, weak US growth persists.",
+  "regimeSub": "Warsh hike threat crystallizes as markets price September action while BOK divergence and weak US data persist.",
   "themes": [
-    "Fed Chair Warsh Jackson Hole (Aug 28) explicitly signals rate hikes if 3.3% CPI persists → economists now betting on hike per Reuters; DXY slips to 99.58 as markets digest hawkish uncertainty",
-    "BOK Governor Shin hikes to 3.00% back-to-back (Aug 27), explicitly states Korea 'won't automatically follow U.S. rate moves' (Aug 31 Businesskorea) → KRW strengthens to 1373, policy divergence narrative entrenched",
-    "US stagflation data stack hardens: Q2 GDP confirmed 1.5% (Aug 26), July NFP -23k (Aug 7), CPI 3.3% YoY → ING notes spending stalls while inflation makes 'slow progress' toward target",
-    "Memory chip rout extends post-Nvidia: Samsung/SK Hynix drop despite TSMC capex upgrade (Jul 16 Reuters) → KOSPI falls to 6710 as HBM valuation reset spreads from US to Korea"
+    "Fed Chair Warsh Jackson Hole (Aug 28) hike signal now priced by markets per CNBC (Aug 31) → DXY weakens to 99.5 as rate hike uncertainty meets soft landing doubts, 10Y holds 4.73%",
+    "BOK Governor Shin's explicit Fed decoupling statement (Aug 31 Businesskorea) after back-to-back hikes to 3.00% → KRW firms to 1370 as Korean President cites 3.5% terminal rate, bond tensions rise",
+    "US stagflation data locked: 1.5% GDP, 3.3% CPI, July NFP -23k, retail sales 'largest drop in more than a year' per ABC (Aug 14) → ING confirms spending stalls while PCE makes 'slow progress'",
+    "Memory sector pressure persists: Samsung/SK Hynix/Kioxia drop (TradingKey Aug 28) despite TSMC capex upgrade → KOSPI 6795 recovers modestly but HBM valuation reset continues post-Nvidia"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 4.67% minus 3.3% CPI = +137bps real; Warsh hike threat keeps real rates elevated despite soft growth"
+      "note": "Real rate ~1.03% (3.63% fed funds vs 3.3% CPI) offers modest positive real yield as Warsh threatens more tightening"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.20% vs 10Y 4.67% = +47bps steepener; term premium bid on fiscal concerns, BOJ rate path uncertainty"
+      "note": "2s10s at +39bp remains steepening; long end selling as fiscal concerns mount with rate hike cycle potentially resuming"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX 14.43 signals complacency despite stagflation; credit spreads compressed vs macro fundamentals"
+      "note": "VIX 14.92 signals complacency despite stagflation data stack; credit spreads compressed despite Warsh hawkish pivot"
     },
     {
       "name": "VIX",
-      "note": "VIX 14.43 near lows despite Warsh hawkish pivot and sticky inflation; vol selling into month-end"
+      "note": "VIX 14.92 remarkably subdued given Warsh hike threat and weak NFP/retail; markets underpricing policy uncertainty"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $90.07 elevated post-Hormuz reopening (Jun 15); OPEC+ output expansion capping upside"
+      "note": "Brent $88.86 stable post-Hormuz reopening (Jun 15); oil 'back to pre-Iran war levels' per Reuters removes supply shock"
     },
     {
       "name": "Gold",
-      "note": "Gold $4480 off $4655 highs; Warsh clarity reduces policy uncertainty bid, real rates support cap"
+      "note": "Gold $4483 at extreme highs; inflation hedge demand + real rate uncertainty driving safe haven flows vs dollar weakness"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW 1373 strengthens on BOK Shin hawkish stance; decoupling from Fed divergence play intact"
+      "note": "KRW at 1370 firm on BOK Shin's hawkish independence (3.00%, eyes 3.5%); won strengthens as Treasury selloff lifts yields"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Samsung/SK Hynix drag KOSPI 6710 despite TSMC capex raise; HBM valuation reset underway"
+      "note": "Memory sector bleeding: Samsung/Hynix/Kioxia drop per TradingKey despite TSMC capex boost; HBM repricing extends"
     }
   ],
-  "headline": "Fed Chair Warsh's Jackson Hole hawkish pivot entrenches stagflation regime as BOK's Shin decouples with back-to-back hikes while US growth stalls at 1.5% against 3.3% inflation.",
-  "generated": "2026-08-31T03:37:08Z",
-  "asOf": "2026-08-31"
+  "headline": "Fed Chair Warsh's Jackson Hole hike threat now priced for September as stagflation data hardens (1.5% GDP, 3.3% CPI) while BOK Governor Shin explicitly decouples Korean policy from Fed guidance.",
+  "generated": "2026-09-01T03:33:29Z",
+  "asOf": "2026-09-01"
 }
