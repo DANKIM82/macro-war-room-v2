@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "10Y breaches 4.79% as Warsh hike odds harden pre-NFP, Brent clears $95 on Iran war premium.",
+  "regimeSub": "Waller muddies hike path pre-NFP as 10Y holds 4.79%, Brent breaches $96 on Iran supply fears.",
   "themes": [
-    "Fed Chair Warsh Jackson Hole hawkish signal (Aug 28) continues to reprice September hike → 10Y at 4.79% (+1bp) as CNBC notes Fed 'at odds with Treasury' (Aug 31); Trump endorses Warsh 'doing what he has to do' (PBS Aug 31)",
-    "Iran war supply shock persists: Brent $95.69 (+$0.18) with WTI $91.24 → jdsupra (Sep 1) calls it 'new shock to global trade'; gold $4459 (+$98) as dual inflation/geopolitical hedge bid intensifies per Indian bond rout (ET Sep 2)",
-    "BOK Governor Rhee decoupling intact: 3.00% rate after back-to-back hikes (Aug 27) with 3.3% growth forecast → KRW firms to 1358 (-11) as Businesskorea (Aug 31) quotes BOK 'won't automatically follow US rate moves'",
-    "HBM rivalry rotation: Samsung gains vs SK Hynix slide (Seoul Economic Daily Sep 1) → KOSPI rallies to 6652 (+29) as AI memory stocks bid post-Nvidia earnings (Mitrade Sep 1); Nikkei hits 64455 on BOJ hike delay speculation"
+    "Fed Governor Waller (Sep 4) 'muddies outlook' on September hike per PBS → counters Warsh Jackson Hole hawkishness; market consensus now split as Axios reports 'not so fast on rate hikes' (Sep 3); 10Y steady at 4.79%",
+    "August NFP preview dominates: CNBC (Sep 3) flags 'jobless summer' with 56K consensus (Biggo Finance Sep 4) → one-time factors may produce negative print per Seeking Alpha; high-stakes for September FOMC hike decision",
+    "Brent clears $96 (+$0.29) as Iran war premium persists despite June interim peace deal → WTI $91.93; gold surges to $4519 (+$60) on dual inflation/haven bid; Indian 10Y breaks 7% on global bond rout (ET Sep 2)",
+    "BOK decoupling holds: Governor Shin's 3.00% rate with 3.3% growth forecast (Aug 27) → KRW firms to 1355 (-3) as Businesskorea confirms BOK 'won't automatically follow US moves'; KOSPI +9pts to 6661 on HBM rotation"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real 10Y at 1.49% (4.79% nominal - 3.3% CPI) as Warsh hike signal steepens real rate premium"
+      "note": "10Y 4.79% minus 3.3% CPI = +149bps real; tightening policy bite evident with Q2 GDP at 1.5%"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +40bps (4.79% 10Y vs 4.39% 2Y) as term premium widens on fiscal/inflation concerns"
+      "note": "Curve at +40bps (4.79 vs 4.39); bear steepening intact as term premium rises on fiscal/inflation fears"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained with VIX at 15.2 despite 10Y selloff; credit complacent vs rate vol"
+      "note": "VIX at 14.32 suggests spreads contained; risk appetite holds despite stagflationary macro mix"
     },
     {
       "name": "VIX",
-      "note": "VIX 15.2 signals equity vol subdued pre-NFP despite bond rout; vol divergence notable"
+      "note": "14.32 remarkably complacent pre-NFP; market pricing benign labor outcome or Fed policy put"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $95.69 holds above $95 on Iran war premium; jdsupra flags 'new shock to global trade'"
+      "note": "$95.98 (+$0.29) breaches $96 handle; Iran supply risk premium persists despite June ceasefire framework"
     },
     {
       "name": "Gold",
-      "note": "Gold $4459 (+$98 vs prior) bid as dual inflation/geopolitical hedge per Indian bond rout (ET Sep 2)"
+      "note": "$4519 (+$60) all-time high territory; dual bid from inflation hedge + geopolitical haven flows"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW firms to 1358 as BOK decoupling from Fed gains credibility post Rhee comments (Aug 31)"
+      "note": "1355 (-3) as BOK rate divergence story holds; Governor Shin's hawkish 3.00% stance supports won"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI memory rally (Mitrade Sep 1) offsets HBM rivalry concerns; Samsung gains vs SK Hynix slide"
+      "note": "KOSPI 6661 (+9) on HBM rotation; Samsung vs SK Hynix rivalry continues post-Nvidia earnings wave"
     }
   ],
-  "headline": "Warsh's hawkish Jackson Hole stance pushes 10Y to 4.79% as markets await Friday NFP with September hike now base case, while Iran war keeps Brent above $95 and gold surges to $4459 on stagflation hedging.",
-  "generated": "2026-09-03T02:55:34Z",
-  "asOf": "2026-09-03"
+  "headline": "Fed hike path blurs as Waller counters Warsh hawkishness pre-NFP while oil clears $96 and gold hits ATH on persistent stagflation regime.",
+  "generated": "2026-09-04T02:54:41Z",
+  "asOf": "2026-09-04"
 }
