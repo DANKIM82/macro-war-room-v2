@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "August NFP blows out at 162K vs. consensus; 10Y holds 4.77% as September hike odds firm.",
+  "regimeSub": "US-Iran strikes resume, Brent punches through $97; September Fed hike odds solidify post-NFP beat.",
   "themes": [
-    "August NFP surprise +162K vs ~100K estimate (CNBC/Reuters Sep 4) → unemployment steady 4.1%; removes labor market excuse for Fed pause; Warsh's Jackson Hole hawkish stance validated as Waller's hesitancy fades; September hike now live",
-    "10Y yield at 4.77% (-2bp from 4.79%) remains 19-month high → real rate squeeze intensifies with CPI at 3.3% YoY; Treasury selloff narrative (WSJ) persists despite modest Friday relief; 2s10s at +43bp signals term premium repricing",
-    "Brent crude at $96.28 (flat) as Iran interim peace deal (Jun 14) fails to fully normalize supply → OPEC+ production expansion (Jul 6) offset by persistent Gulf risk premium; energy drag on CPI relief extends hawkish Fed case",
-    "BOK decoupling continues post back-to-back hikes (Aug 26-27) → KRW firms to 1346 from 1355 as 3.3% growth forecast supports won; KOSPI dips to 6899 (-9pts) on Samsung/SK Hynix pullback but HBM structural bid intact"
+    "US-Iran strikes resume (NYT Sep 6) → Brent surges to $97.13 (+85bp) as OPEC+ holds production steady; Hormuz risk premium returns, undoing June ceasefire gains; inflation overshoot narrative extends",
+    "August NFP +162K vs ~100K (Reuters Sep 4) still reverberating → Waller muddies outlook (PBS Sep 4) but Warsh Jackson Hole hawkishness dominates; 10Y stuck at 4.77% as September hike now base case",
+    "BOK back-to-back hikes (Aug 26-27) driving KRW strength to 1339 from 1346 → KOSPI surges 3.3% to 7129 as HBM/AI capex bid intact; won outperformance vs DXY 99.18 signals EM decoupling",
+    "Gold hits $4468 (+2.1%) on geopolitical reset → real rate of 1.47% (10Y minus CPI) no longer sufficient to cap haven flows; Iran resumption trumps Fed tightening narrative for bullion"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 4.77% minus CPI 3.3% = +147bp real; tightening financial conditions as Fed hike path firms post-NFP beat"
+      "note": "Real 10Y at 1.47% (4.77% minus 3.3% CPI); elevated but gold ignoring as Iran strikes resume"
     },
     {
       "name": "2s10s Curve",
-      "note": "Spread +43bp (4.77-4.34) steepening; term premium repricing on fiscal concerns and hot labor data"
+      "note": "Spread +43bp (4.77-4.34); term premium bid intact as duration sellers persist on fiscal/inflation fears"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained as NFP beat eases near-term recession fears; equity vol muted at VIX 14.5"
+      "note": "VIX at 15.3 implies spreads contained; risk-on equities contradict stagflation fears for now"
     },
     {
       "name": "VIX",
-      "note": "14.53 complacent vs. stagflation regime; SPX 7718 ignoring rate risk ahead of August CPI (Sep 10)"
+      "note": "15.3 subdued despite Iran headlines; market pricing contained conflict, not escalation spiral"
     },
     {
       "name": "Brent Crude",
-      "note": "At $96.28 post-Iran interim deal; OPEC+ output hike absorbed by demand; inflation floor remains"
+      "note": "Brent $97.13 punches higher on US-Iran strike resumption (NYT Sep 6); OPEC+ holds steady"
     },
     {
       "name": "Gold",
-      "note": "$4476.6 (-$43 from $4519); profit-taking after NFP reduces safe haven bid; real rate drag kicks in"
+      "note": "Gold $4468 +2.1% as geopolitical haven bid returns; real rate drag overwhelmed by Iran risk"
     },
     {
       "name": "USD / KRW",
-      "note": "1346 won strength as BOK's Shin maintains hawkish independence; policy divergence favors KRW carry"
+      "note": "KRW at 1339 (+0.5%) as BOK hike cycle and 3.3% growth outperform weak DXY at 99.18"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6899 slips on Samsung strike/margin fears; TSMC 45% sales surge underpins AI capex cycle"
+      "note": "KOSPI 7129 (+3.3%); SK Hynix HBM bid intact as AI capex cycle (TSMC Jul) powers through macro noise"
     }
   ],
-  "headline": "August NFP blowout (+162K) validates Warsh hawkish stance as 10Y yield holds near 19-month highs, cementing September FOMC hike as base case while Brent at $96 and CPI 3.3% keep stagflation regime intact.",
-  "generated": "2026-09-07T02:53:14Z",
-  "asOf": "2026-09-07"
+  "headline": "US-Iran strikes resume jolting oil above $97 while August NFP strength locks in September Fed hike expectations under Warsh's hawkish regime.",
+  "generated": "2026-09-08T03:02:54Z",
+  "asOf": "2026-09-08"
 }
