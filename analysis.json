@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "US-Iran strikes resume, Brent punches through $97; September Fed hike odds solidify post-NFP beat.",
+  "regimeSub": "Brent punches $99 on resumed Iran tensions; BOK hikes to 3% as Fed September decision looms.",
   "themes": [
-    "US-Iran strikes resume (NYT Sep 6) → Brent surges to $97.13 (+85bp) as OPEC+ holds production steady; Hormuz risk premium returns, undoing June ceasefire gains; inflation overshoot narrative extends",
-    "August NFP +162K vs ~100K (Reuters Sep 4) still reverberating → Waller muddies outlook (PBS Sep 4) but Warsh Jackson Hole hawkishness dominates; 10Y stuck at 4.77% as September hike now base case",
-    "BOK back-to-back hikes (Aug 26-27) driving KRW strength to 1339 from 1346 → KOSPI surges 3.3% to 7129 as HBM/AI capex bid intact; won outperformance vs DXY 99.18 signals EM decoupling",
-    "Gold hits $4468 (+2.1%) on geopolitical reset → real rate of 1.47% (10Y minus CPI) no longer sufficient to cap haven flows; Iran resumption trumps Fed tightening narrative for bullion"
+    "US-Iran conflict escalation drives Brent to $99.32 (+2.3% from yesterday's $97.13) → OPEC+ Sep 6 decision to hold production steady amplifies supply squeeze; Hormuz premium fully embedded",
+    "BOK hikes 25bp to 3.0% (Korea Herald Sep 7) → won strengthens to 1338 from 1339; KOSPI -0.4% to 7102 as tightening cycle weighs on domestic sentiment despite HBM tailwinds",
+    "Fed outlook murky: Waller 'muddied' Sep hike path (PBS Sep 4) while Warsh maintains hawkish bias on 3.3% CPI; August NFP +162K vs ~100K keeping Sep hike as base case; 10Y at 4.78% (+1bp)",
+    "Gold retreats to $4426 (-0.9% from $4468) as real rates hold at 1.48%; haven demand moderates despite geopolitical risk as hawkish Fed pricing dominates short-term flows"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real 10Y at 1.47% (4.77% minus 3.3% CPI); elevated but gold ignoring as Iran strikes resume"
+      "note": "Real rate at 1.48% (4.78% 10Y minus 3.3% CPI); marginally higher, constraining risk but not breaking markets"
     },
     {
       "name": "2s10s Curve",
-      "note": "Spread +43bp (4.77-4.34); term premium bid intact as duration sellers persist on fiscal/inflation fears"
+      "note": "Curve at +41bp (4.78% vs 4.37%); steepening continues as long-end prices stagflation + fiscal risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 15.3 implies spreads contained; risk-on equities contradict stagflation fears for now"
+      "note": "VIX at 15.72 suggests HY spreads contained; no stress despite oil spike and tightening fears"
     },
     {
       "name": "VIX",
-      "note": "15.3 subdued despite Iran headlines; market pricing contained conflict, not escalation spiral"
+      "note": "VIX 15.72 remarkably sanguine given $99 Brent and Sep hike uncertainty; complacency or conviction?"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $97.13 punches higher on US-Iran strike resumption (NYT Sep 6); OPEC+ holds steady"
+      "note": "Brent $99.32 up 2.3% from $97.13; OPEC+ hold + Iran resumption = $100 handle imminent"
     },
     {
       "name": "Gold",
-      "note": "Gold $4468 +2.1% as geopolitical haven bid returns; real rate drag overwhelmed by Iran risk"
+      "note": "Gold $4426 down 0.9% from $4468; real rate pressure outweighing geopolitical bid for now"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW at 1339 (+0.5%) as BOK hike cycle and 3.3% growth outperform weak DXY at 99.18"
+      "note": "USDKRW 1338 from 1339; BOK 25bp hike to 3% supporting won vs weaker DXY at 98.77"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 7129 (+3.3%); SK Hynix HBM bid intact as AI capex cycle (TSMC Jul) powers through macro noise"
+      "note": "KOSPI 7102 (-0.4%); SK Hynix/Samsung HBM bid intact but BOK tightening creates headwind"
     }
   ],
-  "headline": "US-Iran strikes resume jolting oil above $97 while August NFP strength locks in September Fed hike expectations under Warsh's hawkish regime.",
-  "generated": "2026-09-08T03:02:54Z",
-  "asOf": "2026-09-08"
+  "headline": "Brent breaches $99 as US-Iran tensions reignite and OPEC+ holds steady, while BOK's third consecutive hike to 3% and Waller's muddied Fed guidance leave markets bracing for September volatility.",
+  "generated": "2026-09-09T03:04:14Z",
+  "asOf": "2026-09-09"
 }
