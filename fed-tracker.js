@@ -3,17 +3,21 @@
    Loaded by index.html via <script src="./fed-tracker.js" defer>.
    Mounts itself directly below the "Upcoming Catalysts" section.
    To refresh: edit FED_SNAPSHOT / FED_OFFICIALS below only.
+   KO/EN toggle: *En fields are optional — Korean text is shown when empty.
    ════════════════════════════════════════════════════════════════════ */
 
 // 데이터 기준일: 2026-09-08
 // stance 척도: +2 강경매파 / +1 매파기울기 / 0 중립·데이터의존 / -1 비둘기기울기 / -2 강경비둘기
+// 영문(EN 토글): roleEn / remarkEn / lastVoteEn / marketOddsEn — 비워 두면 한국어 원문이 대신 표시됨
 
 const FED_SNAPSHOT = {
   asOf: "2026-09-08",
   targetRange: "3.50–3.75%",
   nextFOMC: "2026-09-15~16",
   lastVote: "9–3 동결 (7/29)",
-  marketOdds: "9월 25bp 인상 ~50% (CME FedWatch, 9/3 기준)"
+  lastVoteEn: "9–3 hold (Jul 29)",
+  marketOdds: "9월 25bp 인상 ~50% (CME FedWatch, 9/3 기준)",
+  marketOddsEn: "Sep 25bp hike ~50% (CME FedWatch, as of Sep 3)"
 };
 
 const FED_OFFICIALS = [
@@ -21,209 +25,247 @@ const FED_OFFICIALS = [
     name: "케빈 워시",
     nameEn: "Kevin Warsh",
     role: "의장 (2026.5.22 취임, 이사 임기 2040.1)",
+    roleEn: "Chair (sworn in May 22, 2026; Board term to Jan 2040)",
     group: "board",
     isVoter2026: true,
     stance: 1,
     lastDate: "2026-08-28",
     remark: "잭슨홀 첫 기조연설. 기저 인플레가 목표를 향해 명확하고 충분한 속도로 움직인다는 확신이 없으면 '할 일이 남아 있다'고 표현. PCE 2%는 고정 목표이며 변경 의사 없음을 명확히 함. 금융여건이 경제를 제약하지 않고 있다고 평가하고 금리를 주된 정책수단으로 규정. 포워드가이던스 축소 기조, 연간 FOMC 8회를 6회로 줄이는 안도 위원회에 제기.",
+    remarkEn: "First Jackson Hole keynote. Said there is 'more work to do' unless he is confident underlying inflation is moving clearly and fast enough toward target. Made clear the 2% PCE target is fixed and will not change. Judged that financial conditions are not restraining the economy and called the policy rate the primary tool. Favors less forward guidance and has floated cutting FOMC meetings from eight to six a year.",
     sourceUrl: "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm"
   },
   {
     name: "필립 제퍼슨",
     nameEn: "Philip Jefferson",
     role: "부의장",
+    roleEn: "Vice Chair",
     group: "board",
     isVoter2026: true,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 동결 찬성. 이후 개별 발언은 확인되지 않음 — 최신 연설 확인 필요.",
+    remarkEn: "Voted to hold in July. No individual remarks found since — latest speech needs checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "미셸 보우먼",
     nameEn: "Michelle Bowman",
     role: "감독담당 부의장",
+    roleEn: "Vice Chair for Supervision",
     group: "board",
     isVoter2026: true,
     stance: -1,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 동결 찬성. 1월 연설에서는 인플레가 목표에 근접하는 반면 노동시장이 취약해지고 있으며 그 취약성이 더 큰 리스크라고 평가. 최근 스탠스 재확인 필요.",
+    remarkEn: "Voted to hold in July. In a January speech she said inflation was nearing target while the labor market was weakening, and that labor-market fragility was the bigger risk. Current stance needs reconfirming.",
     sourceUrl: "https://www.federalreserve.gov/newsevents/speech/bowman20260116a.htm"
   },
   {
     name: "크리스토퍼 월러",
     nameEn: "Christopher Waller",
     role: "이사",
+    roleEn: "Governor",
     group: "board",
     isVoter2026: true,
     stance: 0,
     lastDate: "2026-09-03",
     remark: "9/11 발표될 8월 CPI가 판단을 좌우한다고 명시. 인플레 둔화가 이어지면 동결 쪽으로 기울겠지만 뜨겁게 나오면 인상을 고려하겠다는 입장. 현재 차입비용이 수요를 '약간만' 제약하고 있어 인플레가 조금만 가속돼도 인상 지지로 돌아설 수 있다고 언급. 이 발언 직후 9월 인상 확률이 65%에서 50% 수준으로 하락.",
+    remarkEn: "Said the August CPI (due Sep 11) will drive his decision. Leans toward holding if disinflation continues, but would consider a hike if it runs hot. Noted borrowing costs are only 'modestly' restraining demand, so even a small pickup in inflation could move him to support a hike. September hike odds fell from 65% to about 50% right after the remarks.",
     sourceUrl: "https://www.pbs.org/newshour/economy/fed-governor-waller-muddies-outlook-on-possible-rate-hike-later-this-month"
   },
   {
     name: "마이클 바",
     nameEn: "Michael Barr",
     role: "이사",
+    roleEn: "Governor",
     group: "board",
     isVoter2026: true,
     stance: 1,
     lastDate: "2026-09-01",
     remark: "워싱턴 은행 포럼 사전 원고에서 광범위한 가격압력이 고착되는 것을 우려한다고 밝힘. 인플레가 2%로 향한다는 확신이 생기면 정책기조 평가에 시간을 더 쓸 수 있으나, 충분히 완화되지 않는다면 단호하게 금리를 올려야 한다는 입장.",
+    remarkEn: "Prepared remarks for a Washington banking forum said he is concerned about broad price pressures becoming entrenched. If confident inflation is heading to 2%, he could take more time to assess the policy stance; if it does not ease enough, the Fed should raise rates decisively.",
     sourceUrl: "https://www.cnbc.com/2026/09/01/fed-governor-barr-says-hell-support-rate-hike-if-inflation-doesnt-ease.html"
   },
   {
     name: "리사 쿡",
     nameEn: "Lisa Cook",
     role: "이사",
+    roleEn: "Governor",
     group: "board",
     isVoter2026: true,
     stance: -1,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 동결 찬성으로 표결 참여. 이후 개별 발언은 확인되지 않음 — 최신 연설 확인 필요.",
+    remarkEn: "Voted to hold in July. No individual remarks found since — latest speech needs checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "제롬 파월",
     nameEn: "Jerome Powell",
     role: "이사 (전 의장, 이사 임기 2028.1)",
+    roleEn: "Governor (former Chair; Board term to Jan 2028)",
     group: "board",
     isVoter2026: true,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "의장직 이임 후 이사로 잔류하며 FOMC 표결권 유지. 7월 동결 찬성. 이후 개별 발언은 확인되지 않음.",
+    remarkEn: "Stayed on the Board after stepping down as Chair and keeps his FOMC vote. Voted to hold in July. No individual remarks found since.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "존 윌리엄스",
     nameEn: "John Williams",
     role: "뉴욕 연은 총재 · FOMC 부의장 (상시 투표)",
+    roleEn: "President, New York Fed · FOMC Vice Chair (permanent voter)",
     group: "bank",
     isVoter2026: true,
     stance: 0,
     lastDate: "2026-09-02",
     remark: "CNBC 인터뷰에서 최근 인플레 지표가 고무적이지만 하락 추세를 확인할 증거가 더 필요하다는 입장. 현 정책이 1~2년 내 목표 복귀를 담보할 만큼 충분한지 명확한 신호가 없다며 기다려 보자는 쪽. 사실상 9월 동결 지지로 해석됨.",
+    remarkEn: "In a CNBC interview said recent inflation data are encouraging but more evidence is needed to confirm a downtrend. Sees no clear signal yet that current policy is enough to return inflation to target within one to two years and prefers to wait. Read as effective support for a September hold.",
     sourceUrl: "https://www.pbs.org/newshour/economy/fed-governor-waller-muddies-outlook-on-possible-rate-hike-later-this-month"
   },
   {
     name: "베스 해맥",
     nameEn: "Beth Hammack",
     role: "클리블랜드 연은 총재",
+    roleEn: "President, Cleveland Fed",
     group: "bank",
     isVoter2026: true,
     stance: 2,
     lastDate: "2026-07-29",
     remark: "7월 FOMC에서 25bp 인상을 주장하며 반대표. 5년 넘게 목표를 상회한 인플레를 근거로 지금 긴축하지 않으면 기대가 고착될 수 있다는 논리. 회의 전부터 공개적으로 긴축을 주장해 온 인물.",
+    remarkEn: "Dissented in July in favor of a 25bp hike. Argued that with inflation above target for more than five years, failing to tighten now risks entrenched expectations. Had publicly pushed for tightening before the meeting.",
     sourceUrl: "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html"
   },
   {
     name: "닐 카시카리",
     nameEn: "Neel Kashkari",
     role: "미니애폴리스 연은 총재",
+    roleEn: "President, Minneapolis Fed",
     group: "bank",
     isVoter2026: true,
     stance: 2,
     lastDate: "2026-07-29",
     remark: "7월 FOMC에서 25bp 인상을 주장하며 반대표. 회의 수 주 전부터 공개적으로 추가 긴축 필요성을 언급.",
+    remarkEn: "Dissented in July in favor of a 25bp hike. Had publicly flagged the need for further tightening for weeks before the meeting.",
     sourceUrl: "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html"
   },
   {
     name: "로리 로건",
     nameEn: "Lorie Logan",
     role: "댈러스 연은 총재",
+    roleEn: "President, Dallas Fed",
     group: "bank",
     isVoter2026: true,
     stance: 2,
     lastDate: "2026-07-29",
     remark: "7월 FOMC에서 25bp 인상을 주장하며 반대표. 세 명의 반대표는 2016년 9월 이후 처음 나온 동일 방향 3인 반대로 기록됨.",
+    remarkEn: "Dissented in July in favor of a 25bp hike. The three dissents were the first three same-direction dissents since September 2016.",
     sourceUrl: "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html"
   },
   {
     name: "애나 폴슨",
     nameEn: "Anna Paulson",
     role: "필라델피아 연은 총재",
+    roleEn: "President, Philadelphia Fed",
     group: "bank",
     isVoter2026: true,
     stance: -1,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 동결 찬성. 연초에는 인플레 둔화와 노동시장 안정을 전제로 연내 소폭 추가 인하 여지를 언급했고 현 금리를 여전히 다소 긴축적이라고 평가. 인플레보다 고용 쪽 리스크에 무게를 두는 위원회 내 비둘기 축. 최근 발언 재확인 필요.",
+    remarkEn: "Voted to hold in July. Early in the year she saw room for modest further cuts this year, assuming slowing inflation and a stable labor market, and called rates still somewhat restrictive. The committee's dovish anchor, weighting employment risks above inflation. Recent remarks need reconfirming.",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-01-14/fed-s-paulson-repeats-she-sees-modest-rate-cuts-later-in-2026"
   },
   {
     name: "토머스 바킨",
     nameEn: "Thomas Barkin",
     role: "리치먼드 연은 총재 (2027 투표)",
+    roleEn: "President, Richmond Fed (votes 2027)",
     group: "bank",
     isVoter2026: false,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 교체위원으로 참석. 최근 개별 발언 확인 필요.",
+    remarkEn: "Attended the July FOMC as an alternate. Recent individual remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "메리 데일리",
     nameEn: "Mary Daly",
     role: "샌프란시스코 연은 총재 (2027 투표)",
+    roleEn: "President, San Francisco Fed (votes 2027)",
     group: "bank",
     isVoter2026: false,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 교체위원으로 참석. 최근 개별 발언 확인 필요.",
+    remarkEn: "Attended the July FOMC as an alternate. Recent individual remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "오스탄 굴스비",
     nameEn: "Austan Goolsbee",
     role: "시카고 연은 총재 (2027 투표)",
+    roleEn: "President, Chicago Fed (votes 2027)",
     group: "bank",
     isVoter2026: false,
     stance: 1,
     lastDate: "2026-07-29",
     remark: "2025년 12월 인하에 반대표를 던진 이력. 당시 최근 6개월간 특히 서비스 부문에서 인플레 진전이 없었다고 지적하며 적어도 1분기까지는 기다렸어야 한다는 입장. 7월 FOMC 교체위원. 최근 발언 확인 필요.",
+    remarkEn: "Dissented against the December 2025 cut, noting no inflation progress over the prior six months, especially in services, and arguing the Fed should have waited at least until Q1. July FOMC alternate. Recent remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "수전 콜린스",
     nameEn: "Susan Collins",
     role: "보스턴 연은 총재",
+    roleEn: "President, Boston Fed",
     group: "bank",
     isVoter2026: false,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 참석(비투표). 최근 개별 발언 확인 필요.",
+    remarkEn: "Attended the July FOMC (non-voter). Recent individual remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "알베르토 무살렘",
     nameEn: "Alberto Musalem",
     role: "세인트루이스 연은 총재",
+    roleEn: "President, St. Louis Fed",
     group: "bank",
     isVoter2026: false,
     stance: 1,
     lastDate: "2026-07-29",
     remark: "인플레 상방 리스크와 기대 이탈 가능성을 반복 강조해 온 인물. 7월 FOMC 참석(비투표). 최근 발언 확인 필요.",
+    remarkEn: "Has repeatedly stressed upside inflation risks and the chance of expectations becoming unanchored. Attended the July FOMC (non-voter). Recent remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "제프리 슈미드",
     nameEn: "Jeffrey Schmid",
     role: "캔자스시티 연은 총재",
+    roleEn: "President, Kansas City Fed",
     group: "bank",
     isVoter2026: false,
     stance: 1,
     lastDate: "2026-07-29",
     remark: "2025년 12월 인하에 반대표. 당시 현 정책이 겨우 긴축적인 수준이라고 평가. 7월 FOMC 참석(비투표). 최근 발언 확인 필요.",
+    remarkEn: "Dissented against the December 2025 cut, calling policy only barely restrictive at the time. Attended the July FOMC (non-voter). Recent remarks need checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   },
   {
     name: "애틀랜타 연은 (총재 공석)",
     nameEn: "Atlanta Fed",
     role: "총재직 공석 — 보스틱 2026.2.28 임기 종료",
+    roleEn: "Presidency vacant — Bostic's term ended Feb 28, 2026",
     group: "bank",
     isVoter2026: false,
     stance: 0,
     lastDate: "2026-07-29",
     remark: "7월 FOMC 의사록에는 셰릴 베너블 수석부총재가 교체위원으로 기재됨. 후임 총재 선임 여부 확인 필요.",
+    remarkEn: "July FOMC minutes list First Vice President Cheryl Venable as the alternate member. Whether a successor has been named needs checking.",
     sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
   }
 ];
@@ -238,30 +280,51 @@ const FED_OFFICIALS = [
   var SECTION_ID = "fed-tracker";
 
   var STANCES = [
-    { v: 2,  label: "강경매파",       short: "+2" },
-    { v: 1,  label: "매파기울기",     short: "+1" },
-    { v: 0,  label: "중립·데이터의존", short: "0" },
-    { v: -1, label: "비둘기기울기",   short: "−1" },
-    { v: -2, label: "강경비둘기",     short: "−2" }
+    { v: 2,  short: "+2", ko: "강경매파",        en: "Strong hawk" },
+    { v: 1,  short: "+1", ko: "매파기울기",      en: "Leans hawk" },
+    { v: 0,  short: "0",  ko: "중립·데이터의존", en: "Neutral / data-dep." },
+    { v: -1, short: "−1", ko: "비둘기기울기",    en: "Leans dove" },
+    { v: -2, short: "−2", ko: "강경비둘기",      en: "Strong dove" }
   ];
   var GROUP_FILTERS = [
-    { k: "all",   label: "전체" },
-    { k: "voter", label: "2026 투표권" },
-    { k: "board", label: "이사회" },
-    { k: "bank",  label: "지역연은" }
+    { k: "all",   ko: "전체",        en: "All" },
+    { k: "voter", ko: "2026 투표권", en: "2026 voters" },
+    { k: "board", ko: "이사회",      en: "Board" },
+    { k: "bank",  ko: "지역연은",    en: "Reserve Banks" }
   ];
   var STANCE_FILTERS = [
-    { k: "all",     label: "전체" },
-    { k: "hawk",    label: "매파" },
-    { k: "neutral", label: "중립" },
-    { k: "dove",    label: "비둘기" }
+    { k: "all",     ko: "전체",   en: "All" },
+    { k: "hawk",    ko: "매파",   en: "Hawks" },
+    { k: "neutral", ko: "중립",   en: "Neutral" },
+    { k: "dove",    ko: "비둘기", en: "Doves" }
   ];
-  var state = { group: "all", stance: "all" };
+  var UI = {
+    ko: { ff: "FF 목표범위", next: "다음 FOMC", vote: "직전 표결", odds: "시장 확률", asOf: "데이터 기준일",
+          legend: "<b>굵은 테두리</b> = 2026 FOMC 투표권자 · 배지에 마우스를 올리면 이름 표시",
+          group: "구분", stance: "스탠스", unit: "명", empty: "조건에 맞는 인물이 없습니다.",
+          voter: "2026 투표", nonVoter: "비투표", voterLong: "2026 투표권", date: "발언일", source: "출처", koOnly: "" },
+    en: { ff: "FF target range", next: "Next FOMC", vote: "Last vote", odds: "Market odds", asOf: "Data as of",
+          legend: "<b>Bold border</b> = 2026 FOMC voter · hover a badge for the name",
+          group: "Group", stance: "Stance", unit: "", empty: "No officials match these filters.",
+          voter: "2026 voter", nonVoter: "Non-voter", voterLong: "2026 voter", date: "Date", source: "Source", koOnly: "KO only" }
+  };
+  var LANG_KEY = "fedTrackerLang";
+  function loadLang() { try { var v = localStorage.getItem(LANG_KEY); return v === "en" ? "en" : "ko"; } catch (e) { return "ko"; } }
+  function saveLang(v) { try { localStorage.setItem(LANG_KEY, v); } catch (e) {} }
+  var state = { group: "all", stance: "all", lang: loadLang() };
+  function T() { return UI[state.lang]; }
+  function L(obj) { return obj[state.lang] || obj.ko; }
+  function pick(o, key) { return state.lang === "en" && o[key + "En"] ? o[key + "En"] : o[key]; }
+  function dispName(o) { return state.lang === "en" ? (o.nameEn || o.name) : o.name; }
 
   var CSS = [
     "#fed-tracker{text-align:left;margin-bottom:24px;color:var(--t,#2A2317);font-family:'Nunito Sans',system-ui,sans-serif}",
     ".fed-sec{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:.22em;color:var(--dim,#9A8E74);margin:0 0 14px 1px;display:flex;align-items:center;gap:14px}",
-    ".fed-sec:after{content:'';flex:1;height:1px;background:var(--b,rgba(60,48,24,.14))}",
+    ".fed-sec:after{content:'';flex:1;height:1px;background:var(--b,rgba(60,48,24,.14));order:1}",
+    ".fed-lang{order:2;display:inline-flex;border:1px solid var(--b2,rgba(60,48,24,.24));border-radius:999px;overflow:hidden;letter-spacing:.08em}",
+    ".fed-lang-btn{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;padding:3px 9px;border:0;background:transparent;color:var(--mt,#6E6450);cursor:pointer}",
+    ".fed-lang-btn[aria-pressed='true']{background:var(--t,#2A2317);color:var(--p,#F7F1E3)}",
+    ".fed-ko-only{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--mt,#6E6450);border:1px dashed var(--b2,rgba(60,48,24,.24));border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px}",
     ".fed-panel{background:var(--p,#F7F1E3);border:1px solid var(--b,rgba(60,48,24,.14));border-radius:16px;padding:16px}",
     ".fed-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}",
     ".fed-kpi{text-align:center;background:var(--p2,#EFE7D5);border:1px solid var(--b,rgba(60,48,24,.14));border-radius:12px;padding:10px 12px;min-width:0}",
@@ -349,15 +412,15 @@ const FED_OFFICIALS = [
   function renderKPIs() {
     var s = FED_SNAPSHOT;
     var cells = [
-      ["FF 목표범위", s.targetRange],
-      ["다음 FOMC", s.nextFOMC],
-      ["직전 표결", s.lastVote],
-      ["시장 확률", s.marketOdds]
+      [T().ff, s.targetRange],
+      [T().next, s.nextFOMC],
+      [T().vote, pick(s, "lastVote")],
+      [T().odds, pick(s, "marketOdds")]
     ];
     return '<div class="fed-kpis">' + cells.map(function (c) {
       return '<div class="fed-kpi"><div class="fed-kpi-k">' + esc(c[0]) + '</div><div class="fed-kpi-v">' + esc(c[1]) + "</div></div>";
     }).join("") + "</div>" +
-      '<div class="fed-asof">데이터 기준일 ' + esc(s.asOf) + "</div>";
+      '<div class="fed-asof">' + esc(T().asOf) + " " + esc(s.asOf) + "</div>";
   }
 
   function renderSpectrum() {
@@ -366,16 +429,17 @@ const FED_OFFICIALS = [
         .filter(function (x) { return x.o.stance === st.v && matches(x.o); });
       var chips = people.map(function (x) {
         var o = x.o;
-        var title = o.name + " (" + o.nameEn + ") · " + o.role + (o.isVoter2026 ? " · 2026 투표권" : "");
+        var title = (state.lang === "en" ? o.nameEn + " (" + o.name + ")" : o.name + " (" + o.nameEn + ")") +
+          " · " + pick(o, "role") + (o.isVoter2026 ? " · " + T().voterLong : "");
         return '<span class="fed-chip ' + stanceCls(st.v) + (o.isVoter2026 ? " fed-voter" : "") +
           '" title="' + esc(title) + '">' + esc(INITIALS[x.i]) + "</span>";
       }).join("");
       return '<div class="fed-col" role="listitem">' +
         '<div class="fed-col-h ' + stanceCls(st.v) + '" style="background:none">' + esc(st.short) + "</div>" +
-        '<div class="fed-col-s">' + esc(st.label) + "</div>" +
+        '<div class="fed-col-s">' + esc(L(st)) + "</div>" +
         '<div class="fed-col-b">' + (chips || '<span class="fed-col-s">—</span>') + "</div></div>";
     }).join("") + "</div>" +
-      '<div class="fed-legend"><b>굵은 테두리</b> = 2026 FOMC 투표권자 · 배지에 마우스를 올리면 이름 표시</div>';
+      '<div class="fed-legend">' + T().legend + "</div>";
   }
 
   function renderFilters(shown) {
@@ -383,27 +447,29 @@ const FED_OFFICIALS = [
       return '<div class="fed-frow"><span class="fed-flabel">' + esc(label) + "</span>" +
         items.map(function (f) {
           return '<button type="button" class="fed-btn" data-fed-key="' + key + '" data-fed-val="' + f.k +
-            '" aria-pressed="' + (state[key] === f.k ? "true" : "false") + '">' + esc(f.label) + "</button>";
-        }).join("") + (key === "stance" ? '<span class="fed-count">' + shown + " / " + FED_OFFICIALS.length + "명</span>" : "") +
+            '" aria-pressed="' + (state[key] === f.k ? "true" : "false") + '">' + esc(L(f)) + "</button>";
+        }).join("") + (key === "stance" ? '<span class="fed-count">' + shown + " / " + FED_OFFICIALS.length + T().unit + "</span>" : "") +
         "</div>";
     }
-    return '<div class="fed-filters">' + row("구분", GROUP_FILTERS, "group") + row("스탠스", STANCE_FILTERS, "stance") + "</div>";
+    return '<div class="fed-filters">' + row(T().group, GROUP_FILTERS, "group") + row(T().stance, STANCE_FILTERS, "stance") + "</div>";
   }
 
   function renderCards(list) {
-    if (!list.length) return '<div class="fed-cards"><div class="fed-empty">조건에 맞는 인물이 없습니다.</div></div>';
+    if (!list.length) return '<div class="fed-cards"><div class="fed-empty">' + esc(T().empty) + "</div></div>";
     return '<div class="fed-cards">' + list.map(function (o) {
       var st = stanceInfo(o.stance);
+      var sub = state.lang === "en" ? o.name : o.nameEn;
+      var koOnly = state.lang === "en" && !o.remarkEn;
       return '<article class="fed-card">' +
-        '<div class="fed-card-top"><div><div class="fed-name">' + esc(o.name) +
-        '<span class="fed-en">' + esc(o.nameEn) + "</span></div>" +
-        '<div class="fed-role">' + esc(o.role) + "</div></div>" +
-        '<div class="fed-tags"><span class="fed-tag ' + stanceCls(o.stance) + '">' + esc(st.short + " " + st.label) + "</span>" +
-        (o.isVoter2026 ? '<span class="fed-tag fed-tag-vote">2026 투표</span>' : '<span class="fed-tag fed-tag-novote">비투표</span>') +
+        '<div class="fed-card-top"><div><div class="fed-name">' + esc(dispName(o)) +
+        '<span class="fed-en">' + esc(sub) + "</span></div>" +
+        '<div class="fed-role">' + esc(pick(o, "role")) + "</div></div>" +
+        '<div class="fed-tags"><span class="fed-tag ' + stanceCls(o.stance) + '">' + esc(st.short + " " + L(st)) + "</span>" +
+        (o.isVoter2026 ? '<span class="fed-tag fed-tag-vote">' + esc(T().voter) + "</span>" : '<span class="fed-tag fed-tag-novote">' + esc(T().nonVoter) + "</span>") +
         "</div></div>" +
-        '<div class="fed-remark">' + esc(o.remark) + "</div>" +
-        '<div class="fed-meta"><span>발언일 ' + esc(o.lastDate) + "</span>" +
-        '<a href="' + esc(safeUrl(o.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">출처 ↗</a></div>' +
+        '<div class="fed-remark">' + esc(pick(o, "remark")) + (koOnly ? '<span class="fed-ko-only">' + esc(T().koOnly) + "</span>" : "") + "</div>" +
+        '<div class="fed-meta"><span>' + esc(T().date) + " " + esc(o.lastDate) + "</span>" +
+        '<a href="' + esc(safeUrl(o.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + esc(T().source) + " ↗</a></div>" +
         "</article>";
     }).join("") + "</div>";
   }
@@ -417,10 +483,20 @@ const FED_OFFICIALS = [
     });
   }
 
+  function renderLang() {
+    return '<span class="fed-lang" role="group" aria-label="Language">' +
+      ["ko", "en"].map(function (l) {
+        return '<button type="button" class="fed-lang-btn" data-fed-lang="' + l + '" aria-pressed="' +
+          (state.lang === l ? "true" : "false") + '">' + l.toUpperCase() + "</button>";
+      }).join("") + "</span>";
+  }
+
   function render(root) {
     var list = sorted(FED_OFFICIALS.filter(matches));
-    root.querySelector(".fed-body").innerHTML =
-      renderSpectrum() + renderFilters(list.length) + renderCards(list);
+    root.setAttribute("lang", state.lang);
+    root.querySelector(".fed-sec").innerHTML = "Fed Speak Tracker" + renderLang();
+    root.querySelector(".fed-panel").innerHTML = renderKPIs() + '<div class="fed-body">' +
+      renderSpectrum() + renderFilters(list.length) + renderCards(list) + "</div>";
   }
 
   function build() {
@@ -428,9 +504,17 @@ const FED_OFFICIALS = [
     root.id = SECTION_ID;
     root.setAttribute("aria-label", "Fed Speak Tracker");
     root.innerHTML = '<div class="fed-sec">Fed Speak Tracker</div>' +
-      '<div class="fed-panel">' + renderKPIs() + '<div class="fed-body"></div></div>';
+      '<div class="fed-panel"></div>';
     root.addEventListener("click", function (e) {
-      var btn = e.target.closest ? e.target.closest(".fed-btn") : null;
+      if (!e.target.closest) return;
+      var lb = e.target.closest(".fed-lang-btn");
+      if (lb && root.contains(lb)) {
+        state.lang = lb.getAttribute("data-fed-lang");
+        saveLang(state.lang);
+        render(root);
+        return;
+      }
+      var btn = e.target.closest(".fed-btn");
       if (!btn || !root.contains(btn)) return;
       state[btn.getAttribute("data-fed-key")] = btn.getAttribute("data-fed-val");
       render(root);
