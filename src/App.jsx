@@ -29,7 +29,7 @@ const THEMES = [
    SIGNAL STACK  — cross-asset signals that matter RIGHT NOW
    ════════════════════════════════════════════════════════════════════ */
 const SIGNALS = [
-  { name:"US Real Rate",       val:"+1.87%",  pct:88, dir:"▲", col:"#FF3B55",
+  { name:"US Real Rate",       val:"+1.87%", /* live: 10Y − CPI y/y */  pct:88, dir:"▲", col:"#FF3B55",
     note:"Policy 3.63% vs CPI 4.2% = negative real rate; Fed behind the curve, hike bias justified." },
   { name:"2s10s Curve",        val:"+38 bps", pct:62, dir:"▲", col:"#22d3a8",
     note:"+28bp, mildly positive; hike risk flattens front-end, no recession signal from steepening." },
@@ -168,11 +168,11 @@ function mergeCalLive(calArr, live, now){
       const withActual = nfpArr.filter(d=>d.actual!=null);
       const last = withActual[withActual.length-1];
       if(last){
-        const rounded = Math.round(last.actual/1000);
+        const rounded = toK(last.actual);
         patch.last = (rounded>=0?"+":"")+rounded+"K";
         if(last.mo) patch.lp = last.mo.replace(/'\d\d$/, "");
         if(last.estimate!=null){
-          const diffK = rounded - Math.round(last.estimate/1000);
+          const diffK = rounded - toK(last.estimate);
           patch.sur = Math.abs(diffK) < 5 ? "inline" : (diffK > 0 ? "above" : "below");
         }
       }
@@ -187,6 +187,7 @@ function mergeCalLive(calArr, live, now){
     } else if(it.key==="pce" && us && us.corePCEYoY!=null){
       patch.last = "+"+us.corePCEYoY+"% y/y";
     }
+    if(patch.last) patch.pr = patch.last.replace(/\s.*$/,"");
     return {...it, ...patch};
   });
 }
@@ -252,8 +253,11 @@ const BOARD = [
 ];
 
 /* ════════════════════════════════════════════════════════════════
-NFP DATA — static history (actuals auto-updated nightly by GitHub Actions
-via FRED PAYEMS; estimate/spx/note patched manually after each release)
+NFP DATA — static history, all figures in THOUSANDS.
+a = FIRST PRINT (what the market traded on), e = Dow Jones consensus,
+spx = S&P 500 % on release day. New months arrive from data.json
+(first print + release-day SPX are auto-filled by GitHub Actions; the
+consensus `estimate` is patched by hand in data.json after each release).
 ════════════════════════════════════════════════════════════════ */
 const NFP_STATIC=[
 {mo:"Dec'22",a:223,e:200,spx:0.7},{mo:"Jan'23",a:517,e:189,spx:-0.9,note:"+517K shock"},
@@ -271,49 +275,51 @@ const NFP_STATIC=[
 {mo:"Dec'24",a:256,e:155,spx:0.8},{mo:"Jan'25",a:143,e:171,spx:0.6},
 {mo:"Feb'25",a:151,e:170,spx:-1.5,note:"DOGE effect"},{mo:"Mar'25",a:228,e:135,spx:1.8},
 {mo:"Apr'25",a:177,e:130,spx:1.2},{mo:"May'25",a:139,e:130,spx:0.6},
-{mo:"Jun'25",a:147,e:110,spx:0.9},{mo:"Jul'25",a:129,e:100,spx:0.5},
-{mo:"Aug'25",a:165,e:140,spx:1.1},{mo:"Sep'25",a:78,e:120,spx:-0.8,note:"Iran war starts"},
-{mo:"Oct'25",a:185,e:130,spx:1.4},{mo:"Nov'25",a:120,e:145,spx:-0.5},
-{mo:"Dec'25",a:88,e:150,spx:-1.2},{mo:"Jan'26",a:-133,e:-50,spx:2.1,note:"DOGE peak → cut bets"},
-{mo:"Feb'26",a:185,e:60,spx:1.5},{mo:"Mar'26",a:214,e:100,spx:1.0},
-{mo:"Apr'26",a:179,e:62,spx:0.7},{mo:"May'26",a:172,e:88,spx:-2.6,note:"+172K vs 88K → rate hike repricing"},
-].map(d=>({...d,surp:d.a-d.e}));
+{mo:"Jun'25",a:147,e:110,spx:0.9},{mo:"Jul'25",a:73,e:100,spx:-1.6,note:"Big miss + -258K revisions"},
+{mo:"Aug'25",a:22,e:75,spx:-0.3},{mo:"Sep'25",a:119,e:50,spx:-1.6,note:"Delayed by shutdown; NVDA reversal day"},
+{mo:"Oct'25",a:-105,e:null,spx:null,note:"Released w/ Nov (shutdown) — no consensus"},{mo:"Nov'25",a:64,e:45,spx:-0.2},
+{mo:"Dec'25",a:50,e:73,spx:0.7},{mo:"Jan'26",a:130,e:55,spx:0.0},
+{mo:"Feb'26",a:-92,e:50,spx:-1.3,note:"Kaiser strike; oil spike"},{mo:"Mar'26",a:178,e:59,spx:null,note:"Good Friday — US cash market closed"},
+{mo:"Apr'26",a:115,e:55,spx:0.8},{mo:"May'26",a:172,e:80,spx:-2.6,note:"+172K vs 80K → rate hike repricing"},
+{mo:"Jun'26",a:57,e:115,spx:0.0,note:"Miss; SPX flat, Dow record"},{mo:"Jul'26",a:-23,e:83,spx:0.6,note:"Miss → S&P record close"},
+{mo:"Aug'26",a:162,e:53,spx:-0.4,note:"3x consensus → hike bets"},
+].map(d=>({...d,surp:(d.a!=null&&d.e!=null)?d.a-d.e:null}));
 
 /**
- * mergeNFPLive — overlays live data from data.json onto the static array.
- * For each entry in live.nfp:
- *   - If a matching mo exists in NFP_STATIC, update its actual (keeps e/spx/note).
- *   - Otherwise append it as a new bar (estimate/spx/note null until manually patched).
+ * mergeNFPLive — overlays data.json NFP rows onto the static array.
+ *   - Static first prints / estimates / SPX / notes win (curated history).
+ *   - Live rows fill any field the static row is missing, and brand-new months
+ *     are appended. Live `actual` is the FIRST print (thousands); legacy rows
+ *     stored raw job counts (162000) and are normalised to thousands here.
  * Returns the merged array with surp recomputed, oldest first.
  */
+const toK=v=>(v==null||isNaN(v))?null:(Math.abs(v)>=5000?Math.round(v/1000):Number(v));
 function mergeNFPLive(staticArr, liveArr) {
   if (!liveArr || !liveArr.length) return staticArr;
   const byMo = {};
+  const order = staticArr.map(d => d.mo);
   staticArr.forEach(d => { byMo[d.mo] = {...d}; });
   liveArr.forEach(ld => {
     const mo = ld.mo || ld.date;
+    const la = toK(ld.actual), le = toK(ld.estimate);
     if (byMo[mo]) {
-      // update actual from FRED; keep estimate/spx/note from static
-      byMo[mo].a = ld.actual != null ? ld.actual : byMo[mo].a;
+      const st = byMo[mo];
+      if (st.a == null && la != null) st.a = la;
+      if (st.e == null && le != null) st.e = le;
+      if (st.spx == null && ld.spx != null) st.spx = ld.spx;
+      if (!st.note && ld.note) st.note = ld.note;
+      if (ld.revised != null) st.rev = toK(ld.revised);
     } else {
-      // brand-new month from FRED — add with whatever fields exist in live entry
-      byMo[mo] = {
-        mo,
-        a:    ld.actual   != null ? ld.actual   : null,
-        e:    ld.estimate != null ? ld.estimate : null,
-        spx:  ld.spx      != null ? ld.spx      : null,
-        note: ld.note     || null,
-      };
+      order.push(mo);
+      byMo[mo] = { mo, a: la, e: le, spx: ld.spx ?? null, note: ld.note || null,
+                   rev: toK(ld.revised) };
     }
   });
-  // Sort by date using the mo label
-  const moOrder = staticArr.map(d => d.mo);
-  liveArr.forEach(ld => {
-    const mo = ld.mo || ld.date;
-    if (!moOrder.includes(mo)) moOrder.push(mo);
-  });
-  return moOrder
-    .filter(mo => byMo[mo])
+  const MON={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+  const moKey=mo=>{const m=/^([A-Z][a-z]{2})'(\d\d)$/.exec(mo||"");return m?(2000+ +m[2])*12+MON[m[1]]:Infinity;};
+  return order
+    .filter(mo => byMo[mo] && byMo[mo].a != null)
+    .sort((x,y)=>moKey(x)-moKey(y))
     .map(mo => ({ ...byMo[mo], surp: (byMo[mo].a != null && byMo[mo].e != null) ? byMo[mo].a - byMo[mo].e : null }));
 }
 
@@ -373,7 +379,27 @@ function deltaColor(type,val,isEq){
    the static board/signals. Falls back to static when data.json absent.
    ════════════════════════════════════════════════════════════════════ */
 const EQ_KEY={US:"SPX",JP:"Nikkei",KR:"KOSPI",CN:"CSI300",EU:"EuroStoxx",GB:"FTSE"};
-const US_KEY={"Policy Rate":"policyRate","2Y Yield":"y2","10Y Yield":"y10","CPI y/y":"cpiYoY","GDP y/y":"gdpYoY"};
+const US_KEY={
+    "Policy Rate":["policyRate","policyRate_d1","policyRate_w1","policyRate_m1","policyRate_y1"],
+    "2Y Yield":   ["y2","y2_d1","y2_w1","y2_m1","y2_y1"],
+    "10Y Yield":  ["y10","y10_d1","y10_w1","y10_m1","y10_y1"],
+    "CPI y/y":    ["cpiYoY",null,null,"cpiYoY_m1","cpiYoY_y1"],
+    "GDP y/y":    ["gdpYoY",null,null,"gdpYoY_q1","gdpYoY_y1"],
+    "S&P 500":    [null,"spx_d1","spx_w1","spx_m1","spx_y1"],
+};
+function patchFromKeys(src,keys){
+    const [k0,k1,k2,k3,k4]=keys;const patch={};
+    const nv=k0?liveNum(src[k0]):null,nd1=k1?liveNum(src[k1]):null,nw1=k2?liveNum(src[k2]):null,
+          nm1=k3?liveNum(src[k3]):null,ny1=k4?liveNum(src[k4]):null;
+    if(nv !=null){patch.now=nv;patch.live=true;}
+    if(nd1!=null)patch.d1=nd1;
+    if(nw1!=null)patch.w1=nw1;
+    if(nm1!=null)patch.m1=nm1;
+    if(ny1!=null)patch.y1=ny1;
+    // CPI/GDP: 1D/1W ago = same print as now (monthly/quarterly series)
+    if(k0&&!k1&&nv!=null){patch.d1=nv;patch.w1=nv;}
+    return patch;
+}
 const KR_KEY={
     "Policy Rate":["policyRate",null,null,"policyRate_m1","policyRate_y1"],
     "2Y Yield":   ["y2","y2_d1","y2_w1","y2_m1","y2_y1"],
@@ -390,11 +416,16 @@ function mergeBoard(live){
           let rows=c.rows.map(r=>{
                   if(r.eq){
                             const nv=liveNum(live.equities?.[EQ_KEY[c.code]]);
-                            return nv!=null?{...r,now:nv,live:true}:r;
+                            let nr=nv!=null?{...r,now:nv,live:true}:r;
+                            if(c.code==="US"&&live.us)nr={...nr,...patchFromKeys(live.us,US_KEY["S&P 500"])};
+                            return nr;
                   }
                   if(c.code==="US"&&US_KEY[r.k]){
-                            const nv=liveNum(live.us?.[US_KEY[r.k]]);
-                            return nv!=null?{...r,now:nv,live:true}:r;
+                            const us=live.us||{};
+                            const patch=patchFromKeys(us,US_KEY[r.k]);
+                            if(r.k==="CPI y/y"&&us.cpiAsOf)patch.sub=us.cpiAsOf;
+                            if(r.k==="GDP y/y"&&us.gdpAsOf)patch.sub=us.gdpAsOf+" · q/q saar";
+                            return Object.keys(patch).length>0?{...r,...patch}:r;
                   }
                   if(c.code==="KR"&&KR_KEY[r.k]){
                             const [k0,k1,k2,k3,k4]=KR_KEY[r.k];
@@ -416,8 +447,10 @@ function mergeBoard(live){
           if(c.code==="US"){
                   const y2=rows.find(r=>r.k==="2Y Yield"),y10=rows.find(r=>r.k==="10Y Yield");
                   if(y2?.live&&y10?.live){
-                            const slope=Math.round((y10.now-y2.now)*100);
-                            rows=rows.map(r=>r.k==="2s10s"?{...r,now:slope,live:true}:r);
+                            const sl=(a,b)=>(a!=null&&b!=null)?Math.round((a-b)*100):null;
+                            const p={now:sl(y10.now,y2.now),live:true};
+                            ["d1","w1","m1","y1"].forEach(k=>{const v=sl(y10[k],y2[k]);if(v!=null)p[k]=v;});
+                            rows=rows.map(r=>r.k==="2s10s"?{...r,...p}:r);
                   }
           }
           return {...c,rows};
@@ -426,30 +459,53 @@ function mergeBoard(live){
 function mergeSignals(live,analysis){
   const notes={};
   (analysis?.signalNotes||[]).forEach(n=>{if(n&&n.name)notes[n.name]=n.note;});
-  const c=live?.commodities,fx=live?.fx;
+  const c=live?.commodities,fx=live?.fx,us=live?.us;
   return SIGNALS.map(s=>{
     let val=s.val;
     if(s.name==="USD / KRW"&&fx?.USDKRW!=null)val=Number(fx.USDKRW).toLocaleString("en-US");
     else if(s.name==="Brent Crude"&&c?.brent!=null)val="$"+Math.round(c.brent);
     else if(s.name==="Gold"&&c?.gold!=null)val="$"+Math.round(c.gold).toLocaleString("en-US");
     else if(s.name==="VIX"&&c?.vix!=null)val="~"+Number(c.vix).toFixed(0);
+    else if(s.name==="US Real Rate"&&us?.y10!=null&&us?.cpiYoY!=null){
+      const rr=us.y10-us.cpiYoY;val=(rr>=0?"+":"")+rr.toFixed(2)+"%";}
+    else if(s.name==="2s10s Curve"&&us?.y10!=null&&us?.y2!=null){
+      const sl=Math.round((us.y10-us.y2)*100);val=(sl>=0?"+":"")+sl+" bps";}
     return {...s,val,note:notes[s.name]||s.note};
   });
 }
 
 /* ════════════════════════════════════════════════════════════════════
-   AI PROMPTS
+   AI PROMPTS  — date + market context refreshed from data.json at runtime
    ════════════════════════════════════════════════════════════════════ */
+const PROMPT_CTX={date:"Jul 2, 2026",
+  global:"Iran-US war (oil $95), AI supercycle (SK Hynix/Samsung HBM dominance), Fed at 3.75% with hike risk, USDKRW 1,555, USDJPY 160."};
+function fmtAsOf(iso){
+  if(!iso)return null;const d=new Date(iso+"T12:00:00Z");if(isNaN(d))return null;
+  return d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"});
+}
+function refreshPromptCtx(live,analysis){
+  if(!live)return;
+  const us=live.us||{},c=live.commodities||{},fx=live.fx||{};
+  const nfp=(live.nfp||[]).filter(r=>r.actual!=null);const n=nfp[nfp.length-1];
+  const f=(v,d=2)=>v==null?"n/a":Number(v).toFixed(d);
+  PROMPT_CTX.date=fmtAsOf(live.date)||PROMPT_CTX.date;
+  PROMPT_CTX.global=[
+    analysis?.headline||null,
+    `Fed funds ${f(us.policyRate)}% · UST 2Y ${f(us.y2)}% / 10Y ${f(us.y10)}% · CPI ${f(us.cpiYoY,1)}% y/y (${us.cpiAsOf||"latest"})`,
+    n?`Latest NFP ${n.mo} ${toK(n.actual)>=0?"+":""}${toK(n.actual)}K${n.estimate!=null?` vs est ${toK(n.estimate)}K`:""}${n.spx!=null?` (SPX ${n.spx>=0?"+":""}${n.spx}% day-of)`:""}`:null,
+    `Brent $${f(c.brent,0)} · Gold $${f(c.gold,0)} · VIX ${f(c.vix,1)} · USDKRW ${f(fx.USDKRW,0)} · USDJPY ${f(fx.USDJPY,1)} · SPX ${live.equities?.SPX??"n/a"} · KOSPI ${live.equities?.KOSPI??"n/a"}`,
+  ].filter(Boolean).join(". ");
+}
 function buildMetricPrompt(country,row){
   const snap=country.rows.map(r=>`  ${r.k}: ${fmtVal(r,r.now)} (1Y: ${fmtVal(r,r.y1)})`).join("\n");
   const cur=`${fmtVal(row,row.now)}${row.type==="slope"?" bps":row.dp>0?"%":""}`;
   const dlt=calcDelta(row);
-  return `You are a senior macro PM at a $50bn global macro hedge fund. Today is July 2, 2026.
+  return `You are a senior macro PM at a $50bn global macro hedge fund. Today is ${PROMPT_CTX.date}.
 
 COUNTRY DATA — ${country.name}:
 ${snap}
 
-GLOBAL CONTEXT: Iran-US war since Sep 2025 (oil $95), AI supercycle (SK Hynix/Samsung HBM dominance), Fed at 3.75% with hike risk, May NFP +172K vs est +88K (SPX -2.6%), USDKRW 1,555 (15Y high), USDJPY 160.
+GLOBAL CONTEXT: ${PROMPT_CTX.global}
 
 Write a sharp 3-paragraph trade-desk commentary on ${country.name} ${row.k} (now: ${cur}, Δ1Y: ${dlt.str}).
 
@@ -463,7 +519,7 @@ Style: PM-to-team voice note — direct, opinionated, no hedging. 250 words max.
 }
 
 function buildTradePrompt(trade){
-  return `You are a senior PM at a top global macro hedge fund presenting to the investment committee. Today is July 2, 2026.
+  return `You are a senior PM at a top global macro hedge fund presenting to the investment committee. Today is ${PROMPT_CTX.date}.
 
 PROPOSED TRADE:
 Direction: ${trade.dir}
@@ -479,7 +535,7 @@ Core Thesis: ${trade.thesis}
 
 Key Catalyst: ${trade.catalyst}
 
-GLOBAL CONTEXT: Iran war (oil $95), Fed at 3.75% with hike risk, NFP +172K big beat, CPI 3.8% re-accelerating, AI supercycle intact (KR/JP semis), USDKRW at 15Y high, USDJPY at 160.
+GLOBAL CONTEXT: ${PROMPT_CTX.global}
 
 Write a crisp investment committee trade memo:
 
@@ -810,7 +866,8 @@ NFP CHART COMPONENT
 function NFPChart({ liveNFP }) {
 const NFP = mergeNFPLive(NFP_STATIC, liveNFP);
 const lat=NFP[NFP.length-1];
-const avg=Math.round(NFP.filter(d=>d.surp!=null).reduce((s,d)=>s+d.surp,0)/NFP.filter(d=>d.surp!=null).length);
+const last3y=NFP.slice(-36).filter(d=>d.surp!=null);
+const avg=last3y.length?Math.round(last3y.reduce((s,d)=>s+d.surp,0)/last3y.length):0;
 const Tip=({active,payload,label})=>{
 if(!active||!payload?.length)return null;
 const d=NFP.find(x=>x.mo===label);if(!d)return null;
@@ -818,18 +875,20 @@ return(<div style={{background:"#101018",border:"1px solid rgba(255,255,255,.15)
 borderRadius:10,padding:"10px 14px",fontFamily:"JetBrains Mono,monospace",fontSize:11,minWidth:150}}>
 <div style={{color:"#FF6200",fontWeight:700,marginBottom:6}}>{label}</div>
 <div style={{color:"#F0F2F8"}}>Act <b>{d.a}K</b>{d.e!=null?` · Est ${d.e}K`:""}</div>
+{d.rev!=null&&d.rev!==d.a&&<div style={{color:"#8a93a6",fontSize:10}}>Revised {d.rev}K</div>}
 {d.surp!=null&&<div style={{color:d.surp>=0?"#22d3a8":"#FF3B55",fontWeight:700,marginTop:2}}>{d.surp>=0?"+":""}{d.surp}K surprise</div>}
 {d.spx!=null&&<div style={{color:d.spx>=0?"#22d3a8":"#FF3B55",marginTop:4}}>SPX {d.spx>=0?"+":""}{d.spx}%</div>}
 {d.note&&<div style={{color:"#4a5568",marginTop:5,fontSize:9.5,lineHeight:1.4}}>{d.note}</div>}
 </div>);
 };
 const latMo=lat?.mo||"";
-const latSurp=lat?.surp!=null?(lat.surp>=0?"+":"")+lat.surp+"K":"n/a";
+const latSurp=lat?.surp!=null?(lat.surp>=0?"+":"")+lat.surp+"K":(lat?.e==null?"est n/a":"n/a");
+const latEst=lat?.e!=null?` (est ${lat.e}K)`:"";
 const latSpx=lat?.spx!=null?(lat.spx>=0?"+":"")+lat.spx+"%":"n/a";
 return(<div className="nfp-panel">
 <div className="nfp-stats">
-<div className="nstat"><span className="nstat-k">Latest {latMo}</span><span className="nstat-v" style={{color:"#22d3a8"}}>+{lat?.a}K</span></div>
-<div className="nstat"><span className="nstat-k">vs estimate</span><span className="nstat-v" style={{color:"#FF6200"}}>{latSurp}</span></div>
+<div className="nstat"><span className="nstat-k">Latest {latMo}</span><span className="nstat-v" style={{color:(lat?.a??0)>=0?"#22d3a8":"#FF3B55"}}>{(lat?.a??0)>=0?"+":""}{lat?.a}K</span></div>
+<div className="nstat"><span className="nstat-k">vs estimate</span><span className="nstat-v" style={{color:lat?.surp==null?"#FF6200":(lat.surp>=0?"#22d3a8":"#FF3B55")}}>{latSurp}<span style={{fontSize:"0.55em",color:"#4a5568",marginLeft:4}}>{latEst}</span></span></div>
 <div className="nstat"><span className="nstat-k">SPX day-of</span><span className="nstat-v" style={{color:lat?.spx>=0?"#22d3a8":"#FF3B55"}}>{latSpx}</span></div>
 <div className="nstat"><span className="nstat-k">3Y avg surprise</span><span className="nstat-v">{avg>=0?"+":""}{avg}K</span></div>
 </div>
@@ -880,7 +939,7 @@ function AnalysisDrawer({open,onClose,info,state}){
           <div className="dtitle">{info.title}</div>
           <div className="dsub">{info.subtitle}</div>
         </div>
-        <button className="dclose" onClick={onClose}>\u00d7</button>
+        <button className="dclose" onClick={onClose}>×</button>
       </div>
       {loading&&!text?(
         <div className="dloading">
@@ -920,7 +979,7 @@ function RatesMatrix({onAnalyze,board=BOARD}){
             <th className="l">Metric</th>
             <th className="hn">Now</th>
             <th>1D ago</th><th>1W ago</th><th>1M ago</th><th>1Y ago</th>
-            <th>\u0394 1Y</th><th></th>
+            <th>Δ 1Y</th><th></th>
           </tr></thead>
           <tbody>
             {C.rows.map(row=>{
@@ -934,7 +993,7 @@ function RatesMatrix({onAnalyze,board=BOARD}){
                 <td style={{color:"#8892a4"}}>{fmtVal(row,row.m1)}</td>
                 <td style={{color:"#4a5568"}}>{fmtVal(row,row.y1)}</td>
                 <td><span className="bdelta" style={{color:dc}}>{dlt.str}</span></td>
-                <td><button className="gbtn" onClick={e=>{e.stopPropagation();onAnalyze("metric",C,row);}}>AI \u25b7</button></td>
+                <td><button className="gbtn" onClick={e=>{e.stopPropagation();onAnalyze("metric",C,row);}}>AI ▷</button></td>
               </tr>);
             })}
           </tbody>
@@ -943,7 +1002,7 @@ function RatesMatrix({onAnalyze,board=BOARD}){
     </div>
     <div style={{fontSize:9.5,color:"var(--dim)",fontFamily:"Nunito Sans,sans-serif",
         lineHeight:1.6,marginBottom:26,paddingLeft:2,marginTop:6}}>
-      Tap any row for AI analysis · ~ = estimated · \u0394: rate\u2191=red(hawkish) · price\u2191=green · CPI\u2191=red
+      Tap any row for AI analysis · ~ = estimated · Δ: rate↑=red(hawkish) · price↑=green · CPI↑=red
     </div>
   </>);
 }
@@ -970,6 +1029,8 @@ export default function App(){
   },[]);
 
   const liveBoard=mergeBoard(live);
+  refreshPromptCtx(live,analysis);
+  const asOf=fmtAsOf(live?.date)||"Jul 2, 2026";
   const liveSignals=mergeSignals(live,analysis);
   const regimeLabel=analysis?.regimeLabel||REGIME_LABEL;
   const regimeSub=analysis?.regimeSub||REGIME_SUB;
@@ -999,9 +1060,9 @@ export default function App(){
   async function handleAnalyze(type,country,rowOrTrade){
     const key=type==="trade"?`trade_${rowOrTrade.id}`:`${country.code}_${rowOrTrade.k}`;
     const info = type==="trade"
-      ? {type:"trade",title:rowOrTrade.dir+" "+rowOrTrade.asset,subtitle:rowOrTrade.tag+" · Jul 2, 2026"}
+      ? {type:"trade",title:rowOrTrade.dir+" "+rowOrTrade.asset,subtitle:rowOrTrade.tag+" · "+asOf}
       : {type:"metric",title:country.name+" · "+rowOrTrade.k,
-          subtitle:fmtVal(rowOrTrade,rowOrTrade.now)+(rowOrTrade.type==="slope"?" bps":rowOrTrade.dp>0?"%":"")+" · Jul 2, 2026"};
+          subtitle:fmtVal(rowOrTrade,rowOrTrade.now)+(rowOrTrade.type==="slope"?" bps":rowOrTrade.dp>0?"%":"")+" · "+asOf};
     setOpenA({key,info});
     if(analyses[key]?.done)return;
     if(timerRef.current){clearInterval(timerRef.current);timerRef.current=null;}
@@ -1036,7 +1097,7 @@ const sortedCal=[...liveCal].sort((a,b)=>tval(a)-tval(b));
         <header className="hdr">
           <div className="hdr-l">
             <div className="logo">MACRO<span>WAR</span>ROOM</div>
-            <div className="tagline">Global Macro Strategy · Jul 2, 2026</div>
+            <div className="tagline">Global Macro Strategy · {asOf}</div>
           </div>
           <div className="hdr-r">
             <div className="live-clock">
@@ -1124,8 +1185,8 @@ const sortedCal=[...liveCal].sort((a,b)=>tval(a)-tval(b));
                 <div className="cal-blk">
                   <span className="cal-k">Last · {it.lp}</span>
                   <span className="cal-v">{it.last}
-                    {it.sur==="above"&&<span className="chip ab">\u25b2 beat</span>}
-                    {it.sur==="below"&&<span className="chip be">\u25bc miss</span>}
+                    {it.sur==="above"&&<span className="chip ab">▲ beat</span>}
+                    {it.sur==="below"&&<span className="chip be">▼ miss</span>}
                     {it.sur==="inline"&&<span className="chip eq">inline</span>}
                   </span>
                 </div>
@@ -1179,7 +1240,7 @@ const sortedCal=[...liveCal].sort((a,b)=>tval(a)-tval(b));
                 <span style={{color:"#4a5568"}}>Timeline: </span><span>{tr.timeline}</span>
               </div>
               <button className="analyze-btn" onClick={()=>handleAnalyze("trade",null,tr)}>
-                \u26a1 Trade Memo
+                ⚡ Trade Memo
               </button>
             </div>
           ))}
@@ -1194,8 +1255,8 @@ const sortedCal=[...liveCal].sort((a,b)=>tval(a)-tval(b));
         <RatesMatrix onAnalyze={handleAnalyze} board={liveBoard}/>
 
         <div className="foot">
-          <span>Data: BLS, Fed, BOJ, ECB, BOE, TradingEconomics · <b>Jul 1–2, 2026</b>. Signals & trade ideas are for analytical purposes only — not investment advice. ~ = estimated.</span>
-          <span>\u0394 color: rate\u2191=red(hawkish) · price\u2191=green · CPI\u2191=red · curve\u2191=green · Click rows for AI analysis</span>
+          <span>Data: FRED, BLS, BOK ECOS, Yahoo Finance (US/KR live · {asOf}); JP/CN/EU/GB rates & macro are static snapshots (Jul 1–2, 2026). Signals & trade ideas are for analytical purposes only — not investment advice. ~ = estimated.</span>
+          <span>Δ color: rate↑=red(hawkish) · price↑=green · CPI↑=red · curve↑=green · Click rows for AI analysis</span>
         </div>
       </div>
     </div>
