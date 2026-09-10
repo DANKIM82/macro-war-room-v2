@@ -479,7 +479,8 @@ const FED_OFFICIALS = [
     new MutationObserver(function () {
       if (pending) return;
       pending = true;
-      requestAnimationFrame(function () { pending = false; mount(); });
+      // setTimeout (not requestAnimationFrame) so it also mounts in background tabs
+      setTimeout(function () { pending = false; mount(); }, 30);
     }).observe(document.getElementById("root") || document.body, { childList: true, subtree: true });
   }
 
