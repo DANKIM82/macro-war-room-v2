@@ -34,8 +34,12 @@ APP = must_replace(APP, 'import {\n', 'const {\n', "the recharts import opener")
 APP = must_replace(APP, '} from "recharts";', '} = Recharts;', "the recharts import closer")
 
 # No bundler → no import.meta.env; data lives next to index.html at the site root.
-APP = must_replace(APP, '`${import.meta.env.BASE_URL}data.json`', "'./data.json'", "the data.json fetch path")
-APP = must_replace(APP, '`${import.meta.env.BASE_URL}analysis.json`', "'./analysis.json'", "the analysis.json fetch path")
+# (Optional: newer App.jsx sources already fetch './data.json' directly.)
+APP = APP.replace('`${import.meta.env.BASE_URL}data.json`', "'./data.json'")
+APP = APP.replace('`${import.meta.env.BASE_URL}analysis.json`', "'./analysis.json'")
+for _f in ("'./data.json'", "'./analysis.json'"):
+    if _f not in APP:
+        sys.exit(f"[build_html] FAILED — fetch path {_f} not found in src/App.jsx.")
 
 # No ES-module export; App is just a function in the script scope.
 APP = must_replace(APP, 'export default function App(){', 'function App(){', "the App export")
