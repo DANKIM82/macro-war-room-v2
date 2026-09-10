@@ -75,6 +75,8 @@ HTML = f"""<!doctype html>
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script>
+<!-- Fed Speak Tracker: standalone vanilla JS, data lives in fed-tracker.js -->
+<script src="./fed-tracker.js" defer></script>
 </body>
 </html>
 """
