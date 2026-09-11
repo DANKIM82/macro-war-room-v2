@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "Brent breaks $101 as Iran supply fears persist; Warsh September hike odds firm on sticky 3.3% CPI.",
+  "regimeSub": "Brent spikes to $108 on Houthi Red Sea seizure; CPI Friday looms with Warsh hike priced.",
   "themes": [
-    "Brent crude +$1.68 to $101.00 (from $99.32) → Iran supply disruption fears resurface despite June Hormuz ceasefire; OPEC+ maintaining output restraint keeps premium embedded as global bond selloff accelerates",
-    "Fed Chair Warsh hawkish stance hardens per Eurasia Review Sep 10 analysis → markets pricing September hike as base case with 3.3% CPI still 130bp above target; 10Y yields +2bp to 4.80% as term premium expands",
-    "BOK 3.0% rate holds after Aug 26 back-to-back hikes → won firms to 1337 from 1338; KOSPI -1.6% to 6986 as Governor Rhee's 'gardening' tightening cycle pressures domestic equities despite SK Hynix HBM tailwinds",
-    "Gold +0.8% to $4463 from $4426 → haven bid returns as real rates stable at 1.50%; German 10Y Bund at 15-year highs per Sep 9 headlines amplifies global duration risk-off"
+    "Brent crude +$6.75 to $107.75 → Houthis seize strategic Red Sea port per Sep 10 headlines; Saudi output at lowest since 1990 as Iran war disruptions persist despite June Hormuz ceasefire; OPEC cuts 2026 demand outlook",
+    "Fed Chair Warsh September hike odds firm → Economist Sep 10 editorial urges rate increase; core PCE at 3.3% still 130bp above target; 2Y yields +4bp to 4.43% as markets position for Friday CPI print",
+    "BOK signals October 'live meeting' per Sep 10 Korea Times → chip boom inflation pass-through concerns keep tightening bias; won weakens to 1345 from 1337; KOSPI -1.8% to 6862 as duration selloff pressures tech valuations",
+    "SPX -0.6% to 7591 as global bond rout intensifies → 10Y yields +3bp to 4.83%; oil shock compounds stagflation fears with Q2 GDP at 1.5% YoY and retail sales -0.6% MoM signaling consumer fatigue"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real rate steady at 1.50% (4.80% nominal - 3.3% CPI); hawkish Fed pricing keeps real rates elevated near cycle highs"
+      "note": "Real rate at 1.33% (4.83% 10Y minus 3.5% CPI); term premium expanding on oil-driven inflation expectations"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +41bp (4.80% - 4.39%); steepening as long-end sells off on term premium expansion, fiscal concerns"
+      "note": "Curve at +40bp (4.83% vs 4.43%); bear steepening as long-end sells off on supply shock fears"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite rate volatility; VIX at 16.46 suggests no immediate credit stress transmission"
+      "note": "Spreads under pressure as stagflation risk reprices; energy credits bid but consumer discretionary widening"
     },
     {
       "name": "VIX",
-      "note": "VIX at 16.46 reflects muted equity vol despite Brent $101, bond selloff; complacency risk ahead of Sep FOMC"
+      "note": "VIX at 17.84 elevated vs summer lows; Friday CPI event risk and oil volatility keeping hedges bid"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent punches $101 (+1.7% from $99.32); Iran supply risk premium fully embedded despite June Hormuz deal"
+      "note": "Brent $107.75 +6.7% on Houthi Red Sea port seizure; Saudi output lowest since 1990 per WSJ Sep 10"
     },
     {
       "name": "Gold",
-      "note": "Gold rebounds to $4463 (+0.8%); haven demand returns as global bond rout deepens, German Bunds at 15Y highs"
+      "note": "Gold -2.2% to $4365 from $4463; real rate repricing dominates haven bid despite geopolitical flare"
     },
     {
       "name": "USD / KRW",
-      "note": "Won firms to 1337 from 1338; BOK 3.0% rate and 162K NFP beat offset risk-off dollar strength"
+      "note": "Won weakens to 1345 from 1337; BOK signals live October but oil shock pressures EM Asia FX"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -1.6% to 6986; HBM names pressured as BOK tightening cycle weighs despite OpenAI 'Astra' tailwind"
+      "note": "KOSPI -1.8% as duration selloff hits growth; SK Hynix HBM tailwinds offset by BOK tightening cycle"
     }
   ],
-  "headline": "Brent crude breaches $101 on persistent Iran supply fears while Fed Chair Warsh's hawkish posture cements September hike expectations, driving 10Y yields to 4.80% as global bond selloff accelerates.",
-  "generated": "2026-09-10T03:04:47Z",
-  "asOf": "2026-09-10"
+  "headline": "Houthi Red Sea port seizure sends Brent to $108 as Warsh September hike looms over stagflationary US economy with 1.5% GDP and 3.5% CPI.",
+  "generated": "2026-09-11T02:59:57Z",
+  "asOf": "2026-09-11"
 }
