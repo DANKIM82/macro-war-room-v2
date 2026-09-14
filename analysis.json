@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "Brent spikes to $108 on Houthi Red Sea seizure; CPI Friday looms with Warsh hike priced.",
+  "regimeSub": "August CPI +3.7% YoY confirms Fed hike path; 10Y yields hit 19-year highs as oil shock persists.",
   "themes": [
-    "Brent crude +$6.75 to $107.75 → Houthis seize strategic Red Sea port per Sep 10 headlines; Saudi output at lowest since 1990 as Iran war disruptions persist despite June Hormuz ceasefire; OPEC cuts 2026 demand outlook",
-    "Fed Chair Warsh September hike odds firm → Economist Sep 10 editorial urges rate increase; core PCE at 3.3% still 130bp above target; 2Y yields +4bp to 4.43% as markets position for Friday CPI print",
-    "BOK signals October 'live meeting' per Sep 10 Korea Times → chip boom inflation pass-through concerns keep tightening bias; won weakens to 1345 from 1337; KOSPI -1.8% to 6862 as duration selloff pressures tech valuations",
-    "SPX -0.6% to 7591 as global bond rout intensifies → 10Y yields +3bp to 4.83%; oil shock compounds stagflation fears with Q2 GDP at 1.5% YoY and retail sales -0.6% MoM signaling consumer fatigue"
+    "August CPI +3.7% YoY vs 3.5% prior locks in Warsh September hike → Reuters Sep 11 'consumer prices accelerate, push Fed closer to rate hike'; 2Y yields +13bp WoW to 4.56% as markets reprice terminal rate higher",
+    "Brent crude holds $107.67 as Saudi output slumps on Houthi Red Sea port seizure → WSJ Sep 10 reports export routes disrupted despite June Hormuz ceasefire; energy pass-through keeps core PCE sticky at 3.3%",
+    "BOK flags October meeting 'live' on chip boom inflation per Korea Times Sep 10 → won at 1345 despite HBM demand; KOSPI -1.5% WoW to 6756 as duration selloff hits semiconductor valuations",
+    "10Y Treasury yields +12bp to 4.95% (19-year high per SCMP Sep 11) → SPX -0.8% WoW to 7656; Q2 GDP 1.5% YoY and retail sales -0.6% MoM signal consumer exhaustion under real rate squeeze"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate at 1.33% (4.83% 10Y minus 3.5% CPI); term premium expanding on oil-driven inflation expectations"
+      "note": "10Y real rate elevated at ~1.65% (4.95% nominal vs 3.3% core PCE); tightening financial conditions into soft GDP"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +40bp (4.83% vs 4.43%); bear steepening as long-end sells off on supply shock fears"
+      "note": "Curve at -39bp (4.56% 2Y vs 4.95% 10Y); steeper than -40bp last week as long end sells off harder"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads under pressure as stagflation risk reprices; energy credits bid but consumer discretionary widening"
+      "note": "Spreads widening as stagflation repricing intensifies; oil shock + rate hike combo pressures levered credits"
     },
     {
       "name": "VIX",
-      "note": "VIX at 17.84 elevated vs summer lows; Friday CPI event risk and oil volatility keeping hedges bid"
+      "note": "VIX at 15.84 remarkably contained given bond rout; complacency or hedging fatigue ahead of FOMC"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $107.75 +6.7% on Houthi Red Sea port seizure; Saudi output lowest since 1990 per WSJ Sep 10"
+      "note": "Brent $107.67 holding post-Houthi seizure levels; Saudi output at 1990 lows despite Hormuz ceasefire"
     },
     {
       "name": "Gold",
-      "note": "Gold -2.2% to $4365 from $4463; real rate repricing dominates haven bid despite geopolitical flare"
+      "note": "Gold at $4375 surging as stagflation hedge; real rate rise offset by geopolitical bid and inflation fears"
     },
     {
       "name": "USD / KRW",
-      "note": "Won weakens to 1345 from 1337; BOK signals live October but oil shock pressures EM Asia FX"
+      "note": "Won at 1345 flat WoW; BOK hike signals provide support but risk-off outflows pressure EM Asia FX"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -1.8% as duration selloff hits growth; SK Hynix HBM tailwinds offset by BOK tightening cycle"
+      "note": "SOX under pressure as duration selloff hits long-duration tech; SK Hynix vol elevated on HBM demand uncertainty"
     }
   ],
-  "headline": "Houthi Red Sea port seizure sends Brent to $108 as Warsh September hike looms over stagflationary US economy with 1.5% GDP and 3.5% CPI.",
-  "generated": "2026-09-11T02:59:57Z",
-  "asOf": "2026-09-11"
+  "headline": "August CPI at 3.7% YoY seals Warsh's September hike as 10Y yields breach 5% threshold; oil shock from Houthi Red Sea seizure compounds stagflation regime with GDP at 1.5% and retail sales contracting.",
+  "generated": "2026-09-14T03:21:43Z",
+  "asOf": "2026-09-14"
 }
