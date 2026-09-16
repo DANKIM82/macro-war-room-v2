@@ -25,8 +25,8 @@ const FED_OFFICIALS = [
   {
     name: "케빈 워시",
     nameEn: "Kevin Warsh",
-    role: "의장 (2026.5.22 취임, 이사 임기 2040.1)",
-    roleEn: "Chair (sworn in May 22, 2026; Board term to Jan 2040)",
+    role: "의장 (2026.5.22 취임, 의장 임기 2030.5.21, 이사 임기 2040.1.31)",
+    roleEn: "Chair (sworn in May 22, 2026; Chair term to May 21, 2030; Board term to Jan 31, 2040)",
     group: "board",
     isVoter2026: true,
     stance: 1,
