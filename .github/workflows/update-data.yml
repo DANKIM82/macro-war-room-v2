@@ -28,6 +28,12 @@ jobs:
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
         run: python scripts/update_data.py
 
+      - name: Fed funds futures implied FOMC odds
+        continue-on-error: true
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/update_fed_odds.py
+
       - name: Generate news + AI analysis
         continue-on-error: true
         env:
