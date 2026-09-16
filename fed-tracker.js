@@ -3,6 +3,7 @@
    Loaded by index.html via <script src="./fed-tracker.js" defer>.
    Mounts itself directly below the "Upcoming Catalysts" section.
    To refresh: edit FED_SNAPSHOT / FED_OFFICIALS below only.
+   targetRange / nextFOMC / marketOdds are auto-overridden daily from data.json "fed".
    KO/EN toggle: *En fields are optional — Korean text is shown when empty.
    ════════════════════════════════════════════════════════════════════ */
 
@@ -420,7 +421,8 @@ const FED_OFFICIALS = [
     return '<div class="fed-kpis">' + cells.map(function (c) {
       return '<div class="fed-kpi"><div class="fed-kpi-k">' + esc(c[0]) + '</div><div class="fed-kpi-v">' + esc(c[1]) + "</div></div>";
     }).join("") + "</div>" +
-      '<div class="fed-asof">' + esc(T().asOf) + " " + esc(s.asOf) + "</div>";
+      '<div class="fed-asof">' + esc(T().asOf) + " " + esc(s.asOf) +
+      (s.oddsAsOf ? " · " + esc(T().odds) + " " + esc(s.oddsAsOf) : "") + "</div>";
   }
 
   function renderSpectrum() {
@@ -555,7 +557,26 @@ const FED_OFFICIALS = [
     return true;
   }
 
+  // Daily auto-refresh: scripts/update_fed_odds.py writes data.json "fed"
+  // (targetRange / nextFOMC / marketOdds). Hardcoded FED_SNAPSHOT is the fallback.
+  function loadLive() {
+    if (!window.fetch) return;
+    fetch("./data.json", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        var f = d && d.fed;
+        if (!f || !f.marketOdds) return;
+        ["targetRange", "nextFOMC", "marketOdds", "marketOddsEn"].forEach(function (k) {
+          if (f[k]) FED_SNAPSHOT[k] = f[k];
+        });
+        if (f.asOf) FED_SNAPSHOT.oddsAsOf = f.asOf;
+        if (section) render(section);
+      })
+      .catch(function () {});
+  }
+
   function start() {
+    loadLive();
     mount();
     // React renders asynchronously (and re-renders every second for the clock) —
     // keep the section in place if it isn't there yet or gets detached.
