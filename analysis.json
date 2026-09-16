@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION TIGHTENING",
-  "regimeSub": "Hot August CPI +3.7% YoY cements Warsh September hike; 10Y at 4.96% as oil shock persists.",
+  "regimeSub": "FOMC eve: Warsh set to hike tomorrow as 10Y breaches 4.97% on oil/inflation spiral.",
   "themes": [
-    "August CPI +3.7% YoY (vs 3.5% prior) per Reuters Sep 13 'consumer prices accelerate' → 2Y yields surge +26bp MoM to 4.63%; Warsh Jackson Hole 'inflation progress insufficient' signals imminent hike at Sep 17 FOMC",
-    "Brent $106.99 as WSJ Sep 15 reports Saudi output slumps on Houthi Red Sea port seizure → energy pass-through keeps core PCE at 3.3%; Hormuz ceasefire failing to stabilize flows despite June deal",
-    "10Y Treasury hits 4.96% (19-year high) → SPX -2.1% MoM to 7619; Q2 GDP 1.5% YoY with retail sales -0.6% MoM confirms consumer buckling under 150bp+ real rates",
-    "BOK flags chip boom inflation risk per Korea Times Sep 10 after back-to-back hikes to 3.0% → won weakens to 1353 despite HBM demand; KOSPI -0.8% WoW as duration selloff pressures semis"
+    "August CPI +3.7% YoY (vs 3.5% prior) with core PCE stuck at 3.3% → 2Y yields +28bp WoW to 4.65% as markets price Sep 17 Warsh hike; Economist Sep 10 'Warsh should raise rates' reflects consensus",
+    "Brent $108.39 (+1.3% DoD) as WSJ Sep 15 reports Houthi Red Sea port seizure disrupts Saudi exports → energy shock deepens despite June Hormuz ceasefire; OPEC cuts demand outlook per TradingView Sep 10",
+    "10Y Treasury 4.97% (19-year high per SCMP Sep 11) → SPX -2.6% MoM to 7585; Q2 GDP 1.5% YoY with retail sales -0.6% MoM confirms consumer capitulation under 125bp+ real rates",
+    "BOK minutes Sep 15 reveal policy rift on back-to-back hikes per Edge Malaysia → won weakens to 1365 despite HBM strength; Korea Times Sep 10 flags chip boom inflation risk as KOSPI grinds lower"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.66% (4.96%-3.3% core PCE); most restrictive since 2007, crushing duration/growth"
+      "note": "10Y real yield ~1.27% (4.97% nominal - 3.7% CPI) crushing duration and risk assets pre-FOMC."
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +33bp (4.96-4.63); steepening on term premium as Fed hike bets firm for Sep 17 FOMC"
+      "note": "Curve at +32bp (4.97%-4.65%) steepening as long-end sells off on fiscal/inflation fears."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads widening as stagflation regime pressures leveraged corporates; watch energy credits"
+      "note": "Credit under pressure as stagflation bites; consumer weakness + high rates stress lower-quality issuers."
     },
     {
       "name": "VIX",
-      "note": "VIX 17.1 understates tail risk into Sep 17 FOMC; vol sellers complacent despite CPI shock"
+      "note": "VIX 17.2 subdued relative to rate vol; equity complacency ahead of Sep 17 FOMC risk event."
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $106.99 on Saudi output disruption; Houthi port seizure keeps energy supply premium elevated"
+      "note": "Brent $108.39 elevated on Houthi disruptions; June Hormuz ceasefire failing to restore flows."
     },
     {
       "name": "Gold",
-      "note": "Gold $4352 at ATH as stagflation hedge; real rate drag offset by geopolitical/inflation bid"
+      "note": "Gold $4321.7 bid on stagflation hedge + real rate ceiling fears despite hawkish Fed."
     },
     {
       "name": "USD / KRW",
-      "note": "Won at 1353; BOK 3.0% rate + chip flows offset by Treasury yield differential widening"
+      "note": "Won weakens to 1365 on BOK policy rift concerns; HBM tailwind fading vs USD strength."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -0.8% WoW to 6699; HBM demand intact but duration selloff hits semiconductor multiples"
+      "note": "Semis pressured by duration selloff despite HBM demand; BOK inflation warning weighs on KOSPI."
     }
   ],
-  "headline": "Fed Chair Warsh locked into September rate hike as August CPI +3.7% and Brent above $105 keep stagflation trade alive with 10Y yields at 19-year highs crushing equity multiples.",
-  "generated": "2026-09-15T03:23:37Z",
-  "asOf": "2026-09-15"
+  "headline": "Markets brace for Warsh's September hike tomorrow as Brent tops $108, 10Y hits 4.97%, and stagflation grip tightens with CPI at 3.7% and GDP slumping to 1.5%.",
+  "generated": "2026-09-16T00:11:55Z",
+  "asOf": "2026-09-16"
 }
