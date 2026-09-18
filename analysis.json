@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION HIKE BEGINS",
-  "regimeSub": "Warsh delivers first Fed hike in 3 years as sticky 3.7% CPI overrides 1.5% GDP slowdown.",
+  "regimeLabel": "STAGFLATION HIKE CONFIRMED",
+  "regimeSub": "Fed rate now 4.0% after Warsh's second 25bp hike; 2Y blows out to 4.74% as markets price extended tightening cycle.",
   "themes": [
-    "Fed Chair Warsh hiked 25bps to 3.75% on Sept 16, first increase since 2023 → 2Y surges to 4.67% (+28bps WoW), signals more tightening ahead despite growth slump",
-    "Aug retail sales +1.2% MoM beat estimates → validates Warsh's confidence in consumer resilience but cements hawkish path as demand sustains inflation pressure",
-    "BOK signals additional 2026 hike following Fed pivot → KRW weakens to 1379 vs 1365 yesterday as EM central banks forced to match Fed tightening cycle",
-    "Brent holds $105.76 as Houthi Red Sea disruptions persist despite June Iran ceasefire → energy pass-through keeps headline CPI elevated at 3.7%, constraining Fed optionality"
+    "Fed Chair Warsh hiked 25bps to 4.0% (Sept 16-17) → policy rate now +25bps from yesterday's 3.75%, 2Y yield surges 7bps to 4.74% as market prices additional tightening despite 1.5% GDP",
+    "BOK under acute pressure as Korea-US rate gap widens to 100bps post-Fed hike → KRW weakens to 1384 from 1379, BOK signaling forced follow-on hikes to defend currency",
+    "Aug CPI 3.7% YoY (+20bps MoM) and Core PCE 3.3% lock in hawkish Warsh stance → 10Y breaches 5.01% (19-year high), real rates grinding higher as inflation persists above target",
+    "Brent eases to $104.14 from $105.76 but Hormuz war-risk premiums persist post-June Iran ceasefire → energy pass-through maintains headline inflation pressure, constraining Fed pivot options"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy at 3.75% vs 3.7% CPI yields near-zero real rate; Warsh needs more hikes to get meaningfully restrictive"
+      "note": "10Y real at +1.71% (5.01% nominal - 3.3% Core PCE); highest since 2007, financial conditions tightening sharply"
     },
     {
       "name": "2s10s Curve",
-      "note": "Spread at +33bps as 10Y hits 5.0%; bear steepening reflects term premium repricing on fiscal + inflation fears"
+      "note": "Curve at +27bps (5.01% - 4.74%); steepening on term premium as market prices stagflation not recession"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite hike—strong retail sales signal corporate cash flows holding for now"
+      "note": "Spreads stable as Aug retail sales +1.2% validates consumer; Warsh hike priced, no blow-out yet"
     },
     {
       "name": "VIX",
-      "note": "17.71 muted given first Fed hike in 3 years; markets priced move, watching for November guidance"
+      "note": "VIX 15.44 subdued despite rate shock; SPX -1.1% from highs, complacency on growth resilience"
     },
     {
       "name": "Brent Crude",
-      "note": "$105.76 sticky on Houthi Red Sea control; supply disruption outweighs Iran ceasefire demand softness"
+      "note": "Brent $104.14 off highs; Hormuz ceasefire holding but Houthi disruptions keep floor elevated"
     },
     {
       "name": "Gold",
-      "note": "$4322 bid as real rates stagnate near zero; stagflation hedge demand dominant over USD strength"
+      "note": "Gold $4385 at ATH; stagflation hedge bid as real rates rise fails to cap safe-haven demand"
     },
     {
       "name": "USD / KRW",
-      "note": "1379 weaker from 1365 as BOK hike signals lag Fed; semiconductor FX tailwind fading"
+      "note": "KRW 1384 weaker as 100bp Fed-BOK gap widens; BOK forced hike cycle to defend won stability"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "HBM demand supports SK Hynix but KOSPI -6% off highs as rate hike cycle pressures multiples"
+      "note": "KOSPI +96% YTD on HBM; SK Hynix/Samsung lead but vulnerable to Fed liquidity drain"
     }
   ],
-  "headline": "Warsh executes first Fed hike in three years to 3.75%, 10Y breaches 5.0% as stagflation grip tightens with 3.7% CPI meeting 1.5% GDP.",
-  "generated": "2026-09-17T03:27:16Z",
-  "asOf": "2026-09-17"
+  "headline": "Warsh's Fed delivers second consecutive 25bp hike to 4.0%, triggering 2Y yield blowout to 4.74% and forcing BOK's hand as stagflationary macro with 3.7% CPI and 1.5% GDP locks in extended tightening cycle.",
+  "generated": "2026-09-18T03:11:32Z",
+  "asOf": "2026-09-18"
 }
