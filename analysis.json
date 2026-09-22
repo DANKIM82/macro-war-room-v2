@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION CONSOLIDATION",
-  "regimeSub": "Post-hike digestion as 2Y retreats 7bps to 4.67% but 10Y stays elevated at 4.94% on persistent inflation fears.",
+  "regimeLabel": "STAGFLATION GRIND",
+  "regimeSub": "Yields resume bear steepening with 10Y breaching 5% as Warsh's hawkish stance meets sticky 3.7% CPI.",
   "themes": [
-    "Fed Chair Warsh's Sept 16 hike to 4.0% digesting → 2Y yields ease 7bps to 4.67% from 4.74% as market recalibrates, but Warsh signaled 'one more tightening by end-2026' keeps terminal rate anxiety elevated",
-    "BOK rate gap pressure intensifies at 100bps post-Fed hike → USDKRW stabilizes at 1382 vs 1384 but Maeil Kyungjae reports BOK forced into defensive hiking cycle to prevent KRW collapse",
-    "Aug retail sales +1.2% MoM beat reinforces consumer resilience despite 1.5% Q2 GDP → stagflation trap deepens as strong demand undermines Fed's inflation fight, Core PCE stuck at 3.3%",
-    "Brent pulls back to $97.57 from Hormuz war-risk peaks but Iran-US clashes resume per Sept headlines → oil supply risk premium persists, constraining Fed's ability to declare inflation victory"
+    "Fed Chair Warsh's Sept 16 hike to 4.0% now fully priced → 2Y spikes 9bps to 4.76% from 4.67% as market reprices terminal rate higher after 'more tightening ahead' guidance",
+    "10Y breaks psychological 5% barrier at 5.01% → 25bps 2s10s steepening from last week reflects fiscal premium + Warsh credibility concerns on 3.7% Aug CPI vs 3.5% prior",
+    "BOK under acute pressure as Korea-US rate gap holds at 100bps post-Fed hike → USDKRW eases to 1359 from 1382 but BOK forced into reactive hiking cycle per Korea Times reporting",
+    "Brent at $97.27 with Hormuz war-risk premium sticky despite June interim US-Iran deal → oil floor constrains disinflation path, VIX complacent at 14.87 signals equity mispricing of stagflation risk"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real 10Y ~1.24% (4.94% - 3.7% CPI) grinding higher; policy increasingly restrictive despite slowing GDP at 1.5%"
+      "note": "Real 10Y at ~1.3% (5.01% nominal - 3.7% CPI) still restrictive but not enough to break inflation"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve steepens to -27bps as 2Y drops 7bps while 10Y falls only 7bps; term premium rebuilding on fiscal concerns"
+      "note": "Curve at +25bps steepening from +33bps last week as term premium reprices on Warsh hawkishness"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 14.81 suggests credit complacent; spreads likely tight despite stagflation risk building in rates complex"
+      "note": "Credit complacent despite 5% 10Y; spreads ignore stagflation risk as SPX near highs at 7764"
     },
     {
       "name": "VIX",
-      "note": "VIX 14.81 near lows despite Fed hiking into 1.5% GDP growth; equity vol dangerously underpriced for macro tail risks"
+      "note": "VIX at 14.87 screams complacency vs 5% yields and 3.7% CPI — equity vol mispriced"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $97.57 off highs but Hormuz tensions resume per Insurance Business; energy inflation risk not fully de-risked"
+      "note": "Brent at $97.27 holding gains despite US-Iran interim deal; Hormuz risk premium persists"
     },
     {
       "name": "Gold",
-      "note": "Gold $4398 holding near highs despite real rate rise; stagflation hedge demand and geopolitical premium intact"
+      "note": "Gold at $4378 bid as stagflation hedge with negative real rates in most DM ex-US"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1382 stable post-Fed hike; BOK forced follow-on hikes priced as Korea-US gap widens to 100bps per MK"
+      "note": "USDKRW at 1359 down from 1382 as KRW stabilizes post-BOK hawkish signals on rate gap"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix ADR arbitrage persists; KOSPI 7002 resilient on HBM AI capex cycle despite BOK tightening headwinds"
+      "note": "Nikkei +65018, KOSPI 7130 resilient on HBM/AI bid; SK Hynix ADR premium persists"
     }
   ],
-  "headline": "Fed Chair Warsh's second 2026 hike to 4.0% digests with 2Y yields easing 7bps but stagflation trap deepens as strong retail sales and 3.7% CPI collide with 1.5% GDP growth.",
-  "generated": "2026-09-21T03:19:01Z",
-  "asOf": "2026-09-21"
+  "headline": "Bear steepening resumes as 10Y breaches 5% on Warsh's hawkish guidance while sticky 3.7% CPI and $97 Brent trap Fed in stagflation equilibrium.",
+  "generated": "2026-09-22T03:18:36Z",
+  "asOf": "2026-09-22"
 }
