@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION GRIND",
-  "regimeSub": "10Y pulls back from 5.01% to 4.96% but bear steepening thesis intact with Warsh hiking cycle far from over.",
+  "regimeSub": "SPX retraces 0.8% as Warsh hiking cycle bites while 10Y holds 4.96% with oil sticky near $97.",
   "themes": [
-    "Fed Chair Warsh's Sept 16 hike to 4.0% + 'more tightening ahead' guidance keeps 2Y pinned at 4.76% → real rates at +70bps vs 3.7% Aug CPI signal restrictive policy with growth slowing to 1.5% Q2 GDP",
-    "10Y eases 5bps from 5.01% to 4.96% → tactical short-covering but 2s10s at +20bps steepening from 4.74% one month ago reflects fiscal premium + Warsh credibility test against sticky 3.3% core PCE",
-    "Brent spikes to $98.81 (+1.5%) as Iran-US Hormuz clashes resume per Insurance Business → oil pass-through to CPI constrains Fed pivot, gold at $4372 signals inflation hedge bid remains strong",
-    "BOK reactive hiking cycle continues after Aug back-to-back hikes to 3.0% → USDKRW at 1351 still 100bps rate gap pressure but won strengthening from 1382 reflects SK HBM export boom with KOSPI at 7038"
+    "Fed Chair Warsh's Sept 16 hike to 4.0% + 'more tightening ahead' rhetoric keeps 2Y at 4.71% → real rate +100bps vs 3.7% Aug CPI while Q2 GDP at 1.5% confirms growth rolling over under restrictive policy",
+    "Retail sales beat at +1.2% MoM per Census Sept 16 release → consumer resilience complicates Fed pivot calculus, core PCE sticky at 3.3% keeps Warsh hawkish bias intact through year-end",
+    "Brent cools to $97.30 from $98.81 as Saudi output disruptions from Iran-Hormuz clashes ease per WSJ → still elevated enough to maintain CPI pass-through risk, gold down to $4327 from $4372 on modest de-hedging",
+    "BOK 1%pt rate gap vs Fed post-Sept hike pressures won → USDKRW widens to 1371 from 1351 despite SK HBM boom; KOSPI holds 7080 on SK Hynix AI chip demand but FX headwinds building"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate +70bps (4.76% 2Y minus 3.7% CPI) → restrictive but Warsh wants more with core PCE at 3.3%"
+      "note": "2Y at 4.71% vs 3.7% Aug CPI = +101bps real rate, most restrictive since Warsh took chair"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +20bps after 10Y pulls back to 4.96% from 5.01% → bear steepener intact on fiscal + term premium"
+      "note": "2s10s at +25bps bear steepening intact as fiscal premium + Warsh credibility test keeps long end offered"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Credit complacent despite 4.0% policy rate → SPX at 7764 near highs ignoring stagflation signals"
+      "note": "HY spreads stable as Aug NFP +162k beat cushions recession fears despite 1.5% GDP drag"
     },
     {
       "name": "VIX",
-      "note": "VIX at 14.21 down from 14.87 → equity vol mispricing stagflation risk with GDP at 1.5% and CPI at 3.7%"
+      "note": "VIX at 15.18 down from recent stress, complacent given Warsh signaling more hikes ahead"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $98.81 up 1.5% on resumed Hormuz war-risk → inflation floor sticky, June US-Iran ceasefire fraying"
+      "note": "Brent eases to $97.30 from $98.81 but Iran-Hormuz risk keeps oil bid, constraining Fed pivot"
     },
     {
       "name": "Gold",
-      "note": "Gold $4372 holding ATH zone → real rate rise not denting inflation hedge bid, structural demand intact"
+      "note": "Gold pulls back to $4327 from $4372, inflation hedge bid fading slightly on oil pullback"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1351 firmer from 1382 → SK HBM export surge + BOK Aug hikes to 3.0% narrowing rate gap pressure"
+      "note": "USDKRW widens to 1371 from 1351 as 1%pt Korea-US rate gap post-Fed hike pressures won"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "SK Hynix ADR surge + KOSPI 7038 → HBM/AI capex boom persists despite macro headwinds, TSMC lifted guidance"
+      "note": "KOSPI holds 7080 on SK Hynix HBM demand but Nvidia capex cycle maturing per TSMC July guidance"
     }
   ],
-  "headline": "Warsh's hiking cycle meets persistent 3.7% CPI and 1.5% GDP as 10Y pulls back from 5% but stagflation grind continues with Brent near $99 on Hormuz escalation.",
-  "generated": "2026-09-23T03:18:56Z",
-  "asOf": "2026-09-23"
+  "headline": "Warsh's hawkish Sept 16 hike cycle grinds on with 3.7% CPI still double target, 10Y yields stabilize at 4.96% as SPX gives back 0.8% and oil eases to $97 from Hormuz stress highs.",
+  "generated": "2026-09-24T03:08:44Z",
+  "asOf": "2026-09-24"
 }
