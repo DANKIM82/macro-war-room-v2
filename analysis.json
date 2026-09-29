@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION GRIND",
-  "regimeSub": "Bond rout extends as 10Y hits 5.18% with Brent cooling to $98 but core PCE stuck at 3.3%.",
+  "regimeSub": "SPX drops 0.8% as 10Y holds 5.17%, growth stalls at 1.5% with inflation sticky at 3.7%.",
   "themes": [
-    "Warsh's Sept 16 hike to 4.0% continues reverberating → 10Y blows through 5.18% (+7bps WoW) as 30Y yield hits 2004 highs per Reuters Sept 25, 2Y at 4.87% prices another 25bp by Dec while GDP limps at 1.5%",
-    "Brent eases to $98.39 from $105+ highs as Saudi output disruptions normalize post-Iran interim deal → oil still elevated vs $93 WTI but stagflation pass-through locked in with Aug CPI at 3.7% and core PCE 3.3%",
-    "BOK under pressure from 1%pt Fed rate gap per Korea JoongAng Sept 17 → USDKRW holds 1357 as SK chip boom (SK Hynix overtakes Samsung in mkt cap) supports KRW, but BOK hawk Rhee flags inflation risks from HBM surge",
-    "Consumer resilience persists with retail sales +1.2% MoM per Census Sept 16 → SPX grinds to 7743 (+0.5% DoD) but VIX at 14.87 flags complacency as real rates crush duration and gold at $4229 signals stagflation hedging"
+    "Warsh's Sept 16 hike to 4.0% still driving 10Y at 5.17% (-1bp DoD) → 2Y falls 6bps to 4.81% but still prices Dec hike odds while Q2 GDP stuck at 1.5% YoY vs 2.1% prior quarter confirms stagflation setup",
+    "Brent grinds higher to $99.64 (+1.3% DoD) as Saudi output disruptions linger post-Iran interim deal → WTI at $94.16 keeps energy pass-through alive with Aug CPI at 3.7% and core PCE at 3.3%, both well above Fed's 2% target",
+    "BOK rate pressure intensifies with 100bp Fed gap per Korea JoongAng Sept 17 → USDKRW stable at 1357 as HBM chip boom supports won, but BOK hawk Rhee signals potential Oct hike given inflation spillover from semiconductor capex surge",
+    "SPX slides 0.8% to 7683 as bond rout fatigue sets in → VIX rises to 16.07 from 14.87 suggesting complacency fading, gold at $4164 (-1.5% DoD) consolidates after stagflation hedge bid, retail sales +1.2% MoM shows consumer still spending through pain"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real rate ~1.5% (5.18% nominal vs 3.7% CPI) — tightening financial conditions despite resilient equities"
+      "note": "10Y real at ~1.87% (5.17% nominal vs 3.3% core PCE) crushing duration, Warsh's hawkish regime keeps pressure on"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s at +31bps, steepening from +26bps last week — term premium repricing on fiscal/duration supply fears"
+      "note": "Curve at +36bps (5.17% vs 4.81%) steepening from +31bps as front-end reprices slower vs back-end fiscal fears"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads contained despite bond rout — equity resilience suggests risk appetite intact for now"
+      "note": "HY holding steady despite SPX -0.8% drop — credit not confirming equity weakness yet, watch for lag"
     },
     {
       "name": "VIX",
-      "note": "VIX at 14.87 complacent vs 5%+ yields — potential mispricing if stagflation bites harder"
+      "note": "VIX jumps to 16.07 from 14.87 (+8%) as SPX falls — vol repricing but still historically low given macro backdrop"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent at $98.39 off $105 highs post-Iran interim deal — still elevated, supply risk persists"
+      "note": "Brent at $99.64 approaching triple digits again despite Hormuz reopening — Saudi disruptions keep bid under oil"
     },
     {
       "name": "Gold",
-      "note": "Gold at $4229 (-2% off $4318 highs) — stagflation hedge bid intact as real rates rise paradoxically"
+      "note": "Gold pulls back to $4164 from $4229 (-1.5%) as real rates bite, but stagflation bid keeps floor elevated"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW at 1357, KRW resilient on HBM chip boom despite 1%pt Fed rate gap — BOK hike pressure mounts"
+      "note": "USDKRW holds 1357 flat WoW as HBM boom supports KRW vs 100bp Fed rate gap pressure — BOK Oct hike in play"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC capex guidance bullish per Sept 25 Seeking Alpha — AI demand insatiable, KOSPI +96% YTD"
+      "note": "Chip sector mixed as TSMC capex boost meets SK Hynix-Samsung market cap flip — HBM demand strong but valuations stretched"
     }
   ],
-  "headline": "Bond rout extends with 10Y at 5.18% and 30Y at 2004 highs as Warsh's Sept hike reverberates, but equities grind higher on resilient consumer and AI capex while Brent eases to $98 post-Iran deal.",
-  "generated": "2026-09-28T03:38:12Z",
-  "asOf": "2026-09-28"
+  "headline": "Warsh's Fed hike regime grinds on as 10Y holds above 5% with Brent near $100, Q2 GDP at 1.5% and CPI at 3.7% confirm entrenched stagflation while SPX finally cracks 0.8% as VIX wakes up to 16.",
+  "generated": "2026-09-29T04:13:21Z",
+  "asOf": "2026-09-29"
 }
