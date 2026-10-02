@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION GRIND",
-  "regimeSub": "Q2 GDP revised up to 2.2% but 10Y blows through 5.26% as Williams warns one more hike still on table.",
+  "regimeSub": "10Y hits 5.29% (24-year high) then snaps back as buyers emerge; NFP Friday looms.",
   "themes": [
-    "Q2 GDP revised up to 2.2% from initial estimates (Wed) lifts growth narrative → but 10Y spikes 2bps to 5.26% as markets price higher-for-longer with Fed Funds at 4.0% and Williams still flagging Dec hike risk",
-    "Williams (Sep 30) sees 'no urgency' but still expects one more hike by year-end → 2Y eases 3bps to 4.89% as curve steepens to -37bps, pricing extended restrictive stance against Aug CPI at 3.7% YoY and core PCE at 3.0%",
-    "Brent surges $7.03 to $103.53 (+7.3% WoW) reversing post-Hormuz easing → Saudi output disruptions per WSJ (Sep 10) reignite energy inflation pass-through risk with WTI at $90.42, undermining Fed's path back to 2% target",
-    "KOSPI holds 6900 (+2.8% vs 6714 implied from Sep data) as SK Hynix/Samsung HBM demand sustains → USDKRW at 1358 despite 100bp rate gap widening, BOK faces Oct decision with chip boom cushioning won weakness"
+    "10Y yield pierces 5.29% intraday before dip-buyers step in per Reuters (Oct 2) → curve steepens to -41bps (2Y at 4.88%) as term premium reprices fiscal risk with Fed Funds parked at 4.0% and Williams' Dec hike still live",
+    "Williams (Sep 30) 'no urgency' stance keeps Nov FOMC as skip but Dec hike probability elevated → Aug CPI at 3.7% YoY and core PCE at 3.0% give Warsh cover to deliver 25bp in Dec despite Q2 GDP at 2.2%",
+    "Brent fades $1.22 to $102.31 (-1.2% d/d) as Saudi disruption fears ease → WTI at $92.87 still +2.7% WoW keeping energy inflation in play, gold holds $4202 as real rate compression attracts haven flows",
+    "SPX grinds to 7666 (+0.2% d/d) ahead of Sep NFP Friday → CNBC preview notes healthy hiring appetite but markets wary of upside surprise that locks in Dec hike; KOSPI +1.2% to 6982 as HBM demand sustains"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at ~2.26% (5.26% nominal vs 3.0% core PCE) grinding higher as Williams keeps Dec hike live"
+      "note": "10Y real at ~1.6% (5.29% nominal - 3.7% CPI); restrictive but buyers emerging at 24-year yield highs"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at -37bps (4.89% 2Y vs 5.26% 10Y) steepens 5bps WoW as long end sells off on fiscal/supply fears"
+      "note": "Steepens to -41bps (4.88% vs 5.29%) as term premium reprices; Dec hike still priced 50/50"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained despite 10Y at 5.26%; VIX at 16.34 signals no imminent credit stress"
+      "note": "Spreads contained as Q2 GDP 2.2% and retail +1.1% MoM signal no imminent recession"
     },
     {
       "name": "VIX",
-      "note": "VIX at 16.34 (+1.9% DoD) muted despite bond selloff; equity vol disconnected from rates vol"
+      "note": "16.39 flat vs yesterday; pre-NFP calm but upside surprise risk into Friday"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $103.53 (+7.3% WoW) as Saudi disruptions per WSJ reignite supply fears post-Hormuz calm"
+      "note": "$102.31 (-1.2% d/d) as Saudi fears ease but +2.7% WoW keeps energy pass-through risk alive"
     },
     {
       "name": "Gold",
-      "note": "Gold at $4186.70 (-0.5% DoD) eases as real rates grind higher but stays elevated on stagflation hedge bid"
+      "note": "$4202 holding highs; real rate compression + fiscal risk bid supports haven allocation"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW at 1358 (+0.3% DoD) contained despite 100bp rate gap as HBM/AI capex supports won"
+      "note": "1357 stable despite 100bp rate gap; HBM export boom and BOK Aug hikes cushion won"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "TSMC capex guidance bullish per SeekingAlpha; KOSPI 6900 reflects AI chip demand resilience"
+      "note": "KOSPI +1.2% to 6982; SK Hynix/Samsung HBM demand intact per TSMC capex guidance"
     }
   ],
-  "headline": "Fed's Williams holds Dec hike threat as Q2 GDP revised to 2.2%, but Brent at $103 and 10Y at 5.26% keep stagflation grind intact with inflation stuck at 3.7%.",
-  "generated": "2026-10-01T04:08:53Z",
-  "asOf": "2026-10-01"
+  "headline": "10Y Treasury hits 24-year high at 5.29% before buyers emerge; markets hold breath for Sep NFP with Williams' Dec hike warning keeping stagflation regime intact.",
+  "generated": "2026-10-02T04:03:07Z",
+  "asOf": "2026-10-02"
 }
