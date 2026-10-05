@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION GRIND",
-  "regimeSub": "10Y hits 5.29% (24-year high) then snaps back as buyers emerge; NFP Friday looms.",
+  "regimeLabel": "STAGFLATION PAUSE",
+  "regimeSub": "Sep NFP miss (29K vs ~150K est) cools Dec hike bets; 10Y backs off 5.29% to 5.24% as growth fears emerge.",
   "themes": [
-    "10Y yield pierces 5.29% intraday before dip-buyers step in per Reuters (Oct 2) → curve steepens to -41bps (2Y at 4.88%) as term premium reprices fiscal risk with Fed Funds parked at 4.0% and Williams' Dec hike still live",
-    "Williams (Sep 30) 'no urgency' stance keeps Nov FOMC as skip but Dec hike probability elevated → Aug CPI at 3.7% YoY and core PCE at 3.0% give Warsh cover to deliver 25bp in Dec despite Q2 GDP at 2.2%",
-    "Brent fades $1.22 to $102.31 (-1.2% d/d) as Saudi disruption fears ease → WTI at $92.87 still +2.7% WoW keeping energy inflation in play, gold holds $4202 as real rate compression attracts haven flows",
-    "SPX grinds to 7666 (+0.2% d/d) ahead of Sep NFP Friday → CNBC preview notes healthy hiring appetite but markets wary of upside surprise that locks in Dec hike; KOSPI +1.2% to 6982 as HBM demand sustains"
+    "Sep NFP prints 29K (vs ~150K est per CNBC Oct 2), UE ticks to 4.2% → 10Y retraces 5bps to 5.24% as Dec hike odds compress; Williams' 'no urgency' stance (Sep 29) gains credibility with labor market cracking",
+    "2s10s curve steepens to -46bps (2Y at 4.78% vs 4.88% prior) as front-end rallies harder than belly → markets pricing higher probability of Fed pause through Q1'27 despite Warsh's inflation hawkishness",
+    "Brent fades to $102.25 (-0.1% WoW) as Saudi/Iran post-ceasefire supply normalizes per Reuters (Jun 14 interim deal) → gold dips to $4162 (-1.0%) as real rates stabilize with 10Y off highs",
+    "SPX rallies 0.7% to 7722 as weak NFP = goldilocks for risk; KOSPI +0.3% to 7003 with BOK at 3.0% (Aug hike) keeping KRW stable at 1344 despite HBM capex concerns flagged in Korea Times (Sep 10)"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at ~1.6% (5.29% nominal - 3.7% CPI); restrictive but buyers emerging at 24-year yield highs"
+      "note": "10Y real ~2.24% (5.24% nominal - 3.0% core PCE); off highs as NFP miss softens Dec hike conviction"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steepens to -41bps (4.88% vs 5.29%) as term premium reprices; Dec hike still priced 50/50"
+      "note": "-46bps inversion deepens as 2Y rallies 10bps to 4.78%; front-end leading on growth scare"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained as Q2 GDP 2.2% and retail +1.1% MoM signal no imminent recession"
+      "note": "Spreads likely compressing with VIX at 15.31 and SPX +0.7%; risk-on despite NFP miss"
     },
     {
       "name": "VIX",
-      "note": "16.39 flat vs yesterday; pre-NFP calm but upside surprise risk into Friday"
+      "note": "15.31 post-NFP; subdued as payroll miss read as dovish pivot catalyst rather than recession signal"
     },
     {
       "name": "Brent Crude",
-      "note": "$102.31 (-1.2% d/d) as Saudi fears ease but +2.7% WoW keeps energy pass-through risk alive"
+      "note": "$102.25 (-1.2% WoW); Iran-US interim deal (Jun 14) normalizing Hormuz flows caps upside"
     },
     {
       "name": "Gold",
-      "note": "$4202 holding highs; real rate compression + fiscal risk bid supports haven allocation"
+      "note": "$4162 (-1.0%); real rate stabilization and risk-on flow rotation pressure haven demand"
     },
     {
       "name": "USD / KRW",
-      "note": "1357 stable despite 100bp rate gap; HBM export boom and BOK Aug hikes cushion won"
+      "note": "1344 stable; BOK at 3.0% after Aug hike supports won despite Fed rate differential at 100bps"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI +1.2% to 6982; SK Hynix/Samsung HBM demand intact per TSMC capex guidance"
+      "note": "KOSPI 7003 (+4.0% MoM); HBM demand intact per Korea Times but BOK warns chip boom inflation pass-through"
     }
   ],
-  "headline": "10Y Treasury hits 24-year high at 5.29% before buyers emerge; markets hold breath for Sep NFP with Williams' Dec hike warning keeping stagflation regime intact.",
-  "generated": "2026-10-02T04:03:07Z",
-  "asOf": "2026-10-02"
+  "headline": "Sep NFP whiffs at 29K vs 150K est, triggering 10Y relief rally to 5.24% as Warsh's Dec hike path narrows amid stagflationary crosscurrents with CPI still at 3.7%.",
+  "generated": "2026-10-05T04:02:39Z",
+  "asOf": "2026-10-05"
 }
