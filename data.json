@@ -1,33 +1,33 @@
 {
-  "updated": "2026-10-05T04:02:07Z",
-  "date": "2026-10-05",
+  "updated": "2026-10-06T04:51:20Z",
+  "date": "2026-10-06",
   "fx": {
-    "USDJPY": 158.11,
-    "USDKRW": 1344,
-    "USDCNY": 6.7048,
-    "EURUSD": 1.1169,
-    "GBPUSD": 1.3197,
-    "DXY": 101.93,
+    "USDJPY": 158.134,
+    "USDKRW": 1343,
+    "USDCNY": 6.6918,
+    "EURUSD": 1.1222,
+    "GBPUSD": 1.3217,
+    "DXY": 102.17,
     "JPYKRW": 8.5
   },
   "equities": {
-    "SPX": 7722,
-    "Nikkei": 69866,
-    "KOSPI": 7003,
+    "SPX": 7773,
+    "Nikkei": 70531,
+    "KOSPI": 6928,
     "CSI300": 4357,
-    "EuroStoxx": 6238,
-    "FTSE": 10462
+    "EuroStoxx": 6242,
+    "FTSE": 10497
   },
   "commodities": {
-    "brent": 102.25,
-    "wti": 91.11,
-    "gold": 4162.3,
-    "vix": 15.31
+    "brent": 100.81,
+    "wti": 89.82,
+    "gold": 4150.0,
+    "vix": 15.52
   },
   "us": {
     "policyRate": 4.0,
-    "y2": 4.78,
-    "y10": 5.24,
+    "y2": 4.83,
+    "y10": 5.28,
     "cpiYoY": 3.7,
     "gdpYoY": 2.2,
     "cpiAsOf": "Aug 2026",
@@ -36,22 +36,22 @@
     "policyRate_w1": 4.0,
     "policyRate_m1": 3.75,
     "policyRate_y1": 4.25,
-    "y2_d1": 4.88,
-    "y2_w1": 4.87,
+    "y2_d1": 4.78,
+    "y2_w1": 4.81,
     "y2_m1": 4.39,
     "y2_y1": 3.55,
-    "y10_d1": 5.29,
-    "y10_w1": 5.18,
+    "y10_d1": 5.24,
+    "y10_w1": 5.17,
     "y10_m1": 4.79,
-    "y10_y1": 4.12,
+    "y10_y1": 4.1,
     "cpiYoY_m1": 3.5,
     "cpiYoY_y1": 2.7,
     "gdpYoY_q1": 2.5,
     "gdpYoY_y1": 4.0,
-    "spx_d1": 7666.0,
-    "spx_w1": 7743.0,
-    "spx_m1": 7667.0,
-    "spx_y1": 6715.0,
+    "spx_d1": 7723.0,
+    "spx_w1": 7684.0,
+    "spx_m1": 7719.0,
+    "spx_y1": 6716.0,
     "retailSalesMoM": 1.1,
     "corePCEYoY": 3.0
   },
@@ -537,13 +537,13 @@
     }
   ],
   "fed": {
-    "asOf": "2026-10-02",
+    "asOf": "2026-10-06",
     "nextFOMC": "2026-10-27~28",
     "targetRange": "3.75\u20134.00%",
-    "marketOdds": "10\uc6d4 25bp \uc778\uc0c1 20% \u00b7 \ub3d9\uacb0 80% (\uc5f0\ubc29\uae30\uae08\uc120\ubb3c \ub0b4\uc7ac, 10/2 \uc885\uac00)",
-    "marketOddsEn": "Oct 25bp hike 20% \u00b7 hold 80% (fed funds futures implied, 10/2 close)",
+    "marketOdds": "10\uc6d4 25bp \uc778\uc0c1 22% \u00b7 \ub3d9\uacb0 78% (\uc5f0\ubc29\uae30\uae08\uc120\ubb3c \ub0b4\uc7ac, 10/6 \uc885\uac00)",
+    "marketOddsEn": "Oct 25bp hike 22% \u00b7 hold 78% (fed funds futures implied, 10/6 close)",
     "effr": 3.88,
-    "impliedAfter": 3.93,
-    "impliedMoveBp": 5.0
+    "impliedAfter": 3.935,
+    "impliedMoveBp": 5.5
   }
 }
