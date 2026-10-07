@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION BEAR STEEPENER",
-  "regimeSub": "10Y rips to 5.28% (24yr high per Capital Brief) as bond selloff resumes post-NFP; inflation sticky at 3.7%.",
+  "regimeSub": "10Y blows through 5.30% to 24yr highs as term premium reprices; equities ignore bond carnage.",
   "themes": [
-    "10Y yield jumps 4bps to 5.28% (highest since 2002 per Capital Brief Oct 5) despite weak Sep NFP → bear steepener resumes as term premium reprices fiscal risk; Peter Schiff's 'mother of all bond bear markets' call gains traction",
-    "2s10s widens to -45bps (2Y +5bps to 4.83%, 10Y +4bps) as belly underperforms → curve steepening signals stagflation fears with CPI at 3.7% YoY (Aug) and core PCE at 3.0%, well above Warsh's 2% target",
-    "SPX grinds higher to 7773 (+0.6% DoD) as equity risk premium compresses vs 5%+ yields → VIX at 15.52 shows complacency despite Treasury turmoil; retail sales +1.1% MoM supports consumer narrative",
-    "Brent stabilizes at $100.81 (-1.4% from $102.25) as Saudi output normalizes post-Iran interim deal (Jun 14 per Atlantic Council) → gold at $4150 (-0.3%) as real rates rise with 10Y-inflation gap widening"
+    "10Y yield +3bps to 5.31% (highest since 2002) as Treasury selloff accelerates post-weak NFP (29K vs est) → bear steepener intensifies with 2s10s at +47bps; Capital Brief's 'selloff rolls on' narrative intact",
+    "Warsh's Sep 15 hike to 4.0% (first in 3 years) failing to anchor inflation expectations → CPI sticky at 3.7% YoY (Aug), core PCE at 3.0% vs 2% target; Fed Chair's 'inflation is too high' warning proving prescient",
+    "SPX rips to 7818 (+0.6% DoD, +15.4% YoY) as equity risk premium compresses to near-zero vs 5.3% yields → VIX at 15.01 signals dangerous complacency; KOSPI at 6876 (+96% YTD per 24/7 Wall St) on HBM mania",
+    "Brent +0.8% to $101.65 as Saudi output disruptions linger post-Iran deal (Jun 14 Atlantic Council) → gold punches to $4168 (+0.4%) as stagflation hedge despite rising real rates"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at ~1.58% (5.28% - 3.7% CPI); highest since 2007, tightening financial conditions despite labor softening"
+      "note": "10Y real rate ~1.6% (5.31% nominal - 3.7% CPI); highest since 2007 as Warsh tightening bites"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steepens to -45bps from -46bps; bear steepener as long-end sells off on term premium/fiscal concerns"
+      "note": "Curve at +47bps (5.31% - 4.84%); bear steepener as long-end reprices fiscal/inflation risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads compress as SPX rallies; credit ignoring Treasury vol for now, watch for lagged response"
+      "note": "Credit ignoring Treasury carnage; spreads compressed as retail flows chase yield"
     },
     {
       "name": "VIX",
-      "note": "At 15.52, complacent given 10Y at 24yr highs; equity vol disconnected from rates vol"
+      "note": "VIX at 15.01 (-3% DoD) shows equity vol sellers complacent vs 24yr high in 10Y yields"
     },
     {
       "name": "Brent Crude",
-      "note": "Down to $100.81 from $102.25; Saudi/Iran supply normalization per Jun 14 interim deal capping upside"
+      "note": "Brent $101.65 (+0.8%) sticky above $100; Saudi disruptions per WSJ Sep 10 cap downside"
     },
     {
       "name": "Gold",
-      "note": "At $4150 (-0.3%); real rate rise capping gold despite geopolitical bid; watch $4100 support"
+      "note": "Gold $4168 (+0.4%) at ATH as stagflation hedge trumps rising real rates"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW stable at 1343 vs 1344; BOK at 3.0% (Aug hike) providing carry buffer as Fed pauses"
+      "note": "USDKRW 1338 stable as BOK Aug back-to-back hikes (to 3%) shadow Fed tightening"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI at 6928 (-1.1% from 7003); HBM capex concerns (Korea Times Sep 10) weighing on SK Hynix/Samsung"
+      "note": "KOSPI 6876 (+96% YTD) on SK Hynix HBM mania; Nasdaq ADR arbitrage per Startup Fortune Jul 26"
     }
   ],
-  "headline": "Treasury bear steepener resumes with 10Y at 5.28% (24-year high) as markets reassess term premium despite soft Sep NFP, while Warsh's Fed faces stagflation bind with CPI at 3.7% and core PCE at 3.0%.",
-  "generated": "2026-10-06T04:51:47Z",
-  "asOf": "2026-10-06"
+  "headline": "Treasury selloff extends to 24-year highs at 5.31% as Warsh's hawkish regime meets stagflation reality—equities and gold both bid despite bond carnage.",
+  "generated": "2026-10-07T04:18:08Z",
+  "asOf": "2026-10-07"
 }
