@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION BEAR STEEPENER",
-  "regimeSub": "10Y yields resume selloff to 5.27% as term premium reprices despite SPX -0.2% pullback.",
+  "regimeSub": "10Y hits 5.28% as 30Y auction demand fails to halt term premium repricing; SPX -0.5% reverses weekly gains.",
   "themes": [
-    "10Y yield at 5.27% (-4bps DoD) but +49bps MoM as Treasury selloff pauses intraday → 2s10s curve at +48bps maintains bear steepener; Business Day 'new 24-year high' narrative sustains term premium fears",
-    "Warsh's Sep 15 hike to 4.0% failing to anchor inflation → Aug CPI at 3.7% YoY (+20bps MoM), core PCE stuck at 3.0% vs 2% target; NYT 'Elevated Inflation Keeps Pressure' headline confirms hawkish Fed trajectory",
-    "SPX -0.2% to 7801 as equities finally notice bond carnage → KOSPI crashes to 6670 (-3% DoD) as SK Hynix foreign outflows accelerate per AD HOC NEWS; Samsung closing HBM gap pressures Korea AI trade",
-    "Brent +0.8% to $102.50 as Saudi disruptions persist despite Jun Iran interim deal → gold at $4160 (-0.2% DoD) consolidates near ATHs as stagflation hedge bid intact; VIX +0.5% to 15.08 signals mild stress"
+    "10Y yield +1bp to 5.28% extends 24-year high → 2s10s at +51bps confirms bear steepener; Investment Week '30Y yields highest since 2002' despite Thu 30Y auction finding 'solid demand' per Reuters",
+    "Warsh's Sep 15 hike to 4.0% trapped between Aug CPI at 3.7% YoY and Sep NFP miss of 29K vs ~150K est → CNBC 'labor market faltered' headline creates stagflation narrative as Fed boxed in on both mandates",
+    "SPX -0.5% to 7765 as equities catch down to bond carnage → KOSPI -0.7% to 6625 as BOK Aug back-to-back hikes to 3.0% per Korea Herald tighten financial conditions; USDKRW stable at 1344",
+    "Brent +0.3% to $102.84 as Saudi disruptions persist post-Jun Iran interim deal → gold +1.1% to $4206 fresh ATH as stagflation hedge demand accelerates; VIX +2.2% to 15.41 signals rising stress"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real rate ~2.3% (5.27% - 3.0% core PCE); restrictive but equities ignoring duration risk"
+      "note": "10Y real rate ~2.3% (5.28% nom minus 3% core PCE) highest since 2007; restrictive territory confirmed"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s at +48bps bear steepening; front-end anchored at 4.79% as long-end sells off on term premium"
+      "note": "Spread +51bps as bear steepener persists; long-end term premium repricing dominates front-end Fed pricing"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads compressed despite 5%+ yields; credit complacency mirrors equity vol suppression"
+      "note": "Spreads widening modestly as equity vol picks up; credit lagging the rates selloff capitulation"
     },
     {
       "name": "VIX",
-      "note": "VIX at 15.08 (+0.5% DoD); dangerous complacency as bonds sell off and KOSPI cracks 3%"
+      "note": "VIX +2.2% to 15.41 still subdued but rising from 15.08; equity vol catching up to bond stress"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $102.50 (+0.8%); Saudi disruptions linger post-Iran deal, Hormuz reopening hasn't normalized flows"
+      "note": "Brent $102.84 +0.3% as Saudi disruptions persist despite Jun US-Iran interim deal; supply risks elevated"
     },
     {
       "name": "Gold",
-      "note": "Gold $4160 (-0.2%); consolidating near ATH as stagflation hedge despite rising real rates"
+      "note": "Gold +1.1% to $4206 fresh ATH; stagflation hedge bid intensifies as real rates fail to cap upside"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1337 flat despite KOSPI -3%; BOK Aug hikes to 3% supporting KRW vs regional peers"
+      "note": "USDKRW 1344 stable as BOK 3.0% rate supports KRW; SK Hynix foreign outflows offset by rate differential"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -3% on SK Hynix foreign exodus; Samsung HBM gap closure per AD HOC NEWS pressures Korea AI thesis"
+      "note": "Semis under pressure as KOSPI -0.7%; SK Hynix ADR volatility per Chosun Ilbo reflects AI trade fragility"
     }
   ],
-  "headline": "Bear steepener grinds on as 10Y hovers near 24-year highs; KOSPI cracks 3% on HBM rotation while SPX shrugs off term premium repricing.",
-  "generated": "2026-10-08T04:30:07Z",
-  "asOf": "2026-10-08"
+  "headline": "Stagflation regime deepens as 10Y yields hit 5.28% 24-year high while Sep NFP miss of 29K traps Warsh between sticky 3.7% inflation and softening labor market.",
+  "generated": "2026-10-09T04:33:52Z",
+  "asOf": "2026-10-09"
 }
