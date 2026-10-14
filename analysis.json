@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION BEAR STEEPENER",
-  "regimeSub": "10Y holds 5.22% as South Korean president challenges BOK independence, Brent surges to $105 on lingering supply risks.",
+  "regimeSub": "CPI day looms with 10Y at 5.24% as markets brace for acceleration above Aug 3.7% print.",
   "themes": [
-    "10Y yield unchanged at 5.22% after Thu 30Y auction relief fades → 2s10s at +47bp maintains bear steepener as term premium repricing persists with yields at 24-year highs; real rate (10Y-CPI) at 1.52% signals restrictive conditions",
-    "South Korea President publicly states rate hikes 'unavoidable' per BigGo Finance Oct 13 → rare challenge to BOK independence as Governor faces parliamentary scrutiny; KOSPI -7% to 6001 from 6420 as won weakens to 1344 on policy credibility concerns",
-    "Warsh Fed remains boxed: Sep NFP +29K miss per CNBC with unemployment rising to 4.2% yet Aug CPI sticky at 3.7% YoY and core PCE at 3.0% → Williams Oct 8 'sees no urgency for next rate hike' per Reuters buys time but stagflation trap deepens",
-    "Brent +2.1% to $105.48 as Saudi output disruptions from Iran war persist despite Jun interim deal → gold +$0 at $4224 ATH holds as stagflation hedge; SPX -0.06% to 7807 as equity risk premium compresses against 5%+ yields"
+    "10Y +2bp to 5.24% as pre-CPI positioning drives yields to fresh 24-year highs → 2s10s widens to +44bp; real rate (10Y-CPI) at 1.54% maintains restrictive financial conditions ahead of Oct 14 inflation release",
+    "CNBC Oct 13 warns 'inflation data expected to show price increases accelerating' → Sep CPI consensus risks upside surprise vs Aug 3.7%; Warsh Fed boxed between Sep NFP +29K weakness and sticky core PCE at 3.0%",
+    "South Korea President's 'unavoidable' rate hike comments trigger BOK independence crisis → KOSPI +2.3% to 6139 as won strengthens to 1337 from 1344; Governor apologizes over ETF risks per Korea JoongAng Daily Oct 12 while maintaining data-dependent stance",
+    "Brent +0.9% to $106.46 as Saudi output disruptions persist post-Iran interim deal → gold -0.8% to $4191 as pre-CPI dollar bid lifts DXY to 102.09; SPX flat at 7805 as equity risk premium compresses further against 5%+ yields"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 5.22% minus CPI 3.7% = +1.52% real rate; restrictive but not biting growth yet with Q2 GDP at 2.2%"
+      "note": "10Y 5.24% minus Aug CPI 3.7% = 1.54% real rate; restrictive and rising into CPI print"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.75% vs 10Y 5.22% = +47bp steepener; term premium repricing dominates as Fed holds at 4.0%"
+      "note": "2s10s at +44bp (4.8% vs 5.24%); bear steepener intact as term premium repricing continues"
     },
     {
       "name": "HY Credit Spread",
-      "note": "VIX at 15.21 suggests credit spreads contained; equity vol compression despite stagflation backdrop"
+      "note": "Spreads stable as VIX at 15.27 signals complacency; watching for CPI vol catalyst"
     },
     {
       "name": "VIX",
-      "note": "VIX +2.5% to 15.21 from 14.84 as bond relief fades; still suppressed for stagflation regime"
+      "note": "VIX 15.27 subdued pre-CPI; implied vol mispricing risk if inflation accelerates vs consensus"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent +2.1% to $105.48 as Saudi disruptions persist post-Iran war despite Jun interim deal"
+      "note": "Brent $106.46 elevated on Saudi disruptions; Hormuz reopened but shipping risks linger per DW"
     },
     {
       "name": "Gold",
-      "note": "Gold flat at $4224 ATH; stagflation hedge bid intact as real yields stay positive but inflation sticky"
+      "note": "Gold -0.8% to $4191 off ATH as pre-CPI dollar bid weighs; stagflation hedge intact"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW weakens to 1344 as President challenges BOK independence; policy credibility risk premium builds"
+      "note": "USDKRW -0.5% to 1337 as BOK independence drama stabilizes; president-central bank tension watched"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -7% to 6001; SK Hynix HBM valuation under pressure from BOK tightening and won weakness"
+      "note": "Nikkei +0.4% to 68193; KOSPI +2.3% as SK Hynix HBM dominance offsets macro headwinds"
     }
   ],
-  "headline": "Stagflation regime persists as South Korean political challenge to BOK independence sparks KOSPI -7% selloff while Brent breaches $105 on lingering supply disruptions.",
-  "generated": "2026-10-13T05:28:23Z",
-  "asOf": "2026-10-13"
+  "headline": "Markets hold breath for Oct 14 CPI as 10Y yields pierce 5.24%, Warsh Fed trapped between stagflationary labor weakness and sticky inflation, while South Korea's BOK independence crisis stabilizes after presidential interference.",
+  "generated": "2026-10-14T03:31:57Z",
+  "asOf": "2026-10-14"
 }
