@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION BEAR STEEPENER",
-  "regimeSub": "CPI day looms with 10Y at 5.24% as markets brace for acceleration above Aug 3.7% print.",
+  "regimeLabel": "STAGFLATION HIKE PANIC",
+  "regimeSub": "Sep CPI +4.0% YoY smashes 3.7% est, reigniting Oct rate hike odds as SPX dumps 1.1%.",
   "themes": [
-    "10Y +2bp to 5.24% as pre-CPI positioning drives yields to fresh 24-year highs → 2s10s widens to +44bp; real rate (10Y-CPI) at 1.54% maintains restrictive financial conditions ahead of Oct 14 inflation release",
-    "CNBC Oct 13 warns 'inflation data expected to show price increases accelerating' → Sep CPI consensus risks upside surprise vs Aug 3.7%; Warsh Fed boxed between Sep NFP +29K weakness and sticky core PCE at 3.0%",
-    "South Korea President's 'unavoidable' rate hike comments trigger BOK independence crisis → KOSPI +2.3% to 6139 as won strengthens to 1337 from 1344; Governor apologizes over ETF risks per Korea JoongAng Daily Oct 12 while maintaining data-dependent stance",
-    "Brent +0.9% to $106.46 as Saudi output disruptions persist post-Iran interim deal → gold -0.8% to $4191 as pre-CPI dollar bid lifts DXY to 102.09; SPX flat at 7805 as equity risk premium compresses further against 5%+ yields"
+    "Sep CPI prints 4.0% YoY vs 3.7% est per Reuters Oct 14 → 10Y eases 3bp to 5.21% on flight-to-safety bid but 2Y holds 4.79% as Fed funds futures reprice Oct hike probability; core PCE still 3.0% leaves Warsh no room to pivot",
+    "SPX -1.1% from 7805 to 7718 as equity risk premium collapses vs 5%+ yields → VIX +32bp to 16.87 but remains subdued; Goldman 'Goldilocks' Oct 12 thesis invalidated by hot CPI forcing Warsh tightening bias per Sep 15 PBS remarks",
+    "Brent -2.0% to $104.29 as OPEC cuts demand forecasts per The Hill Oct 13 and Iran production crashes below 2mbpd per IranWire → Saudi backfilling offset by slowing global demand; gold -0.2% to $4183 as dollar DXY retreats to 101.91 post-CPI",
+    "KOSPI -9.8% to 5539 as BOK Gov Shin's Oct 12 apology and President's 'unavoidable hikes' comment per BigGo Finance spark contagion → won weakens to 1350 from 1337; SK Hynix ADR-Korea arb unwinds as AI capex cycle questions resurface"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 5.24% minus Aug CPI 3.7% = 1.54% real rate; restrictive and rising into CPI print"
+      "note": "10Y 5.21% minus Sep CPI 4.0% = 1.21% real rate; compressed from 1.54% as inflation overshoots."
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s at +44bp (4.8% vs 5.24%); bear steepener intact as term premium repricing continues"
+      "note": "2s10s at +42bp maintains bear steepening bias; curve pricing terminal rate higher for longer."
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as VIX at 15.27 signals complacency; watching for CPI vol catalyst"
+      "note": "HY spreads stable but equity selloff suggests credit lagging; watch for contagion if SPX breaks 7600."
     },
     {
       "name": "VIX",
-      "note": "VIX 15.27 subdued pre-CPI; implied vol mispricing risk if inflation accelerates vs consensus"
+      "note": "VIX 16.87 up from ~15 pre-CPI; subdued vol despite 1.1% SPX drop signals put sellers still active."
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $106.46 elevated on Saudi disruptions; Hormuz reopened but shipping risks linger per DW"
+      "note": "Brent $104.29 -2% as Iran output collapse offset by Saudi ramp; OPEC demand cuts weigh."
     },
     {
       "name": "Gold",
-      "note": "Gold -0.8% to $4191 off ATH as pre-CPI dollar bid weighs; stagflation hedge intact"
+      "note": "Gold $4183 flat as DXY retreat to 101.91 offsets higher real rate drag post-CPI miss."
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW -0.5% to 1337 as BOK independence drama stabilizes; president-central bank tension watched"
+      "note": "Won weakens to 1350 as BOK independence crisis and KOSPI -9.8% rout triggers EM FX contagion."
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Nikkei +0.4% to 68193; KOSPI +2.3% as SK Hynix HBM dominance offsets macro headwinds"
+      "note": "KOSPI memory selloff pressures SOX; SK Hynix ADR-Korea arb unwind questions AI capex durability."
     }
   ],
-  "headline": "Markets hold breath for Oct 14 CPI as 10Y yields pierce 5.24%, Warsh Fed trapped between stagflationary labor weakness and sticky inflation, while South Korea's BOK independence crisis stabilizes after presidential interference.",
-  "generated": "2026-10-14T03:31:57Z",
-  "asOf": "2026-10-14"
+  "headline": "Hot September CPI at 4.0% resurrects Fed hike risk, triggering SPX -1.1% and KOSPI -10% rout as Warsh tightening cycle extends into Q4.",
+  "generated": "2026-10-15T03:11:26Z",
+  "asOf": "2026-10-15"
 }
