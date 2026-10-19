@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION TECH ROUT",
-  "regimeSub": "SPX +0.3% masks tech carnage as Treasuries rally on flight-to-quality while 4% CPI locks in Oct hike odds.",
+  "regimeLabel": "STAGFLATION REPRIEVE",
+  "regimeSub": "Trump tariff/sanction lift + Warsh rate signal fade eases pressure as tech carnage extends and oil holds $108.",
   "themes": [
-    "Sep CPI 4.0% YoY confirmed vs 3.7% est per CNBC Oct 14 → 2Y +3bp to 4.82% as Oct hike repriced; Warsh's Aug 28 'rate increases in play' per Axios now consensus as core PCE stuck at 3.0%",
-    "SPX +0.3% to 7744 but Tech selloff triggers Treasury rally per FT Oct 15 → 10Y -2bp to 5.19% on flight-to-quality; VIX drops 41bp to 16.46 as equity vol sellers step in despite AI capex doubts",
-    "Samsung -5%, SK Hynix -7% per TradingView as 'peak-out' fears per BigGo Finance Oct 15 hit Korean semis → KOSPI rebounds 3.3% to 5720 on dead cat bounce; BOK Gov Shin's Oct 12 rate warning keeps won at 1345",
-    "Retail sales +0.8% MoM per Reuters Oct 15 beats on higher gasoline prices but 'masks weakness' per Real Economy Blog → Brent +1.0% to $105.37 as Saudi supply disruptions persist; gold +0.4% to $4199 on stagflation hedge"
+    "Trump Oct 17 tariff/sanctions rollback per Reuters triggers risk relief → SPX -1.1% to 7659 but DXY -0.5% to 101.86; USDKRW -1% to 1332 as trade fears ease despite Sep CPI 4.0% YoY overhang",
+    "Warsh Oct 15-16 'price stability key but no rate signal' per PBS/CNBC → rate hike bets fade per BigGo Finance Oct 19; 2Y -5bp to 4.77% as Oct hike odds reprice lower despite 3.0% core PCE",
+    "Samsung/SK Hynix 'peak-out' contagion per BigGo Finance Oct 15 drags KOSPI -0.6% to 5685 → BOK Gov Shin Oct 12 hawkish split keeps Nov hike live; President's Oct 13 'unavoidable' hike comment politicizes policy",
+    "Treasury rally extends as 10Y -9bp to 5.10% on flight-to-quality per Bloomberg Oct 15 → gold -0.1% to $4196 consolidates near highs; Brent +2.5% to $108 as Saudi-Iran supply disruptions persist"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real rate ~1.2% (5.19% nominal - 4.0% CPI); restrictive but curve pricing terminal rate fears not duration blow-up"
+      "note": "10Y real ~1.1% (5.10% nominal - 4.0% CPI); compression on Warsh signal fade supports duration bid"
     },
     {
       "name": "2s10s Curve",
-      "note": "2s10s +37bp steep at -37bp inversion; bear-steepening paused as 10Y rallies on tech flight-to-quality bid"
+      "note": "Steeper at +33bp (5.10-4.77) vs +37bp yday; front-end rallies faster on Oct hike doubts"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads contained as VIX drops; equity rout isolated to AI/semis, not broad credit stress yet"
+      "note": "Spreads stable as Trump tariff lift offsets tech stress; watch for energy HY widening if Brent spikes"
     },
     {
       "name": "VIX",
-      "note": "VIX -41bp to 16.46 despite CPI shock; vol sellers aggressive, complacency risks if Warsh delivers Oct hike"
+      "note": "VIX 19.99 +3.5pts from 16.46 as SPX -1.1%; elevated but not panic despite tech rout"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent +1.0% to $105.37; Saudi supply cuts offset Iran disruption but OPEC demand cuts cap upside"
+      "note": "Brent $108 +2.5% as Saudi-Iran disruptions persist; energy inflation keeps CPI elevated"
     },
     {
       "name": "Gold",
-      "note": "Gold +0.4% to $4199 all-time highs; stagflation hedge bid as real rates stay elevated but inflation sticky"
+      "note": "Gold $4196 consolidates at highs; stagflation hedge bid intact despite real rate compression"
     },
     {
       "name": "USD / KRW",
-      "note": "Won flat at 1345 as KOSPI dead-cat bounce offsets BOK hike fears; Shin's Oct 12 apology caps won strength"
+      "note": "Won strengthens to 1332 from 1345 on Trump tariff rollback; BOK Nov hike odds supportive"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Samsung/SK Hynix 'peak-out' per BigGo Finance triggers semi rout; AI capex cycle questioned as Meta misses"
+      "note": "Samsung -5%, SK Hynix -7% peak-out fears per BigGo Finance; HBM capex cycle questioned"
     }
   ],
-  "headline": "Tech rout sparks flight-to-quality Treasury rally while 4% CPI locks in Warsh's Oct hike and Korean semis crater on AI peak-out fears.",
-  "generated": "2026-10-16T03:07:45Z",
-  "asOf": "2026-10-16"
+  "headline": "Trump tariff/sanctions rollback and Warsh's refusal to signal October hike ease stagflation pressure, but SPX slides 1.1% as tech carnage extends with semis questioning AI capex cycle while Brent holds $108 on Gulf supply risks.",
+  "generated": "2026-10-19T03:15:15Z",
+  "asOf": "2026-10-19"
 }
