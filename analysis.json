@@ -1,47 +1,47 @@
 {
   "regimeLabel": "STAGFLATION REPRIEVE",
-  "regimeSub": "Trump tariff/sanction lift + Warsh rate signal fade eases pressure as tech carnage extends and oil holds $108.",
+  "regimeSub": "Russia sanction waiver lifts oil risk as Warsh stays mum, SPX recovers +0.4% despite 10Y breaching 5%.",
   "themes": [
-    "Trump Oct 17 tariff/sanctions rollback per Reuters triggers risk relief → SPX -1.1% to 7659 but DXY -0.5% to 101.86; USDKRW -1% to 1332 as trade fears ease despite Sep CPI 4.0% YoY overhang",
-    "Warsh Oct 15-16 'price stability key but no rate signal' per PBS/CNBC → rate hike bets fade per BigGo Finance Oct 19; 2Y -5bp to 4.77% as Oct hike odds reprice lower despite 3.0% core PCE",
-    "Samsung/SK Hynix 'peak-out' contagion per BigGo Finance Oct 15 drags KOSPI -0.6% to 5685 → BOK Gov Shin Oct 12 hawkish split keeps Nov hike live; President's Oct 13 'unavoidable' hike comment politicizes policy",
-    "Treasury rally extends as 10Y -9bp to 5.10% on flight-to-quality per Bloomberg Oct 15 → gold -0.1% to $4196 consolidates near highs; Brent +2.5% to $108 as Saudi-Iran supply disruptions persist"
+    "Trump Russia sanction waiver per WSJ/Reuters Oct 19 pulls Brent to $110 → oil retreats from $112 highs as supply disruption fears ease; SPX +0.4% to 7690 on risk relief despite bipartisan backlash per CBS",
+    "10Y Treasury breaches 5.09% per Yahoo Finance Oct 19 as bond selloff narrative shifts per Morningstar → 2Y -3bp to 4.74% suggests curve steepening on term premium; gold -0.8% to $4162 as real rates firm",
+    "Samsung/SK Hynix 'peak-out' fallout per BigGo Finance Oct 15 weighs on KOSPI at 5618 → BOK Nov hike remains live as President's Oct 13 'unavoidable' comment adds political pressure; USDKRW -0.3% to 1328",
+    "Warsh Oct 15-16 'price stability key' per PBS/CNBC but no rate signal → Sep CPI 4.0% YoY vs 3.7% prior keeps inflation overhang; core PCE at 3.0% leaves Fed optionality intact as retail sales +0.8% beats"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.1% (5.10% nominal - 4.0% CPI); compression on Warsh signal fade supports duration bid"
+      "note": "10Y 5.09% minus Sep CPI 4.0% = +109bp real rate; tightening financial conditions despite Fed hold at 4.0%"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steeper at +33bp (5.10-4.77) vs +37bp yday; front-end rallies faster on Oct hike doubts"
+      "note": "Curve steepens +35bp (4.74% vs 5.09%) as term premium reprices on fiscal/inflation concerns per Morningstar"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as Trump tariff lift offsets tech stress; watch for energy HY widening if Brent spikes"
+      "note": "Credit holds as Russia sanction waiver eases geopolitical tail risk; equity volatility contained at VIX 18.4"
     },
     {
       "name": "VIX",
-      "note": "VIX 19.99 +3.5pts from 16.46 as SPX -1.1%; elevated but not panic despite tech rout"
+      "note": "VIX 18.44 subdued despite 10Y >5% and AI trade wobble per Bloomberg; complacency or reprieve unclear"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $108 +2.5% as Saudi-Iran disruptions persist; energy inflation keeps CPI elevated"
+      "note": "Brent $110.09 off highs as Trump Russia waiver per WSJ eases supply fears; Saudi-Iran disruption narrative fades"
     },
     {
       "name": "Gold",
-      "note": "Gold $4196 consolidates at highs; stagflation hedge bid intact despite real rate compression"
+      "note": "Gold $4162 -0.8% as real rates firm and risk-off unwinds; consolidating near ATH on stagflation hedge demand"
     },
     {
       "name": "USD / KRW",
-      "note": "Won strengthens to 1332 from 1345 on Trump tariff rollback; BOK Nov hike odds supportive"
+      "note": "USDKRW 1328 -0.3% as trade fear eases post-waiver; BOK Nov hike odds support KRW despite semi peak-out drag"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Samsung -5%, SK Hynix -7% peak-out fears per BigGo Finance; HBM capex cycle questioned"
+      "note": "Samsung/SK Hynix 'peak-out' per BigGo Finance Oct 15 weighs; AI capex doubts per Bloomberg test sector conviction"
     }
   ],
-  "headline": "Trump tariff/sanctions rollback and Warsh's refusal to signal October hike ease stagflation pressure, but SPX slides 1.1% as tech carnage extends with semis questioning AI capex cycle while Brent holds $108 on Gulf supply risks.",
-  "generated": "2026-10-19T03:15:15Z",
-  "asOf": "2026-10-19"
+  "headline": "Trump's Russia sanction waiver eases oil supply fears and lifts risk sentiment despite 10Y breaching 5% and persistent 4% CPI overhang as Warsh maintains deliberate silence on rates.",
+  "generated": "2026-10-20T03:24:05Z",
+  "asOf": "2026-10-20"
 }
