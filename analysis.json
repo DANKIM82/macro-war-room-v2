@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION REPRIEVE EXTENDS",
-  "regimeSub": "SPX grinds +0.3% as Russia sanction waiver keeps Brent capped at $110; 10Y pushes to 5.15% on term premium.",
+  "regimeLabel": "BOK PAUSE RISK GRIND",
+  "regimeSub": "BOK holds at 3% as expected; SPX +0.6% WoW as sanction relief and rate pause extend stagflation reprieve.",
   "themes": [
-    "Trump Russia sanction waiver per Reuters Oct 19 keeps Brent at $110.51 vs $112 peak → energy secretary Rubio Oct 18 defends move as 'not a lifeline'; oil futures pullback per WSJ Oct 19 sustains risk bid despite bipartisan pushback",
-    "10Y Treasury climbs 6bp to 5.15% per Morningstar bond selloff narrative Oct 19 → 2Y +3bp to 4.77% maintains steep curve; French/Italian protest-driven selloff per Guardian Oct 19 adds EU contagion to term premium",
-    "Fed Chair Warsh 'worst yet to come' warning per Motley Fool Oct 19 keeps Dec hike live → Reuters Oct 20 poll shows nearly all economists expect Oct skip then Dec hike; Sep CPI 4.0% vs 3.7% prior cements inflation overhang",
-    "KOSPI rebounds to 5772 (+2.7% from Oct 15 lows) as HBM peak-out fears stabilize → BOK Rhee Oct 12 'data-dependent' stance leaves Nov decision open; USDKRW -0.15% to 1326 as won firms on risk-on tilt"
+    "BOK holds benchmark rate at 3.00% on Oct 22 per Korea JoongAng Daily → unanimous decision to assess prior two hikes; USDKRW steady at 1322 as Nov hike door remains open",
+    "Trump Russia sanction waiver per Reuters Oct 17 keeps Brent capped at $110.64 vs $112 peak → crude stability extends risk-on despite term premium pressure; 10Y at 5.146% per Morningstar selloff narrative",
+    "Fed Chair Warsh Oct 16 PBS speech: 'price stability is key' but withholds rate signal → Dec hike remains live with Sep CPI at 3.7% per CNN; market pricing Oct skip consensus intact",
+    "KOSPI surges to 5606 (+14.5% YoY) as HBM demand stabilizes → SK Hynix/Samsung rebound supports won; Conference Board Oct 21 retail data signals healthy Q3 consumer despite elevated inflation"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real at ~2.15% (5.15% nom - 3.0% core PCE); highest since 2007, equity multiple compression risk persists"
+      "note": "10Y nominal at 5.146% with core PCE at 3% implies ~2.15% real rate; restrictive but curve steepening dominates"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +38bp (5.15% vs 4.77%); steepening on term premium, not rate cut expectations"
+      "note": "Steep curve persists as term premium drives long end; 10Y +6bp WoW per bond selloff dynamics"
     },
     {
       "name": "HY Credit Spread",
-      "note": "HY spreads stable as Russia sanction waiver dampens energy default tail risk; watch France/Italy contagion"
+      "note": "Spreads contained as sanction relief caps energy risk; SPX near ATH at 7757 supports credit"
     },
     {
       "name": "VIX",
-      "note": "VIX at 17.31 below 20 despite 10Y breach of 5% → equity vol suppressed by earnings beat rate and oil relief"
+      "note": "VIX at 16.68 reflects complacency despite 10Y grinding higher; put selling dominates"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $110.51 down from $112 highs; Trump sanction waiver per WSJ caps upside, Iran supply risk lingers"
+      "note": "Brent at $110.64 capped by Trump Russia waiver Oct 17; below $112 peak supports risk assets"
     },
     {
       "name": "Gold",
-      "note": "Gold $4135 -0.6% from yesterday; real rate surge pressures despite geopolitical bid; Warsh speech eased hike bets"
+      "note": "Gold at $4128 new highs as real rate stability and geopolitical hedge bid persist"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1326 -0.15% as won firms; BOK Nov hike odds support KRW despite Samsung/Hynix peak-out overhang"
+      "note": "USDKRW at 1322 steady post-BOK hold; won supported by HBM flows and risk-on tilt"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Nikkei +2.3% to 64823, KOSPI +2.7% as HBM selloff stabilizes; watch SK Hynix/Samsung guidance revisions"
+      "note": "KOSPI +14.5% YoY driven by HBM; SK Hynix stabilizes after Q3 peak-out scare"
     }
   ],
-  "headline": "Russia sanction waiver caps oil upside and extends risk reprieve as 10Y breaches 5.15%, with Fed Chair Warsh signaling Dec hike likely and Sep CPI at 4.0% keeping stagflation fears on simmer.",
-  "generated": "2026-10-21T03:18:36Z",
-  "asOf": "2026-10-21"
+  "headline": "BOK holds at 3% as expected while Trump sanction waiver keeps Brent capped, allowing SPX to grind higher despite 10Y at 5.15% and Fed Chair Warsh maintaining December hike optionality.",
+  "generated": "2026-10-22T03:17:09Z",
+  "asOf": "2026-10-22"
 }
