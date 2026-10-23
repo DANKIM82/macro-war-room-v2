@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "BOK PAUSE RISK GRIND",
-  "regimeSub": "BOK holds at 3% as expected; SPX +0.6% WoW as sanction relief and rate pause extend stagflation reprieve.",
+  "regimeLabel": "STAGFLATION GRIND PAUSE",
+  "regimeSub": "SPX -1.2% as AI selloff resumes; BOK hold + Warsh silence keep risk bid fragile at 5.13% 10Y.",
   "themes": [
-    "BOK holds benchmark rate at 3.00% on Oct 22 per Korea JoongAng Daily → unanimous decision to assess prior two hikes; USDKRW steady at 1322 as Nov hike door remains open",
-    "Trump Russia sanction waiver per Reuters Oct 17 keeps Brent capped at $110.64 vs $112 peak → crude stability extends risk-on despite term premium pressure; 10Y at 5.146% per Morningstar selloff narrative",
-    "Fed Chair Warsh Oct 16 PBS speech: 'price stability is key' but withholds rate signal → Dec hike remains live with Sep CPI at 3.7% per CNN; market pricing Oct skip consensus intact",
-    "KOSPI surges to 5606 (+14.5% YoY) as HBM demand stabilizes → SK Hynix/Samsung rebound supports won; Conference Board Oct 21 retail data signals healthy Q3 consumer despite elevated inflation"
+    "SPX falls to 7663 (-1.2% DoD) as AI/tech selloff per Bloomberg Oct 22 triggers haven bid → 10Y rallies 1bp to 5.13% but term premium remains elevated vs 3.98% YoY",
+    "BOK holds at 3.00% on Oct 22 per Korea JoongAng Daily with Nov hike signaled → USDKRW +2 to 1324 as won softens on hawkish guidance; KOSPI -3.3% WoW to 5423 on HBM peak-out fears",
+    "Fed Chair Warsh Oct 16 'price stability key' with no rate signal → Dec hike live as Sep CPI printed 4.0% YoY vs 3.7% prior; core PCE sticky at 3.0% keeps 2Y at 4.81%",
+    "Initial claims fall to 194k (3-mo low) per Bloomberg Oct 22 → labor tightness sustains wage pressure; retail MoM +0.8% confirms consumer resilience despite inflation at 4.0%"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y nominal at 5.146% with core PCE at 3% implies ~2.15% real rate; restrictive but curve steepening dominates"
+      "note": "10Y real ~1.1% (5.13% nominal - 4.0% CPI); restrictive but not biting as growth holds 2.2%"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steep curve persists as term premium drives long end; 10Y +6bp WoW per bond selloff dynamics"
+      "note": "Curve at +32bp (5.13-4.81); steeper vs year ago as term premium reprices fiscal risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained as sanction relief caps energy risk; SPX near ATH at 7757 supports credit"
+      "note": "Spreads contained as claims at 60-yr lows offset AI selloff; no stress signal yet"
     },
     {
       "name": "VIX",
-      "note": "VIX at 16.68 reflects complacency despite 10Y grinding higher; put selling dominates"
+      "note": "VIX at 19.03 elevated from AI turbulence but sub-20 keeps systematic flows intact"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent at $110.64 capped by Trump Russia waiver Oct 17; below $112 peak supports risk assets"
+      "note": "Brent $113.70 (+2.8% WoW) as Trump sanction waiver relief fades; Iran supply uncertainty persists"
     },
     {
       "name": "Gold",
-      "note": "Gold at $4128 new highs as real rate stability and geopolitical hedge bid persist"
+      "note": "Gold $4029 near highs as stagflation hedge bid + real rate plateau supports; no haven panic"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW at 1322 steady post-BOK hold; won supported by HBM flows and risk-on tilt"
+      "note": "USDKRW 1324 (+0.2% DoD) as BOK Nov hike signal offsets AI chip selloff; won range-bound"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI +14.5% YoY driven by HBM; SK Hynix stabilizes after Q3 peak-out scare"
+      "note": "HBM peak-out fears per BigGo Oct 15 → Samsung/SK Hynix drag KOSPI; capex cycle uncertainty"
     }
   ],
-  "headline": "BOK holds at 3% as expected while Trump sanction waiver keeps Brent capped, allowing SPX to grind higher despite 10Y at 5.15% and Fed Chair Warsh maintaining December hike optionality.",
-  "generated": "2026-10-22T03:17:09Z",
-  "asOf": "2026-10-22"
+  "headline": "AI selloff drives SPX -1.2% and Treasuries rally as stagflation persists with 4% CPI and BOK signals Nov hike while Warsh keeps Fed on hold.",
+  "generated": "2026-10-23T03:24:42Z",
+  "asOf": "2026-10-23"
 }
