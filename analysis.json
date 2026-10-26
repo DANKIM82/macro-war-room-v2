@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION GRIND PAUSE",
-  "regimeSub": "SPX -1.2% as AI selloff resumes; BOK hold + Warsh silence keep risk bid fragile at 5.13% 10Y.",
+  "regimeLabel": "STAGFLATION RELIEF RALLY",
+  "regimeSub": "10Y plunges 17bp to 4.96% as AI rotation sparks haven bid; SPX -0.5% but yields compress sharply.",
   "themes": [
-    "SPX falls to 7663 (-1.2% DoD) as AI/tech selloff per Bloomberg Oct 22 triggers haven bid → 10Y rallies 1bp to 5.13% but term premium remains elevated vs 3.98% YoY",
-    "BOK holds at 3.00% on Oct 22 per Korea JoongAng Daily with Nov hike signaled → USDKRW +2 to 1324 as won softens on hawkish guidance; KOSPI -3.3% WoW to 5423 on HBM peak-out fears",
-    "Fed Chair Warsh Oct 16 'price stability key' with no rate signal → Dec hike live as Sep CPI printed 4.0% YoY vs 3.7% prior; core PCE sticky at 3.0% keeps 2Y at 4.81%",
-    "Initial claims fall to 194k (3-mo low) per Bloomberg Oct 22 → labor tightness sustains wage pressure; retail MoM +0.8% confirms consumer resilience despite inflation at 4.0%"
+    "10Y yield collapses 17bp DoD to 4.96% per FT 'winter arrives' Oct 23 as AI selloff triggers duration bid → biggest drop since 2023 banking crisis; 2Y -16bp to 4.65% signals Dec hike repricing",
+    "Fed Chair Warsh silent post-Oct 16 'price stability' remarks with no calendar events ±2d → markets lean Dec hike at 4.0% policy rate; Sep CPI 4.0% YoY (+30bp MoM) keeps inflation fears alive",
+    "BOK Oct 22 hold at 3.00% with hawkish guidance per Korea Times → USDKRW -3 to 1321 as won firms on tightening signal; KOSPI +0.8% WoW to 5465 recovering from HBM peak-out panic",
+    "Trump Oct 17 Russia sanctions waiver per Time → geopolitical risk premium fades; Brent steady at $109.48 as Iran war disruption premium persists but no fresh escalation"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.1% (5.13% nominal - 4.0% CPI); restrictive but not biting as growth holds 2.2%"
+      "note": "10Y real ~1.96% (4.96%-3.0% PCE); compressed 17bp as duration bid intensifies on AI rotation"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +32bp (5.13-4.81); steeper vs year ago as term premium reprices fiscal risk"
+      "note": "Curve at +31bp (4.96%-4.65%) steepening 1bp; front-end reprices faster on Fed pause expectations"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads contained as claims at 60-yr lows offset AI selloff; no stress signal yet"
+      "note": "Spreads tighten as Treasury rally offsets equity weakness; risk appetite fragile but not collapsing"
     },
     {
       "name": "VIX",
-      "note": "VIX at 19.03 elevated from AI turbulence but sub-20 keeps systematic flows intact"
+      "note": "VIX at 19.45 down from elevated levels; fear receding but above complacent zone amid AI uncertainty"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $113.70 (+2.8% WoW) as Trump sanction waiver relief fades; Iran supply uncertainty persists"
+      "note": "Brent $109.48 steady; Iran war premium persists but no escalation; OPEC+ holds output stable"
     },
     {
       "name": "Gold",
-      "note": "Gold $4029 near highs as stagflation hedge bid + real rate plateau supports; no haven panic"
+      "note": "Gold $4017.5 holding gains; real rate compression supports haven bid despite no fresh geopolitical catalyst"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1324 (+0.2% DoD) as BOK Nov hike signal offsets AI chip selloff; won range-bound"
+      "note": "USDKRW 1321 (-3 DoD); won firms on BOK hawkish hold Oct 22; DXY 101.62 soft on yield collapse"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "HBM peak-out fears per BigGo Oct 15 → Samsung/SK Hynix drag KOSPI; capex cycle uncertainty"
+      "note": "HBM peak-out fears ease as KOSPI +0.8% WoW; Samsung/SK Hynix stabilize after Oct 15 selloff"
     }
   ],
-  "headline": "AI selloff drives SPX -1.2% and Treasuries rally as stagflation persists with 4% CPI and BOK signals Nov hike while Warsh keeps Fed on hold.",
-  "generated": "2026-10-23T03:24:42Z",
-  "asOf": "2026-10-23"
+  "headline": "Treasuries stage biggest rally since 2023 banking crisis as AI tech rotation triggers duration bid, compressing 10Y 17bp to 4.96% while Fed Chair Warsh remains silent ahead of expected December hike decision.",
+  "generated": "2026-10-26T03:12:14Z",
+  "asOf": "2026-10-26"
 }
