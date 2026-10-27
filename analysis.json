@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION RELIEF RALLY",
-  "regimeSub": "10Y plunges 17bp to 4.96% as AI rotation sparks haven bid; SPX -0.5% but yields compress sharply.",
+  "regimeLabel": "STAGFLATION PAUSE HOLD",
+  "regimeSub": "Fed expected to hold Wed despite 4% CPI; tech-to-bonds rotation extends as 10Y firms at 5%.",
   "themes": [
-    "10Y yield collapses 17bp DoD to 4.96% per FT 'winter arrives' Oct 23 as AI selloff triggers duration bid → biggest drop since 2023 banking crisis; 2Y -16bp to 4.65% signals Dec hike repricing",
-    "Fed Chair Warsh silent post-Oct 16 'price stability' remarks with no calendar events ±2d → markets lean Dec hike at 4.0% policy rate; Sep CPI 4.0% YoY (+30bp MoM) keeps inflation fears alive",
-    "BOK Oct 22 hold at 3.00% with hawkish guidance per Korea Times → USDKRW -3 to 1321 as won firms on tightening signal; KOSPI +0.8% WoW to 5465 recovering from HBM peak-out panic",
-    "Trump Oct 17 Russia sanctions waiver per Time → geopolitical risk premium fades; Brent steady at $109.48 as Iran war disruption premium persists but no fresh escalation"
+    "10Y yield +4bp to 5.00% after Thu-Fri plunge stabilizes; 2Y +4bp to 4.69% as FOMC Wed looms → WSJ/Reuters report Fed Chair Warsh faces Trump criticism but expected to hold at 4.0%",
+    "Sep CPI 4.0% YoY vs Aug 3.7% confirms inflation reacceleration per Advisor Perspectives; core PCE stuck at 3.0% → Fed pause this week but Dec hike on table if data persists",
+    "BOK Oct 22 hold with hawkish tilt per Korea Times → USDKRW +3 to 1324 as won gives back gains; KOSPI -1.4% WoW to 5656 as foreign/institutional flows stabilize per BigGo",
+    "AI rotation extends per Asian Banker 'AI selloff drives Treasury rally' → SPX +0.7% DoD to 7676 as tech finds footing; VIX -0.5 to 18.39 signals vol compression into FOMC"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y real ~1.96% (4.96%-3.0% PCE); compressed 17bp as duration bid intensifies on AI rotation"
+      "note": "10Y 5.00% - CPI 4.0% = 1.0% real rate; positive but compressed vs 1.4% month ago on yield drop"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve at +31bp (4.96%-4.65%) steepening 1bp; front-end reprices faster on Fed pause expectations"
+      "note": "Spread +31bp (5.00% - 4.69%); steepening as short-end reprices Fed hold, long-end stabilizes"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads tighten as Treasury rally offsets equity weakness; risk appetite fragile but not collapsing"
+      "note": "VIX 18.39 suggests credit calm; no fresh stress despite stagflation backdrop and FOMC risk"
     },
     {
       "name": "VIX",
-      "note": "VIX at 19.45 down from elevated levels; fear receding but above complacent zone amid AI uncertainty"
+      "note": "18.39 down from ~19 zone; vol sellers ahead of FOMC betting on no surprise from Warsh"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $109.48 steady; Iran war premium persists but no escalation; OPEC+ holds output stable"
+      "note": "$109.82 steady; Iran war premium persists but no escalation; OPEC+ holding production stable"
     },
     {
       "name": "Gold",
-      "note": "Gold $4017.5 holding gains; real rate compression supports haven bid despite no fresh geopolitical catalyst"
+      "note": "$4024 near highs; stagflation hedge bid intact as 4% CPI + uncertain Fed path supports metal"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1321 (-3 DoD); won firms on BOK hawkish hold Oct 22; DXY 101.62 soft on yield collapse"
+      "note": "1324 +3 from yesterday; won weakens as BOK hawkish hold fails to sustain KRW strength"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "HBM peak-out fears ease as KOSPI +0.8% WoW; Samsung/SK Hynix stabilize after Oct 15 selloff"
+      "note": "KOSPI -1.4% WoW to 5656; Samsung/SK Hynix stabilizing after HBM peak-out rotation to bonds"
     }
   ],
-  "headline": "Treasuries stage biggest rally since 2023 banking crisis as AI tech rotation triggers duration bid, compressing 10Y 17bp to 4.96% while Fed Chair Warsh remains silent ahead of expected December hike decision.",
-  "generated": "2026-10-26T03:12:14Z",
-  "asOf": "2026-10-26"
+  "headline": "Markets consolidate ahead of Wed FOMC with Warsh expected to hold at 4.0% despite 4% CPI; AI-to-bonds rotation pauses as 10Y stabilizes at 5%.",
+  "generated": "2026-10-27T03:42:28Z",
+  "asOf": "2026-10-27"
 }
