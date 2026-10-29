@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION FOMC HOLD",
-  "regimeSub": "FOMC Day 1 begins with Fed expected to hold at 4% despite 4% CPI; Brent spikes to $111 adding inflation pressure.",
+  "regimeLabel": "STAGFLATION HOLD DISSENT",
+  "regimeSub": "Fed Chair Warsh holds at 4% with Cook-dissent signaling hike bias; CPI 4% vs 3% core PCE keeps stagflation alive.",
   "themes": [
-    "FOMC Oct meeting Day 1 underway per Investopedia/PBS → Fed Chair Warsh expected to hold at 4.0% despite Sep CPI 4.0% YoY; markets pricing Dec hike if inflation persists per Reuters 'inflation and weak hiring point opposite directions'",
-    "Brent crude +$111 amid Saudi output disruptions per WSJ Sep report → energy adding 30bp to headline CPI; gold $4,059 at ATH signals inflation hedge bid as real rates stay negative at -0.5%",
-    "10Y yield flat at 5.00% as Treasury rally pauses per TradingView 'bond rush' story; 2Y -1bp to 4.68% → 2s10s steepens to +32bp as term premium reprices Fed credibility risk",
-    "KOSPI +6.1% to 6001 vs last week as foreign flows return; USDKRW +14 to 1338 as won weakens on BOK hold aftermath per Korea Times Oct 22 hawkish stance signaling further tightening ahead"
+    "FOMC Oct decision: Warsh holds at 4.0% in split vote per CNBC/Fortune — Gov Lisa Cook dissented hawkish (first dual dissent since 1992); Warsh signals fewer meetings ahead, keeps Dec hike optionality as Sep CPI sticky at 4.0% YoY",
+    "10Y yield +1bp to 4.99% post-FOMC per CNBC 'yields creep higher' → 2s10s steepens to +29bp; JP Morgan says bonds a buy but hawkish dissent keeps term premium bid as real rate stays negative at 0%",
+    "Brent crude eases to $110.20 from $111 as Saudi disruption fears fade per WSJ; gold -$10 to $4,049 as inflation hedge unwinds modestly but stays elevated on stagflation regime persistence",
+    "KOSPI reclaims 6,000 on Anthropic-SK Hynix strength per Chosun Ilbo; USDKRW -3 to 1335 as BOK seen hiking Nov per Herald → hawkish divergence from Fed hold supports won"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "10Y 5.00% minus 4% CPI = +100bp nominal but core PCE 3% implies real rate near 0% → not restrictive enough"
+      "note": "Policy 4% minus 4% CPI = 0% real rate; Warsh hold keeps policy accommodative vs inflation target"
     },
     {
       "name": "2s10s Curve",
-      "note": "Spread +32bp (4.68/5.00) steepening as long-end reprices inflation persistence; bear steepener risk if Fed holds"
+      "note": "2Y 4.70% vs 10Y 4.99% = +29bp steepening; term premium reprices on Cook hawkish dissent"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as SPX +0.6% DoD; tech rotation to bonds not triggering credit stress yet"
+      "note": "Spreads stable as FOMC hold removes near-term tightening risk; watch Dec guidance"
     },
     {
       "name": "VIX",
-      "note": "VIX 17.52 down from 18.39 yesterday; vol compression into FOMC suggests market confident in hold outcome"
+      "note": "VIX 16.91 flat post-FOMC; split vote adds uncertainty but SPX +20pts absorbs it"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $110.83 elevated on Saudi disruptions; adding 25-30bp to headline CPI per energy price pass-through"
+      "note": "Brent $110.20 off highs; Saudi output normalizing but stays elevated vs $101 WTI"
     },
     {
       "name": "Gold",
-      "note": "Gold $4,059 ATH as inflation hedge + real rate skepticism bid; up $200+ YTD on stagflation positioning"
+      "note": "Gold $4,049 -$10 from ATH; inflation hedge unwinds marginally on Fed hold clarity"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1338 +14 from 1324 as won weakens post-BOK hold; hawkish guidance not enough to stem outflows"
+      "note": "USDKRW 1335 -3 won stronger; BOK Nov hike expectations diverge from Fed hold per Herald"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6001 +6.1% WoW; SK Hynix/Samsung stabilizing as AI capex narrative per TSMC forecast intact"
+      "note": "KOSPI 6,000+ on SK Hynix/Anthropic per Chosun; HBM demand thesis intact despite macro"
     }
   ],
-  "headline": "Fed Chair Warsh begins October FOMC with markets pricing a hold at 4% despite 4% CPI, as Brent at $111 and gold ATH $4,059 signal persistent stagflation fears.",
-  "generated": "2026-10-28T03:58:56Z",
-  "asOf": "2026-10-28"
+  "headline": "Fed Chair Warsh holds at 4% with rare dual dissent from Cook signaling hike bias as stagflation persists with 4% CPI and slowing growth.",
+  "generated": "2026-10-29T04:22:15Z",
+  "asOf": "2026-10-29"
 }
