@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION HOLD DISSENT",
-  "regimeSub": "Fed Chair Warsh holds at 4% with Cook-dissent signaling hike bias; CPI 4% vs 3% core PCE keeps stagflation alive.",
+  "regimeLabel": "STAGFLATION AI ROTATION",
+  "regimeSub": "Q3 GDP 3.4% beat + Sep PCE reacceleration meets AI selloff driving Treasury haven bid, Lagarde exits ECB.",
   "themes": [
-    "FOMC Oct decision: Warsh holds at 4.0% in split vote per CNBC/Fortune — Gov Lisa Cook dissented hawkish (first dual dissent since 1992); Warsh signals fewer meetings ahead, keeps Dec hike optionality as Sep CPI sticky at 4.0% YoY",
-    "10Y yield +1bp to 4.99% post-FOMC per CNBC 'yields creep higher' → 2s10s steepens to +29bp; JP Morgan says bonds a buy but hawkish dissent keeps term premium bid as real rate stays negative at 0%",
-    "Brent crude eases to $110.20 from $111 as Saudi disruption fears fade per WSJ; gold -$10 to $4,049 as inflation hedge unwinds modestly but stays elevated on stagflation regime persistence",
-    "KOSPI reclaims 6,000 on Anthropic-SK Hynix strength per Chosun Ilbo; USDKRW -3 to 1335 as BOK seen hiking Nov per Herald → hawkish divergence from Fed hold supports won"
+    "Q3 GDP prints 3.4% QoQ vs estimates ~2.8% per CNBC/PBS, driven by consumer + AI capex → hot growth + sticky 4% CPI = stagflation persists; Fed Warsh holds 4% but hawkish dissent keeps Dec hike live",
+    "10Y yield drops to 5.05% from 4.99% on AI tech selloff driving flight-to-quality per Bloomberg/investingLive → 2s10s steepens to +38bp; real rate flat at 1.0% as inflation expectations anchor near 4%",
+    "ECB President Lagarde resigns per Guardian citing 'freedom of speech' → leadership vacuum adds EUR uncertainty; EURUSD holds 1.1193 as market awaits successor nomination",
+    "Brent crude eases to $112.13 as VP Vance restarts Iran peace talks per OilPrice → geopolitical premium softens; gold holds $4,000 on stagflation hedge despite oil dip"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Policy 4% minus 4% CPI = 0% real rate; Warsh hold keeps policy accommodative vs inflation target"
+      "note": "Real 10Y at ~1.05% (5.05% - 4.0% CPI); positive but growth outpacing suggests stagflation not recession"
     },
     {
       "name": "2s10s Curve",
-      "note": "2Y 4.70% vs 10Y 4.99% = +29bp steepening; term premium reprices on Cook hawkish dissent"
+      "note": "Steepens to +38bp (5.05% - 4.67%); term premium bid on inflation persistence + AI selloff duration risk"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as FOMC hold removes near-term tightening risk; watch Dec guidance"
+      "note": "Spreads stable as Q3 GDP beat offsets AI rotation; no stress signals despite tech selloff"
     },
     {
       "name": "VIX",
-      "note": "VIX 16.91 flat post-FOMC; split vote adds uncertainty but SPX +20pts absorbs it"
+      "note": "VIX at 17.2, elevated from lows but contained; AI selloff orderly, not panic"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $110.20 off highs; Saudi output normalizing but stays elevated vs $101 WTI"
+      "note": "Brent $112.13 -1% as Vance Iran diplomacy per OilPrice eases supply fears; still elevated on war premium"
     },
     {
       "name": "Gold",
-      "note": "Gold $4,049 -$10 from ATH; inflation hedge unwinds marginally on Fed hold clarity"
+      "note": "Gold holds $4,000 as stagflation hedge; inflation + geopolitical uncertainty support safe-haven bid"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1335 -3 won stronger; BOK Nov hike expectations diverge from Fed hold per Herald"
+      "note": "USDKRW 1336, won stable as BOK Nov hike priced per Korea Times; hawkish divergence supports"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI 6,000+ on SK Hynix/Anthropic per Chosun; HBM demand thesis intact despite macro"
+      "note": "AI selloff pressures semis; KOSPI -345 to 5655, Samsung disappoints on shareholder returns per JoongAng"
     }
   ],
-  "headline": "Fed Chair Warsh holds at 4% with rare dual dissent from Cook signaling hike bias as stagflation persists with 4% CPI and slowing growth.",
-  "generated": "2026-10-29T04:22:15Z",
-  "asOf": "2026-10-29"
+  "headline": "Stagflation regime persists as Q3 GDP beats at 3.4% while Sep inflation reaccelerates, AI tech selloff sparks Treasury haven rally with 10Y at one-month lows, Lagarde resignation adds ECB uncertainty.",
+  "generated": "2026-10-30T04:22:14Z",
+  "asOf": "2026-10-30"
 }
