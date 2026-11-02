@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION AI ROTATION",
-  "regimeSub": "Q3 GDP 3.4% beat + Sep PCE reacceleration meets AI selloff driving Treasury haven bid, Lagarde exits ECB.",
+  "regimeLabel": "STAGFLATION TECH ROTATION",
+  "regimeSub": "SPX -1.8% intraday as AI selloff deepens; Treasury rally extends with 10Y at 4.98% on risk-off bid pre-NFP.",
   "themes": [
-    "Q3 GDP prints 3.4% QoQ vs estimates ~2.8% per CNBC/PBS, driven by consumer + AI capex → hot growth + sticky 4% CPI = stagflation persists; Fed Warsh holds 4% but hawkish dissent keeps Dec hike live",
-    "10Y yield drops to 5.05% from 4.99% on AI tech selloff driving flight-to-quality per Bloomberg/investingLive → 2s10s steepens to +38bp; real rate flat at 1.0% as inflation expectations anchor near 4%",
-    "ECB President Lagarde resigns per Guardian citing 'freedom of speech' → leadership vacuum adds EUR uncertainty; EURUSD holds 1.1193 as market awaits successor nomination",
-    "Brent crude eases to $112.13 as VP Vance restarts Iran peace talks per OilPrice → geopolitical premium softens; gold holds $4,000 on stagflation hedge despite oil dip"
+    "Q3 GDP 3.4% print confirmed per TMGM/Fortune + Sep CPI at 4.0% YoY → stagflation regime persists; Fed Warsh held at 4% Oct FOMC per CNBC but hawkish lean keeps Dec hike odds elevated with core PCE stuck at 3.1%",
+    "10Y yield compresses 7bp to 4.98% as tech selloff accelerates Treasury haven bid per Bloomberg → 2s10s at +37bp steepens from month-ago +37bp; real rate at 0.98% as breakevens hold near 4%",
+    "Lagarde ECB exit creates EUR policy vacuum per Guardian → EURUSD stable at 1.1177 but downside risk on successor uncertainty; BOK held rates Oct 21 per Reuters with Nov hike now live as Fed stays hawkish",
+    "Brent at $109.68 down from $112 as OPEC+ holds Dec targets steady per Straits Times; gold retreats to $3,916 from $4,000 as geopolitical premium fades post-Iran interim deal per Atlantic Council"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real 10Y at ~1.05% (5.05% - 4.0% CPI); positive but growth outpacing suggests stagflation not recession"
+      "note": "Real rate at 0.98% (4.98% 10Y - 4.0% CPI); near flat vs week-ago as nominal yields compress with inflation sticky"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steepens to +38bp (5.05% - 4.67%); term premium bid on inflation persistence + AI selloff duration risk"
+      "note": "2s10s at +37bp (4.98% - 4.61%); steepener intact as short-end anchored by Fed hold, long-end catches risk-off bid"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads stable as Q3 GDP beat offsets AI rotation; no stress signals despite tech selloff"
+      "note": "HY spreads likely widening on tech selloff spillover; SPX -1.8% d/d signals risk-off despite strong GDP print"
     },
     {
       "name": "VIX",
-      "note": "VIX at 17.2, elevated from lows but contained; AI selloff orderly, not panic"
+      "note": "VIX at 19.42 elevated pre-NFP Friday + midterms Tuesday; tech selloff adding to vol but sub-20 shows no panic"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent $112.13 -1% as Vance Iran diplomacy per OilPrice eases supply fears; still elevated on war premium"
+      "note": "Brent $109.68 down from $112; OPEC+ Dec output steady per Straits Times, Iran interim deal caps geopolitical bid"
     },
     {
       "name": "Gold",
-      "note": "Gold holds $4,000 as stagflation hedge; inflation + geopolitical uncertainty support safe-haven bid"
+      "note": "Gold $3,916 off $4,000 highs; stagflation hedge intact but geopolitical premium fading as Vance-Iran talks progress"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW 1336, won stable as BOK Nov hike priced per Korea Times; hawkish divergence supports"
+      "note": "USDKRW 1344 stable; BOK Nov hike speculation per Korea Times supports KRW vs hawkish Fed backdrop"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "AI selloff pressures semis; KOSPI -345 to 5655, Samsung disappoints on shareholder returns per JoongAng"
+      "note": "SOX under pressure as Samsung disappoints on shareholder returns per JoongAng; AI capex rotation weighs on sector"
     }
   ],
-  "headline": "Stagflation regime persists as Q3 GDP beats at 3.4% while Sep inflation reaccelerates, AI tech selloff sparks Treasury haven rally with 10Y at one-month lows, Lagarde resignation adds ECB uncertainty.",
-  "generated": "2026-10-30T04:22:14Z",
-  "asOf": "2026-10-30"
+  "headline": "Stagflation regime persists as 4% CPI meets 3.4% GDP; tech selloff drives Treasury rally to 4.98% ahead of Friday NFP and Tuesday midterms while Fed Warsh keeps December hike live.",
+  "generated": "2026-11-02T04:25:08Z",
+  "asOf": "2026-11-02"
 }
