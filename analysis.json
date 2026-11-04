@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "STAGFLATION RISK-OFF",
-  "regimeSub": "SPX -0.5% as tech rout extends; 10Y rallies to 4.94% on pre-election haven bid with Brent crashing 4%.",
+  "regimeLabel": "ELECTION HAVEN BID",
+  "regimeSub": "SPX +0.4% as Treasuries rally on election-day flight to quality; 10Y drops 3bp to 4.91% amid equity rotation.",
   "themes": [
-    "Q3 GDP 3.4% YoY vs Sep CPI 4.0% YoY confirms stagflation regime; Fed Warsh held at 4% Oct 28 FOMC per CNBC with hawkish bias intact → core PCE 3.1% keeps Dec hike optionality live",
-    "10Y yield drops 4bp to 4.94% as equity-to-bond rotation accelerates pre-midterms per MarketWatch → 2s10s at +38bp with 2Y down 5bp to 4.56% on flight-to-quality bid",
-    "Lagarde ECB resignation Oct 29 per Guardian creates policy vacuum → EURUSD firms to 1.1194 but successor uncertainty caps upside; BOK Nov hike now consensus per Korea Times as Fed stays hawkish",
-    "Brent collapses 4.1% to $105.16 as OPEC+ Dec targets hold per CNBC and Iran war premium fades → gold +0.5% to $3,937 as pre-election hedging offsets oil-driven disinflation hopes"
+    "Fed Musalem Oct 30 called for hikes 'soon' per Yahoo Finance; Warsh held at 4% Oct 28 FOMC with core PCE at 3.1% → Dec hike optionality intact despite Q3 GDP 3.4%",
+    "10Y yield falls 3bp to 4.91% as election-day haven flows per Bloomberg accelerate bond rally → 2s10s steepens to +32bp with 2Y up 3bp to 4.59% on hawkish Fed repricing",
+    "Lagarde ECB exit Feb 2027 per NYT leaves policy vacuum → EURUSD firms to 1.1254 as DXY weakens to 101.28; BOK Nov hike consensus per Korea Times supports won at 1340",
+    "Brent crashes 2.3% to $102.76 as Iran war premium fades and OPEC+ Dec targets hold per Reuters → gold +0.3% to $3,950 on election hedging; VIX stable at 20.83"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate at 0.94% (4.94% 10Y minus 4.0% CPI) → positive real rates tightening conditions as Fed holds"
+      "note": "Real rate 0.9% (4.91% 10Y minus 4.0% CPI); Musalem's 'soon' hike call keeps term premium elevated"
     },
     {
       "name": "2s10s Curve",
-      "note": "Curve steepens to +38bp from +37bp yesterday; 2Y at 4.56% down 5bp as short-end leads rally"
+      "note": "Steepens to +32bp as 2Y rises 3bp to 4.59% on Fed hike bets while 10Y drops 3bp on haven flows"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads widen modestly as tech selloff spills into credit; risk-off tone dominates pre-election"
+      "note": "Spreads compress modestly as election uncertainty peaks; Q3 GDP 3.4% supports corporate fundamentals"
     },
     {
       "name": "VIX",
-      "note": "VIX at 21.15 elevated pre-midterms; reflects election uncertainty and stagflation hedging demand"
+      "note": "VIX at 20.83 stable despite midterm vol event; pre-positioned hedges cap upside spike"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent crashes 4.1% to $105.16 as OPEC+ holds Dec targets and Iran geopolitical premium fades"
+      "note": "Brent -2.3% to $102.76 as Iran war premium fades; OPEC+ Dec production targets hold per Reuters"
     },
     {
       "name": "Gold",
-      "note": "Gold +0.5% to $3,937 as pre-election hedging bid offsets oil-led disinflation narrative"
+      "note": "Gold +0.3% to $3,950 as election hedging dominates; real rate compression supports bid"
     },
     {
       "name": "USD / KRW",
-      "note": "USDKRW at 1339 stable; won resilient despite KOSPI -1.5% rout as BOK Nov hike priced per Korea Times"
+      "note": "Won firm at 1340 as BOK Nov hike consensus per Korea Times; Fed hawkishness caps further gains"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "KOSPI -1.5% to 5,629 as Samsung disappoints on shareholder returns per Korea JoongAng Daily; HBM selloff extends"
+      "note": "Samsung -5%, SK Hynix -7% per Seoul Economic Daily as US AI selloff spills; KOSPI at 5455"
     }
   ],
-  "headline": "US stagflation persists with 4% CPI and 3.4% GDP as Fed Warsh holds hawkish; Brent crashes 4% while Treasury rally extends pre-midterms.",
-  "generated": "2026-11-03T05:20:57Z",
-  "asOf": "2026-11-03"
+  "headline": "US Election Day triggers bond rally and equity rotation as Fed's Musalem reinforces Dec hike optionality with core PCE at 3.1% and Brent collapses below $103.",
+  "generated": "2026-11-04T04:49:59Z",
+  "asOf": "2026-11-04"
 }
