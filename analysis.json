@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "ELECTION HAVEN BID",
-  "regimeSub": "SPX +0.4% as Treasuries rally on election-day flight to quality; 10Y drops 3bp to 4.91% amid equity rotation.",
+  "regimeLabel": "ELECTION RISK-OFF ROTATION",
+  "regimeSub": "SPX +1.6% off lows as midterm volatility compresses; oil crashes to $94.62 erasing Iran war premium.",
   "themes": [
-    "Fed Musalem Oct 30 called for hikes 'soon' per Yahoo Finance; Warsh held at 4% Oct 28 FOMC with core PCE at 3.1% → Dec hike optionality intact despite Q3 GDP 3.4%",
-    "10Y yield falls 3bp to 4.91% as election-day haven flows per Bloomberg accelerate bond rally → 2s10s steepens to +32bp with 2Y up 3bp to 4.59% on hawkish Fed repricing",
-    "Lagarde ECB exit Feb 2027 per NYT leaves policy vacuum → EURUSD firms to 1.1254 as DXY weakens to 101.28; BOK Nov hike consensus per Korea Times supports won at 1340",
-    "Brent crashes 2.3% to $102.76 as Iran war premium fades and OPEC+ Dec targets hold per Reuters → gold +0.3% to $3,950 on election hedging; VIX stable at 20.83"
+    "Bullard Nov 4 calls for Dec hike per Kathleen Hays podcast; Musalem/Dallas Fed prior week aligned on 'soon' → 4% policy rate unchanged but Dec pricing firm with core PCE at 3.1%",
+    "10Y yield +4bp to 4.95% as election haven bid unwinds; 2s10s steepens to +34bp with 2Y at 4.61% → tech rotation into bonds reverses per Bloomberg AI selloff coverage",
+    "Lagarde ECB Feb 2027 exit confirmed per NYT/Guardian → EURUSD firms to 1.1265 as Le Pen risk priced; BOK Nov hike expectations per Reuters support KRW at 1342",
+    "Brent collapses 7.9% WoW to $94.62 as Iran war premium fully exits per Reuters July normalization → gold +3.1% to $4,073 on election hedging; VIX crushed to 16.61"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate 0.9% (4.91% 10Y minus 4.0% CPI); Musalem's 'soon' hike call keeps term premium elevated"
+      "note": "10Y real ~95bp with 4.95% nominal vs 4.0% Sept CPI; hawkish Fed repricing intact as Dec hike odds rise per Bullard"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steepens to +32bp as 2Y rises 3bp to 4.59% on Fed hike bets while 10Y drops 3bp on haven flows"
+      "note": "Steepens to +34bp (4.95% vs 4.61%); bear steepening on growth optimism and term premium rebuild"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads compress modestly as election uncertainty peaks; Q3 GDP 3.4% supports corporate fundamentals"
+      "note": "Spreads compress as VIX collapses to 16.61; risk appetite returns post-election with SPX reclaiming 7688"
     },
     {
       "name": "VIX",
-      "note": "VIX at 20.83 stable despite midterm vol event; pre-positioned hedges cap upside spike"
+      "note": "Crushed from 20.83 to 16.61 (-20%) as election uncertainty resolves; vol selling accelerates"
     },
     {
       "name": "Brent Crude",
-      "note": "Brent -2.3% to $102.76 as Iran war premium fades; OPEC+ Dec production targets hold per Reuters"
+      "note": "Crashes to $94.62 (-7.9% WoW) as Iran war premium fully exits; OPEC+ Dec quota reset looms per Crux Investor"
     },
     {
       "name": "Gold",
-      "note": "Gold +0.3% to $3,950 as election hedging dominates; real rate compression supports bid"
+      "note": "Surges to $4,073 (+3.1%) as election hedge flows dominate; real rate rise not capping safe haven bid"
     },
     {
       "name": "USD / KRW",
-      "note": "Won firm at 1340 as BOK Nov hike consensus per Korea Times; Fed hawkishness caps further gains"
+      "note": "Won stable at 1342 as BOK Nov hike consensus holds per Korea Times; DXY soft at 101.51 despite hawkish Fed"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Samsung -5%, SK Hynix -7% per Seoul Economic Daily as US AI selloff spills; KOSPI at 5455"
+      "note": "Samsung/SK Hynix tumble 3-4% per Seoul Economic Daily on US AI capex doubts; KOSPI -5.6% from 5,760 high"
     }
   ],
-  "headline": "US Election Day triggers bond rally and equity rotation as Fed's Musalem reinforces Dec hike optionality with core PCE at 3.1% and Brent collapses below $103.",
-  "generated": "2026-11-04T04:49:59Z",
-  "asOf": "2026-11-04"
+  "headline": "US midterms compress volatility as VIX plunges 20% to 16.61; oil collapses to $94 erasing Iran premium while Fed's Bullard/Musalem maintain Dec hike optionality with core PCE stuck at 3.1%.",
+  "generated": "2026-11-05T05:06:04Z",
+  "asOf": "2026-11-05"
 }
