@@ -1,47 +1,47 @@
 {
-  "regimeLabel": "HAWKISH PAYROLLS WATCH",
-  "regimeSub": "Hammack/Barkin gradual hike rhetoric + Friday NFP setup drives VIX to 28 as SPX sells off 4.4% from highs.",
+  "regimeLabel": "IRAN PEACE BID",
+  "regimeSub": "Oil crashes on Trump Iran de-escalation hints while Oct NFP 165K beat cements Dec hike as tech rout deepens.",
   "themes": [
-    "Fed's Hammack and Barkin Nov 5 signal gradual rate hikes ahead per Reuters/CNBC → 2Y falls 3bp to 4.58% but Dec hike pricing intact with policy rate at 4%",
-    "SPX crashes 4.4% to 7353 from 7689 as VIX spikes to 28.18 → risk-off rotation accelerates ahead of Oct NFP per Barron's 'green light for hike' framing",
-    "Brent surges 3.9% to $98.29 as OPEC+ quota reset looms per Crux Investor; gold +1% to $4113 on election/Fed uncertainty → haven bid intensifies",
-    "Samsung/SK Hynix tumble per CNBC AI selloff contagion → KOSPI down to 5087 as KRW weakens to 1358; Japan bonds rally on risk-off per Bloomberg"
+    "Oct NFP beats at 165K vs ~120K est per Bloomberg/CNBC; unemployment falls to 4.1% → Dec hike locked in with Fed rate at 4%, 2Y falls 12bp to 4.46%",
+    "Brent drops to $98.40 as Trump says Iran attacks 'unlikely' per Reuters; biggest weekly drop since 2020 per Bloomberg → geopolitical risk premium unwinds",
+    "Fed's Hammack/Barkin Nov 5 gradual hike rhetoric still dominates; CPI due this week per FT → Warsh Dec hike narrative intact despite rate-sensitive selloff",
+    "SOX crashes 'second-worst day on record' per 24/7 Wall St; KOSPI stabilizes at 5107 after $1T AI wipeout → Samsung/SK Hynix margin-call reprieve per BigGo"
   ],
   "signalNotes": [
     {
       "name": "US Real Rate",
-      "note": "Real rate at +90bp (4.58% 2Y - 3.7% trailing inflation); restrictive but tightening path priced per Hammack/Barkin guidance"
+      "note": "10Y at 4.84% vs 4.0% CPI = 84bp real; down from 5.27% 10Y month ago as duration bid returns on risk-off"
     },
     {
       "name": "2s10s Curve",
-      "note": "Steepens to +32bp as 10Y falls 5bp to 4.90%; bull steepening on risk-off rotation ahead of Friday payrolls"
+      "note": "Spread at +38bp (4.84-4.46) steeper vs last week; long-end holds better as front-end reprices hike path lower"
     },
     {
       "name": "HY Credit Spread",
-      "note": "Spreads widening implied by VIX spike to 28.18 and 4.4% SPX selloff; credit stress building into NFP"
+      "note": "Spreads widening implied by VIX at 25.6 and SPX -4% WoW selloff; tech contagion spreading to credit"
     },
     {
       "name": "VIX",
-      "note": "Explodes to 28.18 from 16.61 yesterday (+69%) → election + NFP + Fed hike path uncertainty compounding"
+      "note": "VIX at 25.64 off 28 highs; election clarity and Iran peace bid provide marginal vol compression"
     },
     {
       "name": "Brent Crude",
-      "note": "Rebounds 3.9% to $98.29 as OPEC+ quota reset speculation resurfaces per Crux Investor; Iran premium creeping back"
+      "note": "Brent $98.40 down sharply; Trump 'unlikely' Iran attack comment triggers biggest weekly drop since 2020"
     },
     {
       "name": "Gold",
-      "note": "Climbs to $4113.5 (+1%) on haven demand; election uncertainty + hawkish Fed combo driving safe asset bid"
+      "note": "Gold $4132 +0.5% as haven bid persists despite oil unwind; Fed hike uncertainty and election hedges linger"
     },
     {
       "name": "USD / KRW",
-      "note": "KRW weakens to 1358 from 1342 as KOSPI selloff accelerates; Samsung/SK Hynix chip rout per CNBC contagion"
+      "note": "KRW firms to 1354 from 1358 as risk-off eases slightly; margin-call reprieve per regulators helps KOSPI"
     },
     {
       "name": "Semiconductor SOX",
-      "note": "Korea chip names crushed per ChinaTalk $1T crash coverage; AI capex narrative under pressure from rate hike fears"
+      "note": "SOX posts second-worst day on record per 24/7 Wall St; AI capex narrative cracking as rates bite"
     }
   ],
-  "headline": "VIX spikes 69% to 28 as Hammack/Barkin gradual hike rhetoric collides with Friday NFP setup, triggering 4.4% SPX selloff and broad risk-off rotation into gold and bonds.",
-  "generated": "2026-11-06T05:05:16Z",
-  "asOf": "2026-11-06"
+  "headline": "Strong Oct payrolls cement Dec Fed hike as Trump Iran de-escalation signal triggers oil crash while tech rout extends into second week.",
+  "generated": "2026-11-09T04:39:46Z",
+  "asOf": "2026-11-09"
 }
