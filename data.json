@@ -1,28 +1,28 @@
 {
-  "updated": "2026-11-11T04:41:57Z",
-  "date": "2026-11-11",
+  "updated": "2026-11-12T05:44:42Z",
+  "date": "2026-11-12",
   "fx": {
-    "USDJPY": 158.836,
-    "USDKRW": 1338,
-    "USDCNY": 6.6737,
-    "EURUSD": 1.1166,
-    "GBPUSD": 1.3346,
-    "DXY": 102.26,
-    "JPYKRW": 8.43
+    "USDJPY": 159.687,
+    "USDKRW": 1329,
+    "USDCNY": 6.6683,
+    "EURUSD": 1.1084,
+    "GBPUSD": 1.3261,
+    "DXY": 102.98,
+    "JPYKRW": 8.33
   },
   "equities": {
-    "SPX": 7520,
-    "Nikkei": 61235,
-    "KOSPI": 5338,
-    "CSI300": 4047,
-    "EuroStoxx": 6327,
-    "FTSE": 10751
+    "SPX": 7619,
+    "Nikkei": 60778,
+    "KOSPI": 5306,
+    "CSI300": 4059,
+    "EuroStoxx": 6393,
+    "FTSE": 10835
   },
   "commodities": {
-    "brent": 92.37,
-    "wti": 86.63,
-    "gold": 4052.7,
-    "vix": 19.46
+    "brent": 91.8,
+    "wti": 85.65,
+    "gold": 3981.0,
+    "vix": 17.49
   },
   "us": {
     "policyRate": 4.0,
@@ -48,10 +48,10 @@
     "cpiYoY_y1": 3.0,
     "gdpYoY_q1": 2.2,
     "gdpYoY_y1": 3.9,
-    "spx_d1": 7550.0,
-    "spx_w1": 7569.0,
-    "spx_m1": 7812.0,
-    "spx_y1": 6832.0,
+    "spx_d1": 7521.0,
+    "spx_w1": 7689.0,
+    "spx_m1": 7807.0,
+    "spx_y1": 6847.0,
     "retailSalesMoM": 0.8,
     "corePCEYoY": 3.1
   },
@@ -59,19 +59,19 @@
     "policyRate": 3.0,
     "policyRate_m1": 3.0,
     "policyRate_y1": 2.5,
-    "y2": 3.643,
-    "y2_d1": 3.629,
-    "y2_w1": 3.701,
+    "y2": 3.728,
+    "y2_d1": 3.643,
+    "y2_w1": 3.687,
     "y2_m1": 3.89,
     "y2_y1": 2.54,
-    "y10": 3.85,
-    "y10_d1": 3.863,
-    "y10_w1": 4.001,
+    "y10": 3.95,
+    "y10_d1": 3.85,
+    "y10_w1": 3.968,
     "y10_m1": 4.454,
     "y10_y1": 2.933,
-    "slope": 21,
-    "slope_d1": 23,
-    "slope_w1": 30,
+    "slope": 22,
+    "slope_d1": 21,
+    "slope_w1": 28,
     "slope_m1": 56,
     "slope_y1": 39,
     "cpiYoY": 2.8,
@@ -536,13 +536,13 @@
     }
   ],
   "fed": {
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-11",
     "nextFOMC": "2026-12-08~09",
     "targetRange": "3.75\u20134.00%",
-    "marketOdds": "12\uc6d4 50bp \uc778\uc0c1 13% \u00b7 25bp \uc778\uc0c1 87% (\uc5f0\ubc29\uae30\uae08\uc120\ubb3c \ub0b4\uc7ac, 11/10 \uc885\uac00)",
-    "marketOddsEn": "Dec 50bp hike 13% \u00b7 25bp hike 87% (fed funds futures implied, 11/10 close)",
+    "marketOdds": "12\uc6d4 50bp \uc778\uc0c1 16% \u00b7 25bp \uc778\uc0c1 84% (\uc5f0\ubc29\uae30\uae08\uc120\ubb3c \ub0b4\uc7ac, 11/11 \uc885\uac00)",
+    "marketOddsEn": "Dec 50bp hike 16% \u00b7 25bp hike 84% (fed funds futures implied, 11/11 close)",
     "effr": 3.88,
-    "impliedAfter": 4.1618,
-    "impliedMoveBp": 28.2
+    "impliedAfter": 4.1689,
+    "impliedMoveBp": 28.9
   }
 }
